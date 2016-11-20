@@ -1,0 +1,22 @@
+{
+  "name": "xvx",
+  "version": "1.0.0",
+  "description": "Enough CSS",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscogo/xvx.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Francisco A. Gonzalez O.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/franciscogo/xvx/issues"
+  },
+  "homepage": "https://github.com/franciscogo/xvx#readme"
+}
