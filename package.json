@@ -2,7 +2,7 @@
   "name": "xvx",
   "version": "1.0.0",
   "description": "Enough CSS",
-  "main": "",
+  "main": "dist/xvx.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +20,12 @@
   },
   "homepage": "https://github.com/franciscogo/xvx#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-header": "^1.8.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-size": "^2.1.0"
   }
 }
