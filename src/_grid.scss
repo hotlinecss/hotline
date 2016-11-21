@@ -1,0 +1,9 @@
+.grid {
+	display: flex;
+}
+
+@for $column from 1 through $columns {
+	.col-#{$column} {
+		width: percentage($column/$columns);
+	}
+}
