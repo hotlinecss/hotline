@@ -1,0 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.25;
+}
+
+p {
+	line-height: 1.6;
+	margin-bottom: 1em;
+	max-width: 30em;
+}
+
+blockquote {
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left-style: solid;
+	border-left-color: #333;
+}
