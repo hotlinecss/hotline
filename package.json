@@ -1,6 +1,6 @@
 {
   "name": "xvx",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Enough CSS",
   "main": "dist/xvx.min.css",
   "scripts": {
