@@ -10,6 +10,14 @@ html {
 	box-sizing: inherit;
 }
 
+label,
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
 canvas,
 video,
 iframe {
