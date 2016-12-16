@@ -1,4 +1,4 @@
-/* xvx - 1.0.0 */
+/* xvx - 1.1.0 */
 html {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -8,6 +8,13 @@ html {
 *::before,
 *::after {
   box-sizing: inherit; }
+
+label,
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  vertical-align: middle; }
 
 canvas,
 video,
