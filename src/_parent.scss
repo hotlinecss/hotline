@@ -1,0 +1,41 @@
+/*
+
+	Parent to child
+
+*/
+
+.parent_lh_title {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		line-height: 1.25;
+	}
+}
+
+.parent_lh_copy {
+	p,
+	ul,
+	ol { 
+		line-height: 1.5; 
+	}
+}
+
+.parent_list {
+	ol,
+	ul {
+		padding-left: 0;
+		list-style-type: none;
+	}
+}
+
+.parent_paragraph { 
+	p + p {
+		margin-top: 1.5em;
+	}
+}
+
+.parent_measure { max-width: 30em; }
+.parent_img img { display: block; max-width: 100%; width: 100%; }
