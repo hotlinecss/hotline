@@ -1,0 +1,140 @@
+/*
+
+	Typography
+
+		f  = font-size
+		fw = font-weight
+		lh = line-height
+
+*/
+
+.measure_thick { max-width: 34em }
+.measure { max-width: 30em }
+.measure_tight { max-width: 20em }
+.headline { font-size: 6em; }
+.big { font-size: 5em; }
+.f1 { font-size: 3.157em; }
+.f2 { font-size: 2.369em; }
+.f3 { font-size: 1.777em; }
+.f4 { font-size: 1.333em; }
+.f5 { font-size: 1em; }
+.f6 { font-size: .75em; }
+.fw1 { font-weight: 100; }
+.fw2 { font-weight: 200; }
+.fw3 { font-weight: 300; }
+.fw4 { font-weight: 400; }
+.fw5 { font-weight: 500; }
+.fw6 { font-weight: 600; }
+.fw7 { font-weight: 700; }
+.fw8 { font-weight: 800; }
+.fw9 { font-weight: 900; }
+.bold { font-weight: bold;}
+.lh_normal { line-height: 1; }
+.lh_title { line-height: 1.25; }
+.lh_copy { line-height: 1.5; }
+.upper { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.caps { text-transform: capitalize; }
+.normal { font-style: normal; }
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+.strike { text-decoration: line-through; }
+.tracked { letter-spacing: .16em; }
+.text_center { text-align: center; }
+.text_left { text-align: left; }
+.text_right { text-align: right; }
+.text_justify { text-align: justify; }
+.truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.nowrap { white-space: nowrap; }
+.break_word { word-wrap: break-word; }
+.small_caps { font-variant: small-caps; }
+.font_family_inherit { font-family: inherit; }
+.font_size_inherit { font-size: inherit; }
+.times { font-family: "Times New Roman", Times, serif; }
+.avenir { font-family: "avenir next", avenir, sans-serif; }
+.athelas { font-family: athelas, georgia, serif; }
+.helvetica { font-family: "helvetica neue", helvetica, sans-serif; }
+.georgia { font-family: georgia, serif; }
+.verdana { font-family: verdana, sans-serif; }
+.code { font-family: Consolas, monaco, monospace; }
+
+@include media(map-get($mqs, "sm")) {
+
+	.sm_measure_thick { max-width: 34em }
+	.sm_measure { max-width: 30em }
+	.sm_measure_tight { max-width: 20em }
+	.sm_headline { font-size: 6em; }
+	.sm_big { font-size: 5em; }
+	.sm_f1 { font-size: 3.157em; }
+	.sm_f2 { font-size: 2.369em; }
+	.sm_f3 { font-size: 1.777em; }
+	.sm_f4 { font-size: 1.333em; }
+	.sm_f5 { font-size: 1em; }
+	.sm_f6 { font-size: .75em; }
+	.sm_lh_normal { line-height: 1; }
+	.sm_lh_title { line-height: 1.25; }
+	.sm_lh_copy { line-height: 1.5; }
+	.sm_tracked { letter-spacing: .16em; }
+	.sm_text_center { text-align: center; }
+	.sm_text_left { text-align: left; }
+	.sm_text_right { text-align: right; }
+	.sm_text_justify { text-align: justify; }
+	.sm_truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.sm_nowrap { white-space: nowrap; }
+	.sm_break_word { word-wrap: break-word; }
+
+}
+
+@include media(map-get($mqs, "md")) {
+
+	.md_measure_thick { max-width: 34em }
+	.md_measure { max-width: 30em }
+	.md_measure_tight { max-width: 20em }
+	.md_headline { font-size: 6em; }
+	.md_big { font-size: 5em; }
+	.md_f1 { font-size: 3.157em; }
+	.md_f2 { font-size: 2.369em; }
+	.md_f3 { font-size: 1.777em; }
+	.md_f4 { font-size: 1.333em; }
+	.md_f5 { font-size: 1em; }
+	.md_f6 { font-size: .75em; }
+	.md_lh_normal { line-height: 1; }
+	.md_lh_title { line-height: 1.25; }
+	.md_lh_copy { line-height: 1.5; }
+	.md_tracked { letter-spacing: .16em; }
+	.md_text_center { text-align: center; }
+	.md_text_left { text-align: left; }
+	.md_text_right { text-align: right; }
+	.md_text_justify { text-align: justify; }
+	.md_truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.md_nowrap { white-space: nowrap; }
+	.md_break_word { word-wrap: break-word; }
+
+}
+
+@include media(map-get($mqs, "lg")) {
+
+	.lg_measure_thick { max-width: 34em }
+	.lg_measure { max-width: 30em }
+	.lg_measure_tight { max-width: 20em }
+	.lg_headline { font-size: 6em; }
+	.lg_big { font-size: 5em; }
+	.lg_f1 { font-size: 3.157em; }
+	.lg_f2 { font-size: 2.369em; }
+	.lg_f3 { font-size: 1.777em; }
+	.lg_f4 { font-size: 1.333em; }
+	.lg_f5 { font-size: 1em; }
+	.lg_f6 { font-size: .75em; }
+	.lg_lh_normal { line-height: 1; }
+	.lg_lh_title { line-height: 1.25; }
+	.lg_lh_copy { line-height: 1.5; }
+	.lg_tracked { letter-spacing: .16em; }
+	.lg_text_center { text-align: center; }
+	.lg_text_left { text-align: left; }
+	.lg_text_right { text-align: right; }
+	.lg_text_justify { text-align: justify; }
+	.lg_truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.lg_nowrap { white-space: nowrap; }
+	.lg_break_word { word-wrap: break-word; }
+
+}
