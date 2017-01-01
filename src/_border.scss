@@ -1,0 +1,30 @@
+/*
+
+	Border
+
+		rad = radius, steps(5) [0, .125, .250, .5, 1]
+
+*/
+
+.border { border-style: solid; border-width: 1px; }
+.border_top { border-top-style: solid; border-top-width: 1px; }
+.border_right { border-right-style: solid; border-bottom-width: 1px; }
+.border_bottom { border-bottom-style: solid; border-bottom-width: 1px; }
+.border_left { border-left-style: solid; border-top-width: 1px; }
+.border_none { border: 0; }
+.border_top_none { border-top-width: 0; }
+.border_right_none { border-right-width: 0; }
+.border_bottom_none { border-bottom-width: 0; }
+.border_left_none { border-left-width: 0; }
+.border_tight { border-width: 2px; }
+.border_thick { border-width: 4px; }
+.rounded_top { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.rounded_right {border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.rounded_bottom { border-top-left-radius: 0; border-top-right-radius: 0; }
+.rounded_left { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.circle { border-radius: 50%; }
+.rad0 { border-radius: 0; }
+.rad1 { border-radius: .125em; }
+.rad2 { border-radius: .250em; }
+.rad3 { border-radius: .5em; }
+.rad4 { border-radius: 1em; }
