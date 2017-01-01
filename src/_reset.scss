@@ -1,0 +1,110 @@
+/*
+
+	Basic reset
+	
+*/
+
+html {
+  box-sizing: border-box;
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+canvas,
+video,
+iframe {
+  max-width: 100%;
+}
+
+svg {
+  max-height: 100%;
+}
+
+/*
+
+  Link
+
+*/
+
+.link { 
+  text-decoration: none;
+  transition: color .15s ease-in;
+  cursor: pointer;
+
+  &:link,
+  &:visited {
+    transition: color .15s ease-in;
+  }
+
+  &:hover {
+    transition: color .15s ease-in; 
+  }
+
+  &:active {
+    transition: color .15s ease-in;
+  }
+
+  &:focus {
+    transition: color .15s ease-in;
+  }
+
+}
+
+/*
+
+  Tables
+
+*/
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table_striped > tbody > tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.125);
+}
+
+/*
+
+  Forms
+
+*/
+
+label, 
+input,
+button,
+select,
+textarea {
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  vertical-align: middle;
+}
+
+.input_reset { -webkit-appearance: none; }
+
+/*
+
+  List
+
+*/
+
+.list { list-style-type: none; }
