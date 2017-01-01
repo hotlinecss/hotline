@@ -1,7 +1,7 @@
 {
   "name": "xvx",
-  "version": "1.1.1",
-  "description": "Enough CSS",
+  "version": "2.0.0",
+  "description": "Lightweight framework for the web",
   "main": "css/xvx.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,10 +20,12 @@
   },
   "homepage": "https://github.com/franciscogo/xvx#readme",
   "devDependencies": {
+    "css-mqpacker": "^5.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "^2.0.13",
     "gulp-header": "^1.8.8",
+    "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-size": "^2.1.0"
