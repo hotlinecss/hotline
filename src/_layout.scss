@@ -1,0 +1,117 @@
+/*
+
+	Layout
+
+*/
+
+.border_box { box-sizing: border-box; }
+.hidden { display: none; }
+.visible { opacity: 1; visibility: visible; }
+.block { display: block; }
+.inline_block { display: inline-block; }
+.inline { display: inline; }
+.table_wrap { display: table; }
+.table_fixed { table-layout: fixed; }
+.table_cell { display: table-cell; }
+.align_top { vertical-align: top; }
+.align_middle { vertical-align: middle; }
+.align_baseline { vertical-align: baseline; }
+.align_bottom { vertical-align: bottom; }
+.overflow_hidden { overflow: hidden; }
+.overflow_auto { overflow: auto; }
+.overflow_scroll { overflow: scroll; }
+.overflow_x_hidden { overflow-x: hidden; }
+.overflow_x_auto { overflow-x: auto; }
+.overflow_x_scroll { overflow-x: scroll; }
+.overflow_y_hidden { overflow-y: hidden; }
+.overflow_y_auto { overflow-y: auto; }
+.overflow_y_scroll { overflow-y: scroll; }
+.right { float: right; }
+.left { float: left; }
+
+@include media(map-get($mqs, "sm")) {
+	
+	.sm_border_box { box-sizing: border-box; }
+	.sm_hidden { display: none; }
+	.sm_visible { opacity: 1; visibility: visible; }
+	.sm_block { display: block; }
+	.sm_inline_block { display: inline-block; }
+	.sm_inline { display: inline; }
+	.sm_table_wrap { display: table; }
+	.sm_table_fixed { table-layout: fixed; }
+	.sm_table_cell { display: table-cell; }
+	.sm_align_top { vertical-align: top; }
+	.sm_align_middle { vertical-align: middle; }
+	.sm_align_baseline { vertical-align: baseline; }
+	.sm_align_bottom { vertical-align: bottom; }
+	.sm_overflow_hidden { overflow: hidden; }
+	.sm_overflow_auto { overflow: auto; }
+	.sm_overflow_scroll { overflow: scroll; }
+	.sm_overflow_x_hidden { overflow-x: hidden; }
+	.sm_overflow_x_auto { overflow-x: auto; }
+	.sm_overflow_x_scroll { overflow-x: scroll; }
+	.sm_overflow_y_hidden { overflow-y: hidden; }
+	.sm_overflow_y_auto { overflow-y: auto; }
+	.sm_overflow_y_scroll { overflow-y: scroll; }
+	.sm_right { float: right; }
+	.sm_left { float: left; }
+
+}
+
+@include media(map-get($mqs, "md")) {
+	
+	.md_border_box { box-sizing: border-box; }
+	.md_hidden { display: none; }
+	.md_visible { opacity: 1; visibility: visible; }
+	.md_block { display: block; }
+	.md_inline_block { display: inline-block; }
+	.md_inline { display: inline; }
+	.md_table_wrap { display: table; }
+	.md_table_fixed { table-layout: fixed; }
+	.md_table_cell { display: table-cell; }
+	.md_align_top { vertical-align: top; }
+	.md_align_middle { vertical-align: middle; }
+	.md_align_baseline { vertical-align: baseline; }
+	.md_align_bottom { vertical-align: bottom; }
+	.md_overflow_hidden { overflow: hidden; }
+	.md_overflow_auto { overflow: auto; }
+	.md_overflow_scroll { overflow: scroll; }
+	.md_overflow_x_hidden { overflow-x: hidden; }
+	.md_overflow_x_auto { overflow-x: auto; }
+	.md_overflow_x_scroll { overflow-x: scroll; }
+	.md_overflow_y_hidden { overflow-y: hidden; }
+	.md_overflow_y_auto { overflow-y: auto; }
+	.md_overflow_y_scroll { overflow-y: scroll; }
+	.md_right { float: right; }
+	.md_left { float: left; }
+
+}
+
+@include media(map-get($mqs, "lg")) {
+	
+	.lg_border_box { box-sizing: border-box; }
+	.lg_hidden { display: none; }
+	.lg_visible { opacity: 1; visibility: visible; }
+	.lg_block { display: block; }
+	.lg_inline_block { display: inline-block; }
+	.lg_inline { display: inline; }
+	.lg_table_wrap { display: table; }
+	.lg_table_fixed { table-layout: fixed; }
+	.lg_table_cell { display: table-cell; }
+	.lg_align_top { vertical-align: top; }
+	.lg_align_middle { vertical-align: middle; }
+	.lg_align_baseline { vertical-align: baseline; }
+	.lg_align_bottom { vertical-align: bottom; }
+	.lg_overflow_hidden { overflow: hidden; }
+	.lg_overflow_auto { overflow: auto; }
+	.lg_overflow_scroll { overflow: scroll; }
+	.lg_overflow_x_hidden { overflow-x: hidden; }
+	.lg_overflow_x_auto { overflow-x: auto; }
+	.lg_overflow_x_scroll { overflow-x: scroll; }
+	.lg_overflow_y_hidden { overflow-y: hidden; }
+	.lg_overflow_y_auto { overflow-y: auto; }
+	.lg_overflow_y_scroll { overflow-y: scroll; }
+	.lg_right { float: right; }
+	.lg_left { float: left; }
+
+}
