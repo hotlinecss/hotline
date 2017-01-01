@@ -1,0 +1,74 @@
+/*
+
+  States
+
+*/
+
+.overlay .overlay_item {
+	opacity: 0;
+	transition: opacity .2s ease-in;
+
+	&:hover,
+	&:focus,
+	&:active {
+		opacity: 1;
+	}
+}
+
+.hover_opacity {
+  transition: opacity .2s ease-in;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: .750;
+  }
+}
+
+.hover_underline {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.thick_hover_underline {
+  padding-bottom: .20em;
+  border-bottom: .20em solid transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: .20em solid currentColor;
+    transition: border-color .2s ease-in
+  }
+}
+
+.pointer {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.bg_animate {
+  &:hover,
+  &:focus {
+    transition: background-color 0.2s ease-in;
+  }
+}
+
+.grow {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
