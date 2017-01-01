@@ -1,0 +1,23 @@
+//
+
+// Configuration
+	
+//
+
+$mqs: (
+	"sm": "screen and (min-width: 30em)",
+	"md": "screen and (min-width: 30em) and (max-width: 60em)",
+	"lg": "screen and (min-width: 60em)"
+);
+
+//
+
+// Helper
+
+//
+
+@mixin media($mq) {
+	@media #{$mq} {
+		@content;
+	}
+}
