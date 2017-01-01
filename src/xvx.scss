@@ -1,57 +1,16 @@
-html {
-	box-sizing: border-box;
-	font-family: sans-serif;
-	font-size: 18px;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
-
-label,
-input,
-select,
-textarea {
-  box-sizing: border-box;
-  vertical-align: middle;
-}
-
-canvas,
-video,
-iframe {
-  max-width: 100%;
-}
-
-img {
-	max-width: 100%;
-}
-
-svg {
-	max-height: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	line-height: 1.25;
-}
-
-p {
-	line-height: 1.5;
-	margin-bottom: 1.5em;
-	max-width: 30em;
-}
-
-thead tr {
-	text-align: left;
-}
-
-code,
-pre {
-	font-family: monospace;
-}
+@import "config";
+@import "reset";
+@import "grid";
+@import "height";
+@import "flex";
+@import "layout";
+@import "typography";
+@import "parent";
+@import "position";
+@import "margin";
+@import "padding";
+@import "border";
+@import "background";
+@import "states";
+@import "utilities";
+@import "colors";
