@@ -1,0 +1,48 @@
+/*
+
+	Utilities
+
+*/
+
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.center { margin-left: auto; margin-right: auto; }
+.aspect_ratio { height: 0; position: relative }
+.aspect_ratio--16x9 { padding-bottom: 56.25%; }
+.aspect_ratio--8x5 { padding-bottom: 62.5%; }
+.aspect_ratio--4x3 { padding-bottom: 75%; }
+.aspect_ratio--3x2 { padding-bottom: 66.66%; }
+.aspect_ratio_item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
+
+@include media(map-get($mqs, "sm")) {
+	
+	.sm_aspect_ratio { height: 0; position: relative }
+	.sm_aspect_ratio--16x9 { padding-bottom: 56.25%; }
+	.sm_aspect_ratio--8x5 { padding-bottom: 62.5%; }
+	.sm_aspect_ratio--4x3 { padding-bottom: 75%; }
+	.sm_aspect_ratio--3x2 { padding-bottom: 66.66%; }
+	.sm_aspect_ratio_item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
+
+}
+
+@include media(map-get($mqs, "md")) {
+	
+	.md_aspect_ratio { height: 0; position: relative }
+	.md_aspect_ratio--16x9 { padding-bottom: 56.25%; }
+	.md_aspect_ratio--8x5 { padding-bottom: 62.5%; }
+	.md_aspect_ratio--4x3 { padding-bottom: 75%; }
+	.md_aspect_ratio--3x2 { padding-bottom: 66.66%; }
+	.md_aspect_ratio_item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
+
+}
+
+@include media(map-get($mqs, "lg")) {
+	
+	.lg_aspect_ratio { height: 0; position: relative }
+	.lg_aspect_ratio--16x9 { padding-bottom: 56.25%; }
+	.lg_aspect_ratio--8x5 { padding-bottom: 62.5%; }
+	.lg_aspect_ratio--4x3 { padding-bottom: 75%; }
+	.lg_aspect_ratio--3x2 { padding-bottom: 66.66%; }
+	.lg_aspect_ratio_item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
+
+}
