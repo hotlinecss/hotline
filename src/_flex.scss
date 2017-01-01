@@ -1,0 +1,125 @@
+/*
+
+	Flex
+
+*/
+
+.flex { display: flex; }
+.flex_auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
+.flex_wrap { flex-wrap: wrap; }
+.flex_nowrap { flex-wrap: nowrap; }
+.flex_row { flex-direction: row; }
+.flex_column { flex-direction: column; }
+.justify_start { justify-content: flex-start; }
+.justify_center { justify-content: center; }
+.justify_end { justify-content: flex-end; }
+.justify_between { justify-content: space-between; }
+.justify_around { justify-content: space-around; }
+.items_start { align-items: flex-start; }
+.items_center { align-items: center; }
+.items_end { align-items: flex-end; }
+.items_stretch { align-items: stretch; }
+.items_base { align-items: baseline; }
+.content_start { align-content: flex-start; }
+.content_center { align-content: center; }
+.content_between { align-content: space-between; }
+.content_around { align-content: space-around; }
+.content_stretch { align-content: stretch; }
+.item_start { align-self: flex-start; }
+.item_center { align-self: center; }
+.item_end { align-self: flex-end; }
+.item_stretch { align-self: stretch; }
+.item_baseline { align-self: baseline; }
+
+@include media(map-get($mqs, "sm")) {
+
+	.sm_flex { display: flex; }
+	.sm_flex_auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
+	.sm_flex_wrap { flex-wrap: wrap; }
+	.sm_flex_nowrap { flex-wrap: nowrap; }
+	.sm_flex_row { flex-direction: row; }
+	.sm_flex_column { flex-direction: column; }
+	.sm_justify_start { justify-content: flex-start; }
+	.sm_justify_center { justify-content: center; }
+	.sm_justify_end { justify-content: flex-end; }
+	.sm_justify_between { justify-content: space-between; }
+	.sm_justify_around { justify-content: space-around; }
+	.sm_items_start { align-items: flex-start; }
+	.sm_items_center { align-items: center; }
+	.sm_items_end { align-items: flex-end; }
+	.sm_items_stretch { align-items: stretch; }
+	.sm_items_base { align-items: baseline; }
+	.sm_content_start { align-content: flex-start; }
+	.sm_content_center { align-content: center; }
+	.sm_content_between { align-content: space-between; }
+	.sm_content_around { align-content: space-around; }
+	.sm_content_stretch { align-content: stretch; }
+	.sm_item_start { align-self: flex-start; }
+	.sm_item_center { align-self: center; }
+	.sm_item_end { align-self: flex-end; }
+	.sm_item_stretch { align-self: stretch; }
+	.sm_item_baseline { align-self: baseline; }
+
+}
+
+@include media(map-get($mqs, "md")) {
+
+	.md_flex { display: flex; }
+	.md_flex_auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
+	.md_flex_wrap { flex-wrap: wrap; }
+	.md_flex_nowrap { flex-wrap: nowrap; }
+	.md_flex_row { flex-direction: row; }
+	.md_flex_column { flex-direction: column; }
+	.md_justify_start { justify-content: flex-start; }
+	.md_justify_center { justify-content: center; }
+	.md_justify_end { justify-content: flex-end; }
+	.md_justify_between { justify-content: space-between; }
+	.md_justify_around { justify-content: space-around; }
+	.md_items_start { align-items: flex-start; }
+	.md_items_center { align-items: center; }
+	.md_items_end { align-items: flex-end; }
+	.md_items_stretch { align-items: stretch; }
+	.md_items_base { align-items: baseline; }
+	.md_content_start { align-content: flex-start; }
+	.md_content_center { align-content: center; }
+	.md_content_between { align-content: space-between; }
+	.md_content_around { align-content: space-around; }
+	.md_content_stretch { align-content: stretch; }
+	.md_item_start { align-self: flex-start; }
+	.md_item_center { align-self: center; }
+	.md_item_end { align-self: flex-end; }
+	.md_item_stretch { align-self: stretch; }
+	.md_item_baseline { align-self: baseline; }
+
+}
+
+@include media(map-get($mqs, "lg")) {
+
+	.lg_flex { display: flex; }
+	.lg_flex_auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
+	.lg_flex_wrap { flex-wrap: wrap; }
+	.lg_flex_nowrap { flex-wrap: nowrap; }
+	.lg_flex_row { flex-direction: row; }
+	.lg_flex_column { flex-direction: column; }
+	.lg_justify_start { justify-content: flex-start; }
+	.lg_justify_center { justify-content: center; }
+	.lg_justify_end { justify-content: flex-end; }
+	.lg_justify_between { justify-content: space-between; }
+	.lg_justify_around { justify-content: space-around; }
+	.lg_items_start { align-items: flex-start; }
+	.lg_items_center { align-items: center; }
+	.lg_items_end { align-items: flex-end; }
+	.lg_items_stretch { align-items: stretch; }
+	.lg_items_base { align-items: baseline; }
+	.lg_content_start { align-content: flex-start; }
+	.lg_content_center { align-content: center; }
+	.lg_content_between { align-content: space-between; }
+	.lg_content_around { align-content: space-around; }
+	.lg_content_stretch { align-content: stretch; }
+	.lg_item_start { align-self: flex-start; }
+	.lg_item_center { align-self: center; }
+	.lg_item_end { align-self: flex-end; }
+	.lg_item_stretch { align-self: stretch; }
+	.lg_item_baseline { align-self: baseline; }
+
+}
