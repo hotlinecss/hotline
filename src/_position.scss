@@ -1,0 +1,157 @@
+/*
+
+	Position
+
+		coordinates = [0, 1, 2, 4, 8, 16]
+
+		z = z-index
+
+*/
+
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.relative { position: relative; }
+.static { position: static; }
+.top_0 { top: 0; }
+.top_1 { top: 1em; }
+.top_2 { top: 2em; }
+.top_4 { top: 4em; }
+.top_8 { top: 8em; }
+.top_16 { top: 16em; }
+.right_0 { right: 0; }
+.right_1 { right: 1em; }
+.right_2 { right: 2em; }
+.right_4 { right: 4em; }
+.right_8 { right: 8em; }
+.right_16 { right: 16em; }
+.bottom_0 { bottom: 0; }
+.bottom_1 { bottom: 1em; }
+.bottom_2 { bottom: 2em; }
+.bottom_4 { bottom: 4em; }
+.bottom_8 { bottom: 8em; }
+.bottom_16 { bottom: 16em; }
+.left_0 { left: 0; }
+.left_1 { left: 1em; }
+.left_2 { left: 2em; }
+.left_4 { left: 4em; }
+.left_8 { left: 8em; }
+.left_16 { left: 16em; }
+.z_0 { z-index: 0; }
+.z_1 { z-index: 1; }
+.z_2 { z-index: 2; }
+.z_3 { z-index: 3; }
+.z_4 { z-index: 4; }
+
+@include media(map-get($mqs, "sm")) {
+	
+	.sm_absolute { position: absolute; }
+	.sm_fixed { position: fixed; }
+	.sm_relative { position: relative; }
+	.sm_static { position: static; }
+	.sm_top_0 { top: 0; }
+	.sm_top_1 { top: 1em; }
+	.sm_top_2 { top: 2em; }
+	.sm_top_4 { top: 4em; }
+	.sm_top_8 { top: 8em; }
+	.sm_top_16 { top: 16em; }
+	.sm_right_0 { right: 0; }
+	.sm_right_1 { right: 1em; }
+	.sm_right_2 { right: 2em; }
+	.sm_right_4 { right: 4em; }
+	.sm_right_8 { right: 8em; }
+	.sm_right_16 { right: 16em; }
+	.sm_bottom_0 { bottom: 0; }
+	.sm_bottom_1 { bottom: 1em; }
+	.sm_bottom_2 { bottom: 2em; }
+	.sm_bottom_4 { bottom: 4em; }
+	.sm_bottom_8 { bottom: 8em; }
+	.sm_bottom_16 { bottom: 16em; }
+	.sm_left_0 { left: 0; }
+	.sm_left_1 { left: 1em; }
+	.sm_left_2 { left: 2em; }
+	.sm_left_4 { left: 4em; }
+	.sm_left_8 { left: 8em; }
+	.sm_left_16 { left: 16em; }
+	.sm_z_0 { z-index: 0; }
+	.sm_z_1 { z-index: 1; }
+	.sm_z_2 { z-index: 2; }
+	.sm_z_3 { z-index: 3; }
+	.sm_z_4 { z-index: 4; }
+
+}
+
+@include media(map-get($mqs, "md")) {
+	
+	.md_absolute { position: absolute; }
+	.md_fixed { position: fixed; }
+	.md_relative { position: relative; }
+	.md_static { position: static; }
+	.md_top_0 { top: 0; }
+	.md_top_1 { top: 1em; }
+	.md_top_2 { top: 2em; }
+	.md_top_4 { top: 4em; }
+	.md_top_8 { top: 8em; }
+	.md_top_16 { top: 16em; }
+	.md_right_0 { right: 0; }
+	.md_right_1 { right: 1em; }
+	.md_right_2 { right: 2em; }
+	.md_right_4 { right: 4em; }
+	.md_right_8 { right: 8em; }
+	.md_right_16 { right: 16em; }
+	.md_bottom_0 { bottom: 0; }
+	.md_bottom_1 { bottom: 1em; }
+	.md_bottom_2 { bottom: 2em; }
+	.md_bottom_4 { bottom: 4em; }
+	.md_bottom_8 { bottom: 8em; }
+	.md_bottom_16 { bottom: 16em; }
+	.md_left_0 { left: 0; }
+	.md_left_1 { left: 1em; }
+	.md_left_2 { left: 2em; }
+	.md_left_4 { left: 4em; }
+	.md_left_8 { left: 8em; }
+	.md_left_16 { left: 16em; }
+	.md_z_0 { z-index: 0; }
+	.md_z_1 { z-index: 1; }
+	.md_z_2 { z-index: 2; }
+	.md_z_3 { z-index: 3; }
+	.md_z_4 { z-index: 4; }
+
+}
+
+@include media(map-get($mqs, "lg")) {
+	
+	.lg_absolute { position: absolute; }
+	.lg_fixed { position: fixed; }
+	.lg_relative { position: relative; }
+	.lg_static { position: static; }
+	.lg_top_0 { top: 0; }
+	.lg_top_1 { top: 1em; }
+	.lg_top_2 { top: 2em; }
+	.lg_top_4 { top: 4em; }
+	.lg_top_8 { top: 8em; }
+	.lg_top_16 { top: 16em; }
+	.lg_right_0 { right: 0; }
+	.lg_right_1 { right: 1em; }
+	.lg_right_2 { right: 2em; }
+	.lg_right_4 { right: 4em; }
+	.lg_right_8 { right: 8em; }
+	.lg_right_16 { right: 16em; }
+	.lg_bottom_0 { bottom: 0; }
+	.lg_bottom_1 { bottom: 1em; }
+	.lg_bottom_2 { bottom: 2em; }
+	.lg_bottom_4 { bottom: 4em; }
+	.lg_bottom_8 { bottom: 8em; }
+	.lg_bottom_16 { bottom: 16em; }
+	.lg_left_0 { left: 0; }
+	.lg_left_1 { left: 1em; }
+	.lg_left_2 { left: 2em; }
+	.lg_left_4 { left: 4em; }
+	.lg_left_8 { left: 8em; }
+	.lg_left_16 { left: 16em; }
+	.lg_z_0 { z-index: 0; }
+	.lg_z_1 { z-index: 1; }
+	.lg_z_2 { z-index: 2; }
+	.lg_z_3 { z-index: 3; }
+	.lg_z_4 { z-index: 4; }
+
+}
