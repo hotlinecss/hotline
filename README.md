@@ -1,4 +1,3 @@
-# xvx (WIP)
-Enough CSS.
+# xvx
 
-Non ID's, non-classes library. Just HTML Tags with a few properties that allows you justo to put content fully-responsive and readable in any device by default.
+Lightweight framework for the web
