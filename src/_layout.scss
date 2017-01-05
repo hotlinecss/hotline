@@ -26,8 +26,8 @@
 .overflow_y_hidden { overflow-y: hidden; }
 .overflow_y_auto { overflow-y: auto; }
 .overflow_y_scroll { overflow-y: scroll; }
-.right { float: right; }
 .left { float: left; }
+.right { float: right; }
 
 @include media(map-get($mqs, "sm")) {
 	
@@ -53,8 +53,8 @@
 	.sm_overflow_y_hidden { overflow-y: hidden; }
 	.sm_overflow_y_auto { overflow-y: auto; }
 	.sm_overflow_y_scroll { overflow-y: scroll; }
-	.sm_right { float: right; }
 	.sm_left { float: left; }
+	.sm_right { float: right; }
 
 }
 
@@ -82,8 +82,8 @@
 	.md_overflow_y_hidden { overflow-y: hidden; }
 	.md_overflow_y_auto { overflow-y: auto; }
 	.md_overflow_y_scroll { overflow-y: scroll; }
-	.md_right { float: right; }
 	.md_left { float: left; }
+	.md_right { float: right; }
 
 }
 
@@ -111,7 +111,7 @@
 	.lg_overflow_y_hidden { overflow-y: hidden; }
 	.lg_overflow_y_auto { overflow-y: auto; }
 	.lg_overflow_y_scroll { overflow-y: scroll; }
-	.lg_right { float: right; }
 	.lg_left { float: left; }
+	.lg_right { float: right; }
 
 }

@@ -5,13 +5,12 @@
 		rad = radius, steps(5) [0, .125, .250, .5, 1]
 
 */
-
+.border_none { border: 0; }
 .border { border-style: solid; border-width: 1px; }
 .border_top { border-top-style: solid; border-top-width: 1px; }
 .border_right { border-right-style: solid; border-bottom-width: 1px; }
 .border_bottom { border-bottom-style: solid; border-bottom-width: 1px; }
 .border_left { border-left-style: solid; border-top-width: 1px; }
-.border_none { border: 0; }
 .border_top_none { border-top-width: 0; }
 .border_right_none { border-right-width: 0; }
 .border_bottom_none { border-bottom-width: 0; }
