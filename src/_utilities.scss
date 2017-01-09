@@ -4,8 +4,8 @@
 
 */
 
-.cf:before, .cf:after { content: " "; display: table; }
-.cf:after { clear: both; }
+.cf::before, .cf::after { content: " "; display: table; }
+.cf::after { clear: both; }
 .center { margin-left: auto; margin-right: auto; }
 .aspect_ratio { height: 0; position: relative }
 .aspect_ratio--16x9 { padding-bottom: 56.25%; }
@@ -15,7 +15,10 @@
 .aspect_ratio_item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
 
 @include media(map-get($mqs, "sm")) {
-	
+
+	.sm_cf::before, .cf::after { content: " "; display: table; }
+	.sm_cf::after { clear: both; }
+	.sm_center { margin-left: auto; margin-right: auto; }
 	.sm_aspect_ratio { height: 0; position: relative }
 	.sm_aspect_ratio--16x9 { padding-bottom: 56.25%; }
 	.sm_aspect_ratio--8x5 { padding-bottom: 62.5%; }
@@ -27,6 +30,9 @@
 
 @include media(map-get($mqs, "md")) {
 	
+	.md_cf::before, .cf::after { content: " "; display: table; }
+	.md_cf::after { clear: both; }
+	.md_center { margin-left: auto; margin-right: auto; }
 	.md_aspect_ratio { height: 0; position: relative }
 	.md_aspect_ratio--16x9 { padding-bottom: 56.25%; }
 	.md_aspect_ratio--8x5 { padding-bottom: 62.5%; }
@@ -38,6 +44,9 @@
 
 @include media(map-get($mqs, "lg")) {
 	
+	.lg_cf::before, .cf::after { content: " "; display: table; }
+	.lg_cf::after { clear: both; }
+	.lg_center { margin-left: auto; margin-right: auto; }
 	.lg_aspect_ratio { height: 0; position: relative }
 	.lg_aspect_ratio--16x9 { padding-bottom: 56.25%; }
 	.lg_aspect_ratio--8x5 { padding-bottom: 62.5%; }
