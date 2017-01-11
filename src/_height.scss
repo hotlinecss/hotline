@@ -10,6 +10,7 @@
 
 */
 
+.h_auto { height: auto; }
 .h_1 { height: 1em; }
 .h_2 { height: 2em; }
 .h_4 { height: 4em; }
@@ -22,7 +23,8 @@
 .min_vh_100 { min-height: 100vh; }
 
 @include media(map-get($mqs, "sm")) {
-
+	
+	.sm_h_auto { height: auto; }
 	.sm_h_1 { height: 1em; }
 	.sm_h_2 { height: 2em; }
 	.sm_h_4 { height: 4em; }
@@ -38,6 +40,7 @@
 
 @include media(map-get($mqs, "md")) {
 	
+	.md_h_auto { height: auto; }
 	.md_h_1 { height: 1em; }
 	.md_h_2 { height: 2em; }
 	.md_h_4 { height: 4em; }
@@ -52,7 +55,8 @@
 }
 
 @include media(map-get($mqs, "lg")) {
-
+	
+	.lg_h_auto { height: auto; }
 	.lg_h_1 { height: 1em; }
 	.lg_h_2 { height: 2em; }
 	.lg_h_4 { height: 4em; }

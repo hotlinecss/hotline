@@ -11,6 +11,7 @@
 
 */
 
+.col_auto { width: auto; }
 .col_10 { width: 10%; }
 .col_20 { width: 20%; }
 .col_25 { width: 25%; }
@@ -41,6 +42,7 @@
 
 @include media(map-get($mqs, "sm")) {
 	
+	.sm_col_auto { width: auto; }
 	.sm_col_10 { width: 10%; }
 	.sm_col_20 { width: 20%; }
 	.sm_col_25 { width: 25%; }
@@ -73,6 +75,7 @@
 
 @include media(map-get($mqs, "md")) {
 	
+	.md_col_auto { width: auto; }
 	.md_col_10 { width: 10%; }
 	.md_col_20 { width: 20%; }
 	.md_col_25 { width: 25%; }
@@ -104,7 +107,8 @@
 }
 
 @include media(map-get($mqs, "lg")) {
-	
+
+	.lg_col_auto { width: auto; }
 	.lg_col_10 { width: 10%; }
 	.lg_col_20 { width: 20%; }
 	.lg_col_25 { width: 25%; }
