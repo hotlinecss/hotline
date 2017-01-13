@@ -72,3 +72,23 @@
     transform: scale(0.9);
   }
 }
+
+.hover_shadow {
+  transition: box-shadow 150ms ease-in;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .3)
+  }
+}
+
+.hover_shadow_big {
+  transition: box-shadow 150ms ease-in;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 1px 20px rgba(0, 0, 0, .3)
+  }
+}
