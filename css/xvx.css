@@ -1,4 +1,4 @@
-/* xvx - 2.4.0 - MIT */	/*
+/* xvx - 2.4.1 - MIT */	/*
 
 	Basic reset
 	
@@ -1541,6 +1541,18 @@ textarea {
 
 .border_thick {
   border-width: 4px;
+}
+
+.doshed {
+  border-style: doshed;
+}
+
+.dotted {
+  border-style: dotted;
+}
+
+.double {
+  border-style: double;
 }
 
 .rounded_top {
