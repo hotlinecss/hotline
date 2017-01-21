@@ -11,10 +11,10 @@
 */
 
 .h_auto { height: auto; }
-.h_1 { height: 1em; }
-.h_2 { height: 2em; }
-.h_4 { height: 4em; }
-.h_8 { height: 8em; }
+.h_1 { height: 1rem; }
+.h_2 { height: 2rem; }
+.h_4 { height: 4rem; }
+.h_8 { height: 8rem; }
 .h_25 { height: 25%; }
 .h_50 { height: 50%; }
 .h_100 { height: 100%; }
@@ -25,10 +25,10 @@
 @include media(map-get($mqs, "sm")) {
 	
 	.sm_h_auto { height: auto; }
-	.sm_h_1 { height: 1em; }
-	.sm_h_2 { height: 2em; }
-	.sm_h_4 { height: 4em; }
-	.sm_h_8 { height: 8em; }
+	.sm_h_1 { height: 1rem; }
+	.sm_h_2 { height: 2rem; }
+	.sm_h_4 { height: 4rem; }
+	.sm_h_8 { height: 8rem; }
 	.sm_h_25 { height: 25%; }
 	.sm_h_50 { height: 50%; }
 	.sm_h_100 { height: 100%; }
@@ -41,10 +41,10 @@
 @include media(map-get($mqs, "md")) {
 	
 	.md_h_auto { height: auto; }
-	.md_h_1 { height: 1em; }
-	.md_h_2 { height: 2em; }
-	.md_h_4 { height: 4em; }
-	.md_h_8 { height: 8em; }
+	.md_h_1 { height: 1rem; }
+	.md_h_2 { height: 2rem; }
+	.md_h_4 { height: 4rem; }
+	.md_h_8 { height: 8rem; }
 	.md_h_25 { height: 25%; }
 	.md_h_50 { height: 50%; }
 	.md_h_100 { height: 100%; }
@@ -57,10 +57,10 @@
 @include media(map-get($mqs, "lg")) {
 	
 	.lg_h_auto { height: auto; }
-	.lg_h_1 { height: 1em; }
-	.lg_h_2 { height: 2em; }
-	.lg_h_4 { height: 4em; }
-	.lg_h_8 { height: 8em; }
+	.lg_h_1 { height: 1rem; }
+	.lg_h_2 { height: 2rem; }
+	.lg_h_4 { height: 4rem; }
+	.lg_h_8 { height: 8rem; }
 	.lg_h_25 { height: 25%; }
 	.lg_h_50 { height: 50%; }
 	.lg_h_100 { height: 100%; }

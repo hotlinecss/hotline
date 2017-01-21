@@ -11,14 +11,14 @@
 .measure_thick { max-width: 34em }
 .measure { max-width: 30em }
 .measure_tight { max-width: 20em }
-.headline { font-size: 6em; }
-.big { font-size: 5em; }
-.f1 { font-size: 3.157em; }
-.f2 { font-size: 2.369em; }
-.f3 { font-size: 1.777em; }
-.f4 { font-size: 1.333em; }
-.f5 { font-size: 1em; }
-.f6 { font-size: .75em; }
+.headline { font-size: 6rem; }
+.big { font-size: 5rem; }
+.f1 { font-size: 3.157rem; }
+.f2 { font-size: 2.369rem; }
+.f3 { font-size: 1.777rem; }
+.f4 { font-size: 1.333rem; }
+.f5 { font-size: 1rem; }
+.f6 { font-size: .75rem; }
 .fw1 { font-weight: 100; }
 .fw2 { font-weight: 200; }
 .fw3 { font-weight: 300; }
@@ -39,7 +39,7 @@
 .italic { font-style: italic; }
 .underline { text-decoration: underline; }
 .strike { text-decoration: line-through; }
-.tracked { letter-spacing: .16em; }
+.tracked { letter-spacing: .16rem; }
 .text_center { text-align: center; }
 .text_left { text-align: left; }
 .text_right { text-align: right; }
@@ -60,21 +60,21 @@
 
 @include media(map-get($mqs, "sm")) {
 
-	.sm_measure_thick { max-width: 34em }
-	.sm_measure { max-width: 30em }
-	.sm_measure_tight { max-width: 20em }
-	.sm_headline { font-size: 6em; }
-	.sm_big { font-size: 5em; }
-	.sm_f1 { font-size: 3.157em; }
-	.sm_f2 { font-size: 2.369em; }
-	.sm_f3 { font-size: 1.777em; }
-	.sm_f4 { font-size: 1.333em; }
-	.sm_f5 { font-size: 1em; }
-	.sm_f6 { font-size: .75em; }
+	.sm_measure_thick { max-width: 34rem }
+	.sm_measure { max-width: 30rem }
+	.sm_measure_tight { max-width: 20rem }
+	.sm_headline { font-size: 6rem; }
+	.sm_big { font-size: 5rem; }
+	.sm_f1 { font-size: 3.157rem; }
+	.sm_f2 { font-size: 2.369rem; }
+	.sm_f3 { font-size: 1.777rem; }
+	.sm_f4 { font-size: 1.333rem; }
+	.sm_f5 { font-size: 1rem; }
+	.sm_f6 { font-size: .75rem; }
 	.sm_lh_normal { line-height: 1; }
 	.sm_lh_title { line-height: 1.25; }
 	.sm_lh_copy { line-height: 1.5; }
-	.sm_tracked { letter-spacing: .16em; }
+	.sm_tracked { letter-spacing: .16rem; }
 	.sm_text_center { text-align: center; }
 	.sm_text_left { text-align: left; }
 	.sm_text_right { text-align: right; }
@@ -87,21 +87,21 @@
 
 @include media(map-get($mqs, "md")) {
 
-	.md_measure_thick { max-width: 34em }
-	.md_measure { max-width: 30em }
-	.md_measure_tight { max-width: 20em }
-	.md_headline { font-size: 6em; }
-	.md_big { font-size: 5em; }
-	.md_f1 { font-size: 3.157em; }
-	.md_f2 { font-size: 2.369em; }
-	.md_f3 { font-size: 1.777em; }
-	.md_f4 { font-size: 1.333em; }
-	.md_f5 { font-size: 1em; }
-	.md_f6 { font-size: .75em; }
+	.md_measure_thick { max-width: 34rem }
+	.md_measure { max-width: 30rem }
+	.md_measure_tight { max-width: 20rem }
+	.md_headline { font-size: 6rem; }
+	.md_big { font-size: 5rem; }
+	.md_f1 { font-size: 3.157rem; }
+	.md_f2 { font-size: 2.369rem; }
+	.md_f3 { font-size: 1.777rem; }
+	.md_f4 { font-size: 1.333rem; }
+	.md_f5 { font-size: 1rem; }
+	.md_f6 { font-size: .75rem; }
 	.md_lh_normal { line-height: 1; }
 	.md_lh_title { line-height: 1.25; }
 	.md_lh_copy { line-height: 1.5; }
-	.md_tracked { letter-spacing: .16em; }
+	.md_tracked { letter-spacing: .16rem; }
 	.md_text_center { text-align: center; }
 	.md_text_left { text-align: left; }
 	.md_text_right { text-align: right; }
@@ -114,21 +114,21 @@
 
 @include media(map-get($mqs, "lg")) {
 
-	.lg_measure_thick { max-width: 34em }
-	.lg_measure { max-width: 30em }
-	.lg_measure_tight { max-width: 20em }
-	.lg_headline { font-size: 6em; }
-	.lg_big { font-size: 5em; }
-	.lg_f1 { font-size: 3.157em; }
-	.lg_f2 { font-size: 2.369em; }
-	.lg_f3 { font-size: 1.777em; }
-	.lg_f4 { font-size: 1.333em; }
-	.lg_f5 { font-size: 1em; }
-	.lg_f6 { font-size: .75em; }
+	.lg_measure_thick { max-width: 34rem }
+	.lg_measure { max-width: 30rem }
+	.lg_measure_tight { max-width: 20rem }
+	.lg_headline { font-size: 6rem; }
+	.lg_big { font-size: 5rem; }
+	.lg_f1 { font-size: 3.157rem; }
+	.lg_f2 { font-size: 2.369rem; }
+	.lg_f3 { font-size: 1.777rem; }
+	.lg_f4 { font-size: 1.333rem; }
+	.lg_f5 { font-size: 1rem; }
+	.lg_f6 { font-size: .75rem; }
 	.lg_lh_normal { line-height: 1; }
 	.lg_lh_title { line-height: 1.25; }
 	.lg_lh_copy { line-height: 1.5; }
-	.lg_tracked { letter-spacing: .16em; }
+	.lg_tracked { letter-spacing: .16rem; }
 	.lg_text_center { text-align: center; }
 	.lg_text_left { text-align: left; }
 	.lg_text_right { text-align: right; }
