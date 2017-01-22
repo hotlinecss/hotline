@@ -8,6 +8,9 @@
 .bg_contain { background-size: contain; }
 .bg_fixed { background-attachment: fixed; }
 .bg_repeat { background-repeat: repeat; }
+.bg_border_box { background-clip: border-box; }
+.bg_padding_box { background-clip: padding-box; }
+.bg_content_box { background-clip: content-box; }
 .bg_no_repeat { background-repeat: no-repeat; }
 .bg_x_repeat { background-repeat: repeat-x; }
 .bg_y_repeat { background-repeat: repeat-y; }
@@ -25,6 +28,9 @@
 	.sm_bg_contain { background-size: contain; }
 	.sm_bg_fixed { background-attachment: fixed; }
 	.sm_bg_repeat { background-repeat: repeat; }
+	.sm_bg_border_box { background-clip: border-box; }
+	.sm_bg_padding_box { background-clip: padding-box; }
+	.sm_bg_content_box { background-clip: content-box; }
 	.sm_bg_no_repeat { background-repeat: no-repeat; }
 	.sm_bg_x_repeat { background-repeat: repeat-x; }
 	.sm_bg_y_repeat { background-repeat: repeat-y; }
@@ -44,6 +50,9 @@
 	.md_bg_contain { background-size: contain; }
 	.md_bg_fixed { background-attachment: fixed; }
 	.md_bg_repeat { background-repeat: repeat; }
+	.md_bg_border_box { background-clip: border-box; }
+	.md_bg_padding_box { background-clip: padding-box; }
+	.md_bg_content_box { background-clip: content-box; }
 	.md_bg_no_repeat { background-repeat: no-repeat; }
 	.md_bg_x_repeat { background-repeat: repeat-x; }
 	.md_bg_y_repeat { background-repeat: repeat-y; }
@@ -63,6 +72,9 @@
 	.lg_bg_contain { background-size: contain; }
 	.lg_bg_fixed { background-attachment: fixed; }
 	.lg_bg_repeat { background-repeat: repeat; }
+	.lg_bg_border_box { background-clip: border-box; }
+	.lg_bg_padding_box { background-clip: padding-box; }
+	.lg_bg_content_box { background-clip: content-box; }
 	.lg_bg_no_repeat { background-repeat: no-repeat; }
 	.lg_bg_x_repeat { background-repeat: repeat-x; }
 	.lg_bg_y_repeat { background-repeat: repeat-y; }
