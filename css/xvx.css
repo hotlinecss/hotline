@@ -1,4 +1,4 @@
-/* xvx - 2.7.0 - MIT */	/*
+/* xvx - 2.7.1 - MIT */	/*
 
 	Basic reset
 	
@@ -322,6 +322,16 @@ textarea {
 .flex_column {
   -ms-flex-direction: column;
       flex-direction: column;
+}
+
+.row_reverse {
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+}
+
+.column_reverse {
+  -ms-flex-direction: row-column;
+      flex-direction: row-column;
 }
 
 .justify_start {
@@ -2886,6 +2896,14 @@ textarea {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .sm_row_reverse {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .sm_column_reverse {
+    -ms-flex-direction: row-column;
+    flex-direction: row-column;
+  }
   .sm_justify_start {
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -3854,6 +3872,14 @@ textarea {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .md_row_reverse {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .md_column_reverse {
+    -ms-flex-direction: row-column;
+    flex-direction: row-column;
+  }
   .md_justify_start {
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -4821,6 +4847,14 @@ textarea {
   .lg_flex_column {
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+  .lg_row_reverse {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .lg_column_reverse {
+    -ms-flex-direction: row-column;
+    flex-direction: row-column;
   }
   .lg_justify_start {
     -ms-flex-pack: start;
