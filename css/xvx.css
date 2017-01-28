@@ -1,4 +1,4 @@
-/* xvx - 2.7.1 - MIT */	/*
+/* xvx - 2.7.2 - MIT */	/*
 
 	Basic reset
 	
@@ -1757,11 +1757,13 @@ textarea {
 }
 
 .grow:hover, .grow:focus {
-  transform: scale(1.05);
+  -ms-transform: scale(1.05);
+      transform: scale(1.05);
 }
 
 .grow:active {
-  transform: scale(0.9);
+  -ms-transform: scale(0.9);
+      transform: scale(0.9);
 }
 
 .hover_shadow {
@@ -1781,12 +1783,16 @@ textarea {
 }
 
 .hover_grayscale {
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  transition: -webkit-filter 150ms ease-in;
   transition: filter 150ms ease-in;
+  transition: filter 150ms ease-in, -webkit-filter 150ms ease-in;
 }
 
 .hover_grayscale:hover, .hover_grayscale:focus, .hover_grayscale:active {
-  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 /*
