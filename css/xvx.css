@@ -436,6 +436,46 @@ textarea {
       align-self: baseline;
 }
 
+.order_0 {
+  -ms-flex-order: 0;
+      order: 0;
+}
+
+.order_1 {
+  -ms-flex-order: 1;
+      order: 1;
+}
+
+.order_2 {
+  -ms-flex-order: 2;
+      order: 2;
+}
+
+.order_3 {
+  -ms-flex-order: 3;
+      order: 3;
+}
+
+.order_4 {
+  -ms-flex-order: 4;
+      order: 4;
+}
+
+.order_5 {
+  -ms-flex-order: 5;
+      order: 5;
+}
+
+.order_6 {
+  -ms-flex-order: 6;
+      order: 6;
+}
+
+.order_last {
+  -ms-flex-order: 9999;
+      order: 9999;
+}
+
 /*
 
 	Layout
@@ -506,6 +546,10 @@ textarea {
   vertical-align: bottom;
 }
 
+.overflow_visible {
+  overflow: visible;
+}
+
 .overflow_hidden {
   overflow: hidden;
 }
@@ -518,6 +562,10 @@ textarea {
   overflow: scroll;
 }
 
+.overflow_x_visible {
+  overflow-x: visible;
+}
+
 .overflow_x_hidden {
   overflow-x: hidden;
 }
@@ -528,6 +576,10 @@ textarea {
 
 .overflow_x_scroll {
   overflow-x: scroll;
+}
+
+.overflow_y_visible {
+  overflow-y: visible;
 }
 
 .overflow_y_hidden {
@@ -2992,6 +3044,38 @@ textarea {
     -ms-flex-item-align: baseline;
     align-self: baseline;
   }
+  .sm_order_0 {
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .sm_order_1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .sm_order_2 {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .sm_order_3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .sm_order_4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .sm_order_5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  .sm_order_6 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  .sm_order_last {
+    -ms-flex-order: 9999;
+    order: 9999;
+  }
   .sm_border_box {
     box-sizing: border-box;
   }
@@ -3041,6 +3125,9 @@ textarea {
   .sm_align_bottom {
     vertical-align: bottom;
   }
+  .sm_overflow_visible {
+    overflow: visible;
+  }
   .sm_overflow_hidden {
     overflow: hidden;
   }
@@ -3050,6 +3137,9 @@ textarea {
   .sm_overflow_scroll {
     overflow: scroll;
   }
+  .sm_overflow_x_visible {
+    overflow-x: visible;
+  }
   .sm_overflow_x_hidden {
     overflow-x: hidden;
   }
@@ -3058,6 +3148,9 @@ textarea {
   }
   .sm_overflow_x_scroll {
     overflow-x: scroll;
+  }
+  .sm_overflow_y_visible {
+    overflow-y: visible;
   }
   .sm_overflow_y_hidden {
     overflow-y: hidden;
@@ -3968,6 +4061,38 @@ textarea {
     -ms-flex-item-align: baseline;
     align-self: baseline;
   }
+  .md_order_0 {
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .md_order_1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .md_order_2 {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .md_order_3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .md_order_4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .md_order_5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  .md_order_6 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  .md_order_last {
+    -ms-flex-order: 9999;
+    order: 9999;
+  }
   .md_border_box {
     box-sizing: border-box;
   }
@@ -4017,6 +4142,9 @@ textarea {
   .md_align_bottom {
     vertical-align: bottom;
   }
+  .md_overflow_visible {
+    overflow: visible;
+  }
   .md_overflow_hidden {
     overflow: hidden;
   }
@@ -4026,6 +4154,9 @@ textarea {
   .md_overflow_scroll {
     overflow: scroll;
   }
+  .md_overflow_x_visible {
+    overflow-x: visible;
+  }
   .md_overflow_x_hidden {
     overflow-x: hidden;
   }
@@ -4034,6 +4165,9 @@ textarea {
   }
   .md_overflow_x_scroll {
     overflow-x: scroll;
+  }
+  .md_overflow_y_visible {
+    overflow-y: visible;
   }
   .md_overflow_y_hidden {
     overflow-y: hidden;
@@ -4944,6 +5078,38 @@ textarea {
     -ms-flex-item-align: baseline;
     align-self: baseline;
   }
+  .lg_order_0 {
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .lg_order_1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .lg_order_2 {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .lg_order_3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .lg_order_4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .lg_order_5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  .lg_order_6 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  .lg_order_last {
+    -ms-flex-order: 9999;
+    order: 9999;
+  }
   .lg_border_box {
     box-sizing: border-box;
   }
@@ -4993,6 +5159,9 @@ textarea {
   .lg_align_bottom {
     vertical-align: bottom;
   }
+  .lg_overflow_visible {
+    overflow: visible;
+  }
   .lg_overflow_hidden {
     overflow: hidden;
   }
@@ -5002,6 +5171,9 @@ textarea {
   .lg_overflow_scroll {
     overflow: scroll;
   }
+  .lg_overflow_x_visible {
+    overflow-x: visible;
+  }
   .lg_overflow_x_hidden {
     overflow-x: hidden;
   }
@@ -5010,6 +5182,9 @@ textarea {
   }
   .lg_overflow_x_scroll {
     overflow-x: scroll;
+  }
+  .lg_overflow_y_visible {
+    overflow-y: visible;
   }
   .lg_overflow_y_hidden {
     overflow-y: hidden;
