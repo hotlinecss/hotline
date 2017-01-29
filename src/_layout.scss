@@ -20,12 +20,15 @@
 .align_middle { vertical-align: middle; }
 .align_baseline { vertical-align: baseline; }
 .align_bottom { vertical-align: bottom; }
+.overflow_visible { overflow: visible; }
 .overflow_hidden { overflow: hidden; }
 .overflow_auto { overflow: auto; }
 .overflow_scroll { overflow: scroll; }
+.overflow_x_visible { overflow-x: visible; }
 .overflow_x_hidden { overflow-x: hidden; }
 .overflow_x_auto { overflow-x: auto; }
 .overflow_x_scroll { overflow-x: scroll; }
+.overflow_y_visible { overflow-y: visible; }
 .overflow_y_hidden { overflow-y: hidden; }
 .overflow_y_auto { overflow-y: auto; }
 .overflow_y_scroll { overflow-y: scroll; }
@@ -50,12 +53,15 @@
 	.sm_align_middle { vertical-align: middle; }
 	.sm_align_baseline { vertical-align: baseline; }
 	.sm_align_bottom { vertical-align: bottom; }
+	.sm_overflow_visible { overflow: visible; }
 	.sm_overflow_hidden { overflow: hidden; }
 	.sm_overflow_auto { overflow: auto; }
 	.sm_overflow_scroll { overflow: scroll; }
+	.sm_overflow_x_visible { overflow-x: visible; }
 	.sm_overflow_x_hidden { overflow-x: hidden; }
 	.sm_overflow_x_auto { overflow-x: auto; }
 	.sm_overflow_x_scroll { overflow-x: scroll; }
+	.sm_overflow_y_visible { overflow-y: visible; }
 	.sm_overflow_y_hidden { overflow-y: hidden; }
 	.sm_overflow_y_auto { overflow-y: auto; }
 	.sm_overflow_y_scroll { overflow-y: scroll; }
@@ -82,12 +88,15 @@
 	.md_align_middle { vertical-align: middle; }
 	.md_align_baseline { vertical-align: baseline; }
 	.md_align_bottom { vertical-align: bottom; }
+	.md_overflow_visible { overflow: visible; }
 	.md_overflow_hidden { overflow: hidden; }
 	.md_overflow_auto { overflow: auto; }
 	.md_overflow_scroll { overflow: scroll; }
+	.md_overflow_x_visible { overflow-x: visible; }
 	.md_overflow_x_hidden { overflow-x: hidden; }
 	.md_overflow_x_auto { overflow-x: auto; }
 	.md_overflow_x_scroll { overflow-x: scroll; }
+	.md_overflow_y_visible { overflow-y: visible; }
 	.md_overflow_y_hidden { overflow-y: hidden; }
 	.md_overflow_y_auto { overflow-y: auto; }
 	.md_overflow_y_scroll { overflow-y: scroll; }
@@ -114,12 +123,15 @@
 	.lg_align_middle { vertical-align: middle; }
 	.lg_align_baseline { vertical-align: baseline; }
 	.lg_align_bottom { vertical-align: bottom; }
+	.lg_overflow_visible { overflow: visible; }
 	.lg_overflow_hidden { overflow: hidden; }
 	.lg_overflow_auto { overflow: auto; }
 	.lg_overflow_scroll { overflow: scroll; }
+	.lg_overflow_x_visible { overflow-x: visible; }
 	.lg_overflow_x_hidden { overflow-x: hidden; }
 	.lg_overflow_x_auto { overflow-x: auto; }
 	.lg_overflow_x_scroll { overflow-x: scroll; }
+	.lg_overflow_y_visible { overflow-y: visible; }
 	.lg_overflow_y_hidden { overflow-y: hidden; }
 	.lg_overflow_y_auto { overflow-y: auto; }
 	.lg_overflow_y_scroll { overflow-y: scroll; }
