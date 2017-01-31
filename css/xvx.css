@@ -1,4 +1,4 @@
-/* xvx - 2.7.2 - MIT */	/*
+/* xvx - 2.7.4 - MIT */	/*
 
 	Basic reset
 	
@@ -839,15 +839,15 @@ textarea {
   margin-bottom: 1.5em;
 }
 
-.parent_measure_thick {
+.parent_measure_thick p {
   max-width: 34em;
 }
 
-.parent_measure {
+.parent_measure p {
   max-width: 30em;
 }
 
-.parent_measure_tight {
+.parent_measure_tight p {
   max-width: 20em;
 }
 
