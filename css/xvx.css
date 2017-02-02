@@ -1,4 +1,4 @@
-/* xvx - 2.7.4 - MIT */	/*
+/* xvx - 2.8.0 - MIT */	/*
 
 	Basic reset
 	
@@ -182,6 +182,22 @@ textarea {
 
 .col_100 {
   width: 100%;
+}
+
+.w_1 {
+  width: 1rem;
+}
+
+.w_2 {
+  width: 2rem;
+}
+
+.w_4 {
+  width: 4rem;
+}
+
+.w_8 {
+  width: 8rem;
 }
 
 .mw_1 {
@@ -2810,6 +2826,45 @@ textarea {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+/*
+
+	Gradients
+
+		Transparent
+
+*/
+.grad_09 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.grad_08 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.grad_07 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.grad_06 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.grad_05 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.grad_04 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.grad_03 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+}
+
+.grad_02 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+}
+
 @media screen and (min-width: 30em) {
   .sm_col_auto {
     width: auto;
@@ -2858,6 +2913,18 @@ textarea {
   }
   .sm_col_100 {
     width: 100%;
+  }
+  .sm_w_1 {
+    width: 1rem;
+  }
+  .sm_w_2 {
+    width: 2rem;
+  }
+  .sm_w_4 {
+    width: 4rem;
+  }
+  .sm_w_8 {
+    width: 8rem;
   }
   .sm_mw_1 {
     max-width: 1rem;
@@ -3876,6 +3943,18 @@ textarea {
   .md_col_100 {
     width: 100%;
   }
+  .md_w_1 {
+    width: 1rem;
+  }
+  .md_w_2 {
+    width: 2rem;
+  }
+  .md_w_4 {
+    width: 4rem;
+  }
+  .md_w_8 {
+    width: 8rem;
+  }
   .md_mw_1 {
     max-width: 1rem;
   }
@@ -4892,6 +4971,18 @@ textarea {
   }
   .lg_col_100 {
     width: 100%;
+  }
+  .lg_w_1 {
+    width: 1rem;
+  }
+  .lg_w_2 {
+    width: 2rem;
+  }
+  .lg_w_4 {
+    width: 4rem;
+  }
+  .lg_w_8 {
+    width: 8rem;
   }
   .lg_mw_1 {
     max-width: 1rem;
