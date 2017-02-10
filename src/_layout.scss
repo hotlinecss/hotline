@@ -5,7 +5,6 @@
 */
 
 .border_box { box-sizing: border-box; }
-.padding_box { box-sizing: padding-box; }
 .content_box { box-sizing: content-box; }
 .inherit_box { box-sizing: inherit; }
 .hidden { display: none; }
@@ -38,7 +37,6 @@
 @include media(map-get($mqs, "sm")) {
 	
 	.sm_border_box { box-sizing: border-box; }
-	.sm_padding_box { box-sizing: padding-box; }
 	.sm_content_box { box-sizing: content-box; }
 	.sm_inherit_box { box-sizing: inherit; }
 	.sm_hidden { display: none; }
@@ -73,7 +71,6 @@
 @include media(map-get($mqs, "md")) {
 	
 	.md_border_box { box-sizing: border-box; }
-	.md_padding_box { box-sizing: padding-box; }
 	.md_content_box { box-sizing: content-box; }
 	.md_inherit_box { box-sizing: inherit; }
 	.md_hidden { display: none; }
@@ -108,7 +105,6 @@
 @include media(map-get($mqs, "lg")) {
 	
 	.lg_border_box { box-sizing: border-box; }
-	.lg_padding_box { box-sizing: padding-box; }
 	.lg_content_box { box-sizing: content-box; }
 	.lg_inherit_box { box-sizing: inherit; }
 	.lg_hidden { display: none; }
