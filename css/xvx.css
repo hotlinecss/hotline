@@ -1,4 +1,4 @@
-/* xvx - 2.8.0 - MIT */	/*
+/* xvx - 2.8.1 - MIT */	/*
 
 	Basic reset
 	
@@ -346,8 +346,8 @@ textarea {
 }
 
 .column_reverse {
-  -ms-flex-direction: row-column;
-      flex-direction: row-column;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
 }
 
 .justify_start {
@@ -499,10 +499,6 @@ textarea {
 */
 .border_box {
   box-sizing: border-box;
-}
-
-.padding_box {
-  box-sizing: padding-box;
 }
 
 .content_box {
@@ -2826,45 +2822,6 @@ textarea {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-/*
-
-	Gradients
-
-		Transparent
-
-*/
-.grad_09 {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-}
-
-.grad_08 {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-}
-
-.grad_07 {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-}
-
-.grad_06 {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-}
-
-.grad_05 {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
-}
-
-.grad_04 {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
-}
-
-.grad_03 {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
-}
-
-.grad_02 {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
-}
-
 @media screen and (min-width: 30em) {
   .sm_col_auto {
     width: auto;
@@ -3026,8 +2983,8 @@ textarea {
     flex-direction: row-reverse;
   }
   .sm_column_reverse {
-    -ms-flex-direction: row-column;
-    flex-direction: row-column;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .sm_justify_start {
     -ms-flex-pack: start;
@@ -3145,9 +3102,6 @@ textarea {
   }
   .sm_border_box {
     box-sizing: border-box;
-  }
-  .sm_padding_box {
-    box-sizing: padding-box;
   }
   .sm_content_box {
     box-sizing: content-box;
@@ -4055,8 +4009,8 @@ textarea {
     flex-direction: row-reverse;
   }
   .md_column_reverse {
-    -ms-flex-direction: row-column;
-    flex-direction: row-column;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .md_justify_start {
     -ms-flex-pack: start;
@@ -4174,9 +4128,6 @@ textarea {
   }
   .md_border_box {
     box-sizing: border-box;
-  }
-  .md_padding_box {
-    box-sizing: padding-box;
   }
   .md_content_box {
     box-sizing: content-box;
@@ -5084,8 +5035,8 @@ textarea {
     flex-direction: row-reverse;
   }
   .lg_column_reverse {
-    -ms-flex-direction: row-column;
-    flex-direction: row-column;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .lg_justify_start {
     -ms-flex-pack: start;
@@ -5203,9 +5154,6 @@ textarea {
   }
   .lg_border_box {
     box-sizing: border-box;
-  }
-  .lg_padding_box {
-    box-sizing: padding-box;
   }
   .lg_content_box {
     box-sizing: content-box;
