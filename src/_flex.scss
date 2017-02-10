@@ -11,7 +11,7 @@
 .flex_row { flex-direction: row; }
 .flex_column { flex-direction: column; }
 .row_reverse { flex-direction: row-reverse; }
-.column_reverse { flex-direction: row-column; }
+.column_reverse { flex-direction: column-reverse; }
 .justify_start { justify-content: flex-start; }
 .justify_center { justify-content: center; }
 .justify_end { justify-content: flex-end; }
@@ -50,7 +50,7 @@
 	.sm_flex_row { flex-direction: row; }
 	.sm_flex_column { flex-direction: column; }
 	.sm_row_reverse { flex-direction: row-reverse; }
-	.sm_column_reverse { flex-direction: row-column; }
+	.sm_column_reverse { flex-direction: column-reverse; }
 	.sm_justify_start { justify-content: flex-start; }
 	.sm_justify_center { justify-content: center; }
 	.sm_justify_end { justify-content: flex-end; }
@@ -91,7 +91,7 @@
 	.md_flex_row { flex-direction: row; }
 	.md_flex_column { flex-direction: column; }
 	.md_row_reverse { flex-direction: row-reverse; }
-	.md_column_reverse { flex-direction: row-column; }
+	.md_column_reverse { flex-direction: column-reverse; }
 	.md_justify_start { justify-content: flex-start; }
 	.md_justify_center { justify-content: center; }
 	.md_justify_end { justify-content: flex-end; }
@@ -132,7 +132,7 @@
 	.lg_flex_row { flex-direction: row; }
 	.lg_flex_column { flex-direction: column; }
 	.lg_row_reverse { flex-direction: row-reverse; }
-	.lg_column_reverse { flex-direction: row-column; }
+	.lg_column_reverse { flex-direction: column-reverse; }
 	.lg_justify_start { justify-content: flex-start; }
 	.lg_justify_center { justify-content: center; }
 	.lg_justify_end { justify-content: flex-end; }
