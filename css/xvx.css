@@ -395,7 +395,7 @@ textarea {
       align-items: stretch;
 }
 
-.items_base {
+.items_baseline {
   -ms-flex-align: baseline;
       align-items: baseline;
 }
@@ -2052,123 +2052,123 @@ textarea {
   color: #ffafbd;
 }
 
-.bc_transparent {
+.b_transparent {
   border-color: transparent;
 }
 
-.bc_white {
+.b_white {
   border-color: #fff;
 }
 
-.bc_near_white {
+.b_near_white {
   border-color: #f4f4f4;
 }
 
-.bc_light_gray {
+.b_light_gray {
   border-color: #aaa;
 }
 
-.bc_silver {
+.b_silver {
   border-color: #999;
 }
 
-.bc_gray {
+.b_gray {
   border-color: #777;
 }
 
-.bc_mid_gray {
+.b_mid_gray {
   border-color: #555;
 }
 
-.bc_dark_gray {
+.b_dark_gray {
   border-color: #333;
 }
 
-.bc_near_black {
+.b_near_black {
   border-color: #111;
 }
 
-.bc_black {
+.b_black {
   border-color: #000;
 }
 
-.bc_aqua {
+.b_aqua {
   border-color: #33FFE3;
 }
 
-.bc_yellow {
+.b_yellow {
   border-color: #ffec1a;
 }
 
-.bc_washed_yellow {
+.b_washed_yellow {
   border-color: #fff7a3;
 }
 
-.bg_navy {
+.b_navy {
   border-color: #001542;
 }
 
-.bc_dark_blue {
+.b_dark_blue {
   border-color: #002774;
 }
 
-.bc_blue {
+.b_blue {
   border-color: #1976d2;
 }
 
-.bc_light_blue {
+.b_light_blue {
   border-color: #2196f3;
 }
 
-.bc_washed_blue {
+.b_washed_blue {
   border-color: #c2e2fb;
 }
 
-.bc_green {
+.b_green {
   border-color: #388e3c;
 }
 
-.bc_light_green {
+.b_light_green {
   border-color: #4caf50;
 }
 
-.bc_washed_green {
+.b_washed_green {
   border-color: #c8e6c9;
 }
 
-.bc_orange {
+.b_orange {
   border-color: #ffa000;
 }
 
-.bc_light_orange {
+.b_light_orange {
   border-color: #ffc107;
 }
 
-.bc_washed_orange {
+.b_washed_orange {
   border-color: #ffecb3;
 }
 
-.bc_red {
+.b_red {
   border-color: #d32f2f;
 }
 
-.bc_light_red {
+.b_light_red {
   border-color: #f44336;
 }
 
-.bc_washed_red {
+.b_washed_red {
   border-color: #ffcdd2;
 }
 
-.bc_purple {
+.b_purple {
   border-color: #800055;
 }
 
-.bc_pink {
+.b_pink {
   border-color: #ff748c;
 }
 
-.bc_light_pink {
+.b_light_pink {
   border-color: #ffafbd;
 }
 
@@ -2662,83 +2662,83 @@ textarea {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.bc_white_05 {
+.b_white_05 {
   border-color: rgba(255, 255, 255, 0.05);
 }
 
-.bc_white_10 {
+.b_white_10 {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-.bc_white_20 {
+.b_white_20 {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-.bc_white_30 {
+.b_white_30 {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.bc_white_40 {
+.b_white_40 {
   border-color: rgba(255, 255, 255, 0.4);
 }
 
-.bc_white_50 {
+.b_white_50 {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-.bc_white_60 {
+.b_white_60 {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-.bc_white_70 {
+.b_white_70 {
   border-color: rgba(255, 255, 255, 0.7);
 }
 
-.bc_white_80 {
+.b_white_80 {
   border-color: rgba(255, 255, 255, 0.8);
 }
 
-.bc_white_90 {
+.b_white_90 {
   border-color: rgba(255, 255, 255, 0.9);
 }
 
-.bc_black_05 {
+.b_black_05 {
   border-color: rgba(0, 0, 0, 0.05);
 }
 
-.bc_black_10 {
+.b_black_10 {
   border-color: rgba(0, 0, 0, 0.1);
 }
 
-.bc_black_20 {
+.b_black_20 {
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-.bc_black_30 {
+.b_black_30 {
   border-color: rgba(0, 0, 0, 0.3);
 }
 
-.bc_black_40 {
+.b_black_40 {
   border-color: rgba(0, 0, 0, 0.4);
 }
 
-.bc_black_50 {
+.b_black_50 {
   border-color: rgba(0, 0, 0, 0.5);
 }
 
-.bc_black_60 {
+.b_black_60 {
   border-color: rgba(0, 0, 0, 0.6);
 }
 
-.bc_black_70 {
+.b_black_70 {
   border-color: rgba(0, 0, 0, 0.7);
 }
 
-.bc_black_80 {
+.b_black_80 {
   border-color: rgba(0, 0, 0, 0.8);
 }
 
-.bc_black_90 {
+.b_black_90 {
   border-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -3022,7 +3022,7 @@ textarea {
     -ms-flex-align: stretch;
     align-items: stretch;
   }
-  .sm_items_base {
+  .sm_items_baseline {
     -ms-flex-align: baseline;
     align-items: baseline;
   }
@@ -4048,7 +4048,7 @@ textarea {
     -ms-flex-align: stretch;
     align-items: stretch;
   }
-  .md_items_base {
+  .md_items_baseline {
     -ms-flex-align: baseline;
     align-items: baseline;
   }
@@ -5074,7 +5074,7 @@ textarea {
     -ms-flex-align: stretch;
     align-items: stretch;
   }
-  .lg_items_base {
+  .lg_items_baseline {
     -ms-flex-align: baseline;
     align-items: baseline;
   }
