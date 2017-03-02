@@ -1,4 +1,4 @@
-/* xvx - 2.8.1 - MIT */	/*
+/* xvx - 2.8.3 - MIT */	/*
 
 	Basic reset
 	
@@ -2435,6 +2435,151 @@ textarea {
 .hover_light_pink:hover,
 .hover_light_pink:focus {
   color: #ffafbd;
+}
+
+.hover_b_white:hover,
+.hover_b_white:focus {
+  border-color: #fff;
+}
+
+.hover_b_near_white:hover,
+.hover_b_near_white:focus {
+  border-color: #f4f4f4;
+}
+
+.hover_b_light_gray:hover,
+.hover_b_light_gray:focus {
+  border-color: #aaa;
+}
+
+.hover_b_silver:hover,
+.hover_b_silver:focus {
+  border-color: #999;
+}
+
+.hover_b_gray:hover,
+.hover_b_gray:focus {
+  border-color: #777;
+}
+
+.hover_b_mid_gray:hover,
+.hover_b_mid_gray:focus {
+  border-color: #555;
+}
+
+.hover_b_dark_gray:hover,
+.hover_b_dark_gray:focus {
+  border-color: #333;
+}
+
+.hover_b_near_black:hover,
+.hover_b_near_black:focus {
+  border-color: #111;
+}
+
+.hover_b_black:hover,
+.hover_b_black:focus {
+  border-color: #000;
+}
+
+.hover_b_aqua:hover,
+.hover_b_aqua:focus {
+  border-color: #33FFE3;
+}
+
+.hover_b_yellow:hover,
+.hover_b_yellow:focus {
+  border-color: #ffec1a;
+}
+
+.hover_b_washed_yellow:hover,
+.hover_b_washed_yellow:focus {
+  border-color: #fff7a3;
+}
+
+.hover_b_navy:hover,
+.hover_b_navy:focus {
+  border-color: #001542;
+}
+
+.hover_b_dark_blue:hover,
+.hover_b_dark_blue:focus {
+  border-color: #002774;
+}
+
+.hover_b_blue:hover,
+.hover_b_blue:focus {
+  border-color: #1976d2;
+}
+
+.hover_b_light_blue:hover,
+.hover_b_light_blue:focus {
+  border-color: #2196f3;
+}
+
+.hover_b_washed_blue:hover,
+.hover_b_washed_blue:focus {
+  border-color: #c2e2fb;
+}
+
+.hover_b_green:hover,
+.hover_b_green:focus {
+  border-color: #388e3c;
+}
+
+.hover_b_light_green:hover,
+.hover_b_light_green:focus {
+  border-color: #4caf50;
+}
+
+.hover_b_washed_green:hover,
+.hover_b_washed_green:focus {
+  border-color: #c8e6c9;
+}
+
+.hover_b_orange:hover,
+.hover_b_orange:focus {
+  border-color: #ffa000;
+}
+
+.hover_b_light_orange:hover,
+.hover_b_light_orange:focus {
+  border-color: #ffc107;
+}
+
+.hover_b_washed_orange:hover,
+.hover_b_washed_orange:focus {
+  border-color: #ffecb3;
+}
+
+.hover_b_red:hover,
+.hover_b_red:focus {
+  border-color: #d32f2f;
+}
+
+.hover_b_light_red:hover,
+.hover_b_light_red:focus {
+  border-color: #f44336;
+}
+
+.hover_b_washed_red:hover,
+.hover_b_washed_red:focus {
+  border-color: #ffcdd2;
+}
+
+.hover_b_purple:hover,
+.hover_b_purple:focus {
+  border-color: #800055;
+}
+
+.hover_b_pink:hover,
+.hover_b_pink:focus {
+  border-color: #ff748c;
+}
+
+.hover_b_light_pink:hover,
+.hover_b_light_pink:focus {
+  border-color: #ffafbd;
 }
 
 .hover_bg_white:hover,
