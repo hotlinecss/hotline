@@ -1,6 +1,6 @@
 {
   "name": "xvx",
-  "version": "2.8.3",
+  "version": "2.9.0",
   "description": "Lightweight framework for the web",
   "main": "css/xvx.min.css",
   "scripts": {
