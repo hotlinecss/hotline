@@ -1,4 +1,4 @@
-/* xvx - 2.8.3 - MIT */	/*
+/* xvx - 2.9.0 - MIT */	/*
 
 	Basic reset
 	
@@ -2967,7 +2967,7 @@ textarea {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 36em) {
   .sm_col_auto {
     width: auto;
   }
@@ -3993,7 +3993,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 30em) and (max-width: 60em) {
+@media screen and (min-width: 48em) {
   .md_col_auto {
     width: auto;
   }
@@ -5019,7 +5019,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 62em) {
   .lg_col_auto {
     width: auto;
   }
@@ -6034,6 +6034,1032 @@ textarea {
     padding-bottom: 66.66%;
   }
   .lg_aspect_ratio_item {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .xl_col_auto {
+    width: auto;
+  }
+  .xl_col_10 {
+    width: 10%;
+  }
+  .xl_col_20 {
+    width: 20%;
+  }
+  .xl_col_25 {
+    width: 25%;
+  }
+  .xl_col_30 {
+    width: 30%;
+  }
+  .xl_col_33 {
+    width: 33%;
+  }
+  .xl_col_40 {
+    width: 40%;
+  }
+  .xl_col_45 {
+    width: 45%;
+  }
+  .xl_col_50 {
+    width: 50%;
+  }
+  .xl_col_60 {
+    width: 60%;
+  }
+  .xl_col_66 {
+    width: 66%;
+  }
+  .xl_col_70 {
+    width: 70%;
+  }
+  .xl_col_75 {
+    width: 75%;
+  }
+  .xl_col_80 {
+    width: 80%;
+  }
+  .xl_col_90 {
+    width: 90%;
+  }
+  .xl_col_100 {
+    width: 100%;
+  }
+  .xl_w_1 {
+    width: 1rem;
+  }
+  .xl_w_2 {
+    width: 2rem;
+  }
+  .xl_w_4 {
+    width: 4rem;
+  }
+  .xl_w_8 {
+    width: 8rem;
+  }
+  .xl_mw_1 {
+    max-width: 1rem;
+  }
+  .xl_mw_2 {
+    max-width: 2rem;
+  }
+  .xl_mw_4 {
+    max-width: 4rem;
+  }
+  .xl_mw_8 {
+    max-width: 8rem;
+  }
+  .xl_mw_16 {
+    max-width: 16rem;
+  }
+  .xl_mw_32 {
+    max-width: 32rem;
+  }
+  .xl_mw_48 {
+    max-width: 48rem;
+  }
+  .xl_mw_64 {
+    max-width: 64rem;
+  }
+  .xl_mw_80 {
+    max-width: 80rem;
+  }
+  .xl_mw_90 {
+    max-width: 90rem;
+  }
+  .xl_vw_50 {
+    width: 50vw;
+  }
+  .xl_vw_100 {
+    width: 100vw;
+  }
+  .xl_h_auto {
+    height: auto;
+  }
+  .xl_h_1 {
+    height: 1rem;
+  }
+  .xl_h_2 {
+    height: 2rem;
+  }
+  .xl_h_4 {
+    height: 4rem;
+  }
+  .xl_h_8 {
+    height: 8rem;
+  }
+  .xl_h_25 {
+    height: 25%;
+  }
+  .xl_h_50 {
+    height: 50%;
+  }
+  .xl_h_100 {
+    height: 100%;
+  }
+  .xl_min_h_100 {
+    min-height: 100%;
+  }
+  .xl_vh_100 {
+    height: 100vh;
+  }
+  .xl_min_vh_100 {
+    min-height: 100vh;
+  }
+  .xl_flex {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .xl_flex_auto {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+  }
+  .xl_flex_wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .xl_flex_nowrap {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .xl_flex_row {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .xl_flex_column {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .xl_row_reverse {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .xl_column_reverse {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .xl_justify_start {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .xl_justify_center {
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .xl_justify_end {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .xl_justify_between {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .xl_justify_around {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .xl_items_start {
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .xl_items_center {
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .xl_items_end {
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .xl_items_stretch {
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .xl_items_baseline {
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  .xl_content_start {
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+  }
+  .xl_content_center {
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+  .xl_content_between {
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+  }
+  .xl_content_around {
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+  }
+  .xl_content_stretch {
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+  }
+  .xl_item_start {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+  .xl_item_center {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+  .xl_item_end {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+  .xl_item_stretch {
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+  }
+  .xl_item_baseline {
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+  .xl_order_0 {
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .xl_order_1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .xl_order_2 {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .xl_order_3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .xl_order_4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .xl_order_5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  .xl_order_6 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  .xl_order_last {
+    -ms-flex-order: 9999;
+    order: 9999;
+  }
+  .xl_border_box {
+    box-sizing: border-box;
+  }
+  .xl_content_box {
+    box-sizing: content-box;
+  }
+  .xl_inherit_box {
+    box-sizing: inherit;
+  }
+  .xl_hidden {
+    display: none;
+  }
+  .xl_visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .xl_block {
+    display: block;
+  }
+  .xl_inline_block {
+    display: inline-block;
+  }
+  .xl_inline {
+    display: inline;
+  }
+  .xl_table_wrap {
+    display: table;
+  }
+  .xl_table_fixed {
+    table-layout: fixed;
+  }
+  .xl_table_cell {
+    display: table-cell;
+  }
+  .xl_align_top {
+    vertical-align: top;
+  }
+  .xl_align_middle {
+    vertical-align: middle;
+  }
+  .xl_align_baseline {
+    vertical-align: baseline;
+  }
+  .xl_align_bottom {
+    vertical-align: bottom;
+  }
+  .xl_overflow_visible {
+    overflow: visible;
+  }
+  .xl_overflow_hidden {
+    overflow: hidden;
+  }
+  .xl_overflow_auto {
+    overflow: auto;
+  }
+  .xl_overflow_scroll {
+    overflow: scroll;
+  }
+  .xl_overflow_x_visible {
+    overflow-x: visible;
+  }
+  .xl_overflow_x_hidden {
+    overflow-x: hidden;
+  }
+  .xl_overflow_x_auto {
+    overflow-x: auto;
+  }
+  .xl_overflow_x_scroll {
+    overflow-x: scroll;
+  }
+  .xl_overflow_y_visible {
+    overflow-y: visible;
+  }
+  .xl_overflow_y_hidden {
+    overflow-y: hidden;
+  }
+  .xl_overflow_y_auto {
+    overflow-y: auto;
+  }
+  .xl_overflow_y_scroll {
+    overflow-y: scroll;
+  }
+  .xl_left {
+    float: left;
+  }
+  .xl_right {
+    float: right;
+  }
+  .xl_measure_thick {
+    max-width: 34rem;
+  }
+  .xl_measure {
+    max-width: 30rem;
+  }
+  .xl_measure_tight {
+    max-width: 20rem;
+  }
+  .xl_headline {
+    font-size: 6rem;
+  }
+  .xl_big {
+    font-size: 5rem;
+  }
+  .xl_f1 {
+    font-size: 3.157rem;
+  }
+  .xl_f2 {
+    font-size: 2.369rem;
+  }
+  .xl_f3 {
+    font-size: 1.777rem;
+  }
+  .xl_f4 {
+    font-size: 1.333rem;
+  }
+  .xl_f5 {
+    font-size: 1rem;
+  }
+  .xl_f6 {
+    font-size: .75rem;
+  }
+  .xl_lh_normal {
+    line-height: 1;
+  }
+  .xl_lh_title {
+    line-height: 1.25;
+  }
+  .xl_lh_copy {
+    line-height: 1.5;
+  }
+  .xl_tracked {
+    letter-spacing: .16rem;
+  }
+  .xl_text_center {
+    text-align: center;
+  }
+  .xl_text_left {
+    text-align: left;
+  }
+  .xl_text_right {
+    text-align: right;
+  }
+  .xl_text_justify {
+    text-align: justify;
+  }
+  .xl_truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .xl_nowrap {
+    white-space: nowrap;
+  }
+  .xl_break_word {
+    word-wrap: break-word;
+  }
+  .xl_absolute {
+    position: absolute;
+  }
+  .xl_fixed {
+    position: fixed;
+  }
+  .xl_relative {
+    position: relative;
+  }
+  .xl_static {
+    position: static;
+  }
+  .xl_top_0 {
+    top: 0;
+  }
+  .xl_top_1 {
+    top: .5rem;
+  }
+  .xl_top_2 {
+    top: 1rem;
+  }
+  .xl_top_3 {
+    top: 2rem;
+  }
+  .xl_top_4 {
+    top: 4rem;
+  }
+  .xl_top_5 {
+    top: 8rem;
+  }
+  .xl_top_6 {
+    top: 16rem;
+  }
+  .xl_top__1 {
+    top: -.5rem;
+  }
+  .xl_top__2 {
+    top: -1rem;
+  }
+  .xl_top__3 {
+    top: -2rem;
+  }
+  .xl_top__4 {
+    top: -4rem;
+  }
+  .xl_top__5 {
+    top: -8rem;
+  }
+  .xl_top__6 {
+    top: -16rem;
+  }
+  .xl_right_0 {
+    right: 0;
+  }
+  .xl_right_1 {
+    right: .5rem;
+  }
+  .xl_right_2 {
+    right: 1rem;
+  }
+  .xl_right_3 {
+    right: 2rem;
+  }
+  .xl_right_4 {
+    right: 4rem;
+  }
+  .xl_right_5 {
+    right: 8rem;
+  }
+  .xl_right_6 {
+    right: 16rem;
+  }
+  .xl_right__1 {
+    right: -.5rem;
+  }
+  .xl_right__2 {
+    right: -1rem;
+  }
+  .xl_right__3 {
+    right: -2rem;
+  }
+  .xl_right__4 {
+    right: -4rem;
+  }
+  .xl_right__5 {
+    right: -8rem;
+  }
+  .xl_right__6 {
+    right: -16rem;
+  }
+  .xl_bottom_0 {
+    bottom: 0;
+  }
+  .xl_bottom_1 {
+    bottom: .5rem;
+  }
+  .xl_bottom_2 {
+    bottom: 1rem;
+  }
+  .xl_bottom_3 {
+    bottom: 2rem;
+  }
+  .xl_bottom_4 {
+    bottom: 4rem;
+  }
+  .xl_bottom_5 {
+    bottom: 8rem;
+  }
+  .xl_bottom_6 {
+    bottom: 16rem;
+  }
+  .xl_bottom__1 {
+    bottom: -.5rem;
+  }
+  .xl_bottom__2 {
+    bottom: -1rem;
+  }
+  .xl_bottom__3 {
+    bottom: -2rem;
+  }
+  .xl_bottom__4 {
+    bottom: -4rem;
+  }
+  .xl_bottom__5 {
+    bottom: -8rem;
+  }
+  .xl_bottom__6 {
+    bottom: -16rem;
+  }
+  .xl_left_0 {
+    left: 0;
+  }
+  .xl_left_1 {
+    left: .5rem;
+  }
+  .xl_left_2 {
+    left: 1rem;
+  }
+  .xl_left_3 {
+    left: 2rem;
+  }
+  .xl_left_4 {
+    left: 4rem;
+  }
+  .xl_left_5 {
+    left: 8rem;
+  }
+  .xl_left_6 {
+    left: 16rem;
+  }
+  .xl_left__1 {
+    left: -.5rem;
+  }
+  .xl_left__2 {
+    left: -1rem;
+  }
+  .xl_left__3 {
+    left: -2rem;
+  }
+  .xl_left__4 {
+    left: -4rem;
+  }
+  .xl_left__5 {
+    left: -8rem;
+  }
+  .xl_left__6 {
+    left: -16rem;
+  }
+  .xl_z_0 {
+    z-index: 0;
+  }
+  .xl_z_1 {
+    z-index: 1;
+  }
+  .xl_z_2 {
+    z-index: 2;
+  }
+  .xl_z_3 {
+    z-index: 3;
+  }
+  .xl_z_4 {
+    z-index: 4;
+  }
+  .xl_z_999 {
+    z-index: 999;
+  }
+  .xl_m0 {
+    margin: 0;
+  }
+  .xl_m1 {
+    margin: .5rem;
+  }
+  .xl_m2 {
+    margin: 1rem;
+  }
+  .xl_m3 {
+    margin: 2rem;
+  }
+  .xl_m4 {
+    margin: 4rem;
+  }
+  .xl_m5 {
+    margin: 8rem;
+  }
+  .xl_m6 {
+    margin: 16rem;
+  }
+  .xl_mt0 {
+    margin-top: 0;
+  }
+  .xl_mt1 {
+    margin-top: .5rem;
+  }
+  .xl_mt2 {
+    margin-top: 1rem;
+  }
+  .xl_mt3 {
+    margin-top: 2rem;
+  }
+  .xl_mt4 {
+    margin-top: 4rem;
+  }
+  .xl_mt5 {
+    margin-top: 8rem;
+  }
+  .xl_mt6 {
+    margin-top: 16rem;
+  }
+  .xl_mr0 {
+    margin-right: 0;
+  }
+  .xl_mr1 {
+    margin-right: .5rem;
+  }
+  .xl_mr2 {
+    margin-right: 1rem;
+  }
+  .xl_mr3 {
+    margin-right: 2rem;
+  }
+  .xl_mr4 {
+    margin-right: 4rem;
+  }
+  .xl_mr5 {
+    margin-right: 8rem;
+  }
+  .xl_mr6 {
+    margin-right: 16rem;
+  }
+  .xl_mb0 {
+    margin-bottom: 0;
+  }
+  .xl_mb1 {
+    margin-bottom: .5rem;
+  }
+  .xl_mb2 {
+    margin-bottom: 1rem;
+  }
+  .xl_mb3 {
+    margin-bottom: 2rem;
+  }
+  .xl_mb4 {
+    margin-bottom: 4rem;
+  }
+  .xl_mb5 {
+    margin-bottom: 8rem;
+  }
+  .xl_mb6 {
+    margin-bottom: 16rem;
+  }
+  .xl_ml0 {
+    margin-left: 0;
+  }
+  .xl_ml1 {
+    margin-left: .5rem;
+  }
+  .xl_ml2 {
+    margin-left: 1rem;
+  }
+  .xl_ml3 {
+    margin-left: 2rem;
+  }
+  .xl_ml4 {
+    margin-left: 4rem;
+  }
+  .xl_ml5 {
+    margin-left: 8rem;
+  }
+  .xl_ml6 {
+    margin-left: 16rem;
+  }
+  .xl_mh0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .xl_mh1 {
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+  .xl_mh2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .xl_mh3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .xl_mh4 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .xl_mh5 {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+  .xl_mh6 {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+  .xl_mv0 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .xl_mv1 {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+  .xl_mv2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .xl_mv3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .xl_mv4 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .xl_mv5 {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+  .xl_mv6 {
+    margin-top: 16rem;
+    margin-bottom: 16rem;
+  }
+  .xl_p0 {
+    padding: 0;
+  }
+  .xl_p1 {
+    padding: .5rem;
+  }
+  .xl_p2 {
+    padding: 1rem;
+  }
+  .xl_p3 {
+    padding: 2rem;
+  }
+  .xl_p4 {
+    padding: 4rem;
+  }
+  .xl_p5 {
+    padding: 8rem;
+  }
+  .xl_p6 {
+    padding: 16rem;
+  }
+  .xl_pt0 {
+    padding-top: 0;
+  }
+  .xl_pt1 {
+    padding-top: .5rem;
+  }
+  .xl_pt2 {
+    padding-top: 1rem;
+  }
+  .xl_pt3 {
+    padding-top: 2rem;
+  }
+  .xl_pt4 {
+    padding-top: 4rem;
+  }
+  .xl_pt5 {
+    padding-top: 8rem;
+  }
+  .xl_pt6 {
+    padding-top: 16rem;
+  }
+  .xl_pr0 {
+    padding-right: 0;
+  }
+  .xl_pr1 {
+    padding-right: .5rem;
+  }
+  .xl_pr2 {
+    padding-right: 1rem;
+  }
+  .xl_pr3 {
+    padding-right: 2rem;
+  }
+  .xl_pr4 {
+    padding-right: 4rem;
+  }
+  .xl_pr5 {
+    padding-right: 8rem;
+  }
+  .xl_pr6 {
+    padding-right: 16rem;
+  }
+  .xl_pb0 {
+    padding-bottom: 0;
+  }
+  .xl_pb1 {
+    padding-bottom: .5rem;
+  }
+  .xl_pb2 {
+    padding-bottom: 1rem;
+  }
+  .xl_pb3 {
+    padding-bottom: 2rem;
+  }
+  .xl_pb4 {
+    padding-bottom: 4rem;
+  }
+  .xl_pb5 {
+    padding-bottom: 8rem;
+  }
+  .xl_pb6 {
+    padding-bottom: 16rem;
+  }
+  .xl_pl0 {
+    padding-left: 0;
+  }
+  .xl_pl1 {
+    padding-left: .5rem;
+  }
+  .xl_pl2 {
+    padding-left: 1rem;
+  }
+  .xl_pl3 {
+    padding-left: 2rem;
+  }
+  .xl_pl4 {
+    padding-left: 4rem;
+  }
+  .xl_pl5 {
+    padding-left: 8rem;
+  }
+  .xl_pl6 {
+    padding-left: 16rem;
+  }
+  .xl_ph0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .xl_ph1 {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  .xl_ph2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .xl_ph3 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .xl_ph4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .xl_ph5 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .xl_ph6 {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+  .xl_pv0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .xl_pv1 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+  .xl_pv2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .xl_pv3 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .xl_pv4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .xl_pv5 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .xl_pv6 {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+  .xl_bg_cover {
+    background-size: cover !important;
+  }
+  .xl_bg_contain {
+    background-size: contain;
+  }
+  .xl_bg_fixed {
+    background-attachment: fixed;
+  }
+  .xl_bg_repeat {
+    background-repeat: repeat;
+  }
+  .xl_bg_border_box {
+    background-clip: border-box;
+  }
+  .xl_bg_padding_box {
+    background-clip: padding-box;
+  }
+  .xl_bg_content_box {
+    background-clip: content-box;
+  }
+  .xl_bg_no_repeat {
+    background-repeat: no-repeat;
+  }
+  .xl_bg_x_repeat {
+    background-repeat: repeat-x;
+  }
+  .xl_bg_y_repeat {
+    background-repeat: repeat-y;
+  }
+  .xl_bg_repeat_space {
+    background-repeat: space;
+  }
+  .xl_bg_repeat_around {
+    background-repeat: round;
+  }
+  .xl_bg_center {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .xl_bg_top {
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .xl_bg_right {
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+  .xl_bg_bottom {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+  .xl_bg_left {
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  .xl_aspect_ratio {
+    height: 0;
+    position: relative;
+  }
+  .xl_aspect_ratio--16x9 {
+    padding-bottom: 56.25%;
+  }
+  .xl_aspect_ratio--8x5 {
+    padding-bottom: 62.5%;
+  }
+  .xl_aspect_ratio--4x3 {
+    padding-bottom: 75%;
+  }
+  .xl_aspect_ratio--3x2 {
+    padding-bottom: 66.66%;
+  }
+  .xl_aspect_ratio_item {
     height: 100%;
     position: absolute;
     top: 0;
