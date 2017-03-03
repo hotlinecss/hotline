@@ -163,3 +163,44 @@
 	.lg_order_last { order: 9999; }
 
 }
+
+@include media(map-get($mqs, "xl")) {
+
+	.xl_flex { display: flex; }
+	.xl_flex_auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
+	.xl_flex_wrap { flex-wrap: wrap; }
+	.xl_flex_nowrap { flex-wrap: nowrap; }
+	.xl_flex_row { flex-direction: row; }
+	.xl_flex_column { flex-direction: column; }
+	.xl_row_reverse { flex-direction: row-reverse; }
+	.xl_column_reverse { flex-direction: column-reverse; }
+	.xl_justify_start { justify-content: flex-start; }
+	.xl_justify_center { justify-content: center; }
+	.xl_justify_end { justify-content: flex-end; }
+	.xl_justify_between { justify-content: space-between; }
+	.xl_justify_around { justify-content: space-around; }
+	.xl_items_start { align-items: flex-start; }
+	.xl_items_center { align-items: center; }
+	.xl_items_end { align-items: flex-end; }
+	.xl_items_stretch { align-items: stretch; }
+	.xl_items_baseline { align-items: baseline; }
+	.xl_content_start { align-content: flex-start; }
+	.xl_content_center { align-content: center; }
+	.xl_content_between { align-content: space-between; }
+	.xl_content_around { align-content: space-around; }
+	.xl_content_stretch { align-content: stretch; }
+	.xl_item_start { align-self: flex-start; }
+	.xl_item_center { align-self: center; }
+	.xl_item_end { align-self: flex-end; }
+	.xl_item_stretch { align-self: stretch; }
+	.xl_item_baseline { align-self: baseline; }
+	.xl_order_0 { order: 0; }
+	.xl_order_1 { order: 1; }
+	.xl_order_2 { order: 2; }
+	.xl_order_3 { order: 3; }
+	.xl_order_4 { order: 4; }
+	.xl_order_5 { order: 5; }
+	.xl_order_6 { order: 6; }
+	.xl_order_last { order: 9999; }
+
+}

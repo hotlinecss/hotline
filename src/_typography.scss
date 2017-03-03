@@ -138,3 +138,30 @@
 	.lg_break_word { word-wrap: break-word; }
 
 }
+
+@include media(map-get($mqs, "xl")) {
+
+	.xl_measure_thick { max-width: 34rem }
+	.xl_measure { max-width: 30rem }
+	.xl_measure_tight { max-width: 20rem }
+	.xl_headline { font-size: 6rem; }
+	.xl_big { font-size: 5rem; }
+	.xl_f1 { font-size: 3.157rem; }
+	.xl_f2 { font-size: 2.369rem; }
+	.xl_f3 { font-size: 1.777rem; }
+	.xl_f4 { font-size: 1.333rem; }
+	.xl_f5 { font-size: 1rem; }
+	.xl_f6 { font-size: .75rem; }
+	.xl_lh_normal { line-height: 1; }
+	.xl_lh_title { line-height: 1.25; }
+	.xl_lh_copy { line-height: 1.5; }
+	.xl_tracked { letter-spacing: .16rem; }
+	.xl_text_center { text-align: center; }
+	.xl_text_left { text-align: left; }
+	.xl_text_right { text-align: right; }
+	.xl_text_justify { text-align: justify; }
+	.xl_truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.xl_nowrap { white-space: nowrap; }
+	.xl_break_word { word-wrap: break-word; }
+
+}

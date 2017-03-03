@@ -248,3 +248,63 @@
 	.lg_pv6 { padding-top: 16rem; padding-bottom: 16rem; }
 
 }
+
+@include media(map-get($mqs, "xl")) {
+
+	.xl_p0 { padding: 0; }
+	.xl_p1 { padding: .5rem }
+	.xl_p2 { padding: 1rem; }
+	.xl_p3 { padding: 2rem; }
+	.xl_p4 { padding: 4rem; }
+	.xl_p5 { padding: 8rem; }
+	.xl_p6 { padding: 16rem; }
+
+	.xl_pt0 { padding-top: 0; }
+	.xl_pt1 { padding-top: .5rem }
+	.xl_pt2 { padding-top: 1rem; }
+	.xl_pt3 { padding-top: 2rem; }
+	.xl_pt4 { padding-top: 4rem; }
+	.xl_pt5 { padding-top: 8rem; }
+	.xl_pt6 { padding-top: 16rem; }
+
+	.xl_pr0 { padding-right: 0; }
+	.xl_pr1 { padding-right: .5rem }
+	.xl_pr2 { padding-right: 1rem; }
+	.xl_pr3 { padding-right: 2rem; }
+	.xl_pr4 { padding-right: 4rem; }
+	.xl_pr5 { padding-right: 8rem; }
+	.xl_pr6 { padding-right: 16rem; }
+
+	.xl_pb0 { padding-bottom: 0; }
+	.xl_pb1 { padding-bottom: .5rem; }
+	.xl_pb2 { padding-bottom: 1rem; }
+	.xl_pb3 { padding-bottom: 2rem; }
+	.xl_pb4 { padding-bottom: 4rem; }
+	.xl_pb5 { padding-bottom: 8rem; }
+	.xl_pb6 { padding-bottom: 16rem;}
+
+	.xl_pl0 { padding-left: 0; }
+	.xl_pl1 { padding-left: .5rem; }
+	.xl_pl2 { padding-left: 1rem; }
+	.xl_pl3 { padding-left: 2rem; }
+	.xl_pl4 { padding-left: 4rem; }
+	.xl_pl5 { padding-left: 8rem; }
+	.xl_pl6 { padding-left: 16rem; }
+
+	.xl_ph0 { padding-left: 0; padding-right: 0; }
+	.xl_ph1 { padding-left: .5rem; padding-right: .5rem; }
+	.xl_ph2 { padding-left: 1rem; padding-right: 1rem; }
+	.xl_ph3 { padding-left: 2rem; padding-right: 2rem; }
+	.xl_ph4 { padding-left: 4rem; padding-right:  4rem }
+	.xl_ph5 { padding-left: 8rem; padding-right: 8rem; }
+	.xl_ph6 { padding-left: 16rem; padding-right: 16rem; }
+
+	.xl_pv0 { padding-top: 0; padding-bottom: 0; }
+	.xl_pv1 { padding-top: .5rem; padding-bottom: .5rem; }
+	.xl_pv2 { padding-top: 1rem; padding-bottom: 1rem; }
+	.xl_pv3 { padding-top: 2rem; padding-bottom: 2rem; }
+	.xl_pv4 { padding-top: 4rem; padding-bottom:  4rem }
+	.xl_pv5 { padding-top: 8rem; padding-bottom: 8rem; }
+	.xl_pv6 { padding-top: 16rem; padding-bottom: 16rem; }
+
+}

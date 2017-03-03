@@ -69,3 +69,19 @@
 	.lg_min_vh_100 { min-height: 100vh; }
 
 }
+
+@include media(map-get($mqs, "xl")) {
+	
+	.xl_h_auto { height: auto; }
+	.xl_h_1 { height: 1rem; }
+	.xl_h_2 { height: 2rem; }
+	.xl_h_4 { height: 4rem; }
+	.xl_h_8 { height: 8rem; }
+	.xl_h_25 { height: 25%; }
+	.xl_h_50 { height: 50%; }
+	.xl_h_100 { height: 100%; }
+	.xl_min_h_100 { min-height: 100%; }
+	.xl_vh_100 { height: 100vh; }
+	.xl_min_vh_100 { min-height: 100vh; }
+
+}

@@ -154,3 +154,40 @@
 	.lg_vw_100 { width: 100vw; }
 
 }
+
+@include media(map-get($mqs, "xl")) {
+
+	.xl_col_auto { width: auto; }
+	.xl_col_10 { width: 10%; }
+	.xl_col_20 { width: 20%; }
+	.xl_col_25 { width: 25%; }
+	.xl_col_30 { width: 30%; }
+	.xl_col_33 { width: 33%; }
+	.xl_col_40 { width: 40%; }
+	.xl_col_45 { width: 45%; }
+	.xl_col_50 { width: 50%; }
+	.xl_col_60 { width: 60%; }
+	.xl_col_66 { width: 66%; }
+	.xl_col_70 { width: 70%; }
+	.xl_col_75 { width: 75%; }
+	.xl_col_80 { width: 80%; }
+	.xl_col_90 { width: 90%; }
+	.xl_col_100 { width: 100%; }
+	.xl_w_1 { width: 1rem; }
+	.xl_w_2 { width: 2rem; }
+	.xl_w_4 { width: 4rem; }
+	.xl_w_8 { width: 8rem; }
+	.xl_mw_1 { max-width: 1rem; }
+	.xl_mw_2 { max-width: 2rem; }
+	.xl_mw_4 { max-width: 4rem; }
+	.xl_mw_8 { max-width: 8rem; }
+	.xl_mw_16 { max-width: 16rem; }
+	.xl_mw_32 { max-width: 32rem; }
+	.xl_mw_48 { max-width: 48rem; }
+	.xl_mw_64 { max-width: 64rem; }
+	.xl_mw_80 { max-width: 80rem; }
+	.xl_mw_90 { max-width: 90rem; }
+	.xl_vw_50 { width: 50vw; }
+	.xl_vw_100 { width: 100vw; }
+
+}

@@ -135,3 +135,37 @@
 	.lg_right { float: right; }
 
 }
+
+@include media(map-get($mqs, "xl")) {
+	
+	.xl_border_box { box-sizing: border-box; }
+	.xl_content_box { box-sizing: content-box; }
+	.xl_inherit_box { box-sizing: inherit; }
+	.xl_hidden { display: none; }
+	.xl_visible { opacity: 1; visibility: visible; }
+	.xl_block { display: block; }
+	.xl_inline_block { display: inline-block; }
+	.xl_inline { display: inline; }
+	.xl_table_wrap { display: table; }
+	.xl_table_fixed { table-layout: fixed; }
+	.xl_table_cell { display: table-cell; }
+	.xl_align_top { vertical-align: top; }
+	.xl_align_middle { vertical-align: middle; }
+	.xl_align_baseline { vertical-align: baseline; }
+	.xl_align_bottom { vertical-align: bottom; }
+	.xl_overflow_visible { overflow: visible; }
+	.xl_overflow_hidden { overflow: hidden; }
+	.xl_overflow_auto { overflow: auto; }
+	.xl_overflow_scroll { overflow: scroll; }
+	.xl_overflow_x_visible { overflow-x: visible; }
+	.xl_overflow_x_hidden { overflow-x: hidden; }
+	.xl_overflow_x_auto { overflow-x: auto; }
+	.xl_overflow_x_scroll { overflow-x: scroll; }
+	.xl_overflow_y_visible { overflow-y: visible; }
+	.xl_overflow_y_hidden { overflow-y: hidden; }
+	.xl_overflow_y_auto { overflow-y: auto; }
+	.xl_overflow_y_scroll { overflow-y: scroll; }
+	.xl_left { float: left; }
+	.xl_right { float: right; }
+
+}

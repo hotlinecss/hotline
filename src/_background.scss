@@ -87,3 +87,25 @@
 	.lg_bg_left { background-repeat: no-repeat; background-position: center left; }
 
 }
+
+@include media(map-get($mqs, "xl")) {
+	
+	.xl_bg_cover { background-size: cover !important; }
+	.xl_bg_contain { background-size: contain; }
+	.xl_bg_fixed { background-attachment: fixed; }
+	.xl_bg_repeat { background-repeat: repeat; }
+	.xl_bg_border_box { background-clip: border-box; }
+	.xl_bg_padding_box { background-clip: padding-box; }
+	.xl_bg_content_box { background-clip: content-box; }
+	.xl_bg_no_repeat { background-repeat: no-repeat; }
+	.xl_bg_x_repeat { background-repeat: repeat-x; }
+	.xl_bg_y_repeat { background-repeat: repeat-y; }
+	.xl_bg_repeat_space { background-repeat: space; }
+	.xl_bg_repeat_around { background-repeat: round; }
+	.xl_bg_center { background-repeat: no-repeat; background-position: center center; }
+	.xl_bg_top {background-repeat: no-repeat; background-position: top center; }
+	.xl_bg_right { background-repeat: no-repeat; background-position: center right; }
+	.xl_bg_bottom { background-repeat: no-repeat; background-position: bottom center; }
+	.xl_bg_left { background-repeat: no-repeat; background-position: center left; }
+
+}

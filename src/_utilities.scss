@@ -46,3 +46,14 @@
 	.lg_aspect_ratio_item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
 
 }
+
+@include media(map-get($mqs, "xl")) {
+
+	.xl_aspect_ratio { height: 0; position: relative }
+	.xl_aspect_ratio--16x9 { padding-bottom: 56.25%; }
+	.xl_aspect_ratio--8x5 { padding-bottom: 62.5%; }
+	.xl_aspect_ratio--4x3 { padding-bottom: 75%; }
+	.xl_aspect_ratio--3x2 { padding-bottom: 66.66%; }
+	.xl_aspect_ratio_item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
+
+}
