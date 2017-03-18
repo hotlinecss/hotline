@@ -7,53 +7,53 @@
 .cf::before, .cf::after { content: " "; display: table; }
 .cf::after { clear: both; }
 .center { margin-left: auto; margin-right: auto; }
-.aspect_ratio { height: 0; position: relative }
-.aspect_ratio--16x9 { padding-bottom: 56.25%; }
-.aspect_ratio--8x5 { padding-bottom: 62.5%; }
-.aspect_ratio--4x3 { padding-bottom: 75%; }
-.aspect_ratio--3x2 { padding-bottom: 66.66%; }
-.aspect_ratio_item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
+.aspect-ratio { height: 0; position: relative }
+.aspect-ratio--16x9 { padding-bottom: 56.25%; }
+.aspect-ratio--8x5 { padding-bottom: 62.5%; }
+.aspect-ratio--4x3 { padding-bottom: 75%; }
+.aspect-ratio--3x2 { padding-bottom: 66.66%; }
+.aspect-ratio-item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
 
 @include media(map-get($mqs, "sm")) {
 
-	.sm_aspect_ratio { height: 0; position: relative }
-	.sm_aspect_ratio--16x9 { padding-bottom: 56.25%; }
-	.sm_aspect_ratio--8x5 { padding-bottom: 62.5%; }
-	.sm_aspect_ratio--4x3 { padding-bottom: 75%; }
-	.sm_aspect_ratio--3x2 { padding-bottom: 66.66%; }
-	.sm_aspect_ratio_item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
+	.sm-aspect-ratio { height: 0; position: relative }
+	.sm-aspect-ratio--16x9 { padding-bottom: 56.25%; }
+	.sm-aspect-ratio--8x5 { padding-bottom: 62.5%; }
+	.sm-aspect-ratio--4x3 { padding-bottom: 75%; }
+	.sm-aspect-ratio--3x2 { padding-bottom: 66.66%; }
+	.sm-aspect-ratio-item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
 
 }
 
 @include media(map-get($mqs, "md")) {
 
-	.md_aspect_ratio { height: 0; position: relative }
-	.md_aspect_ratio--16x9 { padding-bottom: 56.25%; }
-	.md_aspect_ratio--8x5 { padding-bottom: 62.5%; }
-	.md_aspect_ratio--4x3 { padding-bottom: 75%; }
-	.md_aspect_ratio--3x2 { padding-bottom: 66.66%; }
-	.md_aspect_ratio_item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
+	.md-aspect-ratio { height: 0; position: relative }
+	.md-aspect-ratio--16x9 { padding-bottom: 56.25%; }
+	.md-aspect-ratio--8x5 { padding-bottom: 62.5%; }
+	.md-aspect-ratio--4x3 { padding-bottom: 75%; }
+	.md-aspect-ratio--3x2 { padding-bottom: 66.66%; }
+	.md-aspect-ratio-item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
 
 }
 
 @include media(map-get($mqs, "lg")) {
 
-	.lg_aspect_ratio { height: 0; position: relative }
-	.lg_aspect_ratio--16x9 { padding-bottom: 56.25%; }
-	.lg_aspect_ratio--8x5 { padding-bottom: 62.5%; }
-	.lg_aspect_ratio--4x3 { padding-bottom: 75%; }
-	.lg_aspect_ratio--3x2 { padding-bottom: 66.66%; }
-	.lg_aspect_ratio_item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
+	.lg-aspect-ratio { height: 0; position: relative }
+	.lg-aspect-ratio--16x9 { padding-bottom: 56.25%; }
+	.lg-aspect-ratio--8x5 { padding-bottom: 62.5%; }
+	.lg-aspect-ratio--4x3 { padding-bottom: 75%; }
+	.lg-aspect-ratio--3x2 { padding-bottom: 66.66%; }
+	.lg-aspect-ratio-item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
 
 }
 
 @include media(map-get($mqs, "xl")) {
 
-	.xl_aspect_ratio { height: 0; position: relative }
-	.xl_aspect_ratio--16x9 { padding-bottom: 56.25%; }
-	.xl_aspect_ratio--8x5 { padding-bottom: 62.5%; }
-	.xl_aspect_ratio--4x3 { padding-bottom: 75%; }
-	.xl_aspect_ratio--3x2 { padding-bottom: 66.66%; }
-	.xl_aspect_ratio_item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
+	.xl-aspect-ratio { height: 0; position: relative }
+	.xl-aspect-ratio--16x9 { padding-bottom: 56.25%; }
+	.xl-aspect-ratio--8x5 { padding-bottom: 62.5%; }
+	.xl-aspect-ratio--4x3 { padding-bottom: 75%; }
+	.xl-aspect-ratio--3x2 { padding-bottom: 66.66%; }
+	.xl-aspect-ratio-item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
 
 }

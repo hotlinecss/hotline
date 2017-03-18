@@ -4,7 +4,7 @@
 
 */
 
-.overlay .overlay_item {
+.overlay .overlay-item {
 	opacity: 0;
 	transition: opacity 150ms ease-in;
 
@@ -15,7 +15,7 @@
 	}
 }
 
-.hover_opacity {
+.hover-opacity {
   transition: opacity 150ms ease-in;
 
   &:hover,
@@ -25,14 +25,14 @@
   }
 }
 
-.hover_underline {
+.hover-underline {
   &:hover,
   &:focus {
     text-decoration: underline;
   }
 }
 
-.thick_hover_underline {
+.thick-hover-underline {
   padding-bottom: .20em;
   border-bottom: .20em solid transparent;
 
@@ -50,7 +50,7 @@
 	}
 }
 
-.bg_animate {
+.bg-animate {
   &:hover,
   &:focus {
     transition: background-color 150ms ease-in;
@@ -73,7 +73,7 @@
   }
 }
 
-.hover_shadow {
+.hover-shadow {
   transition: box-shadow 150ms ease-in;
 
   &:hover,
@@ -83,7 +83,7 @@
   }
 }
 
-.hover_shadow_big {
+.hover-shadow-big {
   transition: box-shadow 150ms ease-in;
 
   &:hover,
@@ -93,7 +93,7 @@
   }
 }
 
-.hover_grayscale {
+.hover-grayscale {
   filter: grayscale(100%);
   transition: filter 150ms ease-in;
   

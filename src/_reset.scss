@@ -78,7 +78,7 @@ svg {
   border-spacing: 0;
 }
 
-.table_striped > tbody > tr:nth-child(odd) {
+.table-striped > tbody > tr:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.125);
 }
 
@@ -104,7 +104,7 @@ textarea {
   vertical-align: middle;
 }
 
-.input_reset { -webkit-appearance: none; }
+.input-reset { -webkit-appearance: none; }
 
 /*
 

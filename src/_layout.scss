@@ -4,168 +4,168 @@
 
 */
 
-.border_box { box-sizing: border-box; }
-.content_box { box-sizing: content-box; }
-.inherit_box { box-sizing: inherit; }
+.border-box { box-sizing: border-box; }
+.content-box { box-sizing: content-box; }
+.inherit-box { box-sizing: inherit; }
 .hidden { display: none; }
 .visible { opacity: 1; visibility: visible; }
 .block { display: block; }
-.inline_block { display: inline-block; }
+.inline-block { display: inline-block; }
 .inline { display: inline; }
-.table_wrap { display: table; }
-.table_fixed { table-layout: fixed; }
-.table_cell { display: table-cell; }
-.align_top { vertical-align: top; }
-.align_middle { vertical-align: middle; }
-.align_baseline { vertical-align: baseline; }
-.align_bottom { vertical-align: bottom; }
-.overflow_visible { overflow: visible; }
-.overflow_hidden { overflow: hidden; }
-.overflow_auto { overflow: auto; }
-.overflow_scroll { overflow: scroll; }
-.overflow_x_visible { overflow-x: visible; }
-.overflow_x_hidden { overflow-x: hidden; }
-.overflow_x_auto { overflow-x: auto; }
-.overflow_x_scroll { overflow-x: scroll; }
-.overflow_y_visible { overflow-y: visible; }
-.overflow_y_hidden { overflow-y: hidden; }
-.overflow_y_auto { overflow-y: auto; }
-.overflow_y_scroll { overflow-y: scroll; }
+.table-wrap { display: table; }
+.table-fixed { table-layout: fixed; }
+.table-cell { display: table-cell; }
+.align-top { vertical-align: top; }
+.align-middle { vertical-align: middle; }
+.align-baseline { vertical-align: baseline; }
+.align-bottom { vertical-align: bottom; }
+.overflow-visible { overflow: visible; }
+.overflow-hidden { overflow: hidden; }
+.overflow-auto { overflow: auto; }
+.overflow-scroll { overflow: scroll; }
+.overflow-x-visible { overflow-x: visible; }
+.overflow-x-hidden { overflow-x: hidden; }
+.overflow-x-auto { overflow-x: auto; }
+.overflow-x-scroll { overflow-x: scroll; }
+.overflow-y-visible { overflow-y: visible; }
+.overflow-y-hidden { overflow-y: hidden; }
+.overflow-y-auto { overflow-y: auto; }
+.overflow-y-scroll { overflow-y: scroll; }
 .left { float: left; }
 .right { float: right; }
 
 @include media(map-get($mqs, "sm")) {
 	
-	.sm_border_box { box-sizing: border-box; }
-	.sm_content_box { box-sizing: content-box; }
-	.sm_inherit_box { box-sizing: inherit; }
-	.sm_hidden { display: none; }
-	.sm_visible { opacity: 1; visibility: visible; }
-	.sm_block { display: block; }
-	.sm_inline_block { display: inline-block; }
-	.sm_inline { display: inline; }
-	.sm_table_wrap { display: table; }
-	.sm_table_fixed { table-layout: fixed; }
-	.sm_table_cell { display: table-cell; }
-	.sm_align_top { vertical-align: top; }
-	.sm_align_middle { vertical-align: middle; }
-	.sm_align_baseline { vertical-align: baseline; }
-	.sm_align_bottom { vertical-align: bottom; }
-	.sm_overflow_visible { overflow: visible; }
-	.sm_overflow_hidden { overflow: hidden; }
-	.sm_overflow_auto { overflow: auto; }
-	.sm_overflow_scroll { overflow: scroll; }
-	.sm_overflow_x_visible { overflow-x: visible; }
-	.sm_overflow_x_hidden { overflow-x: hidden; }
-	.sm_overflow_x_auto { overflow-x: auto; }
-	.sm_overflow_x_scroll { overflow-x: scroll; }
-	.sm_overflow_y_visible { overflow-y: visible; }
-	.sm_overflow_y_hidden { overflow-y: hidden; }
-	.sm_overflow_y_auto { overflow-y: auto; }
-	.sm_overflow_y_scroll { overflow-y: scroll; }
-	.sm_left { float: left; }
-	.sm_right { float: right; }
+	.sm-border-box { box-sizing: border-box; }
+	.sm-content-box { box-sizing: content-box; }
+	.sm-inherit-box { box-sizing: inherit; }
+	.sm-hidden { display: none; }
+	.sm-visible { opacity: 1; visibility: visible; }
+	.sm-block { display: block; }
+	.sm-inline-block { display: inline-block; }
+	.sm-inline { display: inline; }
+	.sm-table-wrap { display: table; }
+	.sm-table-fixed { table-layout: fixed; }
+	.sm-table-cell { display: table-cell; }
+	.sm-align-top { vertical-align: top; }
+	.sm-align-middle { vertical-align: middle; }
+	.sm-align-baseline { vertical-align: baseline; }
+	.sm-align-bottom { vertical-align: bottom; }
+	.sm-overflow-visible { overflow: visible; }
+	.sm-overflow-hidden { overflow: hidden; }
+	.sm-overflow-auto { overflow: auto; }
+	.sm-overflow-scroll { overflow: scroll; }
+	.sm-overflow-x-visible { overflow-x: visible; }
+	.sm-overflow-x-hidden { overflow-x: hidden; }
+	.sm-overflow-x-auto { overflow-x: auto; }
+	.sm-overflow-x-scroll { overflow-x: scroll; }
+	.sm-overflow-y-visible { overflow-y: visible; }
+	.sm-overflow-y-hidden { overflow-y: hidden; }
+	.sm-overflow-y-auto { overflow-y: auto; }
+	.sm-overflow-y-scroll { overflow-y: scroll; }
+	.sm-left { float: left; }
+	.sm-right { float: right; }
 
 }
 
 @include media(map-get($mqs, "md")) {
 	
-	.md_border_box { box-sizing: border-box; }
-	.md_content_box { box-sizing: content-box; }
-	.md_inherit_box { box-sizing: inherit; }
-	.md_hidden { display: none; }
-	.md_visible { opacity: 1; visibility: visible; }
-	.md_block { display: block; }
-	.md_inline_block { display: inline-block; }
-	.md_inline { display: inline; }
-	.md_table_wrap { display: table; }
-	.md_table_fixed { table-layout: fixed; }
-	.md_table_cell { display: table-cell; }
-	.md_align_top { vertical-align: top; }
-	.md_align_middle { vertical-align: middle; }
-	.md_align_baseline { vertical-align: baseline; }
-	.md_align_bottom { vertical-align: bottom; }
-	.md_overflow_visible { overflow: visible; }
-	.md_overflow_hidden { overflow: hidden; }
-	.md_overflow_auto { overflow: auto; }
-	.md_overflow_scroll { overflow: scroll; }
-	.md_overflow_x_visible { overflow-x: visible; }
-	.md_overflow_x_hidden { overflow-x: hidden; }
-	.md_overflow_x_auto { overflow-x: auto; }
-	.md_overflow_x_scroll { overflow-x: scroll; }
-	.md_overflow_y_visible { overflow-y: visible; }
-	.md_overflow_y_hidden { overflow-y: hidden; }
-	.md_overflow_y_auto { overflow-y: auto; }
-	.md_overflow_y_scroll { overflow-y: scroll; }
-	.md_left { float: left; }
-	.md_right { float: right; }
+	.md-border-box { box-sizing: border-box; }
+	.md-content-box { box-sizing: content-box; }
+	.md-inherit-box { box-sizing: inherit; }
+	.md-hidden { display: none; }
+	.md-visible { opacity: 1; visibility: visible; }
+	.md-block { display: block; }
+	.md-inline-block { display: inline-block; }
+	.md-inline { display: inline; }
+	.md-table-wrap { display: table; }
+	.md-table-fixed { table-layout: fixed; }
+	.md-table-cell { display: table-cell; }
+	.md-align-top { vertical-align: top; }
+	.md-align-middle { vertical-align: middle; }
+	.md-align-baseline { vertical-align: baseline; }
+	.md-align-bottom { vertical-align: bottom; }
+	.md-overflow-visible { overflow: visible; }
+	.md-overflow-hidden { overflow: hidden; }
+	.md-overflow-auto { overflow: auto; }
+	.md-overflow-scroll { overflow: scroll; }
+	.md-overflow-x-visible { overflow-x: visible; }
+	.md-overflow-x-hidden { overflow-x: hidden; }
+	.md-overflow-x-auto { overflow-x: auto; }
+	.md-overflow-x-scroll { overflow-x: scroll; }
+	.md-overflow-y-visible { overflow-y: visible; }
+	.md-overflow-y-hidden { overflow-y: hidden; }
+	.md-overflow-y-auto { overflow-y: auto; }
+	.md-overflow-y-scroll { overflow-y: scroll; }
+	.md-left { float: left; }
+	.md-right { float: right; }
 
 }
 
 @include media(map-get($mqs, "lg")) {
 	
-	.lg_border_box { box-sizing: border-box; }
-	.lg_content_box { box-sizing: content-box; }
-	.lg_inherit_box { box-sizing: inherit; }
-	.lg_hidden { display: none; }
-	.lg_visible { opacity: 1; visibility: visible; }
-	.lg_block { display: block; }
-	.lg_inline_block { display: inline-block; }
-	.lg_inline { display: inline; }
-	.lg_table_wrap { display: table; }
-	.lg_table_fixed { table-layout: fixed; }
-	.lg_table_cell { display: table-cell; }
-	.lg_align_top { vertical-align: top; }
-	.lg_align_middle { vertical-align: middle; }
-	.lg_align_baseline { vertical-align: baseline; }
-	.lg_align_bottom { vertical-align: bottom; }
-	.lg_overflow_visible { overflow: visible; }
-	.lg_overflow_hidden { overflow: hidden; }
-	.lg_overflow_auto { overflow: auto; }
-	.lg_overflow_scroll { overflow: scroll; }
-	.lg_overflow_x_visible { overflow-x: visible; }
-	.lg_overflow_x_hidden { overflow-x: hidden; }
-	.lg_overflow_x_auto { overflow-x: auto; }
-	.lg_overflow_x_scroll { overflow-x: scroll; }
-	.lg_overflow_y_visible { overflow-y: visible; }
-	.lg_overflow_y_hidden { overflow-y: hidden; }
-	.lg_overflow_y_auto { overflow-y: auto; }
-	.lg_overflow_y_scroll { overflow-y: scroll; }
-	.lg_left { float: left; }
-	.lg_right { float: right; }
+	.lg-border-box { box-sizing: border-box; }
+	.lg-content-box { box-sizing: content-box; }
+	.lg-inherit-box { box-sizing: inherit; }
+	.lg-hidden { display: none; }
+	.lg-visible { opacity: 1; visibility: visible; }
+	.lg-block { display: block; }
+	.lg-inline-block { display: inline-block; }
+	.lg-inline { display: inline; }
+	.lg-table-wrap { display: table; }
+	.lg-table-fixed { table-layout: fixed; }
+	.lg-table-cell { display: table-cell; }
+	.lg-align-top { vertical-align: top; }
+	.lg-align-middle { vertical-align: middle; }
+	.lg-align-baseline { vertical-align: baseline; }
+	.lg-align-bottom { vertical-align: bottom; }
+	.lg-overflow-visible { overflow: visible; }
+	.lg-overflow-hidden { overflow: hidden; }
+	.lg-overflow-auto { overflow: auto; }
+	.lg-overflow-scroll { overflow: scroll; }
+	.lg-overflow-x-visible { overflow-x: visible; }
+	.lg-overflow-x-hidden { overflow-x: hidden; }
+	.lg-overflow-x-auto { overflow-x: auto; }
+	.lg-overflow-x-scroll { overflow-x: scroll; }
+	.lg-overflow-y-visible { overflow-y: visible; }
+	.lg-overflow-y-hidden { overflow-y: hidden; }
+	.lg-overflow-y-auto { overflow-y: auto; }
+	.lg-overflow-y-scroll { overflow-y: scroll; }
+	.lg-left { float: left; }
+	.lg-right { float: right; }
 
 }
 
 @include media(map-get($mqs, "xl")) {
 	
-	.xl_border_box { box-sizing: border-box; }
-	.xl_content_box { box-sizing: content-box; }
-	.xl_inherit_box { box-sizing: inherit; }
-	.xl_hidden { display: none; }
-	.xl_visible { opacity: 1; visibility: visible; }
-	.xl_block { display: block; }
-	.xl_inline_block { display: inline-block; }
-	.xl_inline { display: inline; }
-	.xl_table_wrap { display: table; }
-	.xl_table_fixed { table-layout: fixed; }
-	.xl_table_cell { display: table-cell; }
-	.xl_align_top { vertical-align: top; }
-	.xl_align_middle { vertical-align: middle; }
-	.xl_align_baseline { vertical-align: baseline; }
-	.xl_align_bottom { vertical-align: bottom; }
-	.xl_overflow_visible { overflow: visible; }
-	.xl_overflow_hidden { overflow: hidden; }
-	.xl_overflow_auto { overflow: auto; }
-	.xl_overflow_scroll { overflow: scroll; }
-	.xl_overflow_x_visible { overflow-x: visible; }
-	.xl_overflow_x_hidden { overflow-x: hidden; }
-	.xl_overflow_x_auto { overflow-x: auto; }
-	.xl_overflow_x_scroll { overflow-x: scroll; }
-	.xl_overflow_y_visible { overflow-y: visible; }
-	.xl_overflow_y_hidden { overflow-y: hidden; }
-	.xl_overflow_y_auto { overflow-y: auto; }
-	.xl_overflow_y_scroll { overflow-y: scroll; }
-	.xl_left { float: left; }
-	.xl_right { float: right; }
+	.xl-border-box { box-sizing: border-box; }
+	.xl-content-box { box-sizing: content-box; }
+	.xl-inherit-box { box-sizing: inherit; }
+	.xl-hidden { display: none; }
+	.xl-visible { opacity: 1; visibility: visible; }
+	.xl-block { display: block; }
+	.xl-inline-block { display: inline-block; }
+	.xl-inline { display: inline; }
+	.xl-table-wrap { display: table; }
+	.xl-table-fixed { table-layout: fixed; }
+	.xl-table-cell { display: table-cell; }
+	.xl-align-top { vertical-align: top; }
+	.xl-align-middle { vertical-align: middle; }
+	.xl-align-baseline { vertical-align: baseline; }
+	.xl-align-bottom { vertical-align: bottom; }
+	.xl-overflow-visible { overflow: visible; }
+	.xl-overflow-hidden { overflow: hidden; }
+	.xl-overflow-auto { overflow: auto; }
+	.xl-overflow-scroll { overflow: scroll; }
+	.xl-overflow-x-visible { overflow-x: visible; }
+	.xl-overflow-x-hidden { overflow-x: hidden; }
+	.xl-overflow-x-auto { overflow-x: auto; }
+	.xl-overflow-x-scroll { overflow-x: scroll; }
+	.xl-overflow-y-visible { overflow-y: visible; }
+	.xl-overflow-y-hidden { overflow-y: hidden; }
+	.xl-overflow-y-auto { overflow-y: auto; }
+	.xl-overflow-y-scroll { overflow-y: scroll; }
+	.xl-left { float: left; }
+	.xl-right { float: right; }
 
 }

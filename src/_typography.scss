@@ -8,9 +8,9 @@
 
 */
 
-.measure_thick { max-width: 34em }
+.measure-thick { max-width: 34em }
 .measure { max-width: 30em }
-.measure_tight { max-width: 20em }
+.measure-tight { max-width: 20em }
 .headline { font-size: 6rem; }
 .big { font-size: 5rem; }
 .f1 { font-size: 3.157rem; }
@@ -29,9 +29,9 @@
 .fw8 { font-weight: 800; }
 .fw9 { font-weight: 900; }
 .bold { font-weight: bold;}
-.lh_normal { line-height: 1; }
-.lh_title { line-height: 1.25; }
-.lh_copy { line-height: 1.5; }
+.lh-normal { line-height: 1; }
+.lh-title { line-height: 1.25; }
+.lh-copy { line-height: 1.5; }
 .upper { text-transform: uppercase; }
 .lowercase { text-transform: lowercase; }
 .caps { text-transform: capitalize; }
@@ -40,16 +40,17 @@
 .underline { text-decoration: underline; }
 .strike { text-decoration: line-through; }
 .tracked { letter-spacing: .16rem; }
-.text_center { text-align: center; }
-.text_left { text-align: left; }
-.text_right { text-align: right; }
-.text_justify { text-align: justify; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
 .truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .nowrap { white-space: nowrap; }
-.break_word { word-wrap: break-word; }
-.small_caps { font-variant: small-caps; }
-.font_family_inherit { font-family: inherit; }
-.font_size_inherit { font-size: inherit; }
+.break-word { word-wrap: break-word; }
+.small-caps { font-variant: small-caps; }
+.font-family-inherit { font-family: inherit; }
+.font-size-inherit { font-size: inherit; }
+.font-color-inherit { color: inherit; }
 .times { font-family: "Times New Roman", Times, serif; }
 .avenir { font-family: "avenir next", avenir, sans-serif; }
 .athelas { font-family: athelas, georgia, serif; }
@@ -60,108 +61,108 @@
 
 @include media(map-get($mqs, "sm")) {
 
-	.sm_measure_thick { max-width: 34rem }
-	.sm_measure { max-width: 30rem }
-	.sm_measure_tight { max-width: 20rem }
-	.sm_headline { font-size: 6rem; }
-	.sm_big { font-size: 5rem; }
-	.sm_f1 { font-size: 3.157rem; }
-	.sm_f2 { font-size: 2.369rem; }
-	.sm_f3 { font-size: 1.777rem; }
-	.sm_f4 { font-size: 1.333rem; }
-	.sm_f5 { font-size: 1rem; }
-	.sm_f6 { font-size: .75rem; }
-	.sm_lh_normal { line-height: 1; }
-	.sm_lh_title { line-height: 1.25; }
-	.sm_lh_copy { line-height: 1.5; }
-	.sm_tracked { letter-spacing: .16rem; }
-	.sm_text_center { text-align: center; }
-	.sm_text_left { text-align: left; }
-	.sm_text_right { text-align: right; }
-	.sm_text_justify { text-align: justify; }
-	.sm_truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-	.sm_nowrap { white-space: nowrap; }
-	.sm_break_word { word-wrap: break-word; }
+	.sm-measure-thick { max-width: 34rem }
+	.sm-measure { max-width: 30rem }
+	.sm-measure-tight { max-width: 20rem }
+	.sm-headline { font-size: 6rem; }
+	.sm-big { font-size: 5rem; }
+	.sm-f1 { font-size: 3.157rem; }
+	.sm-f2 { font-size: 2.369rem; }
+	.sm-f3 { font-size: 1.777rem; }
+	.sm-f4 { font-size: 1.333rem; }
+	.sm-f5 { font-size: 1rem; }
+	.sm-f6 { font-size: .75rem; }
+	.sm-lh-normal { line-height: 1; }
+	.sm-lh-title { line-height: 1.25; }
+	.sm-lh-copy { line-height: 1.5; }
+	.sm-tracked { letter-spacing: .16rem; }
+	.sm-text-center { text-align: center; }
+	.sm-text-left { text-align: left; }
+	.sm-text-right { text-align: right; }
+	.sm-text-justify { text-align: justify; }
+	.sm-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.sm-nowrap { white-space: nowrap; }
+	.sm-break-word { word-wrap: break-word; }
 
 }
 
 @include media(map-get($mqs, "md")) {
 
-	.md_measure_thick { max-width: 34rem }
-	.md_measure { max-width: 30rem }
-	.md_measure_tight { max-width: 20rem }
-	.md_headline { font-size: 6rem; }
-	.md_big { font-size: 5rem; }
-	.md_f1 { font-size: 3.157rem; }
-	.md_f2 { font-size: 2.369rem; }
-	.md_f3 { font-size: 1.777rem; }
-	.md_f4 { font-size: 1.333rem; }
-	.md_f5 { font-size: 1rem; }
-	.md_f6 { font-size: .75rem; }
-	.md_lh_normal { line-height: 1; }
-	.md_lh_title { line-height: 1.25; }
-	.md_lh_copy { line-height: 1.5; }
-	.md_tracked { letter-spacing: .16rem; }
-	.md_text_center { text-align: center; }
-	.md_text_left { text-align: left; }
-	.md_text_right { text-align: right; }
-	.md_text_justify { text-align: justify; }
-	.md_truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-	.md_nowrap { white-space: nowrap; }
-	.md_break_word { word-wrap: break-word; }
+	.md-measure-thick { max-width: 34rem }
+	.md-measure { max-width: 30rem }
+	.md-measure-tight { max-width: 20rem }
+	.md-headline { font-size: 6rem; }
+	.md-big { font-size: 5rem; }
+	.md-f1 { font-size: 3.157rem; }
+	.md-f2 { font-size: 2.369rem; }
+	.md-f3 { font-size: 1.777rem; }
+	.md-f4 { font-size: 1.333rem; }
+	.md-f5 { font-size: 1rem; }
+	.md-f6 { font-size: .75rem; }
+	.md-lh-normal { line-height: 1; }
+	.md-lh-title { line-height: 1.25; }
+	.md-lh-copy { line-height: 1.5; }
+	.md-tracked { letter-spacing: .16rem; }
+	.md-text-center { text-align: center; }
+	.md-text-left { text-align: left; }
+	.md-text-right { text-align: right; }
+	.md-text-justify { text-align: justify; }
+	.md-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.md-nowrap { white-space: nowrap; }
+	.md-break-word { word-wrap: break-word; }
 
 }
 
 @include media(map-get($mqs, "lg")) {
 
-	.lg_measure_thick { max-width: 34rem }
-	.lg_measure { max-width: 30rem }
-	.lg_measure_tight { max-width: 20rem }
-	.lg_headline { font-size: 6rem; }
-	.lg_big { font-size: 5rem; }
-	.lg_f1 { font-size: 3.157rem; }
-	.lg_f2 { font-size: 2.369rem; }
-	.lg_f3 { font-size: 1.777rem; }
-	.lg_f4 { font-size: 1.333rem; }
-	.lg_f5 { font-size: 1rem; }
-	.lg_f6 { font-size: .75rem; }
-	.lg_lh_normal { line-height: 1; }
-	.lg_lh_title { line-height: 1.25; }
-	.lg_lh_copy { line-height: 1.5; }
-	.lg_tracked { letter-spacing: .16rem; }
-	.lg_text_center { text-align: center; }
-	.lg_text_left { text-align: left; }
-	.lg_text_right { text-align: right; }
-	.lg_text_justify { text-align: justify; }
-	.lg_truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-	.lg_nowrap { white-space: nowrap; }
-	.lg_break_word { word-wrap: break-word; }
+	.lg-measure-thick { max-width: 34rem }
+	.lg-measure { max-width: 30rem }
+	.lg-measure-tight { max-width: 20rem }
+	.lg-headline { font-size: 6rem; }
+	.lg-big { font-size: 5rem; }
+	.lg-f1 { font-size: 3.157rem; }
+	.lg-f2 { font-size: 2.369rem; }
+	.lg-f3 { font-size: 1.777rem; }
+	.lg-f4 { font-size: 1.333rem; }
+	.lg-f5 { font-size: 1rem; }
+	.lg-f6 { font-size: .75rem; }
+	.lg-lh-normal { line-height: 1; }
+	.lg-lh-title { line-height: 1.25; }
+	.lg-lh-copy { line-height: 1.5; }
+	.lg-tracked { letter-spacing: .16rem; }
+	.lg-text-center { text-align: center; }
+	.lg-text-left { text-align: left; }
+	.lg-text-right { text-align: right; }
+	.lg-text-justify { text-align: justify; }
+	.lg-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.lg-nowrap { white-space: nowrap; }
+	.lg-break-word { word-wrap: break-word; }
 
 }
 
 @include media(map-get($mqs, "xl")) {
 
-	.xl_measure_thick { max-width: 34rem }
-	.xl_measure { max-width: 30rem }
-	.xl_measure_tight { max-width: 20rem }
-	.xl_headline { font-size: 6rem; }
-	.xl_big { font-size: 5rem; }
-	.xl_f1 { font-size: 3.157rem; }
-	.xl_f2 { font-size: 2.369rem; }
-	.xl_f3 { font-size: 1.777rem; }
-	.xl_f4 { font-size: 1.333rem; }
-	.xl_f5 { font-size: 1rem; }
-	.xl_f6 { font-size: .75rem; }
-	.xl_lh_normal { line-height: 1; }
-	.xl_lh_title { line-height: 1.25; }
-	.xl_lh_copy { line-height: 1.5; }
-	.xl_tracked { letter-spacing: .16rem; }
-	.xl_text_center { text-align: center; }
-	.xl_text_left { text-align: left; }
-	.xl_text_right { text-align: right; }
-	.xl_text_justify { text-align: justify; }
-	.xl_truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-	.xl_nowrap { white-space: nowrap; }
-	.xl_break_word { word-wrap: break-word; }
+	.xl-measure-thick { max-width: 34rem }
+	.xl-measure { max-width: 30rem }
+	.xl-measure-tight { max-width: 20rem }
+	.xl-headline { font-size: 6rem; }
+	.xl-big { font-size: 5rem; }
+	.xl-f1 { font-size: 3.157rem; }
+	.xl-f2 { font-size: 2.369rem; }
+	.xl-f3 { font-size: 1.777rem; }
+	.xl-f4 { font-size: 1.333rem; }
+	.xl-f5 { font-size: 1rem; }
+	.xl-f6 { font-size: .75rem; }
+	.xl-lh-normal { line-height: 1; }
+	.xl-lh-title { line-height: 1.25; }
+	.xl-lh-copy { line-height: 1.5; }
+	.xl-tracked { letter-spacing: .16rem; }
+	.xl-text-center { text-align: center; }
+	.xl-text-left { text-align: left; }
+	.xl-text-right { text-align: right; }
+	.xl-text-justify { text-align: justify; }
+	.xl-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.xl-nowrap { white-space: nowrap; }
+	.xl-break-word { word-wrap: break-word; }
 
 }

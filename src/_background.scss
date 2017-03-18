@@ -4,108 +4,108 @@
 
 */
 
-.bg_cover { background-size: cover !important; }
-.bg_contain { background-size: contain; }
-.bg_fixed { background-attachment: fixed; }
-.bg_repeat { background-repeat: repeat; }
-.bg_border_box { background-clip: border-box; }
-.bg_padding_box { background-clip: padding-box; }
-.bg_content_box { background-clip: content-box; }
-.bg_no_repeat { background-repeat: no-repeat; }
-.bg_x_repeat { background-repeat: repeat-x; }
-.bg_y_repeat { background-repeat: repeat-y; }
-.bg_repeat_space { background-repeat: space; }
-.bg_repeat_around { background-repeat: round; }
-.bg_center { background-repeat: no-repeat; background-position: center center; }
-.bg_top {background-repeat: no-repeat; background-position: top center; }
-.bg_right { background-repeat: no-repeat; background-position: center right; }
-.bg_bottom { background-repeat: no-repeat; background-position: bottom center; }
-.bg_left { background-repeat: no-repeat; background-position: center left; }
+.bg-cover { background-size: cover !important; }
+.bg-contain { background-size: contain; }
+.bg-fixed { background-attachment: fixed; }
+.bg-repeat { background-repeat: repeat; }
+.bg-border-box { background-clip: border-box; }
+.bg-padding-box { background-clip: padding-box; }
+.bg-content-box { background-clip: content-box; }
+.bg-no-repeat { background-repeat: no-repeat; }
+.bg-x-repeat { background-repeat: repeat-x; }
+.bg-y-repeat { background-repeat: repeat-y; }
+.bg-repeat-space { background-repeat: space; }
+.bg-repeat-around { background-repeat: round; }
+.bg-center { background-repeat: no-repeat; background-position: center center; }
+.bg-top {background-repeat: no-repeat; background-position: top center; }
+.bg-right { background-repeat: no-repeat; background-position: center right; }
+.bg-bottom { background-repeat: no-repeat; background-position: bottom center; }
+.bg-left { background-repeat: no-repeat; background-position: center left; }
 
 @include media(map-get($mqs, "sm")) {
 	
-	.sm_bg_cover { background-size: cover !important; }
-	.sm_bg_contain { background-size: contain; }
-	.sm_bg_fixed { background-attachment: fixed; }
-	.sm_bg_repeat { background-repeat: repeat; }
-	.sm_bg_border_box { background-clip: border-box; }
-	.sm_bg_padding_box { background-clip: padding-box; }
-	.sm_bg_content_box { background-clip: content-box; }
-	.sm_bg_no_repeat { background-repeat: no-repeat; }
-	.sm_bg_x_repeat { background-repeat: repeat-x; }
-	.sm_bg_y_repeat { background-repeat: repeat-y; }
-	.sm_bg_repeat_space { background-repeat: space; }
-	.sm_bg_repeat_around { background-repeat: round; }
-	.sm_bg_center { background-repeat: no-repeat; background-position: center center; }
-	.sm_bg_top {background-repeat: no-repeat; background-position: top center; }
-	.sm_bg_right { background-repeat: no-repeat; background-position: center right; }
-	.sm_bg_bottom { background-repeat: no-repeat; background-position: bottom center; }
-	.sm_bg_left { background-repeat: no-repeat; background-position: center left; }
+	.sm-bg-cover { background-size: cover !important; }
+	.sm-bg-contain { background-size: contain; }
+	.sm-bg-fixed { background-attachment: fixed; }
+	.sm-bg-repeat { background-repeat: repeat; }
+	.sm-bg-border-box { background-clip: border-box; }
+	.sm-bg-padding-box { background-clip: padding-box; }
+	.sm-bg-content-box { background-clip: content-box; }
+	.sm-bg-no-repeat { background-repeat: no-repeat; }
+	.sm-bg-x-repeat { background-repeat: repeat-x; }
+	.sm-bg-y-repeat { background-repeat: repeat-y; }
+	.sm-bg-repeat-space { background-repeat: space; }
+	.sm-bg-repeat-around { background-repeat: round; }
+	.sm-bg-center { background-repeat: no-repeat; background-position: center center; }
+	.sm-bg-top {background-repeat: no-repeat; background-position: top center; }
+	.sm-bg-right { background-repeat: no-repeat; background-position: center right; }
+	.sm-bg-bottom { background-repeat: no-repeat; background-position: bottom center; }
+	.sm-bg-left { background-repeat: no-repeat; background-position: center left; }
 
 }
 
 @include media(map-get($mqs, "md")) {
 	
-	.md_bg_cover { background-size: cover !important; }
-	.md_bg_contain { background-size: contain; }
-	.md_bg_fixed { background-attachment: fixed; }
-	.md_bg_repeat { background-repeat: repeat; }
-	.md_bg_border_box { background-clip: border-box; }
-	.md_bg_padding_box { background-clip: padding-box; }
-	.md_bg_content_box { background-clip: content-box; }
-	.md_bg_no_repeat { background-repeat: no-repeat; }
-	.md_bg_x_repeat { background-repeat: repeat-x; }
-	.md_bg_y_repeat { background-repeat: repeat-y; }
-	.md_bg_repeat_space { background-repeat: space; }
-	.md_bg_repeat_around { background-repeat: round; }
-	.md_bg_center { background-repeat: no-repeat; background-position: center center; }
-	.md_bg_top {background-repeat: no-repeat; background-position: top center; }
-	.md_bg_right { background-repeat: no-repeat; background-position: center right; }
-	.md_bg_bottom { background-repeat: no-repeat; background-position: bottom center; }
-	.md_bg_left { background-repeat: no-repeat; background-position: center left; }
+	.md-bg-cover { background-size: cover !important; }
+	.md-bg-contain { background-size: contain; }
+	.md-bg-fixed { background-attachment: fixed; }
+	.md-bg-repeat { background-repeat: repeat; }
+	.md-bg-border-box { background-clip: border-box; }
+	.md-bg-padding-box { background-clip: padding-box; }
+	.md-bg-content-box { background-clip: content-box; }
+	.md-bg-no-repeat { background-repeat: no-repeat; }
+	.md-bg-x-repeat { background-repeat: repeat-x; }
+	.md-bg-y-repeat { background-repeat: repeat-y; }
+	.md-bg-repeat-space { background-repeat: space; }
+	.md-bg-repeat-around { background-repeat: round; }
+	.md-bg-center { background-repeat: no-repeat; background-position: center center; }
+	.md-bg-top {background-repeat: no-repeat; background-position: top center; }
+	.md-bg-right { background-repeat: no-repeat; background-position: center right; }
+	.md-bg-bottom { background-repeat: no-repeat; background-position: bottom center; }
+	.md-bg-left { background-repeat: no-repeat; background-position: center left; }
 
 }
 
 @include media(map-get($mqs, "lg")) {
 	
-	.lg_bg_cover { background-size: cover !important; }
-	.lg_bg_contain { background-size: contain; }
-	.lg_bg_fixed { background-attachment: fixed; }
-	.lg_bg_repeat { background-repeat: repeat; }
-	.lg_bg_border_box { background-clip: border-box; }
-	.lg_bg_padding_box { background-clip: padding-box; }
-	.lg_bg_content_box { background-clip: content-box; }
-	.lg_bg_no_repeat { background-repeat: no-repeat; }
-	.lg_bg_x_repeat { background-repeat: repeat-x; }
-	.lg_bg_y_repeat { background-repeat: repeat-y; }
-	.lg_bg_repeat_space { background-repeat: space; }
-	.lg_bg_repeat_around { background-repeat: round; }
-	.lg_bg_center { background-repeat: no-repeat; background-position: center center; }
-	.lg_bg_top {background-repeat: no-repeat; background-position: top center; }
-	.lg_bg_right { background-repeat: no-repeat; background-position: center right; }
-	.lg_bg_bottom { background-repeat: no-repeat; background-position: bottom center; }
-	.lg_bg_left { background-repeat: no-repeat; background-position: center left; }
+	.lg-bg-cover { background-size: cover !important; }
+	.lg-bg-contain { background-size: contain; }
+	.lg-bg-fixed { background-attachment: fixed; }
+	.lg-bg-repeat { background-repeat: repeat; }
+	.lg-bg-border-box { background-clip: border-box; }
+	.lg-bg-padding-box { background-clip: padding-box; }
+	.lg-bg-content-box { background-clip: content-box; }
+	.lg-bg-no-repeat { background-repeat: no-repeat; }
+	.lg-bg-x-repeat { background-repeat: repeat-x; }
+	.lg-bg-y-repeat { background-repeat: repeat-y; }
+	.lg-bg-repeat-space { background-repeat: space; }
+	.lg-bg-repeat-around { background-repeat: round; }
+	.lg-bg-center { background-repeat: no-repeat; background-position: center center; }
+	.lg-bg-top {background-repeat: no-repeat; background-position: top center; }
+	.lg-bg-right { background-repeat: no-repeat; background-position: center right; }
+	.lg-bg-bottom { background-repeat: no-repeat; background-position: bottom center; }
+	.lg-bg-left { background-repeat: no-repeat; background-position: center left; }
 
 }
 
 @include media(map-get($mqs, "xl")) {
 	
-	.xl_bg_cover { background-size: cover !important; }
-	.xl_bg_contain { background-size: contain; }
-	.xl_bg_fixed { background-attachment: fixed; }
-	.xl_bg_repeat { background-repeat: repeat; }
-	.xl_bg_border_box { background-clip: border-box; }
-	.xl_bg_padding_box { background-clip: padding-box; }
-	.xl_bg_content_box { background-clip: content-box; }
-	.xl_bg_no_repeat { background-repeat: no-repeat; }
-	.xl_bg_x_repeat { background-repeat: repeat-x; }
-	.xl_bg_y_repeat { background-repeat: repeat-y; }
-	.xl_bg_repeat_space { background-repeat: space; }
-	.xl_bg_repeat_around { background-repeat: round; }
-	.xl_bg_center { background-repeat: no-repeat; background-position: center center; }
-	.xl_bg_top {background-repeat: no-repeat; background-position: top center; }
-	.xl_bg_right { background-repeat: no-repeat; background-position: center right; }
-	.xl_bg_bottom { background-repeat: no-repeat; background-position: bottom center; }
-	.xl_bg_left { background-repeat: no-repeat; background-position: center left; }
+	.xl-bg-cover { background-size: cover !important; }
+	.xl-bg-contain { background-size: contain; }
+	.xl-bg-fixed { background-attachment: fixed; }
+	.xl-bg-repeat { background-repeat: repeat; }
+	.xl-bg-border-box { background-clip: border-box; }
+	.xl-bg-padding-box { background-clip: padding-box; }
+	.xl-bg-content-box { background-clip: content-box; }
+	.xl-bg-no-repeat { background-repeat: no-repeat; }
+	.xl-bg-x-repeat { background-repeat: repeat-x; }
+	.xl-bg-y-repeat { background-repeat: repeat-y; }
+	.xl-bg-repeat-space { background-repeat: space; }
+	.xl-bg-repeat-around { background-repeat: round; }
+	.xl-bg-center { background-repeat: no-repeat; background-position: center center; }
+	.xl-bg-top {background-repeat: no-repeat; background-position: top center; }
+	.xl-bg-right { background-repeat: no-repeat; background-position: center right; }
+	.xl-bg-bottom { background-repeat: no-repeat; background-position: bottom center; }
+	.xl-bg-left { background-repeat: no-repeat; background-position: center left; }
 
 }

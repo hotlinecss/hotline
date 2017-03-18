@@ -4,7 +4,7 @@
 
 */
 
-.parent_lh_title {
+.parent-lh-title {
 	h1,
 	h2,
 	h3,
@@ -15,7 +15,7 @@
 	}
 }
 
-.parent_lh_copy {
+.parent-lh-copy {
 	p,
 	ul,
 	ol { 
@@ -23,7 +23,7 @@
 	}
 }
 
-.parent_list {
+.parent-list {
 	ol,
 	ul {
 		padding-left: 0;
@@ -31,13 +31,13 @@
 	}
 }
 
-.parent_paragraph { 
+.parent-paragraph { 
 	p + p {
 		margin-bottom: 1.5em;
 	}
 }
 
-.parent_measure_thick p { max-width: 34em; }
-.parent_measure p { max-width: 30em; }
-.parent_measure_tight p { max-width: 20em; }
-.parent_img img { display: block; max-width: 100%; width: 100%; }
+.parent-measure-thick p { max-width: 34em; }
+.parent-measure p { max-width: 30em; }
+.parent-measure-tight p { max-width: 20em; }
+.parent-img img { display: block; max-width: 100%; width: 100%; }
