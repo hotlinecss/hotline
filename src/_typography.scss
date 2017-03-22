@@ -12,13 +12,13 @@
 .measure { max-width: 30em }
 .measure-tight { max-width: 20em }
 .headline { font-size: 6rem; }
-.big { font-size: 5rem; }
-.f1 { font-size: 3.157rem; }
-.f2 { font-size: 2.369rem; }
-.f3 { font-size: 1.777rem; }
-.f4 { font-size: 1.333rem; }
+.sub-headline { font-size: 5rem; }
+.f1 { font-size: 3rem; }
+.f2 { font-size: 2.5rem; }
+.f3 { font-size: 1.5rem; }
+.f4 { font-size: 1.25rem; }
 .f5 { font-size: 1rem; }
-.f6 { font-size: .75rem; }
+.f6 { font-size: .875rem; }
 .fw1 { font-weight: 100; }
 .fw2 { font-weight: 200; }
 .fw3 { font-weight: 300; }
@@ -65,13 +65,13 @@
 	.sm-measure { max-width: 30rem }
 	.sm-measure-tight { max-width: 20rem }
 	.sm-headline { font-size: 6rem; }
-	.sm-big { font-size: 5rem; }
-	.sm-f1 { font-size: 3.157rem; }
-	.sm-f2 { font-size: 2.369rem; }
-	.sm-f3 { font-size: 1.777rem; }
-	.sm-f4 { font-size: 1.333rem; }
+	.sm-sub-headline { font-size: 5rem; }
+	.sm-f1 { font-size: 3rem; }
+	.sm-f2 { font-size: 2.5rem; }
+	.sm-f3 { font-size: 1.5rem; }
+	.sm-f4 { font-size: 1.25rem; }
 	.sm-f5 { font-size: 1rem; }
-	.sm-f6 { font-size: .75rem; }
+	.sm-f6 { font-size: .875rem; }
 	.sm-lh-normal { line-height: 1; }
 	.sm-lh-title { line-height: 1.25; }
 	.sm-lh-copy { line-height: 1.5; }
@@ -92,13 +92,13 @@
 	.md-measure { max-width: 30rem }
 	.md-measure-tight { max-width: 20rem }
 	.md-headline { font-size: 6rem; }
-	.md-big { font-size: 5rem; }
-	.md-f1 { font-size: 3.157rem; }
-	.md-f2 { font-size: 2.369rem; }
-	.md-f3 { font-size: 1.777rem; }
-	.md-f4 { font-size: 1.333rem; }
+	.md-sub-headline { font-size: 5rem; }
+	.md-f1 { font-size: 3rem; }
+	.md-f2 { font-size: 2.5rem; }
+	.md-f3 { font-size: 1.5rem; }
+	.md-f4 { font-size: 1.25rem; }
 	.md-f5 { font-size: 1rem; }
-	.md-f6 { font-size: .75rem; }
+	.md-f6 { font-size: .875rem; }
 	.md-lh-normal { line-height: 1; }
 	.md-lh-title { line-height: 1.25; }
 	.md-lh-copy { line-height: 1.5; }
@@ -119,13 +119,13 @@
 	.lg-measure { max-width: 30rem }
 	.lg-measure-tight { max-width: 20rem }
 	.lg-headline { font-size: 6rem; }
-	.lg-big { font-size: 5rem; }
-	.lg-f1 { font-size: 3.157rem; }
-	.lg-f2 { font-size: 2.369rem; }
-	.lg-f3 { font-size: 1.777rem; }
-	.lg-f4 { font-size: 1.333rem; }
+	.lg-sub-headline { font-size: 5rem; }
+	.lg-f1 { font-size: 3rem; }
+	.lg-f2 { font-size: 2.5rem; }
+	.lg-f3 { font-size: 1.5rem; }
+	.lg-f4 { font-size: 1.25rem; }
 	.lg-f5 { font-size: 1rem; }
-	.lg-f6 { font-size: .75rem; }
+	.lg-f6 { font-size: .875rem; }
 	.lg-lh-normal { line-height: 1; }
 	.lg-lh-title { line-height: 1.25; }
 	.lg-lh-copy { line-height: 1.5; }
@@ -146,13 +146,13 @@
 	.xl-measure { max-width: 30rem }
 	.xl-measure-tight { max-width: 20rem }
 	.xl-headline { font-size: 6rem; }
-	.xl-big { font-size: 5rem; }
-	.xl-f1 { font-size: 3.157rem; }
-	.xl-f2 { font-size: 2.369rem; }
-	.xl-f3 { font-size: 1.777rem; }
-	.xl-f4 { font-size: 1.333rem; }
+	.xl-sub-headline { font-size: 5rem; }
+	.xl-f1 { font-size: 3rem; }
+	.xl-f2 { font-size: 2.5rem; }
+	.xl-f3 { font-size: 1.5rem; }
+	.xl-f4 { font-size: 1.25rem; }
 	.xl-f5 { font-size: 1rem; }
-	.xl-f6 { font-size: .75rem; }
+	.xl-f6 { font-size: .875rem; }
 	.xl-lh-normal { line-height: 1; }
 	.xl-lh-title { line-height: 1.25; }
 	.xl-lh-copy { line-height: 1.5; }
