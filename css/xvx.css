@@ -1,4 +1,4 @@
-/* xvx - 3.0.0 - MIT */	/*
+/* xvx - 3.0.1 - MIT */	/*
 
 	Basic reset
 	
@@ -646,24 +646,24 @@ textarea {
   font-size: 6rem;
 }
 
-.big {
+.sub-headline {
   font-size: 5rem;
 }
 
 .f1 {
-  font-size: 3.157rem;
+  font-size: 3rem;
 }
 
 .f2 {
-  font-size: 2.369rem;
+  font-size: 2.5rem;
 }
 
 .f3 {
-  font-size: 1.777rem;
+  font-size: 1.5rem;
 }
 
 .f4 {
-  font-size: 1.333rem;
+  font-size: 1.25rem;
 }
 
 .f5 {
@@ -671,7 +671,7 @@ textarea {
 }
 
 .f6 {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 
 .fw1 {
@@ -3451,26 +3451,26 @@ textarea {
   .sm-headline {
     font-size: 6rem;
   }
-  .sm-big {
+  .sm-sub-headline {
     font-size: 5rem;
   }
   .sm-f1 {
-    font-size: 3.157rem;
+    font-size: 3rem;
   }
   .sm-f2 {
-    font-size: 2.369rem;
+    font-size: 2.5rem;
   }
   .sm-f3 {
-    font-size: 1.777rem;
+    font-size: 1.5rem;
   }
   .sm-f4 {
-    font-size: 1.333rem;
+    font-size: 1.25rem;
   }
   .sm-f5 {
     font-size: 1rem;
   }
   .sm-f6 {
-    font-size: .75rem;
+    font-size: .875rem;
   }
   .sm-lh-normal {
     line-height: 1;
@@ -4550,26 +4550,26 @@ textarea {
   .md-headline {
     font-size: 6rem;
   }
-  .md-big {
+  .md-sub-headline {
     font-size: 5rem;
   }
   .md-f1 {
-    font-size: 3.157rem;
+    font-size: 3rem;
   }
   .md-f2 {
-    font-size: 2.369rem;
+    font-size: 2.5rem;
   }
   .md-f3 {
-    font-size: 1.777rem;
+    font-size: 1.5rem;
   }
   .md-f4 {
-    font-size: 1.333rem;
+    font-size: 1.25rem;
   }
   .md-f5 {
     font-size: 1rem;
   }
   .md-f6 {
-    font-size: .75rem;
+    font-size: .875rem;
   }
   .md-lh-normal {
     line-height: 1;
@@ -5649,26 +5649,26 @@ textarea {
   .lg-headline {
     font-size: 6rem;
   }
-  .lg-big {
+  .lg-sub-headline {
     font-size: 5rem;
   }
   .lg-f1 {
-    font-size: 3.157rem;
+    font-size: 3rem;
   }
   .lg-f2 {
-    font-size: 2.369rem;
+    font-size: 2.5rem;
   }
   .lg-f3 {
-    font-size: 1.777rem;
+    font-size: 1.5rem;
   }
   .lg-f4 {
-    font-size: 1.333rem;
+    font-size: 1.25rem;
   }
   .lg-f5 {
     font-size: 1rem;
   }
   .lg-f6 {
-    font-size: .75rem;
+    font-size: .875rem;
   }
   .lg-lh-normal {
     line-height: 1;
@@ -6748,26 +6748,26 @@ textarea {
   .xl-headline {
     font-size: 6rem;
   }
-  .xl-big {
+  .xl-sub-headline {
     font-size: 5rem;
   }
   .xl-f1 {
-    font-size: 3.157rem;
+    font-size: 3rem;
   }
   .xl-f2 {
-    font-size: 2.369rem;
+    font-size: 2.5rem;
   }
   .xl-f3 {
-    font-size: 1.777rem;
+    font-size: 1.5rem;
   }
   .xl-f4 {
-    font-size: 1.333rem;
+    font-size: 1.25rem;
   }
   .xl-f5 {
     font-size: 1rem;
   }
   .xl-f6 {
-    font-size: .75rem;
+    font-size: .875rem;
   }
   .xl-lh-normal {
     line-height: 1;
