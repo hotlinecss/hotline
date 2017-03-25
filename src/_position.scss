@@ -77,10 +77,12 @@
 .z-2 { z-index: 2; }
 .z-3 { z-index: 3; }
 .z-4 { z-index: 4; }
+.z-5 { z-index: 5; }
 .z-999 { z-index: 999; }
+.z-max { z-index: 2147483647; }
 
 @include media(map-get($mqs, "sm")) {
-	
+
 	.sm-absolute { position: absolute; }
 	.sm-fixed { position: fixed; }
 	.sm-relative { position: relative; }
@@ -150,12 +152,13 @@
 	.sm-z-2 { z-index: 2; }
 	.sm-z-3 { z-index: 3; }
 	.sm-z-4 { z-index: 4; }
+	.sm-z-5 { z-index: 5; }
 	.sm-z-999 { z-index: 999; }
-
+	.sm-z-max { z-index: 2147483647; }
 }
 
 @include media(map-get($mqs, "md")) {
-	
+
 	.md-absolute { position: absolute; }
 	.md-fixed { position: fixed; }
 	.md-relative { position: relative; }
@@ -225,12 +228,14 @@
 	.md-z-2 { z-index: 2; }
 	.md-z-3 { z-index: 3; }
 	.md-z-4 { z-index: 4; }
+	.md-z-5 { z-index: 5; }
 	.md-z-999 { z-index: 999; }
+	.md-z-max { z-index: 2147483647; }
 
 }
 
 @include media(map-get($mqs, "lg")) {
-	
+
 	.lg-absolute { position: absolute; }
 	.lg-fixed { position: fixed; }
 	.lg-relative { position: relative; }
@@ -300,12 +305,14 @@
 	.lg-z-2 { z-index: 2; }
 	.lg-z-3 { z-index: 3; }
 	.lg-z-4 { z-index: 4; }
+	.lg-z-5 { z-index: 5; }
 	.lg-z-999 { z-index: 999; }
+	.lg-z-max { z-index: 2147483647; }
 
 }
 
 @include media(map-get($mqs, "xl")) {
-	
+
 	.xl-absolute { position: absolute; }
 	.xl-fixed { position: fixed; }
 	.xl-relative { position: relative; }
@@ -375,6 +382,8 @@
 	.xl-z-2 { z-index: 2; }
 	.xl-z-3 { z-index: 3; }
 	.xl-z-4 { z-index: 4; }
+	.xl-z-5 { z-index: 5; }
 	.xl-z-999 { z-index: 999; }
+	.xl-z-max { z-index: 2147483647; }
 
 }

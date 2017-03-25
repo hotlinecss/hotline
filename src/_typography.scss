@@ -46,6 +46,7 @@
 .text-justify { text-align: justify; }
 .truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .nowrap { white-space: nowrap; }
+.ws-normal { white-space: normal; }
 .break-word { word-wrap: break-word; }
 .small-caps { font-variant: small-caps; }
 .font-family-inherit { font-family: inherit; }
@@ -82,6 +83,7 @@
 	.sm-text-justify { text-align: justify; }
 	.sm-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 	.sm-nowrap { white-space: nowrap; }
+	.sm-ws-normal { white-space: normal; }
 	.sm-break-word { word-wrap: break-word; }
 
 }
@@ -109,6 +111,7 @@
 	.md-text-justify { text-align: justify; }
 	.md-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 	.md-nowrap { white-space: nowrap; }
+	.md-ws-normal { white-space: normal; }
 	.md-break-word { word-wrap: break-word; }
 
 }
@@ -136,6 +139,7 @@
 	.lg-text-justify { text-align: justify; }
 	.lg-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 	.lg-nowrap { white-space: nowrap; }
+	.lg-ws-normal { white-space: normal; }
 	.lg-break-word { word-wrap: break-word; }
 
 }
@@ -163,6 +167,7 @@
 	.xl-text-justify { text-align: justify; }
 	.xl-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 	.xl-nowrap { white-space: nowrap; }
+	.xl-ws-normal { white-space: normal; }
 	.xl-break-word { word-wrap: break-word; }
 
 }

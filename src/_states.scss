@@ -6,7 +6,7 @@
 
 .overlay .overlay-item {
 	opacity: 0;
-	transition: opacity 150ms ease-in;
+	transition: opacity 200ms ease-in-out;
 
 	&:hover,
 	&:focus,
@@ -16,7 +16,7 @@
 }
 
 .hover-opacity {
-  transition: opacity 150ms ease-in;
+  transition: opacity 200ms ease-in-out;
 
   &:hover,
   &:focus,
@@ -40,7 +40,7 @@
   &:focus,
   &:active {
     border-bottom: .20em solid currentColor;
-    transition: border-color 150ms ease-in;
+    transition: border-color 200ms ease-in-out;
   }
 }
 
@@ -53,7 +53,7 @@
 .bg-animate {
   &:hover,
   &:focus {
-    transition: background-color 150ms ease-in;
+    transition: background-color 200ms ease-in-out;
   }
 }
 
@@ -61,7 +61,7 @@
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);
-  transition: transform 150ms ease-out;
+  transition: transform 200ms ease-out;
 
   &:hover,
   &:focus {
@@ -74,7 +74,7 @@
 }
 
 .hover-shadow {
-  transition: box-shadow 150ms ease-in;
+  transition: box-shadow 200ms ease-in-out;
 
   &:hover,
   &:focus,
@@ -84,7 +84,7 @@
 }
 
 .hover-shadow-big {
-  transition: box-shadow 150ms ease-in;
+  transition: box-shadow 200ms ease-in-out;
 
   &:hover,
   &:focus,
@@ -95,8 +95,8 @@
 
 .hover-grayscale {
   filter: grayscale(100%);
-  transition: filter 150ms ease-in;
-  
+  transition: filter 200ms ease-in-out;
+
   &:hover,
   &:focus,
   &:active {
