@@ -4,6 +4,7 @@
 
 */
 
+.fill { top: 0; right: 0; bottom: 0; left: 0; }
 .cf::before, .cf::after { content: " "; display: table; }
 .cf::after { clear: both; }
 .center { margin-left: auto; margin-right: auto; }
@@ -16,6 +17,7 @@
 
 @include media(map-get($mqs, "sm")) {
 
+	.sm-fill { top: 0; right: 0; bottom: 0; left: 0; }
 	.sm-aspect-ratio { height: 0; position: relative }
 	.sm-aspect-ratio--16x9 { padding-bottom: 56.25%; }
 	.sm-aspect-ratio--8x5 { padding-bottom: 62.5%; }
@@ -27,6 +29,7 @@
 
 @include media(map-get($mqs, "md")) {
 
+	.md-fill { top: 0; right: 0; bottom: 0; left: 0; }
 	.md-aspect-ratio { height: 0; position: relative }
 	.md-aspect-ratio--16x9 { padding-bottom: 56.25%; }
 	.md-aspect-ratio--8x5 { padding-bottom: 62.5%; }
@@ -38,6 +41,7 @@
 
 @include media(map-get($mqs, "lg")) {
 
+	.lg-fill { top: 0; right: 0; bottom: 0; left: 0; }
 	.lg-aspect-ratio { height: 0; position: relative }
 	.lg-aspect-ratio--16x9 { padding-bottom: 56.25%; }
 	.lg-aspect-ratio--8x5 { padding-bottom: 62.5%; }
@@ -49,6 +53,7 @@
 
 @include media(map-get($mqs, "xl")) {
 
+	.xl-fill { top: 0; right: 0; bottom: 0; left: 0; }
 	.xl-aspect-ratio { height: 0; position: relative }
 	.xl-aspect-ratio--16x9 { padding-bottom: 56.25%; }
 	.xl-aspect-ratio--8x5 { padding-bottom: 62.5%; }
