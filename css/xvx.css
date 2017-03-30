@@ -1,4 +1,4 @@
-/* xvx - 3.1.0 - MIT */	/*
+/* xvx - 3.1.1 - MIT */	/*
 
 	Basic reset
 
@@ -1992,6 +1992,13 @@ textarea {
 	Utilities
 
 */
+.fill {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .cf::before, .cf::after {
   content: " ";
   display: table;
@@ -4181,6 +4188,12 @@ textarea {
     background-repeat: no-repeat;
     background-position: center left;
   }
+  .sm-fill {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
   .sm-aspect-ratio {
     height: 0;
     position: relative;
@@ -5294,6 +5307,12 @@ textarea {
   .md-bg-left {
     background-repeat: no-repeat;
     background-position: center left;
+  }
+  .md-fill {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
   .md-aspect-ratio {
     height: 0;
@@ -6409,6 +6428,12 @@ textarea {
     background-repeat: no-repeat;
     background-position: center left;
   }
+  .lg-fill {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
   .lg-aspect-ratio {
     height: 0;
     position: relative;
@@ -7522,6 +7547,12 @@ textarea {
   .xl-bg-left {
     background-repeat: no-repeat;
     background-position: center left;
+  }
+  .xl-fill {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
   .xl-aspect-ratio {
     height: 0;
