@@ -648,7 +648,7 @@ textarea {
 		lh = line-height
 
 */
-.measure-thick {
+.measure--thick {
   max-width: 34em;
 }
 
@@ -656,7 +656,7 @@ textarea {
   max-width: 30em;
 }
 
-.measure-tight {
+.measure--tight {
   max-width: 20em;
 }
 
@@ -673,7 +673,7 @@ textarea {
 }
 
 .f2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 
 .f3 {
@@ -1723,22 +1723,22 @@ textarea {
   border-width: 1px;
 }
 
-.b-top {
+.b--top {
   border-top-style: solid;
   border-top-width: 1px;
 }
 
-.b-right {
+.b--right {
   border-right-style: solid;
   border-bottom-width: 1px;
 }
 
-.b-bottom {
+.b--bottom {
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
 
-.b-left {
+.b--left {
   border-left-style: solid;
   border-top-width: 1px;
 }
@@ -1759,11 +1759,11 @@ textarea {
   border-left-width: 0;
 }
 
-.b-tight {
+.b--tight {
   border-width: 2px;
 }
 
-.b-thick {
+.b--thick {
   border-width: 4px;
 }
 
@@ -3486,14 +3486,14 @@ textarea {
   .sm-right {
     float: right;
   }
-  .sm-measure-thick {
-    max-width: 34rem;
+  .sm-measure--thick {
+    max-width: 34em;
   }
   .sm-measure {
-    max-width: 30rem;
+    max-width: 30em;
   }
-  .sm-measure-tight {
-    max-width: 20rem;
+  .sm-measure--tight {
+    max-width: 20em;
   }
   .sm-headline {
     font-size: 6rem;
@@ -3505,7 +3505,7 @@ textarea {
     font-size: 3rem;
   }
   .sm-f2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   .sm-f3 {
     font-size: 1.5rem;
@@ -3519,6 +3519,36 @@ textarea {
   .sm-f6 {
     font-size: .875rem;
   }
+  .sm-fw1 {
+    font-weight: 100;
+  }
+  .sm-fw2 {
+    font-weight: 200;
+  }
+  .sm-fw3 {
+    font-weight: 300;
+  }
+  .sm-fw4 {
+    font-weight: 400;
+  }
+  .sm-fw5 {
+    font-weight: 500;
+  }
+  .sm-fw6 {
+    font-weight: 600;
+  }
+  .sm-fw7 {
+    font-weight: 700;
+  }
+  .sm-fw8 {
+    font-weight: 800;
+  }
+  .sm-fw9 {
+    font-weight: 900;
+  }
+  .sm-bold {
+    font-weight: bold;
+  }
   .sm-lh-normal {
     line-height: 1;
   }
@@ -3527,6 +3557,27 @@ textarea {
   }
   .sm-lh-copy {
     line-height: 1.5;
+  }
+  .sm-upper {
+    text-transform: uppercase;
+  }
+  .sm-lowercase {
+    text-transform: lowercase;
+  }
+  .sm-caps {
+    text-transform: capitalize;
+  }
+  .sm-normal {
+    font-style: normal;
+  }
+  .sm-italic {
+    font-style: italic;
+  }
+  .sm-underline {
+    text-decoration: underline;
+  }
+  .sm-strike {
+    text-decoration: line-through;
   }
   .sm-tracked {
     letter-spacing: .16rem;
@@ -3556,6 +3607,18 @@ textarea {
   }
   .sm-break-word {
     word-wrap: break-word;
+  }
+  .sm-small-caps {
+    font-variant: small-caps;
+  }
+  .sm-font-family-inherit {
+    font-family: inherit;
+  }
+  .sm-font-size-inherit {
+    font-size: inherit;
+  }
+  .sm-font-color-inherit {
+    color: inherit;
   }
   .sm-absolute {
     position: absolute;
@@ -4610,14 +4673,14 @@ textarea {
   .md-right {
     float: right;
   }
-  .md-measure-thick {
-    max-width: 34rem;
+  .md-measure--thick {
+    max-width: 34em;
   }
   .md-measure {
-    max-width: 30rem;
+    max-width: 30em;
   }
-  .md-measure-tight {
-    max-width: 20rem;
+  .md-measure--tight {
+    max-width: 20em;
   }
   .md-headline {
     font-size: 6rem;
@@ -4629,7 +4692,7 @@ textarea {
     font-size: 3rem;
   }
   .md-f2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   .md-f3 {
     font-size: 1.5rem;
@@ -4643,6 +4706,36 @@ textarea {
   .md-f6 {
     font-size: .875rem;
   }
+  .md-fw1 {
+    font-weight: 100;
+  }
+  .md-fw2 {
+    font-weight: 200;
+  }
+  .md-fw3 {
+    font-weight: 300;
+  }
+  .md-fw4 {
+    font-weight: 400;
+  }
+  .md-fw5 {
+    font-weight: 500;
+  }
+  .md-fw6 {
+    font-weight: 600;
+  }
+  .md-fw7 {
+    font-weight: 700;
+  }
+  .md-fw8 {
+    font-weight: 800;
+  }
+  .md-fw9 {
+    font-weight: 900;
+  }
+  .md-bold {
+    font-weight: bold;
+  }
   .md-lh-normal {
     line-height: 1;
   }
@@ -4651,6 +4744,27 @@ textarea {
   }
   .md-lh-copy {
     line-height: 1.5;
+  }
+  .md-upper {
+    text-transform: uppercase;
+  }
+  .md-lowercase {
+    text-transform: lowercase;
+  }
+  .md-caps {
+    text-transform: capitalize;
+  }
+  .md-normal {
+    font-style: normal;
+  }
+  .md-italic {
+    font-style: italic;
+  }
+  .md-underline {
+    text-decoration: underline;
+  }
+  .md-strike {
+    text-decoration: line-through;
   }
   .md-tracked {
     letter-spacing: .16rem;
@@ -4680,6 +4794,18 @@ textarea {
   }
   .md-break-word {
     word-wrap: break-word;
+  }
+  .md-small-caps {
+    font-variant: small-caps;
+  }
+  .md-font-family-inherit {
+    font-family: inherit;
+  }
+  .md-font-size-inherit {
+    font-size: inherit;
+  }
+  .md-font-color-inherit {
+    color: inherit;
   }
   .md-absolute {
     position: absolute;
@@ -5734,14 +5860,14 @@ textarea {
   .lg-right {
     float: right;
   }
-  .lg-measure-thick {
-    max-width: 34rem;
+  .lg-measure--thick {
+    max-width: 34em;
   }
   .lg-measure {
-    max-width: 30rem;
+    max-width: 30em;
   }
-  .lg-measure-tight {
-    max-width: 20rem;
+  .lg-measure--tight {
+    max-width: 20em;
   }
   .lg-headline {
     font-size: 6rem;
@@ -5753,7 +5879,7 @@ textarea {
     font-size: 3rem;
   }
   .lg-f2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   .lg-f3 {
     font-size: 1.5rem;
@@ -5767,6 +5893,36 @@ textarea {
   .lg-f6 {
     font-size: .875rem;
   }
+  .lg-fw1 {
+    font-weight: 100;
+  }
+  .lg-fw2 {
+    font-weight: 200;
+  }
+  .lg-fw3 {
+    font-weight: 300;
+  }
+  .lg-fw4 {
+    font-weight: 400;
+  }
+  .lg-fw5 {
+    font-weight: 500;
+  }
+  .lg-fw6 {
+    font-weight: 600;
+  }
+  .lg-fw7 {
+    font-weight: 700;
+  }
+  .lg-fw8 {
+    font-weight: 800;
+  }
+  .lg-fw9 {
+    font-weight: 900;
+  }
+  .lg-bold {
+    font-weight: bold;
+  }
   .lg-lh-normal {
     line-height: 1;
   }
@@ -5775,6 +5931,27 @@ textarea {
   }
   .lg-lh-copy {
     line-height: 1.5;
+  }
+  .lg-upper {
+    text-transform: uppercase;
+  }
+  .lg-lowercase {
+    text-transform: lowercase;
+  }
+  .lg-caps {
+    text-transform: capitalize;
+  }
+  .lg-normal {
+    font-style: normal;
+  }
+  .lg-italic {
+    font-style: italic;
+  }
+  .lg-underline {
+    text-decoration: underline;
+  }
+  .lg-strike {
+    text-decoration: line-through;
   }
   .lg-tracked {
     letter-spacing: .16rem;
@@ -5804,6 +5981,18 @@ textarea {
   }
   .lg-break-word {
     word-wrap: break-word;
+  }
+  .lg-small-caps {
+    font-variant: small-caps;
+  }
+  .lg-font-family-inherit {
+    font-family: inherit;
+  }
+  .lg-font-size-inherit {
+    font-size: inherit;
+  }
+  .lg-font-color-inherit {
+    color: inherit;
   }
   .lg-absolute {
     position: absolute;
@@ -6858,14 +7047,14 @@ textarea {
   .xl-right {
     float: right;
   }
-  .xl-measure-thick {
-    max-width: 34rem;
+  .xl-measure--thick {
+    max-width: 34em;
   }
   .xl-measure {
-    max-width: 30rem;
+    max-width: 30em;
   }
-  .xl-measure-tight {
-    max-width: 20rem;
+  .xl-measure--tight {
+    max-width: 20em;
   }
   .xl-headline {
     font-size: 6rem;
@@ -6877,7 +7066,7 @@ textarea {
     font-size: 3rem;
   }
   .xl-f2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   .xl-f3 {
     font-size: 1.5rem;
@@ -6891,6 +7080,36 @@ textarea {
   .xl-f6 {
     font-size: .875rem;
   }
+  .xl-fw1 {
+    font-weight: 100;
+  }
+  .xl-fw2 {
+    font-weight: 200;
+  }
+  .xl-fw3 {
+    font-weight: 300;
+  }
+  .xl-fw4 {
+    font-weight: 400;
+  }
+  .xl-fw5 {
+    font-weight: 500;
+  }
+  .xl-fw6 {
+    font-weight: 600;
+  }
+  .xl-fw7 {
+    font-weight: 700;
+  }
+  .xl-fw8 {
+    font-weight: 800;
+  }
+  .xl-fw9 {
+    font-weight: 900;
+  }
+  .xl-bold {
+    font-weight: bold;
+  }
   .xl-lh-normal {
     line-height: 1;
   }
@@ -6899,6 +7118,27 @@ textarea {
   }
   .xl-lh-copy {
     line-height: 1.5;
+  }
+  .xl-upper {
+    text-transform: uppercase;
+  }
+  .xl-lowercase {
+    text-transform: lowercase;
+  }
+  .xl-caps {
+    text-transform: capitalize;
+  }
+  .xl-normal {
+    font-style: normal;
+  }
+  .xl-italic {
+    font-style: italic;
+  }
+  .xl-underline {
+    text-decoration: underline;
+  }
+  .xl-strike {
+    text-decoration: line-through;
   }
   .xl-tracked {
     letter-spacing: .16rem;
@@ -6928,6 +7168,18 @@ textarea {
   }
   .xl-break-word {
     word-wrap: break-word;
+  }
+  .xl-small-caps {
+    font-variant: small-caps;
+  }
+  .xl-font-family-inherit {
+    font-family: inherit;
+  }
+  .xl-font-size-inherit {
+    font-size: inherit;
+  }
+  .xl-font-color-inherit {
+    color: inherit;
   }
   .xl-absolute {
     position: absolute;
