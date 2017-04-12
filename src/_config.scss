@@ -1,14 +1,14 @@
 //
 
 // Configuration
-	
+
 //
 
-$mqs: (
-	"sm": "screen and (min-width: 36em)",
-	"md": "screen and (min-width: 48em)",
-	"lg": "screen and (min-width: 62em)",
-	"xl": "screen and (min-width: 75em)"
+$breakpoints: (
+	"sm": 36em,
+	"md": 48em,
+	"lg": 62em,
+	"xl": 75em
 );
 
 //
@@ -17,8 +17,14 @@ $mqs: (
 
 //
 
-@mixin media($mq) {
-	@media #{$mq} {
-		@content;
-	}
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
 }
