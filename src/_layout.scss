@@ -34,8 +34,8 @@
 .left { float: left; }
 .right { float: right; }
 
-@include media(map-get($mqs, "sm")) {
-	
+@include breakpoint("sm") {
+
 	.sm-border-box { box-sizing: border-box; }
 	.sm-content-box { box-sizing: content-box; }
 	.sm-inherit-box { box-sizing: inherit; }
@@ -68,8 +68,8 @@
 
 }
 
-@include media(map-get($mqs, "md")) {
-	
+@include breakpoint("md") {
+
 	.md-border-box { box-sizing: border-box; }
 	.md-content-box { box-sizing: content-box; }
 	.md-inherit-box { box-sizing: inherit; }
@@ -102,8 +102,8 @@
 
 }
 
-@include media(map-get($mqs, "lg")) {
-	
+@include breakpoint("lg") {
+
 	.lg-border-box { box-sizing: border-box; }
 	.lg-content-box { box-sizing: content-box; }
 	.lg-inherit-box { box-sizing: inherit; }
@@ -136,8 +136,8 @@
 
 }
 
-@include media(map-get($mqs, "xl")) {
-	
+@include breakpoint("xl") {
+
 	.xl-border-box { box-sizing: border-box; }
 	.xl-content-box { box-sizing: content-box; }
 	.xl-inherit-box { box-sizing: inherit; }

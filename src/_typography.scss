@@ -2,15 +2,11 @@
 
 	Typography
 
-		f  = font-size
-		fw = font-weight
-		lh = line-height
-
 */
 
-.measure--thick { max-width: 34em }
+.measure-wide { max-width: 34em }
 .measure { max-width: 30em }
-.measure--tight { max-width: 20em }
+.measure-narrow { max-width: 20em }
 .headline { font-size: 6rem; }
 .sub-headline { font-size: 5rem; }
 .f1 { font-size: 3rem; }
@@ -19,6 +15,7 @@
 .f4 { font-size: 1.25rem; }
 .f5 { font-size: 1rem; }
 .f6 { font-size: .875rem; }
+.fw-normal { font-weight: normal; }
 .fw1 { font-weight: 100; }
 .fw2 { font-weight: 200; }
 .fw3 { font-weight: 300; }
@@ -28,14 +25,14 @@
 .fw7 { font-weight: 700; }
 .fw8 { font-weight: 800; }
 .fw9 { font-weight: 900; }
-.bold { font-weight: bold;}
+.fw-bold { font-weight: bold;}
 .lh-normal { line-height: 1; }
 .lh-title { line-height: 1.25; }
 .lh-copy { line-height: 1.5; }
 .upper { text-transform: uppercase; }
 .lowercase { text-transform: lowercase; }
 .caps { text-transform: capitalize; }
-.normal { font-style: normal; }
+.fs-normal { font-style: normal; }
 .italic { font-style: italic; }
 .underline { text-decoration: underline; }
 .strike { text-decoration: line-through; }
@@ -52,6 +49,13 @@
 .font-family-inherit { font-family: inherit; }
 .font-size-inherit { font-size: inherit; }
 .font-color-inherit { color: inherit; }
+
+/*
+
+	Font family
+
+*/
+
 .times { font-family: "Times New Roman", Times, serif; }
 .avenir { font-family: "avenir next", avenir, sans-serif; }
 .athelas { font-family: athelas, georgia, serif; }
@@ -60,11 +64,11 @@
 .verdana { font-family: verdana, sans-serif; }
 .code { font-family: Consolas, monaco, monospace; }
 
-@include media(map-get($mqs, "sm")) {
+@include breakpoint("sm") {
 
-	.sm-measure--thick { max-width: 34em }
+	.sm-measure-wide { max-width: 34em }
 	.sm-measure { max-width: 30em }
-	.sm-measure--tight { max-width: 20em }
+	.sm-measure-narrow { max-width: 20em }
 	.sm-headline { font-size: 6rem; }
 	.sm-sub-headline { font-size: 5rem; }
 	.sm-f1 { font-size: 3rem; }
@@ -73,6 +77,7 @@
 	.sm-f4 { font-size: 1.25rem; }
 	.sm-f5 { font-size: 1rem; }
 	.sm-f6 { font-size: .875rem; }
+	.fw-normal { font-weight: normal; }
 	.sm-fw1 { font-weight: 100; }
 	.sm-fw2 { font-weight: 200; }
 	.sm-fw3 { font-weight: 300; }
@@ -82,14 +87,14 @@
 	.sm-fw7 { font-weight: 700; }
 	.sm-fw8 { font-weight: 800; }
 	.sm-fw9 { font-weight: 900; }
-	.sm-bold { font-weight: bold;}
+	.sm-fw-bold { font-weight: bold;}
 	.sm-lh-normal { line-height: 1; }
 	.sm-lh-title { line-height: 1.25; }
 	.sm-lh-copy { line-height: 1.5; }
 	.sm-upper { text-transform: uppercase; }
 	.sm-lowercase { text-transform: lowercase; }
 	.sm-caps { text-transform: capitalize; }
-	.sm-normal { font-style: normal; }
+	.sm-fs-normal { font-style: normal; }
 	.sm-italic { font-style: italic; }
 	.sm-underline { text-decoration: underline; }
 	.sm-strike { text-decoration: line-through; }
@@ -109,11 +114,11 @@
 
 }
 
-@include media(map-get($mqs, "md")) {
+@include breakpoint("md") {
 
-	.md-measure--thick { max-width: 34em }
+	.md-measure-wide { max-width: 34em }
 	.md-measure { max-width: 30em }
-	.md-measure--tight { max-width: 20em }
+	.md-measure-narrow { max-width: 20em }
 	.md-headline { font-size: 6rem; }
 	.md-sub-headline { font-size: 5rem; }
 	.md-f1 { font-size: 3rem; }
@@ -122,6 +127,7 @@
 	.md-f4 { font-size: 1.25rem; }
 	.md-f5 { font-size: 1rem; }
 	.md-f6 { font-size: .875rem; }
+	.fw-normal { font-weight: normal; }
 	.md-fw1 { font-weight: 100; }
 	.md-fw2 { font-weight: 200; }
 	.md-fw3 { font-weight: 300; }
@@ -131,14 +137,14 @@
 	.md-fw7 { font-weight: 700; }
 	.md-fw8 { font-weight: 800; }
 	.md-fw9 { font-weight: 900; }
-	.md-bold { font-weight: bold;}
+	.md-fw-bold { font-weight: bold;}
 	.md-lh-normal { line-height: 1; }
 	.md-lh-title { line-height: 1.25; }
 	.md-lh-copy { line-height: 1.5; }
 	.md-upper { text-transform: uppercase; }
 	.md-lowercase { text-transform: lowercase; }
 	.md-caps { text-transform: capitalize; }
-	.md-normal { font-style: normal; }
+	.md-fs-normal { font-style: normal; }
 	.md-italic { font-style: italic; }
 	.md-underline { text-decoration: underline; }
 	.md-strike { text-decoration: line-through; }
@@ -158,11 +164,11 @@
 
 }
 
-@include media(map-get($mqs, "lg")) {
+@include breakpoint("lg") {
 
-	.lg-measure--thick { max-width: 34em }
+	.lg-measure-wide { max-width: 34em }
 	.lg-measure { max-width: 30em }
-	.lg-measure--tight { max-width: 20em }
+	.lg-measure-narrow { max-width: 20em }
 	.lg-headline { font-size: 6rem; }
 	.lg-sub-headline { font-size: 5rem; }
 	.lg-f1 { font-size: 3rem; }
@@ -171,6 +177,7 @@
 	.lg-f4 { font-size: 1.25rem; }
 	.lg-f5 { font-size: 1rem; }
 	.lg-f6 { font-size: .875rem; }
+	.fw-normal { font-weight: normal; }
 	.lg-fw1 { font-weight: 100; }
 	.lg-fw2 { font-weight: 200; }
 	.lg-fw3 { font-weight: 300; }
@@ -180,7 +187,7 @@
 	.lg-fw7 { font-weight: 700; }
 	.lg-fw8 { font-weight: 800; }
 	.lg-fw9 { font-weight: 900; }
-	.lg-bold { font-weight: bold;}
+	.lg-fw-bold { font-weight: bold;}
 	.lg-lh-normal { line-height: 1; }
 	.lg-lh-title { line-height: 1.25; }
 	.lg-lh-copy { line-height: 1.5; }
@@ -188,7 +195,7 @@
 	.lg-lowercase { text-transform: lowercase; }
 	.lg-caps { text-transform: capitalize; }
 	.lg-normal { font-style: normal; }
-	.lg-italic { font-style: italic; }
+	.lg-fs-italic { font-style: italic; }
 	.lg-underline { text-decoration: underline; }
 	.lg-strike { text-decoration: line-through; }
 	.lg-tracked { letter-spacing: .16rem; }
@@ -207,11 +214,11 @@
 
 }
 
-@include media(map-get($mqs, "xl")) {
+@include breakpoint("xl") {
 
-	.xl-measure--thick { max-width: 34em }
+	.xl-measure-wide { max-width: 34em }
 	.xl-measure { max-width: 30em }
-	.xl-measure--tight { max-width: 20em }
+	.xl-measure-narrow { max-width: 20em }
 	.xl-headline { font-size: 6rem; }
 	.xl-sub-headline { font-size: 5rem; }
 	.xl-f1 { font-size: 3rem; }
@@ -220,6 +227,7 @@
 	.xl-f4 { font-size: 1.25rem; }
 	.xl-f5 { font-size: 1rem; }
 	.xl-f6 { font-size: .875rem; }
+	.fw-normal { font-weight: normal; }
 	.xl-fw1 { font-weight: 100; }
 	.xl-fw2 { font-weight: 200; }
 	.xl-fw3 { font-weight: 300; }
@@ -229,7 +237,7 @@
 	.xl-fw7 { font-weight: 700; }
 	.xl-fw8 { font-weight: 800; }
 	.xl-fw9 { font-weight: 900; }
-	.xl-bold { font-weight: bold;}
+	.xl-fw-bold { font-weight: bold;}
 	.xl-lh-normal { line-height: 1; }
 	.xl-lh-title { line-height: 1.25; }
 	.xl-lh-copy { line-height: 1.5; }
@@ -237,7 +245,7 @@
 	.xl-lowercase { text-transform: lowercase; }
 	.xl-caps { text-transform: capitalize; }
 	.xl-normal { font-style: normal; }
-	.xl-italic { font-style: italic; }
+	.xl-fs-italic { font-style: italic; }
 	.xl-underline { text-decoration: underline; }
 	.xl-strike { text-decoration: line-through; }
 	.xl-tracked { letter-spacing: .16rem; }

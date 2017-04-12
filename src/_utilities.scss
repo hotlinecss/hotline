@@ -15,7 +15,7 @@
 .aspect-ratio--3x2 { padding-bottom: 66.66%; }
 .aspect-ratio-item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
 
-@include media(map-get($mqs, "sm")) {
+@include breakpoint("sm") {
 
 	.sm-fill { top: 0; right: 0; bottom: 0; left: 0; }
 	.sm-aspect-ratio { height: 0; position: relative }
@@ -27,7 +27,7 @@
 
 }
 
-@include media(map-get($mqs, "md")) {
+@include breakpoint("md") {
 
 	.md-fill { top: 0; right: 0; bottom: 0; left: 0; }
 	.md-aspect-ratio { height: 0; position: relative }
@@ -39,7 +39,7 @@
 
 }
 
-@include media(map-get($mqs, "lg")) {
+@include breakpoint("lg") {
 
 	.lg-fill { top: 0; right: 0; bottom: 0; left: 0; }
 	.lg-aspect-ratio { height: 0; position: relative }
@@ -51,7 +51,7 @@
 
 }
 
-@include media(map-get($mqs, "xl")) {
+@include breakpoint("xl") {
 
 	.xl-fill { top: 0; right: 0; bottom: 0; left: 0; }
 	.xl-aspect-ratio { height: 0; position: relative }

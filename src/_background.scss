@@ -1,5 +1,5 @@
 /*
-	
+
 	Background
 
 */
@@ -12,8 +12,8 @@
 .bg-padding-box { background-clip: padding-box; }
 .bg-content-box { background-clip: content-box; }
 .bg-no-repeat { background-repeat: no-repeat; }
-.bg-x-repeat { background-repeat: repeat-x; }
-.bg-y-repeat { background-repeat: repeat-y; }
+.bg-repeat-x { background-repeat: repeat-x; }
+.bg-repeat-y { background-repeat: repeat-y; }
 .bg-repeat-space { background-repeat: space; }
 .bg-repeat-around { background-repeat: round; }
 .bg-center { background-repeat: no-repeat; background-position: center center; }
@@ -22,8 +22,8 @@
 .bg-bottom { background-repeat: no-repeat; background-position: bottom center; }
 .bg-left { background-repeat: no-repeat; background-position: center left; }
 
-@include media(map-get($mqs, "sm")) {
-	
+@include breakpoint("sm") {
+
 	.sm-bg-cover { background-size: cover !important; }
 	.sm-bg-contain { background-size: contain; }
 	.sm-bg-fixed { background-attachment: fixed; }
@@ -32,8 +32,8 @@
 	.sm-bg-padding-box { background-clip: padding-box; }
 	.sm-bg-content-box { background-clip: content-box; }
 	.sm-bg-no-repeat { background-repeat: no-repeat; }
-	.sm-bg-x-repeat { background-repeat: repeat-x; }
-	.sm-bg-y-repeat { background-repeat: repeat-y; }
+	.sm-bg-repeat-x { background-repeat: repeat-x; }
+	.sm-bg-repeat-y { background-repeat: repeat-y; }
 	.sm-bg-repeat-space { background-repeat: space; }
 	.sm-bg-repeat-around { background-repeat: round; }
 	.sm-bg-center { background-repeat: no-repeat; background-position: center center; }
@@ -44,8 +44,8 @@
 
 }
 
-@include media(map-get($mqs, "md")) {
-	
+@include breakpoint("md") {
+
 	.md-bg-cover { background-size: cover !important; }
 	.md-bg-contain { background-size: contain; }
 	.md-bg-fixed { background-attachment: fixed; }
@@ -54,8 +54,8 @@
 	.md-bg-padding-box { background-clip: padding-box; }
 	.md-bg-content-box { background-clip: content-box; }
 	.md-bg-no-repeat { background-repeat: no-repeat; }
-	.md-bg-x-repeat { background-repeat: repeat-x; }
-	.md-bg-y-repeat { background-repeat: repeat-y; }
+	.md-bg-repeat-x { background-repeat: repeat-x; }
+	.md-bg-repeat-y { background-repeat: repeat-y; }
 	.md-bg-repeat-space { background-repeat: space; }
 	.md-bg-repeat-around { background-repeat: round; }
 	.md-bg-center { background-repeat: no-repeat; background-position: center center; }
@@ -66,8 +66,8 @@
 
 }
 
-@include media(map-get($mqs, "lg")) {
-	
+@include breakpoint("lg") {
+
 	.lg-bg-cover { background-size: cover !important; }
 	.lg-bg-contain { background-size: contain; }
 	.lg-bg-fixed { background-attachment: fixed; }
@@ -76,8 +76,8 @@
 	.lg-bg-padding-box { background-clip: padding-box; }
 	.lg-bg-content-box { background-clip: content-box; }
 	.lg-bg-no-repeat { background-repeat: no-repeat; }
-	.lg-bg-x-repeat { background-repeat: repeat-x; }
-	.lg-bg-y-repeat { background-repeat: repeat-y; }
+	.lg-bg-repeat-x { background-repeat: repeat-x; }
+	.lg-bg-repeat-y { background-repeat: repeat-y; }
 	.lg-bg-repeat-space { background-repeat: space; }
 	.lg-bg-repeat-around { background-repeat: round; }
 	.lg-bg-center { background-repeat: no-repeat; background-position: center center; }
@@ -88,8 +88,8 @@
 
 }
 
-@include media(map-get($mqs, "xl")) {
-	
+@include breakpoint("xl") {
+
 	.xl-bg-cover { background-size: cover !important; }
 	.xl-bg-contain { background-size: contain; }
 	.xl-bg-fixed { background-attachment: fixed; }
@@ -98,8 +98,8 @@
 	.xl-bg-padding-box { background-clip: padding-box; }
 	.xl-bg-content-box { background-clip: content-box; }
 	.xl-bg-no-repeat { background-repeat: no-repeat; }
-	.xl-bg-x-repeat { background-repeat: repeat-x; }
-	.xl-bg-y-repeat { background-repeat: repeat-y; }
+	.xl-bg-repeat-x { background-repeat: repeat-x; }
+	.xl-bg-repeat-y { background-repeat: repeat-y; }
 	.xl-bg-repeat-space { background-repeat: space; }
 	.xl-bg-repeat-around { background-repeat: round; }
 	.xl-bg-center { background-repeat: no-repeat; background-position: center center; }

@@ -2,15 +2,6 @@
 
 	Margin
 
-		steps: (7) [0, .25, .5, 1, 2, 4, 8, 16]
-
-		t = top
-		r = right
-		b = bottom
-		l = left
-		h = horizontal
-		v = vertical
-
 */
 
 .m0 { margin: 0; }
@@ -76,8 +67,8 @@
 .mv6 { margin-top: 8rem; margin-bottom: 8rem; }
 .mv7 { margin-top: 16rem; margin-bottom: 16rem; }
 
-@include media(map-get($mqs, "sm")) {
-	
+@include breakpoint("sm") {
+
 	.sm-m0 { margin: 0; }
 	.sm-m1 { margin: .25rem; }
 	.sm-m2 { margin: .5rem; }
@@ -143,7 +134,7 @@
 
 }
 
-@include media(map-get($mqs, "md")) {
+@include breakpoint("md") {
 
 	.md-m0 { margin: 0; }
 	.md-m1 { margin: .25rem; }
@@ -210,7 +201,7 @@
 
 }
 
-@include media(map-get($mqs, "lg")) {
+@include breakpoint("lg") {
 
 	.lg-m0 { margin: 0; }
 	.lg-m1 { margin: .25rem; }
@@ -274,10 +265,10 @@
 	.lg-mv5 { margin-top: 4rem; margin-bottom:  4rem }
 	.lg-mv6 { margin-top: 8rem; margin-bottom: 8rem; }
 	.lg-mv7 { margin-top: 16rem; margin-bottom: 16rem; }
-		
+
 }
 
-@include media(map-get($mqs, "xl")) {
+@include breakpoint("xl") {
 
 	.xl-m0 { margin: 0; }
 	.xl-m1 { margin: .25rem; }

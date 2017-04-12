@@ -2,10 +2,6 @@
 
 	Position
 
-		coordinates = [0, .5, 1, 2, 4, 8, 16]
-
-		z = z-index
-
 */
 
 .absolute { position: absolute; }
@@ -81,7 +77,7 @@
 .z-999 { z-index: 999; }
 .z-max { z-index: 2147483647; }
 
-@include media(map-get($mqs, "sm")) {
+@include breakpoint("sm") {
 
 	.sm-absolute { position: absolute; }
 	.sm-fixed { position: fixed; }
@@ -157,7 +153,7 @@
 	.sm-z-max { z-index: 2147483647; }
 }
 
-@include media(map-get($mqs, "md")) {
+@include breakpoint("md") {
 
 	.md-absolute { position: absolute; }
 	.md-fixed { position: fixed; }
@@ -234,7 +230,7 @@
 
 }
 
-@include media(map-get($mqs, "lg")) {
+@include breakpoint("lg") {
 
 	.lg-absolute { position: absolute; }
 	.lg-fixed { position: fixed; }
@@ -311,7 +307,7 @@
 
 }
 
-@include media(map-get($mqs, "xl")) {
+@include breakpoint("xl") {
 
 	.xl-absolute { position: absolute; }
 	.xl-fixed { position: fixed; }

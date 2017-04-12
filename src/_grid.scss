@@ -2,13 +2,6 @@
 
 	Grid
 
-		mw = max-width
-		vw = viewport width
-
-		Widths         = [10, 20, 25, 30, 33, 40, 45, 50, 60, 66, 70, 75, 80, 90, 100]
-		Max width      = [1, 2, 4, 8, 16, 32, 48, 64, 80, 90]
-		Viewport width = [50, 100]
-
 */
 
 .w-auto { width: auto; }
@@ -46,7 +39,7 @@
 .vw-50 { width: 50vw; }
 .vw-100 { width: 100vw; }
 
-@include media(map-get($mqs, "sm")) {
+@include breakpoint("sm") {
 
 	.sm-w-auto { width: auto; }
 	.sm-w-0 { width: 0; }
@@ -85,7 +78,7 @@
 
 }
 
-@include media(map-get($mqs, "md")) {
+@include breakpoint("md") {
 
 	.md-w-auto { width: auto; }
 	.md-w-0 { width: 0; }
@@ -124,7 +117,7 @@
 
 }
 
-@include media(map-get($mqs, "lg")) {
+@include breakpoint("lg") {
 
 	.lg-w-auto { width: auto; }
 	.lg-w-0 { width: 0; }
@@ -163,7 +156,7 @@
 
 }
 
-@include media(map-get($mqs, "xl")) {
+@include breakpoint("xl") {
 
 	.xl-w-auto { width: auto; }
 	.xl-w-0 { width: 0; }

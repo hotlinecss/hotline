@@ -1,15 +1,6 @@
 /*
 
 	Padding
-		
-		steps: (7) [0, .25, .5, 1, 2, 4, 8, 16]
-
-		t = top
-		r = right
-		b = bottom
-		l = left
-		v = vertical
-		h = horizontal
 
 */
 
@@ -76,8 +67,8 @@
 .pv6 { padding-top: 8rem; padding-bottom: 8rem; }
 .pv7 { padding-top: 16rem; padding-bottom: 16rem; }
 
-@include media(map-get($mqs, "sm")) {
-	
+@include breakpoint("sm") {
+
 	.sm-p0 { padding: 0; }
 	.sm-p1 { padding: .25rem; }
 	.sm-p2 { padding: .5rem; }
@@ -143,7 +134,7 @@
 
 }
 
-@include media(map-get($mqs, "md")) {
+@include breakpoint("md") {
 
 	.md-p0 { padding: 0; }
 	.md-p1 { padding: .25rem; }
@@ -210,7 +201,7 @@
 
 }
 
-@include media(map-get($mqs, "lg")) {
+@include breakpoint("lg") {
 
 	.lg-p0 { padding: 0; }
 	.lg-p1 { padding: .25rem; }
@@ -274,10 +265,10 @@
 	.lg-pv5 { padding-top: 4rem; padding-bottom:  4rem }
 	.lg-pv6 { padding-top: 8rem; padding-bottom: 8rem; }
 	.lg-pv7 { padding-top: 16rem; padding-bottom: 16rem; }
-		
+
 }
 
-@include media(map-get($mqs, "xl")) {
+@include breakpoint("xl") {
 
 	.xl-p0 { padding: 0; }
 	.xl-p1 { padding: .25rem; }
