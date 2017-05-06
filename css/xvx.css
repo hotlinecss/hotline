@@ -1876,12 +1876,12 @@ svg {
   text-decoration: underline;
 }
 
-.thick-hover-underline {
+.hover-underline-thick {
   padding-bottom: .20em;
   border-bottom: .20em solid transparent;
 }
 
-.thick-hover-underline:hover, .thick-hover-underline:focus, .thick-hover-underline:active {
+.hover-underline-thick:hover, .hover-underline-thick:focus, .hover-underline-thick:active {
   border-bottom: .20em solid currentColor;
   transition: border-color 200ms ease-in-out;
 }
@@ -1929,16 +1929,12 @@ svg {
 }
 
 .hover-grayscale {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  transition: -webkit-filter 200ms ease-in-out;
+  filter: grayscale(100%);
   transition: filter 200ms ease-in-out;
-  transition: filter 200ms ease-in-out, -webkit-filter 200ms ease-in-out;
 }
 
 .hover-grayscale:hover, .hover-grayscale:focus, .hover-grayscale:active {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 /*
