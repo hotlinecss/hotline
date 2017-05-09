@@ -1,4 +1,4 @@
-/* xvx - 3.3.1 - MIT */	/*
+/* xvx - 3.3.1 - MIT */	/* xvx - 3.3.1 - MIT */	/*
 
 	Basic reset
 
@@ -1778,7 +1778,7 @@ svg {
 
 */
 .bg-cover {
-  background-size: cover !important;
+  background-size: cover;
 }
 
 .bg-contain {
@@ -4252,7 +4252,7 @@ svg {
     border-radius: 1rem;
   }
   .sm-bg-cover {
-    background-size: cover !important;
+    background-size: cover;
   }
   .sm-bg-contain {
     background-size: contain;
@@ -5541,7 +5541,7 @@ svg {
     border-radius: 1rem;
   }
   .md-bg-cover {
-    background-size: cover !important;
+    background-size: cover;
   }
   .md-bg-contain {
     background-size: contain;
@@ -6830,7 +6830,7 @@ svg {
     border-radius: 1rem;
   }
   .lg-bg-cover {
-    background-size: cover !important;
+    background-size: cover;
   }
   .lg-bg-contain {
     background-size: contain;
@@ -8119,7 +8119,7 @@ svg {
     border-radius: 1rem;
   }
   .xl-bg-cover {
-    background-size: cover !important;
+    background-size: cover;
   }
   .xl-bg-contain {
     background-size: contain;
