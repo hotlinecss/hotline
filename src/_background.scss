@@ -4,7 +4,7 @@
 
 */
 
-.bg-cover { background-size: cover !important; }
+.bg-cover { background-size: cover; }
 .bg-contain { background-size: contain; }
 .bg-fixed { background-attachment: fixed; }
 .bg-repeat { background-repeat: repeat; }
@@ -24,7 +24,7 @@
 
 @include breakpoint("sm") {
 
-	.sm-bg-cover { background-size: cover !important; }
+	.sm-bg-cover { background-size: cover; }
 	.sm-bg-contain { background-size: contain; }
 	.sm-bg-fixed { background-attachment: fixed; }
 	.sm-bg-repeat { background-repeat: repeat; }
@@ -46,7 +46,7 @@
 
 @include breakpoint("md") {
 
-	.md-bg-cover { background-size: cover !important; }
+	.md-bg-cover { background-size: cover; }
 	.md-bg-contain { background-size: contain; }
 	.md-bg-fixed { background-attachment: fixed; }
 	.md-bg-repeat { background-repeat: repeat; }
@@ -68,7 +68,7 @@
 
 @include breakpoint("lg") {
 
-	.lg-bg-cover { background-size: cover !important; }
+	.lg-bg-cover { background-size: cover; }
 	.lg-bg-contain { background-size: contain; }
 	.lg-bg-fixed { background-attachment: fixed; }
 	.lg-bg-repeat { background-repeat: repeat; }
@@ -90,7 +90,7 @@
 
 @include breakpoint("xl") {
 
-	.xl-bg-cover { background-size: cover !important; }
+	.xl-bg-cover { background-size: cover; }
 	.xl-bg-contain { background-size: contain; }
 	.xl-bg-fixed { background-attachment: fixed; }
 	.xl-bg-repeat { background-repeat: repeat; }
