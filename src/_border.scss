@@ -14,21 +14,22 @@
 .border-right-0 { border-right-width: 0; }
 .border-bottom-0 { border-bottom-width: 0; }
 .border-left-0 { border-left-width: 0; }
-.border-narrow{ border-width: 2px; }
+.border-narrow { border-width: 2px; }
 .border-wide { border-width: 4px; }
 .doshed { border-style: dashed; }
 .dotted { border-style: dotted; }
 .double { border-style: double; }
 .rounded-top { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-.rounded-right {border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.rounded-right { border-top-left-radius: 0; border-bottom-left-radius: 0; }
 .rounded-bottom { border-top-left-radius: 0; border-top-right-radius: 0; }
 .rounded-left { border-top-right-radius: 0; border-bottom-right-radius: 0; }
-.circle { border-radius: 50%; }
-.rad0 { border-radius: 0; }
-.rad1 { border-radius: .125rem; }
-.rad2 { border-radius: .250rem; }
-.rad3 { border-radius: .5rem; }
-.rad4 { border-radius: 1rem; }
+.rounded-circle { border-radius: 50%; }
+.radius-0 { border-radius: 0; }
+.radius-1 { border-radius: .125rem; }
+.radius-2 { border-radius: .250rem; }
+.radius-3 { border-radius: .5rem; }
+.radius-4 { border-radius: 1rem; }
+.radius-5 { border-radius: 2rem; }
 
 @include breakpoint("sm") {
 
@@ -51,12 +52,13 @@
 	.sm-rounded-right {border-top-left-radius: 0; border-bottom-left-radius: 0; }
 	.sm-rounded-bottom { border-top-left-radius: 0; border-top-right-radius: 0; }
 	.sm-rounded-left { border-top-right-radius: 0; border-bottom-right-radius: 0; }
-	.sm-circle { border-radius: 50%; }
-	.sm-rad0 { border-radius: 0; }
-	.sm-rad1 { border-radius: .125rem; }
-	.sm-rad2 { border-radius: .250rem; }
-	.sm-rad3 { border-radius: .5rem; }
-	.sm-rad4 { border-radius: 1rem; }
+	.sm-rounded-circle { border-radius: 50%; }
+	.sm-radius-0 { border-radius: 0; }
+	.sm-radius-1 { border-radius: .125rem; }
+	.sm-radius-2 { border-radius: .250rem; }
+	.sm-radius-3 { border-radius: .5rem; }
+	.sm-radius-4 { border-radius: 1rem; }
+	.sm-radius-5 { border-radius: 2rem; }
 
 }
 
@@ -81,12 +83,13 @@
 	.md-rounded-right {border-top-left-radius: 0; border-bottom-left-radius: 0; }
 	.md-rounded-bottom { border-top-left-radius: 0; border-top-right-radius: 0; }
 	.md-rounded-left { border-top-right-radius: 0; border-bottom-right-radius: 0; }
-	.md-circle { border-radius: 50%; }
-	.md-rad0 { border-radius: 0; }
-	.md-rad1 { border-radius: .125rem; }
-	.md-rad2 { border-radius: .250rem; }
-	.md-rad3 { border-radius: .5rem; }
-	.md-rad4 { border-radius: 1rem; }
+	.md-rounded-circle { border-radius: 50%; }
+	.md-radius-0 { border-radius: 0; }
+	.md-radius-1 { border-radius: .125rem; }
+	.md-radius-2 { border-radius: .250rem; }
+	.md-radius-3 { border-radius: .5rem; }
+	.md-radius-4 { border-radius: 1rem; }
+	.md-radius-5 { border-radius: 2rem; }
 
 }
 
@@ -111,12 +114,12 @@
 	.lg-rounded-right {border-top-left-radius: 0; border-bottom-left-radius: 0; }
 	.lg-rounded-bottom { border-top-left-radius: 0; border-top-right-radius: 0; }
 	.lg-rounded-left { border-top-right-radius: 0; border-bottom-right-radius: 0; }
-	.lg-circle { border-radius: 50%; }
-	.lg-rad0 { border-radius: 0; }
-	.lg-rad1 { border-radius: .125rem; }
-	.lg-rad2 { border-radius: .250rem; }
-	.lg-rad3 { border-radius: .5rem; }
-	.lg-rad4 { border-radius: 1rem; }
+	.lg-rounded-circle { border-radius: 50%; }
+	.lg-radius-0 { border-radius: 0; }
+	.lg-radius-1 { border-radius: .125rem; }
+	.lg-radius-2 { border-radius: .250rem; }
+	.lg-radius-3 { border-radius: .5rem; }
+	.lg-radius-5 { border-radius: 2rem; }
 
 }
 
@@ -141,11 +144,12 @@
 	.xl-rounded-right {border-top-left-radius: 0; border-bottom-left-radius: 0; }
 	.xl-rounded-bottom { border-top-left-radius: 0; border-top-right-radius: 0; }
 	.xl-rounded-left { border-top-right-radius: 0; border-bottom-right-radius: 0; }
-	.xl-circle { border-radius: 50%; }
-	.xl-rad0 { border-radius: 0; }
-	.xl-rad1 { border-radius: .125rem; }
-	.xl-rad2 { border-radius: .250rem; }
-	.xl-rad3 { border-radius: .5rem; }
-	.xl-rad4 { border-radius: 1rem; }
+	.xl-rounded-circle { border-radius: 50%; }
+	.xl-radius-0 { border-radius: 0; }
+	.xl-radius-1 { border-radius: .125rem; }
+	.xl-radius-2 { border-radius: .250rem; }
+	.xl-radius-3 { border-radius: .5rem; }
+	.xl-radius-4 { border-radius: 1rem; }
+	.xl-radius-5 { border-radius: 2rem; }
 
 }
