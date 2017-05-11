@@ -15,7 +15,10 @@
 .f4 { font-size: 1.25rem; }
 .f5 { font-size: 1rem; }
 .f6 { font-size: .875rem; }
+.fw-lighter { font-weight: lighter; }
 .fw-normal { font-weight: normal; }
+.fw-bolder { font-weight: bolder; }
+.fw-bold { font-weight: bold; }
 .fw1 { font-weight: 100; }
 .fw2 { font-weight: 200; }
 .fw3 { font-weight: 300; }
@@ -25,7 +28,6 @@
 .fw7 { font-weight: 700; }
 .fw8 { font-weight: 800; }
 .fw9 { font-weight: 900; }
-.fw-bold { font-weight: bold;}
 .lh-normal { line-height: 1; }
 .lh-title { line-height: 1.25; }
 .lh-copy { line-height: 1.5; }
@@ -55,7 +57,16 @@
 	Font family
 
 */
-
+.sans-serif {
+  font-family: -apple-system,
+  						 system-ui,
+  						 BlinkMacSystemFont,
+  						 "Segoe UI",
+  						 "Roboto",
+  						 "Helvetica Neue",
+  						 Arial,
+  						 sans-serif;
+}
 .times { font-family: "Times New Roman", Times, serif; }
 .avenir { font-family: "avenir next", avenir, sans-serif; }
 .athelas { font-family: athelas, georgia, serif; }
@@ -77,7 +88,10 @@
 	.sm-f4 { font-size: 1.25rem; }
 	.sm-f5 { font-size: 1rem; }
 	.sm-f6 { font-size: .875rem; }
-	.fw-normal { font-weight: normal; }
+	.sm-fw-lighter { font-weight: lighter; }
+	.sm-fw-normal { font-weight: normal; }
+	.sm-fw-bolder { font-weight: bolder; }
+	.sm-fw-bold { font-weight: bold; }
 	.sm-fw1 { font-weight: 100; }
 	.sm-fw2 { font-weight: 200; }
 	.sm-fw3 { font-weight: 300; }
@@ -87,7 +101,6 @@
 	.sm-fw7 { font-weight: 700; }
 	.sm-fw8 { font-weight: 800; }
 	.sm-fw9 { font-weight: 900; }
-	.sm-fw-bold { font-weight: bold;}
 	.sm-lh-normal { line-height: 1; }
 	.sm-lh-title { line-height: 1.25; }
 	.sm-lh-copy { line-height: 1.5; }
@@ -127,7 +140,10 @@
 	.md-f4 { font-size: 1.25rem; }
 	.md-f5 { font-size: 1rem; }
 	.md-f6 { font-size: .875rem; }
-	.fw-normal { font-weight: normal; }
+	.md-fw-lighter { font-weight: lighter; }
+	.md-fw-normal { font-weight: normal; }
+	.md-fw-bolder { font-weight: bolder; }
+	.md-fw-bold { font-weight: bold; }
 	.md-fw1 { font-weight: 100; }
 	.md-fw2 { font-weight: 200; }
 	.md-fw3 { font-weight: 300; }
@@ -137,7 +153,6 @@
 	.md-fw7 { font-weight: 700; }
 	.md-fw8 { font-weight: 800; }
 	.md-fw9 { font-weight: 900; }
-	.md-fw-bold { font-weight: bold;}
 	.md-lh-normal { line-height: 1; }
 	.md-lh-title { line-height: 1.25; }
 	.md-lh-copy { line-height: 1.5; }
@@ -177,7 +192,10 @@
 	.lg-f4 { font-size: 1.25rem; }
 	.lg-f5 { font-size: 1rem; }
 	.lg-f6 { font-size: .875rem; }
-	.fw-normal { font-weight: normal; }
+	.lg-fw-lighter { font-weight: lighter; }
+	.lg-fw-normal { font-weight: normal; }
+	.lg-fw-bolder { font-weight: bolder; }
+	.lg-fw-bold { font-weight: bold; }
 	.lg-fw1 { font-weight: 100; }
 	.lg-fw2 { font-weight: 200; }
 	.lg-fw3 { font-weight: 300; }
@@ -187,7 +205,6 @@
 	.lg-fw7 { font-weight: 700; }
 	.lg-fw8 { font-weight: 800; }
 	.lg-fw9 { font-weight: 900; }
-	.lg-fw-bold { font-weight: bold;}
 	.lg-lh-normal { line-height: 1; }
 	.lg-lh-title { line-height: 1.25; }
 	.lg-lh-copy { line-height: 1.5; }
@@ -227,7 +244,10 @@
 	.xl-f4 { font-size: 1.25rem; }
 	.xl-f5 { font-size: 1rem; }
 	.xl-f6 { font-size: .875rem; }
-	.fw-normal { font-weight: normal; }
+	.xl-fw-lighter { font-weight: lighter; }
+	.xl-fw-normal { font-weight: normal; }
+	.xl-fw-bolder { font-weight: bolder; }
+	.xl-fw-bold { font-weight: bold; }
 	.xl-fw1 { font-weight: 100; }
 	.xl-fw2 { font-weight: 200; }
 	.xl-fw3 { font-weight: 300; }
@@ -237,7 +257,6 @@
 	.xl-fw7 { font-weight: 700; }
 	.xl-fw8 { font-weight: 800; }
 	.xl-fw9 { font-weight: 900; }
-	.xl-fw-bold { font-weight: bold;}
 	.xl-lh-normal { line-height: 1; }
 	.xl-lh-title { line-height: 1.25; }
 	.xl-lh-copy { line-height: 1.5; }
