@@ -18,8 +18,8 @@
 .parent-lh-copy {
 	p,
 	ul,
-	ol { 
-		line-height: 1.5; 
+	ol {
+		line-height: 1.5;
 	}
 }
 
@@ -31,13 +31,13 @@
 	}
 }
 
-.parent-paragraph { 
+.parent-paragraph {
 	p + p {
 		margin-bottom: 1.5em;
 	}
 }
 
-.parent-measure-thick p { max-width: 34em; }
+.parent-measure-wide p { max-width: 34em; }
 .parent-measure p { max-width: 30em; }
-.parent-measure-tight p { max-width: 20em; }
+.parent-measure-narrow p { max-width: 20em; }
 .parent-img img { display: block; max-width: 100%; width: 100%; }
