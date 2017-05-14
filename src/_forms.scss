@@ -8,11 +8,9 @@ label,
 input,
 button,
 select,
-option,
 legend,
 fieldset,
 textarea {
-  background-color: transparent;
   box-sizing: border-box;
   font-family: inherit;
   font-size: inherit;
@@ -20,4 +18,14 @@ textarea {
   vertical-align: middle;
 }
 
-.input-reset { -webkit-appearance: none; }
+input,
+select,
+textarea {
+	background-color: transparent;
+	border-style: solid;
+}
+
+.input-reset {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}

@@ -1,4 +1,4 @@
-/* xvx - 3.4.0 - MIT */	/*
+/* xvx - 3.5.0 - MIT */	/*
 
 	Basic reset
 
@@ -295,6 +295,38 @@ svg {
 
 .min-vh-100 {
   min-height: 100vh;
+}
+
+/*
+
+  Forms
+
+*/
+label,
+input,
+button,
+select,
+legend,
+fieldset,
+textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  vertical-align: middle;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  border-style: solid;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 /*
@@ -694,6 +726,10 @@ svg {
 
 .f6 {
   font-size: .875rem;
+}
+
+.f-normal {
+  font-size: normal;
 }
 
 .fw-lighter {
@@ -1717,7 +1753,8 @@ svg {
 
 */
 .border-none {
-  border: 0;
+  border-width: 0;
+  border-style: 0;
 }
 
 .border {
@@ -3599,6 +3636,9 @@ svg {
   .sm-f6 {
     font-size: .875rem;
   }
+  .sm-f-normal {
+    font-size: normal;
+  }
   .sm-fw-lighter {
     font-weight: lighter;
   }
@@ -4295,7 +4335,8 @@ svg {
     padding-bottom: 16rem;
   }
   .sm-border-none {
-    border: 0;
+    border-width: 0;
+    border-style: 0;
   }
   .sm-border {
     border-style: solid;
@@ -4925,6 +4966,9 @@ svg {
   }
   .md-f6 {
     font-size: .875rem;
+  }
+  .md-f-normal {
+    font-size: normal;
   }
   .md-fw-lighter {
     font-weight: lighter;
@@ -5622,7 +5666,8 @@ svg {
     padding-bottom: 16rem;
   }
   .md-border-none {
-    border: 0;
+    border-width: 0;
+    border-style: 0;
   }
   .md-border {
     border-style: solid;
@@ -6252,6 +6297,9 @@ svg {
   }
   .lg-f6 {
     font-size: .875rem;
+  }
+  .lg-f-normal {
+    font-size: normal;
   }
   .lg-fw-lighter {
     font-weight: lighter;
@@ -6949,7 +6997,8 @@ svg {
     padding-bottom: 16rem;
   }
   .lg-border-none {
-    border: 0;
+    border-width: 0;
+    border-style: 0;
   }
   .lg-border {
     border-style: solid;
@@ -7576,6 +7625,9 @@ svg {
   }
   .xl-f6 {
     font-size: .875rem;
+  }
+  .xl-f-normal {
+    font-size: normal;
   }
   .xl-fw-lighter {
     font-weight: lighter;
@@ -8273,7 +8325,8 @@ svg {
     padding-bottom: 16rem;
   }
   .xl-border-none {
-    border: 0;
+    border-width: 0;
+    border-style: 0;
   }
   .xl-border {
     border-style: solid;
