@@ -45,7 +45,9 @@
 .text-right { text-align: right; }
 .text-justify { text-align: justify; }
 .truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.nowrap { white-space: nowrap; }
+.ws-prewrap { white-space: pre-wrap; }
+.ws-preline { white-space: pre-line; }
+.ws-nowrap { white-space: nowrap; }
 .ws-normal { white-space: normal; }
 .break-word { word-wrap: break-word; }
 .small-caps { font-variant: small-caps; }
@@ -119,7 +121,9 @@
 	.sm-text-right { text-align: right; }
 	.sm-text-justify { text-align: justify; }
 	.sm-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-	.sm-nowrap { white-space: nowrap; }
+	.sm-ws-prewrap { white-space: pre-wrap; }
+	.sm-ws-preline { white-space: pre-line; }
+	.sm-ws-nowrap { white-space: nowrap; }
 	.sm-ws-normal { white-space: normal; }
 	.sm-break-word { word-wrap: break-word; }
 	.sm-small-caps { font-variant: small-caps; }
@@ -172,7 +176,9 @@
 	.md-text-right { text-align: right; }
 	.md-text-justify { text-align: justify; }
 	.md-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-	.md-nowrap { white-space: nowrap; }
+	.md-ws-prewrap { white-space: pre-wrap; }
+	.md-ws-preline { white-space: pre-line; }
+	.md-ws-nowrap { white-space: nowrap; }
 	.md-ws-normal { white-space: normal; }
 	.md-break-word { word-wrap: break-word; }
 	.md-small-caps { font-variant: small-caps; }
@@ -225,7 +231,9 @@
 	.lg-text-right { text-align: right; }
 	.lg-text-justify { text-align: justify; }
 	.lg-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-	.lg-nowrap { white-space: nowrap; }
+	.lg-ws-prewrap { white-space: pre-wrap; }
+	.lg-ws-preline { white-space: pre-line; }
+	.lg-ws-nowrap { white-space: nowrap; }
 	.lg-ws-normal { white-space: normal; }
 	.lg-break-word { word-wrap: break-word; }
 	.lg-small-caps { font-variant: small-caps; }
@@ -278,7 +286,9 @@
 	.xl-text-right { text-align: right; }
 	.xl-text-justify { text-align: justify; }
 	.xl-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-	.xl-nowrap { white-space: nowrap; }
+	.xl-ws-prewrap { white-space: pre-wrap; }
+	.xl-ws-preline { white-space: pre-line; }
+	.xl-ws-nowrap { white-space: nowrap; }
 	.xl-ws-normal { white-space: normal; }
 	.xl-break-word { word-wrap: break-word; }
 	.xl-small-caps { font-variant: small-caps; }
