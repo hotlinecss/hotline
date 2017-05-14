@@ -46,6 +46,7 @@
 @include breakpoint("sm") {
 
 	.sm-flex { display: flex; }
+	.sm-inline-flex { display: inline-flex; }
 	.sm-flex-auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
 	.sm-flex-wrap { flex-wrap: wrap; }
 	.sm-flex-nowrap { flex-wrap: nowrap; }
@@ -88,6 +89,7 @@
 @include breakpoint("md") {
 
 	.md-flex { display: flex; }
+	.md-inline-flex { display: inline-flex; }
 	.md-flex-auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
 	.md-flex-wrap { flex-wrap: wrap; }
 	.md-flex-nowrap { flex-wrap: nowrap; }
@@ -130,6 +132,7 @@
 @include breakpoint("lg") {
 
 	.lg-flex { display: flex; }
+	.lg-inline-flex { display: inline-flex; }
 	.lg-flex-auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
 	.lg-flex-wrap { flex-wrap: wrap; }
 	.lg-flex-nowrap { flex-wrap: nowrap; }
@@ -172,6 +175,7 @@
 @include breakpoint("xl") {
 
 	.xl-flex { display: flex; }
+	.xl-inline-flex { display: inline-flex; }
 	.xl-flex-auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
 	.xl-flex-wrap { flex-wrap: wrap; }
 	.xl-flex-nowrap { flex-wrap: nowrap; }
