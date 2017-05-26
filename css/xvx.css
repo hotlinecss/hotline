@@ -1,4 +1,4 @@
-/* xvx - 3.5.2 - MIT */	/*
+/* xvx - 3.5.4 - MIT */	/*
 
 	Basic reset
 
@@ -81,6 +81,37 @@ svg {
 */
 .list {
   list-style-type: none;
+}
+
+/*
+
+  Forms
+
+*/
+label,
+input,
+button,
+select,
+legend,
+fieldset,
+textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  vertical-align: middle;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 /*
@@ -204,6 +235,10 @@ svg {
   max-width: 48rem;
 }
 
+.mw-60 {
+  max-width: 60rem;
+}
+
 .mw-64 {
   max-width: 64rem;
 }
@@ -295,38 +330,6 @@ svg {
 
 .min-vh-100 {
   min-height: 100vh;
-}
-
-/*
-
-  Forms
-
-*/
-label,
-input,
-button,
-select,
-legend,
-fieldset,
-textarea {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  vertical-align: middle;
-}
-
-input,
-select,
-textarea {
-  background-color: transparent;
-  border-style: solid;
-}
-
-.input-reset {
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
 /*
@@ -3277,6 +3280,9 @@ textarea {
   .sm-mw-48 {
     max-width: 48rem;
   }
+  .sm-mw-60 {
+    max-width: 60rem;
+  }
   .sm-mw-64 {
     max-width: 64rem;
   }
@@ -4618,6 +4624,9 @@ textarea {
   }
   .md-mw-48 {
     max-width: 48rem;
+  }
+  .md-mw-60 {
+    max-width: 60rem;
   }
   .md-mw-64 {
     max-width: 64rem;
@@ -5961,6 +5970,9 @@ textarea {
   .lg-mw-48 {
     max-width: 48rem;
   }
+  .lg-mw-60 {
+    max-width: 60rem;
+  }
   .lg-mw-64 {
     max-width: 64rem;
   }
@@ -7299,6 +7311,9 @@ textarea {
   }
   .xl-mw-48 {
     max-width: 48rem;
+  }
+  .xl-mw-60 {
+    max-width: 60rem;
   }
   .xl-mw-64 {
     max-width: 64rem;
