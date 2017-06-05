@@ -36,7 +36,7 @@
 .lowercase { text-transform: lowercase; }
 .caps { text-transform: capitalize; }
 .fs-normal { font-style: normal; }
-.italic { font-style: italic; }
+.fs-italic { font-style: italic; }
 .underline { text-decoration: underline; }
 .strike { text-decoration: line-through; }
 .tracked { letter-spacing: .16rem; }
@@ -79,7 +79,6 @@
 .code { font-family: Consolas, monaco, monospace; }
 
 @include breakpoint("sm") {
-
 	.sm-measure-wide { max-width: 34em }
 	.sm-measure { max-width: 30em }
 	.sm-measure-narrow { max-width: 20em }
@@ -112,7 +111,7 @@
 	.sm-lowercase { text-transform: lowercase; }
 	.sm-caps { text-transform: capitalize; }
 	.sm-fs-normal { font-style: normal; }
-	.sm-italic { font-style: italic; }
+	.sm-fs-italic { font-style: italic; }
 	.sm-underline { text-decoration: underline; }
 	.sm-strike { text-decoration: line-through; }
 	.sm-tracked { letter-spacing: .16rem; }
@@ -130,7 +129,6 @@
 	.sm-font-family-inherit { font-family: inherit; }
 	.sm-font-size-inherit { font-size: inherit; }
 	.sm-font-color-inherit { color: inherit; }
-
 }
 
 @include breakpoint("md") {
@@ -167,7 +165,7 @@
 	.md-lowercase { text-transform: lowercase; }
 	.md-caps { text-transform: capitalize; }
 	.md-fs-normal { font-style: normal; }
-	.md-italic { font-style: italic; }
+	.md-fs-italic { font-style: italic; }
 	.md-underline { text-decoration: underline; }
 	.md-strike { text-decoration: line-through; }
 	.md-tracked { letter-spacing: .16rem; }
@@ -221,7 +219,7 @@
 	.lg-upper { text-transform: uppercase; }
 	.lg-lowercase { text-transform: lowercase; }
 	.lg-caps { text-transform: capitalize; }
-	.lg-normal { font-style: normal; }
+	.lg-fs-normal { font-style: normal; }
 	.lg-fs-italic { font-style: italic; }
 	.lg-underline { text-decoration: underline; }
 	.lg-strike { text-decoration: line-through; }
@@ -276,7 +274,7 @@
 	.xl-upper { text-transform: uppercase; }
 	.xl-lowercase { text-transform: lowercase; }
 	.xl-caps { text-transform: capitalize; }
-	.xl-normal { font-style: normal; }
+	.xl-fs-normal { font-style: normal; }
 	.xl-fs-italic { font-style: italic; }
 	.xl-underline { text-decoration: underline; }
 	.xl-strike { text-decoration: line-through; }
