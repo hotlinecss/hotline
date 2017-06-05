@@ -1,4 +1,4 @@
-/* xvx - 3.5.4 - MIT */	/*
+/* xvx - 3.5.5 - MIT */	/*
 
 	Basic reset
 
@@ -365,6 +365,11 @@ textarea {
 .flex-nowrap {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 
 .flex-row {
@@ -815,7 +820,7 @@ textarea {
   font-style: normal;
 }
 
-.italic {
+.fs-italic {
   font-style: italic;
 }
 
@@ -3374,6 +3379,10 @@ textarea {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+  .sm-flex-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
   .sm-flex-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3718,7 +3727,7 @@ textarea {
   .sm-fs-normal {
     font-style: normal;
   }
-  .sm-italic {
+  .sm-fs-italic {
     font-style: italic;
   }
   .sm-underline {
@@ -4719,6 +4728,10 @@ textarea {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+  .md-flex-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
   .md-flex-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -5063,7 +5076,7 @@ textarea {
   .md-fs-normal {
     font-style: normal;
   }
-  .md-italic {
+  .md-fs-italic {
     font-style: italic;
   }
   .md-underline {
@@ -6064,6 +6077,10 @@ textarea {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+  .lg-flex-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
   .lg-flex-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -6405,7 +6422,7 @@ textarea {
   .lg-caps {
     text-transform: capitalize;
   }
-  .lg-normal {
+  .lg-fs-normal {
     font-style: normal;
   }
   .lg-fs-italic {
@@ -7406,6 +7423,10 @@ textarea {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+  .xl-flex-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
   .xl-flex-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -7747,7 +7768,7 @@ textarea {
   .xl-caps {
     text-transform: capitalize;
   }
-  .xl-normal {
+  .xl-fs-normal {
     font-style: normal;
   }
   .xl-fs-italic {
