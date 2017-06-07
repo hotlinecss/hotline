@@ -1,4 +1,4 @@
-/* xvx - 3.5.5 - MIT */	/*
+/* xvx - 3.5.6 - MIT */	/*
 
 	Basic reset
 
@@ -737,7 +737,7 @@ textarea {
 }
 
 .f-normal {
-  font-size: normal;
+  font-size: medium;
 }
 
 .fw-lighter {
@@ -3665,7 +3665,7 @@ textarea {
     font-size: .875rem;
   }
   .sm-f-normal {
-    font-size: normal;
+    font-size: medium;
   }
   .sm-fw-lighter {
     font-weight: lighter;
@@ -5014,7 +5014,7 @@ textarea {
     font-size: .875rem;
   }
   .md-f-normal {
-    font-size: normal;
+    font-size: medium;
   }
   .md-fw-lighter {
     font-weight: lighter;
@@ -6363,7 +6363,7 @@ textarea {
     font-size: .875rem;
   }
   .lg-f-normal {
-    font-size: normal;
+    font-size: medium;
   }
   .lg-fw-lighter {
     font-weight: lighter;
@@ -7709,7 +7709,7 @@ textarea {
     font-size: .875rem;
   }
   .xl-f-normal {
-    font-size: normal;
+    font-size: medium;
   }
   .xl-fw-lighter {
     font-weight: lighter;
