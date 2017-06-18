@@ -1,10 +1,11 @@
 /*
 
-	Grid
+	Width
 
 */
 
 .w-auto { width: auto; }
+.w-inherit { width: inherit; }
 .w-0 { width: 0; }
 .w-10 { width: 10%; }
 .w-20 { width: 20%; }
@@ -26,6 +27,7 @@
 .w3 { width: 4rem; }
 .w4 { width: 8rem; }
 .w5 { width: 16rem; }
+.w6 { width: 32rem; }
 .mw-1 { max-width: 1rem; }
 .mw-2 { max-width: 2rem; }
 .mw-4 { max-width: 4rem; }
@@ -43,6 +45,7 @@
 @include breakpoint("sm") {
 
 	.sm-w-auto { width: auto; }
+	.sm-w-inherit { width: inherit; }
 	.sm-w-0 { width: 0; }
 	.sm-w-10 { width: 10%; }
 	.sm-w-20 { width: 20%; }
@@ -64,6 +67,7 @@
 	.sm-w3 { width: 4rem; }
 	.sm-w4 { width: 8rem; }
 	.sm-w5 { width: 16rem; }
+	.sm-w6 { width: 32rem; }
 	.sm-mw-1 { max-width: 1rem; }
 	.sm-mw-2 { max-width: 2rem; }
 	.sm-mw-4 { max-width: 4rem; }
@@ -83,6 +87,7 @@
 @include breakpoint("md") {
 
 	.md-w-auto { width: auto; }
+	.md-w-inherit { width: inherit; }
 	.md-w-0 { width: 0; }
 	.md-w-10 { width: 10%; }
 	.md-w-20 { width: 20%; }
@@ -104,6 +109,7 @@
 	.md-w3 { width: 4rem; }
 	.md-w4 { width: 8rem; }
 	.md-w5 { width: 16rem; }
+	.md-w6 { width: 32rem; }
 	.md-mw-1 { max-width: 1rem; }
 	.md-mw-2 { max-width: 2rem; }
 	.md-mw-4 { max-width: 4rem; }
@@ -123,6 +129,7 @@
 @include breakpoint("lg") {
 
 	.lg-w-auto { width: auto; }
+	.lg-w-inherit { width: inherit; }
 	.lg-w-0 { width: 0; }
 	.lg-w-10 { width: 10%; }
 	.lg-w-20 { width: 20%; }
@@ -144,6 +151,7 @@
 	.lg-w3 { width: 4rem; }
 	.lg-w4 { width: 8rem; }
 	.lg-w5 { width: 16rem; }
+	.lg-w6 { width: 32rem; }
 	.lg-mw-1 { max-width: 1rem; }
 	.lg-mw-2 { max-width: 2rem; }
 	.lg-mw-4 { max-width: 4rem; }
@@ -163,6 +171,7 @@
 @include breakpoint("xl") {
 
 	.xl-w-auto { width: auto; }
+	.xl-w-inherit { width: inherit; }
 	.xl-w-0 { width: 0; }
 	.xl-w-10 { width: 10%; }
 	.xl-w-20 { width: 20%; }
@@ -184,6 +193,7 @@
 	.xl-w3 { width: 4rem; }
 	.xl-w4 { width: 8rem; }
 	.xl-w5 { width: 16rem; }
+	.xl-w6 { width: 32rem; }
 	.xl-mw-1 { max-width: 1rem; }
 	.xl-mw-2 { max-width: 2rem; }
 	.xl-mw-4 { max-width: 4rem; }
