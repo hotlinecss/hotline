@@ -4,7 +4,7 @@
   "description": "Lightweight framework for the web",
   "main": "css/xvx.min.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "gulp default"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     "css-mqpacker": "^6.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.4.2",
+    "gulp-clean-css": "^3.6.0",
     "gulp-header": "^1.8.8",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
