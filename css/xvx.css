@@ -44,34 +44,34 @@ svg {
 */
 .link {
   text-decoration: none;
-  -webkit-transition: color 200ms ease-in;
-  -o-transition: color 200ms ease-in;
-  transition: color 200ms ease-in;
+  -webkit-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
   cursor: pointer;
 }
 
 .link:link, .link:visited {
-  -webkit-transition: color 200ms ease-in;
-  -o-transition: color 200ms ease-in;
-  transition: color 200ms ease-in;
+  -webkit-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
 }
 
 .link:hover {
-  -webkit-transition: color 200ms ease-in;
-  -o-transition: color 200ms ease-in;
-  transition: color 200ms ease-in;
+  -webkit-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
 }
 
 .link:active {
-  -webkit-transition: color 200ms ease-in;
-  -o-transition: color 200ms ease-in;
-  transition: color 200ms ease-in;
+  -webkit-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
 }
 
 .link:focus {
-  -webkit-transition: color 200ms ease-in;
-  -o-transition: color 200ms ease-in;
-  transition: color 200ms ease-in;
+  -webkit-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
 }
 
 /*
