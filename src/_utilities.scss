@@ -4,6 +4,9 @@
 
 */
 
+.events-auto { pointer-events: auto; }
+.events-none { pointer-events: none; }
+.events-inherit { pointer-events: inherit; }
 .fill { top: 0; right: 0; bottom: 0; left: 0; }
 .cf::before, .cf::after { content: " "; display: table; }
 .cf::after { clear: both; }
@@ -16,7 +19,9 @@
 .aspect-ratio-item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
 
 @include breakpoint("sm") {
-
+	.sm-events-auto { pointer-events: auto; }
+	.sm-events-none { pointer-events: none; }
+	.sm-events-inherit { pointer-events: inherit; }
 	.sm-fill { top: 0; right: 0; bottom: 0; left: 0; }
 	.sm-aspect-ratio { height: 0; position: relative }
 	.sm-aspect-ratio--16x9 { padding-bottom: 56.25%; }
@@ -29,6 +34,9 @@
 
 @include breakpoint("md") {
 
+	.md-events-auto { pointer-events: auto; }
+	.md-events-none { pointer-events: none; }
+	.md-events-inherit { pointer-events: inherit; }
 	.md-fill { top: 0; right: 0; bottom: 0; left: 0; }
 	.md-aspect-ratio { height: 0; position: relative }
 	.md-aspect-ratio--16x9 { padding-bottom: 56.25%; }
@@ -40,7 +48,10 @@
 }
 
 @include breakpoint("lg") {
-
+	
+	.lg-events-auto { pointer-events: auto; }
+	.lg-events-none { pointer-events: none; }
+	.lg-events-inherit { pointer-events: inherit; }
 	.lg-fill { top: 0; right: 0; bottom: 0; left: 0; }
 	.lg-aspect-ratio { height: 0; position: relative }
 	.lg-aspect-ratio--16x9 { padding-bottom: 56.25%; }
@@ -53,6 +64,9 @@
 
 @include breakpoint("xl") {
 
+	.xl-events-auto { pointer-events: auto; }
+	.xl-events-none { pointer-events: none; }
+	.xl-events-inherit { pointer-events: inherit; }
 	.xl-fill { top: 0; right: 0; bottom: 0; left: 0; }
 	.xl-aspect-ratio { height: 0; position: relative }
 	.xl-aspect-ratio--16x9 { padding-bottom: 56.25%; }
