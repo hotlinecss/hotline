@@ -1,4 +1,4 @@
-/* xvx - 3.6.3 - MIT */	/*
+/* xvx - 3.6.6 - MIT */	/*
 
 	Basic reset
 
@@ -2095,6 +2095,18 @@ textarea {
 	Utilities
 
 */
+.events-auto {
+  pointer-events: auto;
+}
+
+.events-none {
+  pointer-events: none;
+}
+
+.events-inherit {
+  pointer-events: inherit;
+}
+
 .fill {
   top: 0;
   right: 0;
@@ -2222,24 +2234,29 @@ textarea {
 	Shadows
 
 */
-.shadow-1 {
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+.shadow-outer-1 {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(89, 105, 128, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.025);
+          box-shadow: 0 1px 3px 0 rgba(89, 105, 128, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.025);
 }
 
-.shadow-2 {
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+.shadow-outer-2 {
+  -webkit-box-shadow: 0 0 0 1px rgba(89, 105, 128, 0.1), 0 1px 3px 0 rgba(89, 105, 128, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 0 1px rgba(89, 105, 128, 0.1), 0 1px 3px 0 rgba(89, 105, 128, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
-.shadow-3 {
-  -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+.shadow-outer-3 {
+  -webkit-box-shadow: 0 0 0 1px rgba(89, 105, 128, 0.1), 0 3px 20px 0 rgba(89, 105, 128, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 0 1px rgba(89, 105, 128, 0.1), 0 3px 20px 0 rgba(89, 105, 128, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
-.shadow-4 {
-  -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+.shadow-inner-1 {
+  -webkit-box-shadow: inset 0 1px 2px 0 rgba(207, 215, 230, 0.4);
+          box-shadow: inset 0 1px 2px 0 rgba(207, 215, 230, 0.4);
+}
+
+.shadow-inner-2 {
+  -webkit-box-shadow: inset 0 0 0 1px rgba(89, 105, 128, 0.1), inset 0 1px 3px 0 rgba(207, 215, 230, 0.6);
+          box-shadow: inset 0 0 0 1px rgba(89, 105, 128, 0.1), inset 0 1px 3px 0 rgba(207, 215, 230, 0.6);
 }
 
 /*
@@ -2601,6 +2618,122 @@ textarea {
 
 .bg-light-pink {
   background-color: #ffafbd;
+}
+
+.fill-white {
+  fill: #fff;
+}
+
+.fill-near-white {
+  fill: #f4f4f4;
+}
+
+.fill-light-gray {
+  fill: #aaa;
+}
+
+.fill-silver {
+  fill: #999;
+}
+
+.fill-gray {
+  fill: #777;
+}
+
+.fill-mid-gray {
+  fill: #555;
+}
+
+.fill-dark-gray {
+  fill: #333;
+}
+
+.fill-near-black {
+  fill: #111;
+}
+
+.fill-black {
+  fill: #000;
+}
+
+.fill-aqua {
+  fill: #33FFE3;
+}
+
+.fill-yellow {
+  fill: #ffec1a;
+}
+
+.fill-washed-yellow {
+  fill: #fff7a3;
+}
+
+.fill-navy {
+  fill: #001542;
+}
+
+.fill-dark-blue {
+  fill: #002774;
+}
+
+.fill-blue {
+  fill: #1976d2;
+}
+
+.fill-light-blue {
+  fill: #2196f3;
+}
+
+.fill-washed-blue {
+  fill: #c2e2fb;
+}
+
+.fill-green {
+  fill: #388e3c;
+}
+
+.fill-light-green {
+  fill: #4caf50;
+}
+
+.fill-washed-green {
+  fill: #c8e6c9;
+}
+
+.fill-orange {
+  fill: #ffa000;
+}
+
+.fill-light-orange {
+  fill: #ffc107;
+}
+
+.fill-washed-orange {
+  fill: #ffecb3;
+}
+
+.fill-red {
+  fill: #d32f2f;
+}
+
+.fill-light-red {
+  fill: #f44336;
+}
+
+.fill-washed-red {
+  fill: #ffcdd2;
+}
+
+.fill-purple {
+  fill: #800055;
+}
+
+.fill-pink {
+  fill: #ff748c;
+}
+
+.fill-light-pink {
+  fill: #ffafbd;
 }
 
 .hover-white:hover,
@@ -4602,6 +4735,15 @@ textarea {
     background-repeat: no-repeat;
     background-position: center left;
   }
+  .sm-events-auto {
+    pointer-events: auto;
+  }
+  .sm-events-none {
+    pointer-events: none;
+  }
+  .sm-events-inherit {
+    pointer-events: inherit;
+  }
   .sm-fill {
     top: 0;
     right: 0;
@@ -6008,6 +6150,15 @@ textarea {
     background-repeat: no-repeat;
     background-position: center left;
   }
+  .md-events-auto {
+    pointer-events: auto;
+  }
+  .md-events-none {
+    pointer-events: none;
+  }
+  .md-events-inherit {
+    pointer-events: inherit;
+  }
   .md-fill {
     top: 0;
     right: 0;
@@ -7410,6 +7561,15 @@ textarea {
   .lg-bg-left {
     background-repeat: no-repeat;
     background-position: center left;
+  }
+  .lg-events-auto {
+    pointer-events: auto;
+  }
+  .lg-events-none {
+    pointer-events: none;
+  }
+  .lg-events-inherit {
+    pointer-events: inherit;
   }
   .lg-fill {
     top: 0;
@@ -8816,6 +8976,15 @@ textarea {
   .xl-bg-left {
     background-repeat: no-repeat;
     background-position: center left;
+  }
+  .xl-events-auto {
+    pointer-events: auto;
+  }
+  .xl-events-none {
+    pointer-events: none;
+  }
+  .xl-events-inherit {
+    pointer-events: inherit;
   }
   .xl-fill {
     top: 0;
