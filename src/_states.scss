@@ -79,7 +79,9 @@
   &:hover,
   &:focus,
   &:active {
-    box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 0 1px rgba(89,105,128,.1), 
+                0 1px 3px 0 rgba(89,105,128,.1), 
+                0 1px 2px 0 rgba(0,0,0,.05);
   }
 }
 
@@ -89,7 +91,9 @@
   &:hover,
   &:focus,
   &:active {
-    box-shadow: 0 1px 20px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 0 1px rgba(89,105,128,.1), 
+                0 3px 20px 0 rgba(89,105,128,.3), 
+                0 1px 2px 0 rgba(0,0,0,.05);
   }
 }
 
