@@ -1,4 +1,4 @@
-/* xvx - 3.6.6 - MIT */	/*
+/* xvx - 3.6.9 - MIT */	/*
 
 	Basic reset
 
@@ -1826,12 +1826,28 @@ textarea {
   border-left-width: 0;
 }
 
-.border-narrow {
-  border-width: 2px;
+.border-w-0 {
+  border-width: 0;
 }
 
-.border-wide {
-  border-width: 4px;
+.border-w-1 {
+  border-width: .125rem;
+}
+
+.border-w-2 {
+  border-width: .250rem;
+}
+
+.border-w-3 {
+  border-width: .500rem;
+}
+
+.border-w-4 {
+  border-width: 1rem;
+}
+
+.border-w-5 {
+  border-width: 2rem;
 }
 
 .doshed {
@@ -2058,8 +2074,8 @@ textarea {
 }
 
 .hover-shadow:hover, .hover-shadow:focus, .hover-shadow:active {
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 0 1px rgba(89, 105, 128, 0.1), 0 1px 3px 0 rgba(89, 105, 128, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 0 1px rgba(89, 105, 128, 0.1), 0 1px 3px 0 rgba(89, 105, 128, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 .hover-shadow-big {
@@ -2071,8 +2087,8 @@ textarea {
 }
 
 .hover-shadow-big:hover, .hover-shadow-big:focus, .hover-shadow-big:active {
-  -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 0 1px rgba(89, 105, 128, 0.1), 0 3px 20px 0 rgba(89, 105, 128, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 0 1px rgba(89, 105, 128, 0.1), 0 3px 20px 0 rgba(89, 105, 128, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 .hover-grayscale {
@@ -2272,12 +2288,20 @@ textarea {
   color: #f4f4f4;
 }
 
-.light-gray {
-  color: #aaa;
-}
-
 .silver {
   color: #999;
+}
+
+.light-silver {
+  color: #eef1f6;
+}
+
+.lightest-silver {
+  color: #f7f8fb;
+}
+
+.light-gray {
+  color: #aaa;
 }
 
 .gray {
@@ -2392,12 +2416,20 @@ textarea {
   border-color: #f4f4f4;
 }
 
-.b-light-gray {
-  border-color: #aaa;
-}
-
 .b-silver {
   border-color: #999;
+}
+
+.b-light-silver {
+  border-color: #eef1f6;
+}
+
+.b-lightest-silver {
+  border-color: #f7f8fb;
+}
+
+.b-light-gray {
+  border-color: #aaa;
 }
 
 .b-gray {
@@ -2512,12 +2544,20 @@ textarea {
   background-color: #f4f4f4;
 }
 
-.bg-light-gray {
-  background-color: #aaa;
-}
-
 .bg-silver {
   background-color: #999;
+}
+
+.bg-light-silver {
+  background-color: #eef1f6;
+}
+
+.bg-lightest-silver {
+  background-color: #f7f8fb;
+}
+
+.bg-light-gray {
+  background-color: #aaa;
 }
 
 .bg-gray {
@@ -2628,12 +2668,20 @@ textarea {
   fill: #f4f4f4;
 }
 
-.fill-light-gray {
-  fill: #aaa;
-}
-
 .fill-silver {
   fill: #999;
+}
+
+.fill-light-silver {
+  fill: #eef1f6;
+}
+
+.fill-lightest-silver {
+  fill: #f7f8fb;
+}
+
+.fill-light-gray {
+  fill: #aaa;
 }
 
 .fill-gray {
@@ -2746,14 +2794,24 @@ textarea {
   color: #f4f4f4;
 }
 
-.hover-light-gray:hover,
-.hover-light-gray:focus {
-  color: #aaa;
-}
-
 .hover-silver:hover,
 .hover-silver:focus {
   color: #999;
+}
+
+.hover-light-silver:hover,
+.hover-light-silver:focus {
+  color: #eef1f6;
+}
+
+.hover-lightest-silver,
+.hover-lightest-silver {
+  color: #f7f8fb;
+}
+
+.hover-light-gray:hover,
+.hover-light-gray:focus {
+  color: #aaa;
 }
 
 .hover-gray:hover,
@@ -2891,14 +2949,24 @@ textarea {
   border-color: #f4f4f4;
 }
 
-.hover-b-light-gray:hover,
-.hover-b-light-gray:focus {
-  border-color: #aaa;
-}
-
 .hover-b-silver:hover,
 .hover-b-silver:focus {
   border-color: #999;
+}
+
+.hover-b-light-silver:hover,
+.hover-b-light-silver:focus {
+  border-color: #eef1f6;
+}
+
+.hover-b-lightest-silver,
+.hover-b-lightest-silver {
+  border-color: #f7f8fb;
+}
+
+.hover-b-light-gray:hover,
+.hover-b-light-gray:focus {
+  border-color: #aaa;
 }
 
 .hover-b-gray:hover,
@@ -3036,14 +3104,24 @@ textarea {
   background-color: #f4f4f4;
 }
 
-.hover-bg-light-gray:hover,
-.hover-bg-light-gray:focus {
-  background-color: #aaa;
-}
-
 .hover-bg-silver:hover,
 .hover-bg-silver:focus {
   background-color: #999;
+}
+
+.hover-bg-light-silver:hover,
+.hover-bg-light-silver:focus {
+  background-color: #eef1f6;
+}
+
+.hover-bg-lightest-silver,
+.hover-bg-lightest-silver {
+  background-color: #f7f8fb;
+}
+
+.hover-bg-light-gray:hover,
+.hover-bg-light-gray:focus {
+  background-color: #aaa;
 }
 
 .hover-bg-gray:hover,
@@ -4627,11 +4705,23 @@ textarea {
   .sm-border-left-none {
     border-left-width: 0;
   }
-  .sm-border-narrow {
-    border-width: 2px;
+  .sm-border-w-0 {
+    border-width: 0;
   }
-  .sm-border-wide {
-    border-width: 4px;
+  .sm-border-w-1 {
+    border-width: .125rem;
+  }
+  .sm-border-w-2 {
+    border-width: .250rem;
+  }
+  .sm-border-w-3 {
+    border-width: .500rem;
+  }
+  .sm-border-w-4 {
+    border-width: 1rem;
+  }
+  .sm-border-w-5 {
+    border-width: 2rem;
   }
   .sm-doshed {
     border-style: dashed;
@@ -6042,11 +6132,23 @@ textarea {
   .md-border-left-none {
     border-left-width: 0;
   }
-  .md-border-narrow {
-    border-width: 2px;
+  .md-border-w-0 {
+    border-width: 0;
   }
-  .md-border-wide {
-    border-width: 4px;
+  .md-border-w-1 {
+    border-width: .125rem;
+  }
+  .md-border-w-2 {
+    border-width: .250rem;
+  }
+  .md-border-w-3 {
+    border-width: .500rem;
+  }
+  .md-border-w-4 {
+    border-width: 1rem;
+  }
+  .md-border-w-5 {
+    border-width: 2rem;
   }
   .md-doshed {
     border-style: dashed;
@@ -7454,14 +7556,23 @@ textarea {
   .lg-border-bottom-0 {
     border-bottom-width: 0;
   }
-  .lg-border-left-0 {
-    border-left-width: 0;
+  .lg-border-w-0 {
+    border-width: 0;
   }
-  .lg-border-narrow {
-    border-width: 2px;
+  .lg-border-w-1 {
+    border-width: .125rem;
   }
-  .lg-border-wide {
-    border-width: 4px;
+  .lg-border-w-2 {
+    border-width: .250rem;
+  }
+  .lg-border-w-3 {
+    border-width: .500rem;
+  }
+  .lg-border-w-4 {
+    border-width: 1rem;
+  }
+  .lg-border-w-5 {
+    border-width: 2rem;
   }
   .lg-doshed {
     border-style: dashed;
@@ -8869,11 +8980,23 @@ textarea {
   .xl-border-left-0 {
     border-left-width: 0;
   }
-  .xl-border-narrow {
-    border-width: 2px;
+  .xl-border-w-0 {
+    border-width: 0;
   }
-  .xl-border-wide {
-    border-width: 4px;
+  .xl-border-w-1 {
+    border-width: .125rem;
+  }
+  .xl-border-w-2 {
+    border-width: .250rem;
+  }
+  .xl-border-w-3 {
+    border-width: .500rem;
+  }
+  .xl-border-w-4 {
+    border-width: 1rem;
+  }
+  .xl-border-w-5 {
+    border-width: 2rem;
   }
   .xl-doshed {
     border-style: dashed;
