@@ -1,30 +1,49 @@
 /*
 
-	Basic reset
+	Minimal resets that complements normalize.css
 
 */
 
-html {
-  box-sizing: border-box;
-  font-family: -apple-system, Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  text-rendering: optimizeLegibility;
-}
+html, 
+body, 
+div, 
+article, 
+section, 
+main, 
+footer, 
+header, 
+form, 
+fieldset, 
+legend,
+pre, 
+code, 
+a, 
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p, 
+ul, 
+ol, 
+li, 
+dl, 
+dt, 
+dd, 
+textarea, 
+table,
+td, 
+th, 
+tr, 
+input[type="email"], 
+input[type="number"], 
+input[type="password"],
+input[type="tel"], 
+input[type="text"], 
+input[type="url"] { box-sizing: border-box; }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-	margin: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
+img { max-width: 100%; }
 
 canvas,
 video,
@@ -32,44 +51,4 @@ iframe {
   max-width: 100%;
 }
 
-svg {
-  max-height: 100%;
-}
-
-/*
-
-  Link
-
-*/
-
-.link {
-  text-decoration: none;
-  transition: color 200ms ease-in-out;
-  cursor: pointer;
-
-  &:link,
-  &:visited {
-    transition: color 200ms ease-in-out;
-  }
-
-  &:hover {
-    transition: color 200ms ease-in-out;
-  }
-
-  &:active {
-    transition: color 200ms ease-in-out;
-  }
-
-  &:focus {
-    transition: color 200ms ease-in-out;
-  }
-
-}
-
-/*
-
-  List
-
-*/
-
-.list { list-style-type: none; }
+svg { max-height: 100%; }
