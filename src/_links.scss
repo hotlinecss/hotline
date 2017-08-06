@@ -1,0 +1,29 @@
+/*
+
+  Link
+
+*/
+
+.link {
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+  cursor: pointer;
+
+  &:link,
+  &:visited {
+    transition: color 200ms ease-in-out;
+  }
+
+  &:hover {
+    transition: color 200ms ease-in-out;
+  }
+
+  &:active {
+    transition: color 200ms ease-in-out;
+  }
+
+  &:focus {
+    transition: color 200ms ease-in-out;
+  }
+
+}
