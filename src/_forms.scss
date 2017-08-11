@@ -12,13 +12,9 @@ legend,
 fieldset,
 textarea {
   box-sizing: border-box;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
   vertical-align: middle;
 }
 
-input,
 select,
 textarea {
 	background-color: transparent;
@@ -27,4 +23,9 @@ textarea {
 .input-reset {
 	-webkit-appearance: none;
 	-moz-appearance: none;
+}
+
+.button-reset::-moz-focus-inner, .input-reset::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
