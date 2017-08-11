@@ -7,9 +7,10 @@
 .border-box { box-sizing: border-box; }
 .content-box { box-sizing: content-box; }
 .inherit-box { box-sizing: inherit; }
-.hidden { display: none; }
+.hide { display: none; }
 .visible { opacity: 1; visibility: visible; }
 .block { display: block; }
+.hidden { visibility: hidden; }
 .inline-block { display: inline-block; }
 .inline { display: inline; }
 .table-wrap { display: table; }
@@ -39,10 +40,10 @@
 	.sm-border-box { box-sizing: border-box; }
 	.sm-content-box { box-sizing: content-box; }
 	.sm-inherit-box { box-sizing: inherit; }
-	.sm-hidden { display: none; }
+	.sm-hide { display: none; }
 	.sm-visible { opacity: 1; visibility: visible; }
 	.sm-block { display: block; }
-	.sm-inline-block { display: inline-block; }
+	.sm-hidden { visibility: hidden; }	.sm-inline-block { display: inline-block; }
 	.sm-inline { display: inline; }
 	.sm-table-wrap { display: table; }
 	.sm-table-fixed { table-layout: fixed; }
@@ -73,10 +74,10 @@
 	.md-border-box { box-sizing: border-box; }
 	.md-content-box { box-sizing: content-box; }
 	.md-inherit-box { box-sizing: inherit; }
-	.md-hidden { display: none; }
+	.md-hide { display: none; }
 	.md-visible { opacity: 1; visibility: visible; }
 	.md-block { display: block; }
-	.md-inline-block { display: inline-block; }
+	.md-hidden { visibility: hidden; }	.md-inline-block { display: inline-block; }
 	.md-inline { display: inline; }
 	.md-table-wrap { display: table; }
 	.md-table-fixed { table-layout: fixed; }
@@ -107,9 +108,10 @@
 	.lg-border-box { box-sizing: border-box; }
 	.lg-content-box { box-sizing: content-box; }
 	.lg-inherit-box { box-sizing: inherit; }
-	.lg-hidden { display: none; }
+	.lg-hide { display: none; }
 	.lg-visible { opacity: 1; visibility: visible; }
 	.lg-block { display: block; }
+	.lg-hidden { visibility: hidden; }
 	.lg-inline-block { display: inline-block; }
 	.lg-inline { display: inline; }
 	.lg-table-wrap { display: table; }
@@ -141,9 +143,10 @@
 	.xl-border-box { box-sizing: border-box; }
 	.xl-content-box { box-sizing: content-box; }
 	.xl-inherit-box { box-sizing: inherit; }
-	.xl-hidden { display: none; }
+	.xl-hide { display: none; }
 	.xl-visible { opacity: 1; visibility: visible; }
 	.xl-block { display: block; }
+	.xl-hidden { visibility: hidden; }
 	.xl-inline-block { display: inline-block; }
 	.xl-inline { display: inline; }
 	.xl-table-wrap { display: table; }
