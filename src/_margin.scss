@@ -67,6 +67,11 @@
 .mv6 { margin-top: 8rem; margin-bottom: 8rem; }
 .mv7 { margin-top: 16rem; margin-bottom: 16rem; }
 
+.mta { margin-top: auto; }
+.mra { margin-right: auto; }
+.mba { margin-bottom: auto; }
+.mla { margin-left: auto; }
+
 @include breakpoint("sm") {
 
 	.sm-m0 { margin: 0; }
@@ -131,6 +136,11 @@
 	.sm-mv5 { margin-top: 4rem; margin-bottom:  4rem }
 	.sm-mv6 { margin-top: 8rem; margin-bottom: 8rem; }
 	.sm-mv7 { margin-top: 16rem; margin-bottom: 16rem; }
+
+	.sm-mta { margin-top: auto; }
+	.sm-mra { margin-right: auto; }
+	.sm-mba { margin-bottom: auto; }
+	.sm-mla { margin-left: auto; }
 
 }
 
@@ -199,6 +209,12 @@
 	.md-mv6 { margin-top: 8rem; margin-bottom: 8rem; }
 	.md-mv7 { margin-top: 16rem; margin-bottom: 16rem; }
 
+	.md-mta { margin-top: auto; }
+	.md-mra { margin-right: auto; }
+	.md-mba { margin-bottom: auto; }
+	.md-mla { margin-left: auto; }
+
+
 }
 
 @include breakpoint("lg") {
@@ -266,6 +282,11 @@
 	.lg-mv6 { margin-top: 8rem; margin-bottom: 8rem; }
 	.lg-mv7 { margin-top: 16rem; margin-bottom: 16rem; }
 
+	.lg-mta { margin-top: auto; }
+	.lg-mra { margin-right: auto; }
+	.lg-mba { margin-bottom: auto; }
+	.lg-mla { margin-left: auto; }
+
 }
 
 @include breakpoint("xl") {
@@ -332,5 +353,10 @@
 	.xl-mv5 { margin-top: 4rem; margin-bottom:  4rem }
 	.xl-mv6 { margin-top: 8rem; margin-bottom: 8rem; }
 	.xl-mv7 { margin-top: 16rem; margin-bottom: 16rem; }
+
+	.xl-mta { margin-top: auto; }
+	.xl-mra { margin-right: auto; }
+	.xl-mba { margin-bottom: auto; }
+	.xl-mla { margin-left: auto; }
 
 }
