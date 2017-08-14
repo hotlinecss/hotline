@@ -12,7 +12,7 @@ const pkg     = require("./package.json");
 const options = {
 	"paths": {
 		"srcAll": "./src/*.scss",
-		"src": "./src/xvx.scss",
+		"src": "./src/hotline.scss",
 		"dist": "./css/",
 		"root": "./"
 	},

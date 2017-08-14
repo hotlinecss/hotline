@@ -1,14 +1,14 @@
 {
-  "name": "xvx",
+  "name": "hotlinecss",
   "version": "3.9.0",
   "description": "Lightweight framework for the web",
-  "main": "css/xvx.min.css",
+  "main": "css/hotline.min.css",
   "scripts": {
     "compile": "gulp default"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/franciscogo/xvx.git"
+    "url": "git+https://github.com/hotlinecss/hotline.git"
   },
   "keywords": [
     "css"
@@ -16,9 +16,9 @@
   "author": "Francisco A. Gonzalez O.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/franciscogo/xvx/issues"
+    "url": "https://github.com/hotlinecss/hotline/issues"
   },
-  "homepage": "https://github.com/franciscogo/xvx#readme",
+  "homepage": "https://github.com/hotlinecss/hotline#readme",
   "devDependencies": {
     "css-mqpacker": "^6.0.1",
     "gulp": "^3.9.1",
