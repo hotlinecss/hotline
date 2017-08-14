@@ -1,4 +1,4 @@
-/* xvx - 3.8.9 - MIT */	/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* xvx - 3.9.0 - MIT */	/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -114,7 +114,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -1952,6 +1953,22 @@ textarea {
 .mv7 {
   margin-top: 16rem;
   margin-bottom: 16rem;
+}
+
+.mta {
+  margin-top: auto;
+}
+
+.mra {
+  margin-right: auto;
+}
+
+.mba {
+  margin-bottom: auto;
+}
+
+.mla {
+  margin-left: auto;
 }
 
 /*
@@ -5146,6 +5163,18 @@ textarea {
     margin-top: 16rem;
     margin-bottom: 16rem;
   }
+  .sm-mta {
+    margin-top: auto;
+  }
+  .sm-mra {
+    margin-right: auto;
+  }
+  .sm-mba {
+    margin-bottom: auto;
+  }
+  .sm-mla {
+    margin-left: auto;
+  }
   .sm-p0 {
     padding: 0;
   }
@@ -6578,6 +6607,18 @@ textarea {
   .md-mv7 {
     margin-top: 16rem;
     margin-bottom: 16rem;
+  }
+  .md-mta {
+    margin-top: auto;
+  }
+  .md-mra {
+    margin-right: auto;
+  }
+  .md-mba {
+    margin-bottom: auto;
+  }
+  .md-mla {
+    margin-left: auto;
   }
   .md-p0 {
     padding: 0;
@@ -8012,6 +8053,18 @@ textarea {
     margin-top: 16rem;
     margin-bottom: 16rem;
   }
+  .lg-mta {
+    margin-top: auto;
+  }
+  .lg-mra {
+    margin-right: auto;
+  }
+  .lg-mba {
+    margin-bottom: auto;
+  }
+  .lg-mla {
+    margin-left: auto;
+  }
   .lg-p0 {
     padding: 0;
   }
@@ -9438,6 +9491,18 @@ textarea {
   .xl-mv7 {
     margin-top: 16rem;
     margin-bottom: 16rem;
+  }
+  .xl-mta {
+    margin-top: auto;
+  }
+  .xl-mra {
+    margin-right: auto;
+  }
+  .xl-mba {
+    margin-bottom: auto;
+  }
+  .xl-mla {
+    margin-left: auto;
   }
   .xl-p0 {
     padding: 0;
