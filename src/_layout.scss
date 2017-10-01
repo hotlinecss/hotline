@@ -35,40 +35,6 @@
 .left { float: left; }
 .right { float: right; }
 
-@include breakpoint("sm") {
-
-	.sm-border-box { box-sizing: border-box; }
-	.sm-content-box { box-sizing: content-box; }
-	.sm-inherit-box { box-sizing: inherit; }
-	.sm-hide { display: none; }
-	.sm-visible { opacity: 1; visibility: visible; }
-	.sm-block { display: block; }
-	.sm-hidden { visibility: hidden; }	.sm-inline-block { display: inline-block; }
-	.sm-inline { display: inline; }
-	.sm-table-wrap { display: table; }
-	.sm-table-fixed { table-layout: fixed; }
-	.sm-table-cell { display: table-cell; }
-	.sm-align-top { vertical-align: top; }
-	.sm-align-middle { vertical-align: middle; }
-	.sm-align-baseline { vertical-align: baseline; }
-	.sm-align-bottom { vertical-align: bottom; }
-	.sm-overflow-visible { overflow: visible; }
-	.sm-overflow-hidden { overflow: hidden; }
-	.sm-overflow-auto { overflow: auto; }
-	.sm-overflow-scroll { overflow: scroll; }
-	.sm-overflow-x-visible { overflow-x: visible; }
-	.sm-overflow-x-hidden { overflow-x: hidden; }
-	.sm-overflow-x-auto { overflow-x: auto; }
-	.sm-overflow-x-scroll { overflow-x: scroll; }
-	.sm-overflow-y-visible { overflow-y: visible; }
-	.sm-overflow-y-hidden { overflow-y: hidden; }
-	.sm-overflow-y-auto { overflow-y: auto; }
-	.sm-overflow-y-scroll { overflow-y: scroll; }
-	.sm-left { float: left; }
-	.sm-right { float: right; }
-
-}
-
 @include breakpoint("md") {
 
 	.md-border-box { box-sizing: border-box; }

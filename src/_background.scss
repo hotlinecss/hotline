@@ -22,28 +22,6 @@
 .bg-bottom { background-repeat: no-repeat; background-position: bottom center; }
 .bg-left { background-repeat: no-repeat; background-position: center left; }
 
-@include breakpoint("sm") {
-
-	.sm-bg-cover { background-size: cover; }
-	.sm-bg-contain { background-size: contain; }
-	.sm-bg-fixed { background-attachment: fixed; }
-	.sm-bg-repeat { background-repeat: repeat; }
-	.sm-bg-border-box { background-clip: border-box; }
-	.sm-bg-padding-box { background-clip: padding-box; }
-	.sm-bg-content-box { background-clip: content-box; }
-	.sm-bg-no-repeat { background-repeat: no-repeat; }
-	.sm-bg-repeat-x { background-repeat: repeat-x; }
-	.sm-bg-repeat-y { background-repeat: repeat-y; }
-	.sm-bg-repeat-space { background-repeat: space; }
-	.sm-bg-repeat-around { background-repeat: round; }
-	.sm-bg-center { background-repeat: no-repeat; background-position: center center; }
-	.sm-bg-top { background-repeat: no-repeat; background-position: top center; }
-	.sm-bg-right { background-repeat: no-repeat; background-position: center right; }
-	.sm-bg-bottom { background-repeat: no-repeat; background-position: bottom center; }
-	.sm-bg-left { background-repeat: no-repeat; background-position: center left; }
-
-}
-
 @include breakpoint("md") {
 
 	.md-bg-cover { background-size: cover; }

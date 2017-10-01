@@ -28,20 +28,6 @@
 .aspect-ratio--3x2 { padding-bottom: 66.66%; }
 .aspect-ratio-item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
 
-@include breakpoint("sm") {
-	.sm-events-auto { pointer-events: auto; }
-	.sm-events-none { pointer-events: none; }
-	.sm-events-inherit { pointer-events: inherit; }
-	.sm-fill { top: 0; right: 0; bottom: 0; left: 0; }
-	.sm-aspect-ratio { height: 0; position: relative }
-	.sm-aspect-ratio--16x9 { padding-bottom: 56.25%; }
-	.sm-aspect-ratio--8x5 { padding-bottom: 62.5%; }
-	.sm-aspect-ratio--4x3 { padding-bottom: 75%; }
-	.sm-aspect-ratio--3x2 { padding-bottom: 66.66%; }
-	.sm-aspect-ratio-item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
-
-}
-
 @include breakpoint("md") {
 
 	.md-events-auto { pointer-events: auto; }
