@@ -39,7 +39,9 @@
 .fs-italic { font-style: italic; }
 .underline { text-decoration: underline; }
 .strike { text-decoration: line-through; }
-.tracked { letter-spacing: .16rem; }
+.tracked-tight { letter-spacing: -0.05rem; }
+.tracked-normal { letter-spacing: 0; }
+.tracked-wide { letter-spacing: .16rem; }
 .text-center { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
@@ -115,7 +117,9 @@
 	.md-fs-italic { font-style: italic; }
 	.md-underline { text-decoration: underline; }
 	.md-strike { text-decoration: line-through; }
-	.md-tracked { letter-spacing: .16rem; }
+	.md-tracked-tight { letter-spacing: -0.05rem; }
+	.md-tracked-normal { letter-spacing: 0; }
+	.md-tracked-wide { letter-spacing: .16rem; }
 	.md-text-center { text-align: center; }
 	.md-text-left { text-align: left; }
 	.md-text-right { text-align: right; }
@@ -170,7 +174,9 @@
 	.lg-fs-italic { font-style: italic; }
 	.lg-underline { text-decoration: underline; }
 	.lg-strike { text-decoration: line-through; }
-	.lg-tracked { letter-spacing: .16rem; }
+	.lg-tracked-tight { letter-spacing: -0.05rem; }
+	.lg-tracked-normal { letter-spacing: 0; }
+	.lg-tracked-wide { letter-spacing: .16rem; }
 	.lg-text-center { text-align: center; }
 	.lg-text-left { text-align: left; }
 	.lg-text-right { text-align: right; }
@@ -225,7 +231,9 @@
 	.xl-fs-italic { font-style: italic; }
 	.xl-underline { text-decoration: underline; }
 	.xl-strike { text-decoration: line-through; }
-	.xl-tracked { letter-spacing: .16rem; }
+	.xl-tracked-tight { letter-spacing: -0.05rem; }
+	.xl-tracked-normal { letter-spacing: 0; }
+	.xl-tracked-wide { letter-spacing: .16rem; }
 	.xl-text-center { text-align: center; }
 	.xl-text-left { text-align: left; }
 	.xl-text-right { text-align: right; }

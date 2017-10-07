@@ -8,6 +8,7 @@
 .fixed { position: fixed; }
 .relative { position: relative; }
 .static { position: static; }
+.sticky { position: sticky; }
 .top-0 { top: 0; }
 .top-1 { top: .25rem; }
 .top-2 { top: .5rem; }
@@ -83,6 +84,7 @@
 	.md-fixed { position: fixed; }
 	.md-relative { position: relative; }
 	.md-static { position: static; }
+	.md-sticky { position: sticky; }
 	.md-top-0 { top: 0; }
 	.md-top-1 { top: .25rem; }
 	.md-top-2 { top: .5rem; }
@@ -160,6 +162,7 @@
 	.lg-fixed { position: fixed; }
 	.lg-relative { position: relative; }
 	.lg-static { position: static; }
+	.lg-sticky { position: sticky; }
 	.lg-top-0 { top: 0; }
 	.lg-top-1 { top: .25rem; }
 	.lg-top-2 { top: .5rem; }
@@ -237,6 +240,7 @@
 	.xl-fixed { position: fixed; }
 	.xl-relative { position: relative; }
 	.xl-static { position: static; }
+	.xl-sticky { position: sticky; }
 	.xl-top-0 { top: 0; }
 	.xl-top-1 { top: .25rem; }
 	.xl-top-2 { top: .5rem; }

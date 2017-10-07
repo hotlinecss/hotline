@@ -1,4 +1,4 @@
-/* hotlinecss - 4.0.0 - MIT */	/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* hotlinecss - 4.0.2 - MIT */	/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -1269,7 +1269,15 @@ textarea {
   text-decoration: line-through;
 }
 
-.tracked {
+.tracked-tight {
+  letter-spacing: -0.05rem;
+}
+
+.tracked-normal {
+  letter-spacing: 0;
+}
+
+.tracked-wide {
   letter-spacing: .16rem;
 }
 
@@ -1436,6 +1444,11 @@ textarea {
 
 .static {
   position: static;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .top-0 {
@@ -4715,7 +4728,13 @@ textarea {
   .md-strike {
     text-decoration: line-through;
   }
-  .md-tracked {
+  .md-tracked-tight {
+    letter-spacing: -0.05rem;
+  }
+  .md-tracked-normal {
+    letter-spacing: 0;
+  }
+  .md-tracked-wide {
     letter-spacing: .16rem;
   }
   .md-text-center {
@@ -4774,6 +4793,10 @@ textarea {
   }
   .md-static {
     position: static;
+  }
+  .md-sticky {
+    position: -webkit-sticky;
+    position: sticky;
   }
   .md-top-0 {
     top: 0;
@@ -6160,7 +6183,13 @@ textarea {
   .lg-strike {
     text-decoration: line-through;
   }
-  .lg-tracked {
+  .lg-tracked-tight {
+    letter-spacing: -0.05rem;
+  }
+  .lg-tracked-normal {
+    letter-spacing: 0;
+  }
+  .lg-tracked-wide {
     letter-spacing: .16rem;
   }
   .lg-text-center {
@@ -6219,6 +6248,10 @@ textarea {
   }
   .lg-static {
     position: static;
+  }
+  .lg-sticky {
+    position: -webkit-sticky;
+    position: sticky;
   }
   .lg-top-0 {
     top: 0;
@@ -7599,7 +7632,13 @@ textarea {
   .xl-strike {
     text-decoration: line-through;
   }
-  .xl-tracked {
+  .xl-tracked-tight {
+    letter-spacing: -0.05rem;
+  }
+  .xl-tracked-normal {
+    letter-spacing: 0;
+  }
+  .xl-tracked-wide {
     letter-spacing: .16rem;
   }
   .xl-text-center {
@@ -7658,6 +7697,10 @@ textarea {
   }
   .xl-static {
     position: static;
+  }
+  .xl-sticky {
+    position: -webkit-sticky;
+    position: sticky;
   }
   .xl-top-0 {
     top: 0;
