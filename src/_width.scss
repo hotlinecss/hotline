@@ -4,170 +4,45 @@
 
 */
 
-.w-auto { width: auto; }
-.w-inherit { width: inherit; }
-.w-0 { width: 0; }
-.w-10 { width: 10%; }
-.w-15 { width: 15%; }
-.w-20 { width: 20%; }
-.w-25 { width: 25%; }
-.w-30 { width: 30%; }
-.w-33 { width: 33%; }
-.w-40 { width: 40%; }
-.w-45 { width: 45%; }
-.w-50 { width: 50%; }
-.w-60 { width: 60%; }
-.w-66 { width: 66%; }
-.w-70 { width: 70%; }
-.w-75 { width: 75%; }
-.w-80 { width: 80%; }
-.w-90 { width: 90%; }
-.w-100 { width: 100%; }
-.w1 { width: 1rem; }
-.w2 { width: 2rem; }
-.w3 { width: 4rem; }
-.w4 { width: 8rem; }
-.w5 { width: 16rem; }
-.w6 { width: 32rem; }
-.mw-1 { max-width: 1rem; }
-.mw-2 { max-width: 2rem; }
-.mw-4 { max-width: 4rem; }
-.mw-8 { max-width: 8rem; }
-.mw-16 { max-width: 16rem; }
-.mw-32 { max-width: 32rem; }
-.mw-48 { max-width: 48rem; }
-.mw-60 { max-width: 60rem; }
-.mw-64 { max-width: 64rem; }
-.mw-80 { max-width: 80rem; }
-.mw-90 { max-width: 90rem; }
-.vw-50 { width: 50vw; }
-.vw-100 { width: 100vw; }
+@include breakpoints {
 
-@include breakpoint("md") {
-
-	.md-w-auto { width: auto; }
-	.md-w-inherit { width: inherit; }
-	.md-w-0 { width: 0; }
-	.md-w-10 { width: 10%; }
-	.md-w-15 { width: 15%; }
-	.md-w-20 { width: 20%; }
-	.md-w-25 { width: 25%; }
-	.md-w-30 { width: 30%; }
-	.md-w-33 { width: 33%; }
-	.md-w-40 { width: 40%; }
-	.md-w-45 { width: 45%; }
-	.md-w-50 { width: 50%; }
-	.md-w-60 { width: 60%; }
-	.md-w-66 { width: 66%; }
-	.md-w-70 { width: 70%; }
-	.md-w-75 { width: 75%; }
-	.md-w-80 { width: 80%; }
-	.md-w-90 { width: 90%; }
-	.md-w-100 { width: 100%; }
-	.md-w1 { width: 1rem; }
-	.md-w2 { width: 2rem; }
-	.md-w3 { width: 4rem; }
-	.md-w4 { width: 8rem; }
-	.md-w5 { width: 16rem; }
-	.md-w6 { width: 32rem; }
-	.md-mw-1 { max-width: 1rem; }
-	.md-mw-2 { max-width: 2rem; }
-	.md-mw-4 { max-width: 4rem; }
-	.md-mw-8 { max-width: 8rem; }
-	.md-mw-16 { max-width: 16rem; }
-	.md-mw-32 { max-width: 32rem; }
-	.md-mw-48 { max-width: 48rem; }
-	.md-mw-60 { max-width: 60rem; }
-	.md-mw-64 { max-width: 64rem; }
-	.md-mw-80 { max-width: 80rem; }
-	.md-mw-90 { max-width: 90rem; }
-	.md-vw-50 { width: 50vw; }
-	.md-vw-100 { width: 100vw; }
-
-}
-
-@include breakpoint("lg") {
-
-	.lg-w-auto { width: auto; }
-	.lg-w-inherit { width: inherit; }
-	.lg-w-0 { width: 0; }
-	.lg-w-10 { width: 10%; }
-	.lg-w-15 { width: 15%; }
-	.lg-w-20 { width: 20%; }
-	.lg-w-25 { width: 25%; }
-	.lg-w-30 { width: 30%; }
-	.lg-w-33 { width: 33%; }
-	.lg-w-40 { width: 40%; }
-	.lg-w-45 { width: 45%; }
-	.lg-w-50 { width: 50%; }
-	.lg-w-60 { width: 60%; }
-	.lg-w-66 { width: 66%; }
-	.lg-w-70 { width: 70%; }
-	.lg-w-75 { width: 75%; }
-	.lg-w-80 { width: 80%; }
-	.lg-w-90 { width: 90%; }
-	.lg-w-100 { width: 100%; }
-	.lg-w1 { width: 1rem; }
-	.lg-w2 { width: 2rem; }
-	.lg-w3 { width: 4rem; }
-	.lg-w4 { width: 8rem; }
-	.lg-w5 { width: 16rem; }
-	.lg-w6 { width: 32rem; }
-	.lg-mw-1 { max-width: 1rem; }
-	.lg-mw-2 { max-width: 2rem; }
-	.lg-mw-4 { max-width: 4rem; }
-	.lg-mw-8 { max-width: 8rem; }
-	.lg-mw-16 { max-width: 16rem; }
-	.lg-mw-32 { max-width: 32rem; }
-	.lg-mw-48 { max-width: 48rem; }
-	.lg-mw-60 { max-width: 60rem; }
-	.lg-mw-64 { max-width: 64rem; }
-	.lg-mw-80 { max-width: 80rem; }
-	.lg-mw-90 { max-width: 90rem; }
-	.lg-vw-50 { width: 50vw; }
-	.lg-vw-100 { width: 100vw; }
-
-}
-
-@include breakpoint("xl") {
-
-	.xl-w-auto { width: auto; }
-	.xl-w-inherit { width: inherit; }
-	.xl-w-0 { width: 0; }
-	.xl-w-10 { width: 10%; }
-	.xl-w-15 { width: 15%; }
-	.xl-w-20 { width: 20%; }
-	.xl-w-25 { width: 25%; }
-	.xl-w-30 { width: 30%; }
-	.xl-w-33 { width: 33%; }
-	.xl-w-40 { width: 40%; }
-	.xl-w-45 { width: 45%; }
-	.xl-w-50 { width: 50%; }
-	.xl-w-60 { width: 60%; }
-	.xl-w-66 { width: 66%; }
-	.xl-w-70 { width: 70%; }
-	.xl-w-75 { width: 75%; }
-	.xl-w-80 { width: 80%; }
-	.xl-w-90 { width: 90%; }
-	.xl-w-100 { width: 100%; }
-	.xl-w1 { width: 1rem; }
-	.xl-w2 { width: 2rem; }
-	.xl-w3 { width: 4rem; }
-	.xl-w4 { width: 8rem; }
-	.xl-w5 { width: 16rem; }
-	.xl-w6 { width: 32rem; }
-	.xl-mw-1 { max-width: 1rem; }
-	.xl-mw-2 { max-width: 2rem; }
-	.xl-mw-4 { max-width: 4rem; }
-	.xl-mw-8 { max-width: 8rem; }
-	.xl-mw-16 { max-width: 16rem; }
-	.xl-mw-32 { max-width: 32rem; }
-	.xl-mw-48 { max-width: 48rem; }
-	.xl-mw-60 { max-width: 60rem; }
-	.xl-mw-64 { max-width: 64rem; }
-	.xl-mw-80 { max-width: 80rem; }
-	.xl-mw-90 { max-width: 90rem; }
-	.xl-vw-50 { width: 50vw; }
-	.xl-vw-100 { width: 100vw; }
+	&w-auto { width: auto; }
+	&w-inherit { width: inherit; }
+	&w-0 { width: 0; }
+	&w-10 { width: 10%; }
+	&w-15 { width: 15%; }
+	&w-20 { width: 20%; }
+	&w-25 { width: 25%; }
+	&w-30 { width: 30%; }
+	&w-33 { width: 33%; }
+	&w-40 { width: 40%; }
+	&w-45 { width: 45%; }
+	&w-50 { width: 50%; }
+	&w-60 { width: 60%; }
+	&w-66 { width: 66%; }
+	&w-70 { width: 70%; }
+	&w-75 { width: 75%; }
+	&w-80 { width: 80%; }
+	&w-90 { width: 90%; }
+	&w-100 { width: 100%; }
+	&w1 { width: 1rem; }
+	&w2 { width: 2rem; }
+	&w3 { width: 4rem; }
+	&w4 { width: 8rem; }
+	&w5 { width: 16rem; }
+	&w6 { width: 32rem; }
+	&mw-1 { max-width: 1rem; }
+	&mw-2 { max-width: 2rem; }
+	&mw-4 { max-width: 4rem; }
+	&mw-8 { max-width: 8rem; }
+	&mw-16 { max-width: 16rem; }
+	&mw-32 { max-width: 32rem; }
+	&mw-48 { max-width: 48rem; }
+	&mw-60 { max-width: 60rem; }
+	&mw-64 { max-width: 64rem; }
+	&mw-80 { max-width: 80rem; }
+	&mw-90 { max-width: 90rem; }
+	&vw-50 { width: 50vw; }
+	&vw-100 { width: 100vw; }
 
 }

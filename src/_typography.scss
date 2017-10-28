@@ -4,64 +4,70 @@
 
 */
 
-.measure-wide { max-width: 34em }
-.measure { max-width: 30em }
-.measure-narrow { max-width: 20em }
-.headline { font-size: 6rem; }
-.sub-headline { font-size: 5rem; }
-.f1 { font-size: 3rem; }
-.f2 { font-size: 2.25rem; }
-.f3 { font-size: 1.5rem; }
-.f4 { font-size: 1.25rem; }
-.f5 { font-size: 1rem; }
-.f6 { font-size: .875rem; }
-.f-normal { font-size: medium; }
-.fw-lighter { font-weight: lighter; }
-.fw-normal { font-weight: normal; }
-.fw-bolder { font-weight: bolder; }
-.fw-bold { font-weight: bold; }
-.fw1 { font-weight: 100; }
-.fw2 { font-weight: 200; }
-.fw3 { font-weight: 300; }
-.fw4 { font-weight: 400; }
-.fw5 { font-weight: 500; }
-.fw6 { font-weight: 600; }
-.fw7 { font-weight: 700; }
-.fw8 { font-weight: 800; }
-.fw9 { font-weight: 900; }
-.lh-normal { line-height: 1; }
-.lh-title { line-height: 1.25; }
-.lh-copy { line-height: 1.5; }
-.upper { text-transform: uppercase; }
-.lowercase { text-transform: lowercase; }
-.caps { text-transform: capitalize; }
-.fs-normal { font-style: normal; }
-.fs-italic { font-style: italic; }
-.underline { text-decoration: underline; }
-.strike { text-decoration: line-through; }
-.tracked-tight { letter-spacing: -0.05rem; }
-.tracked-normal { letter-spacing: 0; }
-.tracked-wide { letter-spacing: .16rem; }
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-.text-justify { text-align: justify; }
-.truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.ws-prewrap { white-space: pre-wrap; }
-.ws-preline { white-space: pre-line; }
-.ws-nowrap { white-space: nowrap; }
-.ws-normal { white-space: normal; }
-.break-word { word-wrap: break-word; }
-.small-caps { font-variant: small-caps; }
-.font-family-inherit { font-family: inherit; }
-.font-size-inherit { font-size: inherit; }
-.font-color-inherit { color: inherit; }
+@include breakpoints {
+
+	&measure-wide { max-width: 34em }
+	&measure { max-width: 30em }
+	&measure-narrow { max-width: 20em }
+	&headline { font-size: 6rem; }
+	&sub-headline { font-size: 5rem; }
+	&f1 { font-size: 3rem; }
+	&f2 { font-size: 2.25rem; }
+	&f3 { font-size: 1.5rem; }
+	&f4 { font-size: 1.25rem; }
+	&f5 { font-size: 1rem; }
+	&f6 { font-size: .875rem; }
+	&f-normal { font-size: medium; }
+	&fw-lighter { font-weight: lighter; }
+	&fw-normal { font-weight: normal; }
+	&fw-bolder { font-weight: bolder; }
+	&fw-bold { font-weight: bold; }
+	&fw1 { font-weight: 100; }
+	&fw2 { font-weight: 200; }
+	&fw3 { font-weight: 300; }
+	&fw4 { font-weight: 400; }
+	&fw5 { font-weight: 500; }
+	&fw6 { font-weight: 600; }
+	&fw7 { font-weight: 700; }
+	&fw8 { font-weight: 800; }
+	&fw9 { font-weight: 900; }
+	&lh-normal { line-height: 1; }
+	&lh-title { line-height: 1.25; }
+	&lh-copy { line-height: 1.5; }
+	&upper { text-transform: uppercase; }
+	&lowercase { text-transform: lowercase; }
+	&caps { text-transform: capitalize; }
+	&fs-normal { font-style: normal; }
+	&fs-italic { font-style: italic; }
+	&decoration-none { text-decoration: none; }
+	&underline { text-decoration: underline; }
+	&strike { text-decoration: line-through; }
+	&tracked-tight { letter-spacing: -0.05rem; }
+	&tracked-normal { letter-spacing: 0; }
+	&tracked-wide { letter-spacing: .16rem; }
+	&text-center { text-align: center; }
+	&text-left { text-align: left; }
+	&text-right { text-align: right; }
+	&text-justify { text-align: justify; }
+	&truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	&ws-prewrap { white-space: pre-wrap; }
+	&ws-preline { white-space: pre-line; }
+	&ws-nowrap { white-space: nowrap; }
+	&ws-normal { white-space: normal; }
+	&break-word { word-wrap: break-word; }
+	&small-caps { font-variant: small-caps; }
+	&font-family-inherit { font-family: inherit; }
+	&font-size-inherit { font-size: inherit; }
+	&font-color-inherit { color: inherit; }
+
+}
 
 /*
 
 	Font family
 
 */
+
 .sans-serif {
   font-family: -apple-system,
   						 system-ui,
@@ -79,174 +85,3 @@
 .georgia { font-family: georgia, serif; }
 .verdana { font-family: verdana, sans-serif; }
 .code { font-family: Consolas, monaco, monospace; }
-
-@include breakpoint("md") {
-
-	.md-measure-wide { max-width: 34em }
-	.md-measure { max-width: 30em }
-	.md-measure-narrow { max-width: 20em }
-	.md-headline { font-size: 6rem; }
-	.md-sub-headline { font-size: 5rem; }
-	.md-f1 { font-size: 3rem; }
-	.md-f2 { font-size: 2.25rem; }
-	.md-f3 { font-size: 1.5rem; }
-	.md-f4 { font-size: 1.25rem; }
-	.md-f5 { font-size: 1rem; }
-	.md-f6 { font-size: .875rem; }
-	.md-f-normal { font-size: medium; }
-	.md-fw-lighter { font-weight: lighter; }
-	.md-fw-normal { font-weight: normal; }
-	.md-fw-bolder { font-weight: bolder; }
-	.md-fw-bold { font-weight: bold; }
-	.md-fw1 { font-weight: 100; }
-	.md-fw2 { font-weight: 200; }
-	.md-fw3 { font-weight: 300; }
-	.md-fw4 { font-weight: 400; }
-	.md-fw5 { font-weight: 500; }
-	.md-fw6 { font-weight: 600; }
-	.md-fw7 { font-weight: 700; }
-	.md-fw8 { font-weight: 800; }
-	.md-fw9 { font-weight: 900; }
-	.md-lh-normal { line-height: 1; }
-	.md-lh-title { line-height: 1.25; }
-	.md-lh-copy { line-height: 1.5; }
-	.md-upper { text-transform: uppercase; }
-	.md-lowercase { text-transform: lowercase; }
-	.md-caps { text-transform: capitalize; }
-	.md-fs-normal { font-style: normal; }
-	.md-fs-italic { font-style: italic; }
-	.md-underline { text-decoration: underline; }
-	.md-strike { text-decoration: line-through; }
-	.md-tracked-tight { letter-spacing: -0.05rem; }
-	.md-tracked-normal { letter-spacing: 0; }
-	.md-tracked-wide { letter-spacing: .16rem; }
-	.md-text-center { text-align: center; }
-	.md-text-left { text-align: left; }
-	.md-text-right { text-align: right; }
-	.md-text-justify { text-align: justify; }
-	.md-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-	.md-ws-prewrap { white-space: pre-wrap; }
-	.md-ws-preline { white-space: pre-line; }
-	.md-ws-nowrap { white-space: nowrap; }
-	.md-ws-normal { white-space: normal; }
-	.md-break-word { word-wrap: break-word; }
-	.md-small-caps { font-variant: small-caps; }
-	.md-font-family-inherit { font-family: inherit; }
-	.md-font-size-inherit { font-size: inherit; }
-	.md-font-color-inherit { color: inherit; }
-
-}
-
-@include breakpoint("lg") {
-
-	.lg-measure-wide { max-width: 34em }
-	.lg-measure { max-width: 30em }
-	.lg-measure-narrow { max-width: 20em }
-	.lg-headline { font-size: 6rem; }
-	.lg-sub-headline { font-size: 5rem; }
-	.lg-f1 { font-size: 3rem; }
-	.lg-f2 { font-size: 2.25rem; }
-	.lg-f3 { font-size: 1.5rem; }
-	.lg-f4 { font-size: 1.25rem; }
-	.lg-f5 { font-size: 1rem; }
-	.lg-f6 { font-size: .875rem; }
-	.lg-f-normal { font-size: medium; }
-	.lg-fw-lighter { font-weight: lighter; }
-	.lg-fw-normal { font-weight: normal; }
-	.lg-fw-bolder { font-weight: bolder; }
-	.lg-fw-bold { font-weight: bold; }
-	.lg-fw1 { font-weight: 100; }
-	.lg-fw2 { font-weight: 200; }
-	.lg-fw3 { font-weight: 300; }
-	.lg-fw4 { font-weight: 400; }
-	.lg-fw5 { font-weight: 500; }
-	.lg-fw6 { font-weight: 600; }
-	.lg-fw7 { font-weight: 700; }
-	.lg-fw8 { font-weight: 800; }
-	.lg-fw9 { font-weight: 900; }
-	.lg-lh-normal { line-height: 1; }
-	.lg-lh-title { line-height: 1.25; }
-	.lg-lh-copy { line-height: 1.5; }
-	.lg-upper { text-transform: uppercase; }
-	.lg-lowercase { text-transform: lowercase; }
-	.lg-caps { text-transform: capitalize; }
-	.lg-fs-normal { font-style: normal; }
-	.lg-fs-italic { font-style: italic; }
-	.lg-underline { text-decoration: underline; }
-	.lg-strike { text-decoration: line-through; }
-	.lg-tracked-tight { letter-spacing: -0.05rem; }
-	.lg-tracked-normal { letter-spacing: 0; }
-	.lg-tracked-wide { letter-spacing: .16rem; }
-	.lg-text-center { text-align: center; }
-	.lg-text-left { text-align: left; }
-	.lg-text-right { text-align: right; }
-	.lg-text-justify { text-align: justify; }
-	.lg-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-	.lg-ws-prewrap { white-space: pre-wrap; }
-	.lg-ws-preline { white-space: pre-line; }
-	.lg-ws-nowrap { white-space: nowrap; }
-	.lg-ws-normal { white-space: normal; }
-	.lg-break-word { word-wrap: break-word; }
-	.lg-small-caps { font-variant: small-caps; }
-	.lg-font-family-inherit { font-family: inherit; }
-	.lg-font-size-inherit { font-size: inherit; }
-	.lg-font-color-inherit { color: inherit; }
-
-}
-
-@include breakpoint("xl") {
-
-	.xl-measure-wide { max-width: 34em }
-	.xl-measure { max-width: 30em }
-	.xl-measure-narrow { max-width: 20em }
-	.xl-headline { font-size: 6rem; }
-	.xl-sub-headline { font-size: 5rem; }
-	.xl-f1 { font-size: 3rem; }
-	.xl-f2 { font-size: 2.25rem; }
-	.xl-f3 { font-size: 1.5rem; }
-	.xl-f4 { font-size: 1.25rem; }
-	.xl-f5 { font-size: 1rem; }
-	.xl-f6 { font-size: .875rem; }
-	.xl-f-normal { font-size: medium; }
-	.xl-fw-lighter { font-weight: lighter; }
-	.xl-fw-normal { font-weight: normal; }
-	.xl-fw-bolder { font-weight: bolder; }
-	.xl-fw-bold { font-weight: bold; }
-	.xl-fw1 { font-weight: 100; }
-	.xl-fw2 { font-weight: 200; }
-	.xl-fw3 { font-weight: 300; }
-	.xl-fw4 { font-weight: 400; }
-	.xl-fw5 { font-weight: 500; }
-	.xl-fw6 { font-weight: 600; }
-	.xl-fw7 { font-weight: 700; }
-	.xl-fw8 { font-weight: 800; }
-	.xl-fw9 { font-weight: 900; }
-	.xl-lh-normal { line-height: 1; }
-	.xl-lh-title { line-height: 1.25; }
-	.xl-lh-copy { line-height: 1.5; }
-	.xl-upper { text-transform: uppercase; }
-	.xl-lowercase { text-transform: lowercase; }
-	.xl-caps { text-transform: capitalize; }
-	.xl-fs-normal { font-style: normal; }
-	.xl-fs-italic { font-style: italic; }
-	.xl-underline { text-decoration: underline; }
-	.xl-strike { text-decoration: line-through; }
-	.xl-tracked-tight { letter-spacing: -0.05rem; }
-	.xl-tracked-normal { letter-spacing: 0; }
-	.xl-tracked-wide { letter-spacing: .16rem; }
-	.xl-text-center { text-align: center; }
-	.xl-text-left { text-align: left; }
-	.xl-text-right { text-align: right; }
-	.xl-text-justify { text-align: justify; }
-	.xl-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-	.xl-ws-prewrap { white-space: pre-wrap; }
-	.xl-ws-preline { white-space: pre-line; }
-	.xl-ws-nowrap { white-space: nowrap; }
-	.xl-ws-normal { white-space: normal; }
-	.xl-break-word { word-wrap: break-word; }
-	.xl-small-caps { font-variant: small-caps; }
-	.xl-font-family-inherit { font-family: inherit; }
-	.xl-font-size-inherit { font-size: inherit; }
-	.xl-font-color-inherit { color: inherit; }
-
-}

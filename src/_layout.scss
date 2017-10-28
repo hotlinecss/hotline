@@ -4,137 +4,37 @@
 
 */
 
-.border-box { box-sizing: border-box; }
-.content-box { box-sizing: content-box; }
-.inherit-box { box-sizing: inherit; }
-.hide { display: none; }
-.visible { opacity: 1; visibility: visible; }
-.block { display: block; }
-.hidden { visibility: hidden; }
-.inline-block { display: inline-block; }
-.inline { display: inline; }
-.table-wrap { display: table; }
-.table-fixed { table-layout: fixed; }
-.table-cell { display: table-cell; }
-.align-top { vertical-align: top; }
-.align-middle { vertical-align: middle; }
-.align-baseline { vertical-align: baseline; }
-.align-bottom { vertical-align: bottom; }
-.overflow-visible { overflow: visible; }
-.overflow-hidden { overflow: hidden; }
-.overflow-auto { overflow: auto; }
-.overflow-scroll { overflow: scroll; }
-.overflow-x-visible { overflow-x: visible; }
-.overflow-x-hidden { overflow-x: hidden; }
-.overflow-x-auto { overflow-x: auto; }
-.overflow-x-scroll { overflow-x: scroll; }
-.overflow-y-visible { overflow-y: visible; }
-.overflow-y-hidden { overflow-y: hidden; }
-.overflow-y-auto { overflow-y: auto; }
-.overflow-y-scroll { overflow-y: scroll; }
-.left { float: left; }
-.right { float: right; }
-
-@include breakpoint("md") {
-
-	.md-border-box { box-sizing: border-box; }
-	.md-content-box { box-sizing: content-box; }
-	.md-inherit-box { box-sizing: inherit; }
-	.md-hide { display: none; }
-	.md-visible { opacity: 1; visibility: visible; }
-	.md-block { display: block; }
-	.md-hidden { visibility: hidden; }	.md-inline-block { display: inline-block; }
-	.md-inline { display: inline; }
-	.md-table-wrap { display: table; }
-	.md-table-fixed { table-layout: fixed; }
-	.md-table-cell { display: table-cell; }
-	.md-align-top { vertical-align: top; }
-	.md-align-middle { vertical-align: middle; }
-	.md-align-baseline { vertical-align: baseline; }
-	.md-align-bottom { vertical-align: bottom; }
-	.md-overflow-visible { overflow: visible; }
-	.md-overflow-hidden { overflow: hidden; }
-	.md-overflow-auto { overflow: auto; }
-	.md-overflow-scroll { overflow: scroll; }
-	.md-overflow-x-visible { overflow-x: visible; }
-	.md-overflow-x-hidden { overflow-x: hidden; }
-	.md-overflow-x-auto { overflow-x: auto; }
-	.md-overflow-x-scroll { overflow-x: scroll; }
-	.md-overflow-y-visible { overflow-y: visible; }
-	.md-overflow-y-hidden { overflow-y: hidden; }
-	.md-overflow-y-auto { overflow-y: auto; }
-	.md-overflow-y-scroll { overflow-y: scroll; }
-	.md-left { float: left; }
-	.md-right { float: right; }
-
-}
-
-@include breakpoint("lg") {
-
-	.lg-border-box { box-sizing: border-box; }
-	.lg-content-box { box-sizing: content-box; }
-	.lg-inherit-box { box-sizing: inherit; }
-	.lg-hide { display: none; }
-	.lg-visible { opacity: 1; visibility: visible; }
-	.lg-block { display: block; }
-	.lg-hidden { visibility: hidden; }
-	.lg-inline-block { display: inline-block; }
-	.lg-inline { display: inline; }
-	.lg-table-wrap { display: table; }
-	.lg-table-fixed { table-layout: fixed; }
-	.lg-table-cell { display: table-cell; }
-	.lg-align-top { vertical-align: top; }
-	.lg-align-middle { vertical-align: middle; }
-	.lg-align-baseline { vertical-align: baseline; }
-	.lg-align-bottom { vertical-align: bottom; }
-	.lg-overflow-visible { overflow: visible; }
-	.lg-overflow-hidden { overflow: hidden; }
-	.lg-overflow-auto { overflow: auto; }
-	.lg-overflow-scroll { overflow: scroll; }
-	.lg-overflow-x-visible { overflow-x: visible; }
-	.lg-overflow-x-hidden { overflow-x: hidden; }
-	.lg-overflow-x-auto { overflow-x: auto; }
-	.lg-overflow-x-scroll { overflow-x: scroll; }
-	.lg-overflow-y-visible { overflow-y: visible; }
-	.lg-overflow-y-hidden { overflow-y: hidden; }
-	.lg-overflow-y-auto { overflow-y: auto; }
-	.lg-overflow-y-scroll { overflow-y: scroll; }
-	.lg-left { float: left; }
-	.lg-right { float: right; }
-
-}
-
-@include breakpoint("xl") {
-
-	.xl-border-box { box-sizing: border-box; }
-	.xl-content-box { box-sizing: content-box; }
-	.xl-inherit-box { box-sizing: inherit; }
-	.xl-hide { display: none; }
-	.xl-visible { opacity: 1; visibility: visible; }
-	.xl-block { display: block; }
-	.xl-hidden { visibility: hidden; }
-	.xl-inline-block { display: inline-block; }
-	.xl-inline { display: inline; }
-	.xl-table-wrap { display: table; }
-	.xl-table-fixed { table-layout: fixed; }
-	.xl-table-cell { display: table-cell; }
-	.xl-align-top { vertical-align: top; }
-	.xl-align-middle { vertical-align: middle; }
-	.xl-align-baseline { vertical-align: baseline; }
-	.xl-align-bottom { vertical-align: bottom; }
-	.xl-overflow-visible { overflow: visible; }
-	.xl-overflow-hidden { overflow: hidden; }
-	.xl-overflow-auto { overflow: auto; }
-	.xl-overflow-scroll { overflow: scroll; }
-	.xl-overflow-x-visible { overflow-x: visible; }
-	.xl-overflow-x-hidden { overflow-x: hidden; }
-	.xl-overflow-x-auto { overflow-x: auto; }
-	.xl-overflow-x-scroll { overflow-x: scroll; }
-	.xl-overflow-y-visible { overflow-y: visible; }
-	.xl-overflow-y-hidden { overflow-y: hidden; }
-	.xl-overflow-y-auto { overflow-y: auto; }
-	.xl-overflow-y-scroll { overflow-y: scroll; }
-	.xl-left { float: left; }
-	.xl-right { float: right; }
+@include breakpoints {
+	
+	&border-box { box-sizing: border-box; }
+	&content-box { box-sizing: content-box; }
+	&inherit-box { box-sizing: inherit; }
+	&hide { display: none; }
+	&visible { opacity: 1; visibility: visible; }
+	&block { display: block; }
+	&hidden { visibility: hidden; }
+	&inline-block { display: inline-block; }
+	&inline { display: inline; }
+	&table-wrap { display: table; }
+	&table-fixed { table-layout: fixed; }
+	&table-cell { display: table-cell; }
+	&align-top { vertical-align: top; }
+	&align-middle { vertical-align: middle; }
+	&align-baseline { vertical-align: baseline; }
+	&align-bottom { vertical-align: bottom; }
+	&overflow-visible { overflow: visible; }
+	&overflow-hidden { overflow: hidden; }
+	&overflow-auto { overflow: auto; }
+	&overflow-scroll { overflow: scroll; }
+	&overflow-x-visible { overflow-x: visible; }
+	&overflow-x-hidden { overflow-x: hidden; }
+	&overflow-x-auto { overflow-x: auto; }
+	&overflow-x-scroll { overflow-x: scroll; }
+	&overflow-y-visible { overflow-y: visible; }
+	&overflow-y-hidden { overflow-y: hidden; }
+	&overflow-y-auto { overflow-y: auto; }
+	&overflow-y-scroll { overflow-y: scroll; }
+	&pull-left { float: left; }
+	&pull-right { float: right; }
 
 }

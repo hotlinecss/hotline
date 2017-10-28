@@ -25,17 +25,17 @@ gulp.task("build:css", function() {
 		.pipe(sass({outputStyle: "expanded"}).on("error", sass.logError))
 		.pipe(prefix({browsers: options.prefix }))
 		.pipe(postcss(options.processors))
-		.pipe(header("/* ${pkg.name} - ${pkg.version} - ${pkg.license} */\t", {pkg: pkg}))
+		.pipe(header("/* ${pkg.name} - ${pkg.version} - ${pkg.license} */\t\n", {pkg: pkg}))
 		.pipe(gulp.dest(options.paths.dist))
 		.pipe(size({title: "Raw: "}))
 		.pipe(clean())
 		.pipe(rename({suffix: ".min"}))
-		.pipe(header("/* ${pkg.name} - ${pkg.version} - ${pkg.license} */\t", {pkg: pkg}))
+		.pipe(header("/* ${pkg.name} - ${pkg.version} - ${pkg.license} */\t\n", {pkg: pkg}))
 		.pipe(size({title: "Min: "}))
 		.pipe(size({title: "Gzip: ", gzip: true}))
 		.pipe(gulp.dest(options.paths.dist))
 });
 
 gulp.task("default", ["build:css"], function() {
-	gulp.watch(options.paths.srcAll, ["build:css"])
+	gulp.watch(options.paths.srcAll, ["build:css"]);
 })
