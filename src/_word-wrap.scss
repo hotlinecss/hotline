@@ -1,0 +1,17 @@
+/*
+
+	Word wrap
+
+*/
+
+@include breakpoints {
+
+	@each $word-wrapKey, $word-wrapValue in $word-wrap {
+		
+		&#{$word-wrap-name}-#{$word-wrapKey} {
+			word-wrap: #{$word-wrapValue};
+		}
+
+	}
+
+}

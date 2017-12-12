@@ -1,0 +1,17 @@
+/*
+
+	Text decoration
+
+*/
+
+@include breakpoints {
+
+	@each $text-decorationKey, $text-decorationValue in $text-decoration {
+		
+		&#{$text-decoration-name}-#{$text-decorationKey} {
+			text-decoration: #{$text-decorationValue};
+		}
+
+	}
+
+}

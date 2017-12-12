@@ -1,0 +1,13 @@
+/*
+
+	Opacity
+
+*/
+
+@each $opacityKey, $opacityValue in $opacity {
+
+	.#{$opacity-name}-#{$opacityKey} {
+		opacity: #{$opacityValue};
+	}
+
+}

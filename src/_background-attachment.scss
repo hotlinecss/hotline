@@ -1,0 +1,17 @@
+/*
+
+	Background attachment
+
+*/
+
+@include breakpoints {
+
+	@each $background-attachmentKey, $background-attachmentValue in $background-attachment {
+		
+		&#{$background-attachment-name}-#{$background-attachmentKey} {
+			background-attachment: #{$background-attachmentValue};
+		}
+
+	}
+
+}

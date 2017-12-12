@@ -1,0 +1,17 @@
+/*
+
+	Background size
+
+*/
+
+@include breakpoints {
+
+	@each $background-sizeKey, $background-sizeValue in $background-size {
+		
+		&#{$background-size-name}-#{$background-sizeKey} {
+			background-size: #{$background-sizeValue};
+		}
+
+	}
+
+}

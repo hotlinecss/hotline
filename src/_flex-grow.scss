@@ -1,0 +1,17 @@
+/*
+
+	Flex grow
+
+*/
+
+@include breakpoints {
+
+	@each $flex-growKey, $flex-growValue in $flex-grow {
+		
+		&#{$flex-grow-name}-#{$flex-growKey} {
+			flex-grow: #{$flex-growValue};
+		}
+
+	}
+
+}

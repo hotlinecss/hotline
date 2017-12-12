@@ -1,8 +1,4 @@
-//
-
 // Configuration
-
-//
 
 $breakpoints: (
   "xs": null,
@@ -11,39 +7,588 @@ $breakpoints: (
 	"xl": 75em  // 1200px
 );
 
-//
+$sides: (
+  "none": "none",
+  "all": "all",
+  "top": "top",
+  "right": "right",
+  "bottom": "bottom",
+  "left": "left",
+  "horizontal": "horizontal",
+  "vertical": "vertical",
+  "center": "center"
+);
 
-// Mixins
+// Display
 
-//
+$display-name: "display";
+$display: (
+  "flex": "flex",
+  "inline-flex": "inline-flex",
+  "inline-block": "inline-block",
+  "none": "none",
+  "block": "block",
+  "inline": "inline",
+  "table": "table",
+  "cell": "table-cell"
+);
 
-$responsive-classes: true;
+// Flex wrap
 
-@mixin breakpoints {
-  @if ($responsive-classes == true) {
-  @each $breakpoint-name, $breakpoint-value in $breakpoints {
-    $breakpoint-prefix: "#{$breakpoint-name}-";
-    @include media-query($breakpoint-name) {
-      .#{$breakpoint-prefix} {
-        @content;
-      }
-    }
-   }
-  } @else {
-   .xs-{ @content; }
-  }
-}
+$flex-wrap-name: "flex";
+$flex-wrap: (
+  "wrap": "wrap",
+  "nowrap": "nowrap",
+  "wrap-reverse": "wrap-reverse"
+);
 
-@mixin media-query($breakpoint) {
-  @if (map-has-key($breakpoints, $breakpoint) != true) {
-    @error "Error in media query";
-  } 
-  @else if(map-get($breakpoints, $breakpoint)) == null {
-    @content;
-  } 
-  @else {
-    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
-      @content;
-    }
-  }
-}
+// Flex direction
+
+$flex-direction-name: "flex";
+$flex-direction: (
+  "column": "column",
+  "row-reverse": "row-reverse",
+  "column-reverse": "column-reverse"
+);
+
+// Justify content
+
+$justify-content-name: "justify";
+$justify-content: (
+  "start": "flex-start",
+  "center": "center",
+  "end": "flex-end",
+  "between": "space-between",
+  "around": "space-around"
+);
+
+// Align items
+
+$align-items-name: "items";
+$align-items: (
+  "start": "flex-start",
+  "center": "center",
+  "end": "flex-end",
+  "stretch": "stretch",
+  "baseline": "baseline"
+);
+
+// Align content
+
+$align-content-name: "content";
+$align-content: (
+  "start": "flex-start",
+  "center": "center",
+  "end": "flex-end",
+  "between": "space-between",
+  "around": "space-around",
+  "stretch": "stretch"
+);
+
+// Align self
+
+$align-self-name: "self";
+$align-self: (
+  "start": "flex-start",
+  "center": "center",
+  "end": "flex-end",
+  "stretch": "stretch",
+  "baseline": "baseline"
+);
+
+$flex-grow-name: "flex-grow";
+$flex-grow: (
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "inherit": "inherit"
+);
+
+// Order
+
+$order-name: "order";
+$order: (
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "4": 4,
+  "5": 5,
+  "6": 6,
+  "last": 999
+);
+
+// Position
+
+$position-name: "position";
+$position: (
+  "absolute": "absolute",
+  "relative": "relative",
+  "static": "static",
+  "sticky": "sticky",
+  "fixed": "fixed"
+);
+
+// Float
+
+$float-name: "push";
+$float: (
+  "left": "left",
+  "right": "right",
+  "none": "none"
+);
+
+// Coordinates
+
+$coordinates: (
+  "0": 0,
+  "1": ".25rem",
+  "2": ".5rem",
+  "3": "1rem",
+  "4": "2rem",
+  "5": "4rem",
+  "6": "8rem",
+  "7": "16rem"
+);
+
+// Z index
+
+$z-index-name: "z-index";
+$z-index: (
+  "0": 0,
+  "1": "1",
+  "2": "2",
+  "3": "3",
+  "4": "4",
+  "5": "5",
+  "999": "999",
+  "max": "2147483647"
+);
+
+// Overflow
+
+$overflow-name: "overflow";
+$overflow: (
+  "visible": "visible",
+  "auto": "auto",
+  "hidden": "hidden",
+  "scroll": "scroll"
+);
+
+// Vertical align
+
+$vertical-align-name: "align";
+$vertical-align: (
+  "top": "top",
+  "middle": "middle",
+  "baseline": "baseline",
+  "bottom": "bottom"
+);
+
+// Text align
+
+$text-align-name: "text";
+$text-align: (
+  "justify": "justify",
+  "center": "center",
+  "right": "right",
+  "left": "left",
+);
+
+// Text shadow 
+
+$text-shadow-name: "text-shadow";
+$text-shadow: (
+  "1": "0 1px 2px rgba(0, 0, 0, 0.20)"
+);
+
+// Box shadow
+
+$box-shadow-name: "box-shadow";
+$box-shadow: (
+  "1": "0 1px 3px 0 rgba(89, 105, 128, .05), 0 1px 1px 0 rgba(0, 0, 0, .025)",
+  "2": "0 0 0 1px rgba(89, 105, 128, .1), 0 1px 3px 0 rgba(89, 105, 128, .1), 0 1px 2px 0 rgba(0, 0, 0,.05)",
+  "3": "0 0 0 1px rgba(89, 105, 128, .1), 0 3px 20px 0 rgba(89, 105, 128,.3), 0 1px 2px 0 rgba(0, 0, 0,.05)",
+  "4": "0 2px 4px rgba(0, 0, 0, 0.18)"
+);
+
+// Font style
+
+$font-style-name: "font-style";
+$font-style: (
+  "normal": "normal",
+  "italic": "italic"
+);
+
+// Font size
+
+$font-size-name: "font";
+$font-size: (
+  "headline": "6rem",
+  "sub-headline": "5rem",
+  "1": "3rem",
+  "2": "2.25rem",
+  "3": "1.5rem",
+  "4": "1.25rem",
+  "5": "1rem",
+  "6": ".875rem",
+  "7": ".75rem",
+  "medium": "medium"
+);
+
+// Text transform
+
+$text-transform-name: "text";
+$text-transform: (
+  "uppercase": "uppercase",
+  "lowercase": "lowercase",
+  "capitalize": "capitalize",
+);
+
+// Line height
+
+$line-height-name: "line";
+$line-height: (
+  "normal": 1,
+  "title": 1.25,
+  "copy": 1.5
+);
+
+// Letter spacing
+
+$letter-spacing-name: "tracking";
+$letter-spacing: (
+  "tight": "0.05rem",
+  "normal": 0,
+  "wide": ".16rem"
+);
+
+// Font weight
+
+$font-weight-name: "font";
+$font-weight: (
+  "lighter": "lighter",
+  "normal": "normal",
+  "bolder": "bolder",
+  "bold": "bold",
+  "100": 100,
+  "200": 200,
+  "300": 300,
+  "400": 400,
+  "500": 500,
+  "600": 600,
+  "700": 700,
+  "800": 800,
+  "900": 900
+);
+
+// Text decoration
+
+$text-decoration-name: "text";
+$text-decoration: (
+  "none": "none",
+  "underline": "underline",
+  "strike": "line-through"
+);
+
+// White space
+
+$white-space-name: "space";
+$white-space: (
+  "prewrap": "pre-wrap",
+  "preline": "pre-line",
+  "nowrap": "nowrap",
+  "normal": "normal"
+);
+
+// Border width
+
+$border-width-name: "border-width";
+$border-width: (
+  "0": 0,
+  "1": ".125rem",
+  "2": ".250rem",
+  "3": ".500rem",
+  "4": "1rem",
+  "5": "2rem"
+);
+
+// Border general
+
+$border-name: "border";
+
+// Radius side name
+
+$radius-side-name: "rounded";
+
+// Border radius
+
+$border-radius-name: "radius";
+$border-radius: (
+  "0": 0,
+  "1": ".125rem",
+  "2": ".250rem",
+  "3": ".500rem",
+  "4": "1rem",
+  "5": "2rem",
+  "full": "9999px"
+);
+
+// Border style
+
+$border-style-name: "border-style";
+$border-style: (
+  "dashed": "dashed",
+  "dotted": "dotted",
+  "double": "double",
+);
+
+// Height
+
+$height-name: "height";
+$height: (
+  "inherit": "inherit",
+  "auto": "auto",
+  "1": "1rem",
+  "2": "2rem",
+  "3": "4rem",
+  "4": "8rem",
+  "5": "16rem",
+  "25": "25%",
+  "50": "50%",
+  "75": "75%",
+  "100": "100%",
+  "25vh": "25vh",
+  "50vh": "50vh",
+  "75vh": "75vh",
+  "100vh": "100vh"
+);
+
+// Min height
+
+$min-height-name: "min-height";
+$min-height: (
+  "0": 0,
+  "100": "100%",
+  "100vh": "100vh"
+);
+
+// Background size
+
+$background-size-name: "background";
+$background-size: (
+  "cover": "cover",
+  "contain": "contain"
+);
+
+// Background repeat
+
+$background-repeat-name: "background";
+$background-repeat: (
+  "repeat": "repeat",
+  "no-repeat": "no-repeat",
+  "repeat-x": "repeat-x",
+  "repeat-y": "repeat-y",
+  "space": "space",
+  "around": "around"
+);
+
+// Background position
+
+$background-position-name: "background";
+
+// Background attachment
+
+$background-attachment-name: "background";
+$background-attachment: (
+  "fixed": "fixed",
+  "local": "local",
+  "scroll": "scroll"
+);
+
+// Background clip
+
+$background-clip-name: "background";
+$background-clip: (
+  "border-box": "border-box",
+  "padding-box": "padding-box",
+  "content-box": "content-box"
+);
+
+// Object fit
+
+$object-fit-name: "object";
+$object-fit: (
+  "fill": "fill",
+  "contain": "contain",
+  "scale-down": "scale-down",
+  "none": "none"
+);
+
+// Word wrap
+
+$word-wrap-name: "wrap";
+$word-wrap: (
+  "normal": "normal",
+  "break-word": "break-word"
+);
+
+// Width
+
+$width-name: "width";
+$width: (
+  "auto": "auto",
+  "1": "1rem",
+  "2": "2rem",
+  "3": "4rem",
+  "4": "8rem",
+  "5": "16rem",
+  "10": "10%",
+  "20": "20%",
+  "25": "25%",
+  "30": "30%",
+  "33": "33%",
+  "40": "40%",
+  "45": "45%",
+  "50": "50%",
+  "60": "60%",
+  "66": "66%",
+  "70": "70%",
+  "75": "75%",
+  "80": "80%",
+  "90": "90%",
+  "100": "100%",
+  "50vw": "50vw",
+  "100vw": "100vw"
+);
+
+// Pointer events
+
+$pointer-events-name: "events";
+$pointer-events: (
+  "auto": "auto",
+  "none": "none",
+  "inherit": "inherit"
+);
+
+// Max width
+
+$max-width-name: "max-width";
+$max-width: (
+  "1": "1rem",
+  "2": "2rem",
+  "3": "3rem",
+  "4": "4rem",
+  "8": "8rem",
+  "16": "16rem",
+  "measure-narrow": "20em",
+  "measure": "30em",
+  "measure-wide": "34em",
+  "32": "32rem",
+  "48": "48rem",
+  "64": "64rem",
+  "80": "80rem",
+  "full": "100%"
+);
+
+// Padding
+
+$padding-name: "padding";
+$padding: (
+  "0": "0",
+  "1": ".25rem",
+  "2": ".5rem",
+  "3": "1rem",
+  "4": "2rem",
+  "5": "4rem",
+  "6": "8rem",
+  "7": "16rem",
+);
+
+// Margin
+
+$margin-name: "margin";
+$margin: (
+  "0": "0",
+  "1": ".25rem",
+  "2": ".5rem",
+  "3": "1rem",
+  "4": "2rem",
+  "5": "4rem",
+  "6": "8rem",
+  "7": "16rem",
+  "auto": "auto"
+);
+
+// Offset
+
+$offset-name: "offset";
+$offset: (
+  "0": 0,
+  "10": "10%",
+  "20": "20%",
+  "25": "25%",
+  "33": "33%",
+  "40": "40%",
+  "45": "45%",
+  "50": "50%",
+  "60": "60%",
+  "66": "66%",
+  "70": "70%",
+  "75": "75%",
+  "80": "80%",
+  "90": "90%",
+  "100": "100%"
+);
+
+$colors-name: (
+  "color": "color",
+  "border": "border",
+  "background": "fill"
+);
+
+// Opacity
+
+$opacity-name: "opacity";
+$opacity: (
+  "0": 0,
+  "50": .5,
+  "75": .75,
+  "100": 1
+);
+
+$colors: (
+  "inherit": "inherit",
+  "transparent": "transparent",
+  "current-color": "current-color",
+  "white": "#fff",
+  "near-white": "#f4f4f4",
+  "silver": "#999",
+  "light-silver": "#eef1f6",
+  "lightest-silver": "#f7f8fb",
+  "light-gray": "#aaa",
+  "gray": "#777",
+  "mid-gray": "#555",
+  "dark-gray": "#333",
+  "near-black": "#111",
+  "black": "#000",
+  "aqua": "#33FFE3",
+  "yellow": "#ffec1a",
+  "washed-yellow": "#fff7a3",
+  "navy": "#001542",
+  "dark-blue": "#002774",
+  "blue": "#1976d2",
+  "light-blue": "#2196f3",
+  "washed-blue": "#c2e2fb",
+  "green": "#388e3c",
+  "light-green": "#4caf50",
+  "washed-green": "#c8e6c9",
+  "orange": "#ff6600",
+  "light-orange": "#ffc107",
+  "washed-orange": "#ffecb3",
+  "red": "#d32f2f",
+  "light-red": "#f44336",
+  "washed-red": "#ffcdd2",
+  "purple": "#800055",
+  "pink": "#ff748c",
+  "light-pink": "#ffafbd"
+);

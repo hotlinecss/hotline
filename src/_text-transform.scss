@@ -1,0 +1,17 @@
+/*
+
+	Text transform
+
+*/
+
+@include breakpoints {
+
+	@each $text-transformKey, $text-transformValue in $text-transform {
+		
+		&#{$text-transform-name}-#{$text-transformKey} {
+			text-transform: #{$text-transformValue};
+		}
+
+	}
+
+}

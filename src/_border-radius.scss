@@ -1,0 +1,37 @@
+/*
+
+	Border radius
+
+*/
+
+@include breakpoints {
+
+	@each $border-radiusKey, $border-radiusValue in $border-radius {
+		
+		&#{$border-radius-name}-#{$border-radiusKey} {
+			border-radius: #{$border-radiusValue};
+		}
+
+	}
+
+	&#{$radius-side-name}-#{map-get($sides, "top")} { 
+		border-bottom-left-radius: 0; 
+		border-bottom-right-radius: 0; 
+	}
+	
+	&#{$radius-side-name}-#{map-get($sides, "right")} { 
+		border-top-left-radius: 0; 
+		border-bottom-left-radius: 0; 
+	}
+
+	&#{$radius-side-name}-#{map-get($sides, "bottom")} { 
+		border-top-left-radius: 0; 
+		border-top-right-radius: 0; 
+	}
+
+	&#{$radius-side-name}-#{map-get($sides, "left")} { 
+		border-top-right-radius: 0; 
+		border-bottom-right-radius: 0; 
+	}
+
+}

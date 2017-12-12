@@ -5,36 +5,42 @@
 */
 
 @include breakpoints {
-	
-	&border-none { border-width: 0; border-style: none; }
-	&border { border-style: solid; border-width: 1px; }
-	&border-top { border-top-style: solid; border-top-width: 1px; }
-	&border-right { border-right-style: solid; border-bottom-width: 1px; }
-	&border-bottom { border-bottom-style: solid; border-bottom-width: 1px; }
-	&border-left { border-left-style: solid; border-top-width: 1px; }
-	&border-top-0 { border-top-width: 0; }
-	&border-right-0 { border-right-width: 0; }
-	&border-bottom-0 { border-bottom-width: 0; }
-	&border-left-0 { border-left-width: 0; }
-	&border-w-0 { border-width: 0; }
-	&border-w-1 { border-width: .125rem; }
-	&border-w-2 { border-width: .250rem; }
-	&border-w-3 { border-width: .500rem; }
-	&border-w-4 { border-width: 1rem; }
-	&border-w-5 { border-width: 2rem; }
-	&doshed { border-style: dashed; }
-	&dotted { border-style: dotted; }
-	&double { border-style: double; }
-	&radius-0 { border-radius: 0; }
-	&radius-1 { border-radius: .125rem; }
-	&radius-2 { border-radius: .250rem; }
-	&radius-3 { border-radius: .5rem; }
-	&radius-4 { border-radius: 1rem; }
-	&radius-5 { border-radius: 2rem; }
-	&radius-full { border-radius: 9999px; }
-	&rounded-top { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-	&rounded-right { border-top-left-radius: 0; border-bottom-left-radius: 0; }
-	&rounded-bottom { border-top-left-radius: 0; border-top-right-radius: 0; }
-	&rounded-left { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
+	&#{$border-name}-#{map-get($sides, "top")} {
+		border-top-style: solid; 
+		border-top-width: 1px;
+	}
+
+	&#{$border-name}-#{map-get($sides, "right")} {
+		border-right-style: solid; 
+		border-right-width: 1px;
+	}
+
+	&#{$border-name}-#{map-get($sides, "bottom")} {
+		border-bottom-style: solid; 
+		border-bottom-width: 1px;
+	}
+
+	&#{$border-name}-#{map-get($sides, "left")} {
+		border-left-style: solid; 
+		border-left-width: 1px;
+	}
+
+	&#{$border-name}-#{map-get($sides, "top")}-0 {
+		border-top-width: 0;
+	}
+
+	&#{$border-name}-#{map-get($sides, "right")}-0 {
+		border-right-width: 0;
+	}
+
+	&#{$border-name}-#{map-get($sides, "bottom")}-0 {
+		border-bottom-width: 0;
+	}
+
+	&#{$border-name}-#{map-get($sides, "left")}-0 {
+		border-left-width: 0;
+	}
+
 
 }

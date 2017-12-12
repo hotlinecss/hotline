@@ -1,0 +1,17 @@
+/*
+
+	Min height
+
+*/
+
+@include breakpoints {
+
+	@each $min-heightKey, $min-heightValue in $min-height {
+		
+		&#{$min-height-name}-#{$min-heightKey} {
+			min-height: #{$min-heightValue};
+		}
+
+	}
+
+}

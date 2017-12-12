@@ -6,43 +6,12 @@
 
 @include breakpoints {
 
-	&w-auto { width: auto; }
-	&w-inherit { width: inherit; }
-	&w-0 { width: 0; }
-	&w-10 { width: 10%; }
-	&w-15 { width: 15%; }
-	&w-20 { width: 20%; }
-	&w-25 { width: 25%; }
-	&w-30 { width: 30%; }
-	&w-33 { width: 33%; }
-	&w-40 { width: 40%; }
-	&w-45 { width: 45%; }
-	&w-50 { width: 50%; }
-	&w-60 { width: 60%; }
-	&w-66 { width: 66%; }
-	&w-70 { width: 70%; }
-	&w-75 { width: 75%; }
-	&w-80 { width: 80%; }
-	&w-90 { width: 90%; }
-	&w-100 { width: 100%; }
-	&w1 { width: 1rem; }
-	&w2 { width: 2rem; }
-	&w3 { width: 4rem; }
-	&w4 { width: 8rem; }
-	&w5 { width: 16rem; }
-	&w6 { width: 32rem; }
-	&mw-1 { max-width: 1rem; }
-	&mw-2 { max-width: 2rem; }
-	&mw-4 { max-width: 4rem; }
-	&mw-8 { max-width: 8rem; }
-	&mw-16 { max-width: 16rem; }
-	&mw-32 { max-width: 32rem; }
-	&mw-48 { max-width: 48rem; }
-	&mw-60 { max-width: 60rem; }
-	&mw-64 { max-width: 64rem; }
-	&mw-80 { max-width: 80rem; }
-	&mw-90 { max-width: 90rem; }
-	&vw-50 { width: 50vw; }
-	&vw-100 { width: 100vw; }
+	@each $widthKey, $widthValue in $width {
+		
+		&#{$width-name}-#{$widthKey} {
+			width: #{$widthValue};
+		}
+
+	}
 
 }

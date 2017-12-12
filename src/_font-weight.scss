@@ -1,0 +1,17 @@
+/*
+
+	Font weight
+
+*/
+
+@include breakpoints {
+
+	@each $font-weightKey, $font-weightValue in $font-weight {
+		
+		&#{$font-weight-name}-#{$font-weightKey} {
+			font-weight: #{$font-weightValue};
+		}
+
+	}
+
+}

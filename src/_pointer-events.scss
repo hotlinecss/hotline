@@ -1,0 +1,17 @@
+/*
+
+	Pointer events
+
+*/
+
+@include breakpoints {
+
+	@each $pointer-eventsKey, $pointer-eventsValue in $pointer-events {
+		
+		&#{$pointer-events-name}-#{$pointer-eventsKey} {
+			pointer-events: #{$pointer-eventsValue};
+		}
+
+	}
+
+}

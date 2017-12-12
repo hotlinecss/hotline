@@ -1,0 +1,17 @@
+/*
+
+	Font size
+
+*/
+
+@include breakpoints {
+
+	@each $font-sizeKey, $font-sizeValue in $font-size {
+		
+		&#{$font-size-name}-#{$font-sizeKey} {
+			font-size: #{$font-sizeValue};
+		}
+
+	}
+
+}

@@ -1,0 +1,18 @@
+/*
+
+	Flex
+	Align content
+
+*/
+
+@include breakpoints {
+
+	@each $justify-contentKey, $justify-contentValue in $justify-content {
+		
+		&#{$justify-content-name}-#{$justify-contentKey} {
+			justify-content: #{$justify-contentValue};
+		}
+
+	}
+
+}

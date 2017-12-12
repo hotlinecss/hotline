@@ -1,0 +1,17 @@
+/*
+
+	Font style
+
+*/
+
+@include breakpoints {
+
+	@each $font-styleKey, $font-styleValue in $font-style {
+		
+		&#{$font-style-name}-#{$font-styleKey} {
+			font-style: #{$font-styleValue};
+		}
+
+	}
+
+}

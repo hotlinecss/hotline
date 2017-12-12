@@ -1,0 +1,25 @@
+/*
+
+	Overflow
+
+*/
+
+@include breakpoints {
+
+	@each $overflowKey, $overflowValue in $overflow {
+		
+		&#{$overflow-name}-#{$overflowKey} {
+			overflow: #{$overflowValue};
+		}
+
+		&#{$overflow-name}-x-#{$overflowKey} {
+			overflow-x: #{$overflowValue};
+		}
+
+		&#{$overflow-name}-y-#{$overflowKey} {
+			overflow-y: #{$overflowValue};
+		}
+
+	}
+
+}

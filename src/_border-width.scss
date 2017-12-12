@@ -1,0 +1,17 @@
+/*
+
+	Border width
+
+*/
+
+@include breakpoints {
+
+	@each $border-widthKey, $border-widthValue in $border-width {
+		
+		&#{$border-width-name}-#{$border-widthKey} {
+			border-width: #{$border-widthValue};
+		}
+
+	}
+
+}

@@ -22,7 +22,7 @@ const options = {
 
 gulp.task("build:css", function() {
 	return gulp.src(options.paths.srcAll)
-		.pipe(sass({outputStyle: "expanded"}).on("error", sass.logError))
+		.pipe(sass({outputStyle: "compact"}).on("error", sass.logError))
 		.pipe(prefix({browsers: options.prefix }))
 		.pipe(postcss(options.processors))
 		.pipe(header("/* ${pkg.name} - ${pkg.version} - ${pkg.license} */\t\n", {pkg: pkg}))

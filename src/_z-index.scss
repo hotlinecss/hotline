@@ -1,0 +1,17 @@
+/*
+
+	Z index
+
+*/
+
+@include breakpoints {
+
+	@each $z-indexKey, $z-indexValue in $z-index {
+		
+		&#{$z-index-name}-#{$z-indexKey} {
+			z-index: #{$z-indexValue};
+		}
+
+	}
+
+}

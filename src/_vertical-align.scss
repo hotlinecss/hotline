@@ -1,0 +1,17 @@
+/*
+
+	Vertical align
+
+*/
+
+@include breakpoints {
+
+	@each $vertical-alignKey, $vertical-alignValue in $vertical-align {
+		
+		&#{$vertical-align-name}-#{$vertical-alignKey} {
+			vertical-align: #{$vertical-alignValue};
+		}
+
+	}
+
+}

@@ -1,0 +1,18 @@
+/*
+
+	Flex
+	Flex wrap
+
+*/
+
+@include breakpoints {
+
+	@each $flex-wrapKey, $flex-wrapValue in $flex-wrap {
+		
+		&#{$flex-wrap-name}-#{$flex-wrapKey} {
+			flex-wrap: #{$flex-wrapValue};
+		}
+
+	}
+
+}

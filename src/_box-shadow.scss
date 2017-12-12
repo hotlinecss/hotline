@@ -1,0 +1,13 @@
+/*
+
+	Box shadow
+
+*/
+
+@each $box-shadowKey, $box-shadowValue in $box-shadow {
+	
+	.#{$box-shadow-name}-#{$box-shadowKey} {
+		box-shadow: #{$box-shadowValue};
+	}
+
+}

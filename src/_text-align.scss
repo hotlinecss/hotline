@@ -1,0 +1,17 @@
+/*
+
+	Text align
+
+*/
+
+@include breakpoints {
+
+	@each $text-alignKey, $text-alignValue in $text-align {
+		
+		&#{$text-align-name}-#{$text-alignKey} {
+			text-align: #{$text-alignValue};
+		}
+
+	}
+
+}

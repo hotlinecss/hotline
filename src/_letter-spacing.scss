@@ -1,0 +1,17 @@
+/*
+
+	Letter spacing
+
+*/
+
+@include breakpoints {
+
+	@each $letter-spacingKey, $letter-spacingValue in $letter-spacing {
+		
+		&#{$letter-spacing-name}-#{$letter-spacingKey} {
+			letter-spacing: #{$letter-spacingValue};
+		}
+
+	}
+
+}

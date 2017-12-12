@@ -1,0 +1,29 @@
+/*
+
+	Coordinates
+
+*/
+
+@include breakpoints {
+
+	@each $coordinatesKey, $coordinatesValue in $coordinates {
+		
+		&#{map-get($sides, "top")}-#{$coordinatesKey} {
+			top: #{$coordinatesValue};
+		}
+
+		&#{map-get($sides, "right")}-#{$coordinatesKey} {
+			right: #{$coordinatesValue};
+		}
+
+		&#{map-get($sides, "bottom")}-#{$coordinatesKey} {
+			bottom: #{$coordinatesValue};
+		}
+
+		&#{map-get($sides, "left")}-#{$coordinatesKey} {
+			left: #{$coordinatesValue};
+		}
+
+	}
+
+}

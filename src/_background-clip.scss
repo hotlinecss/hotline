@@ -1,0 +1,17 @@
+/*
+
+	Background clip
+
+*/
+
+@include breakpoints {
+
+	@each $background-clipKey, $background-clipValue in $background-clip {
+		
+		&#{$background-clip-name}-#{$background-clipKey} {
+			background-clip: #{$background-clipValue};
+		}
+
+	}
+
+}

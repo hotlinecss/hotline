@@ -6,21 +6,12 @@
 
 @include breakpoints {
 
-	&offset-0 { margin-left: 0; }
-	&offset-10 { margin-left: 10%; }
-	&offset-20 { margin-left: 20%; }
-	&offset-25 { margin-left: 25%; }
-	&offset-30 { margin-left: 30%; }
-	&offset-33 { margin-left: 33%; }
-	&offset-40 { margin-left: 40%; }
-	&offset-45 { margin-left: 45%; }
-	&offset-50 { margin-left: 50%; }
-	&offset-60 { margin-left: 60%; }
-	&offset-66 { margin-left: 66%; }
-	&offset-70 { margin-left: 70%; }
-	&offset-75 { margin-left: 75%; }
-	&offset-80 { margin-left: 80%; }
-	&offset-90 { margin-left: 90%; }
-	&offset-100 { margin-left: 100%; }
+	@each $offsetKey, $offsetValue in $offset {
+		
+		&#{$offset-name}-#{$offsetKey} {
+			margin-left: #{$offsetValue};
+		}
+
+	}
 
 }

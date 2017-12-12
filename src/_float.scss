@@ -1,0 +1,17 @@
+/*
+
+	Float
+
+*/
+
+@include breakpoints {
+
+	@each $floatKey, $floatValue in $float {
+		
+		&#{$float-name}-#{$floatKey} {
+			float: #{$floatValue};
+		}
+
+	}
+
+}

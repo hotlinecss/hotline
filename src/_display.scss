@@ -1,0 +1,17 @@
+/*
+
+	Display
+
+*/
+
+@include breakpoints {
+
+	@each $displayKey, $displayValue in $display {
+		
+		&#{$display-name}-#{$displayKey} {
+			display: #{$displayValue};
+		}
+
+	}
+
+}

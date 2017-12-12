@@ -1,0 +1,18 @@
+/*
+
+	Flex
+	Flex direction
+
+*/
+
+@include breakpoints {
+
+	@each $flex-directionKey, $flex-directionValue in $flex-direction {
+		
+		&#{$flex-direction-name}-#{$flex-directionKey} {
+			flex-direction: #{$flex-directionValue};
+		}
+
+	}
+
+}

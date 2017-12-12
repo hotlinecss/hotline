@@ -1,0 +1,17 @@
+/*
+
+	Object fit
+
+*/
+
+@include breakpoints {
+
+	@each $object-fitKey, $object-fitValue in $object-fit {
+		
+		&#{$object-fit-name}-#{$object-fitKey} {
+			object-fit: #{$object-fitValue};
+		}
+
+	}
+
+}

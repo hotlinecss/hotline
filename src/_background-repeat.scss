@@ -1,0 +1,17 @@
+/*
+
+	Background repeat
+
+*/
+
+@include breakpoints {
+
+	@each $background-repeatKey, $background-repeatValue in $background-repeat {
+		
+		&#{$background-repeat-name}-#{$background-repeatKey} {
+			background-repeat: #{$background-repeatValue};
+		}
+
+	}
+
+}

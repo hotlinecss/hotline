@@ -1,6 +1,6 @@
 /*
 
-  Tables
+	Table
 
 */
 
@@ -9,6 +9,4 @@
   border-spacing: 0;
 }
 
-.table--striped:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0.125);
-}
+.table-fixed {	table-layout: fixed; }

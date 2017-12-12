@@ -1,0 +1,17 @@
+/*
+
+	Border style
+
+*/
+
+@include breakpoints {
+
+	@each $border-styleKey, $border-styleValue in $border-style {
+		
+		&#{$border-style-name}-#{$border-styleKey} {
+			border-style: #{$border-styleValue};
+		}
+
+	}
+
+}

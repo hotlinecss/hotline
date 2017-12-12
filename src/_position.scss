@@ -6,78 +6,12 @@
 
 @include breakpoints {
 
-	&absolute { position: absolute; }
-	&fixed { position: fixed; }
-	&relative { position: relative; }
-	&static { position: static; }
-	&sticky { position: sticky; }
-	&top-0 { top: 0; }
-	&top-1 { top: .25rem; }
-	&top-2 { top: .5rem; }
-	&top-3 { top: 1rem; }
-	&top-4 { top: 2rem; }
-	&top-5 { top: 4rem; }
-	&top-6 { top: 8rem; }
-	&top-7 { top: 16rem; }
-	&top--1 { top: -.25rem;}
-	&top--2 { top: -.5rem;}
-	&top--3 { top: -1rem;}
-	&top--4 { top: -2rem;}
-	&top--5 { top: -4rem;}
-	&top--6 { top: -8rem;}
-	&top--7 { top: -16rem;}
-	&right-0 { right: 0; }
-	&right-1 { right: .25rem; }
-	&right-2 { right: .5rem; }
-	&right-3 { right: 1rem; }
-	&right-4 { right: 2rem; }
-	&right-5 { right: 4rem; }
-	&right-6 { right: 8rem; }
-	&right-7 { right: 16rem; }
-	&right--1 { right: -.25rem; }
-	&right--2 { right: -.5rem; }
-	&right--3 { right: -1rem; }
-	&right--4 { right: -2rem; }
-	&right--5 { right: -4rem; }
-	&right--6 { right: -8rem; }
-	&right--7 { right: -16rem; }
-	&bottom-0 { bottom: 0; }
-	&bottom-1 { bottom: .25rem; }
-	&bottom-2 { bottom: .5rem; }
-	&bottom-3 { bottom: 1rem; }
-	&bottom-4 { bottom: 2rem; }
-	&bottom-5 { bottom: 4rem; }
-	&bottom-6 { bottom: 8rem; }
-	&bottom-7 { bottom: 16rem; }
-	&bottom--1 { bottom: -.25rem; }
-	&bottom--2 { bottom: -.5rem; }
-	&bottom--3 { bottom: -1rem; }
-	&bottom--4 { bottom: -2rem; }
-	&bottom--5 { bottom: -4rem; }
-	&bottom--6 { bottom: -8rem; }
-	&bottom--7 { bottom: -16rem; }
-	&left-0 { left: 0; }
-	&left-1 { left: .25rem; }
-	&left-2 { left: .5rem; }
-	&left-3 { left: 1rem; }
-	&left-4 { left: 2rem; }
-	&left-5 { left: 4rem; }
-	&left-6 { left: 8rem; }
-	&left-7 { left: 16rem; }
-	&left--1 { left: -.25rem; }
-	&left--2 { left: -.5rem; }
-	&left--3 { left: -1rem; }
-	&left--4 { left: -2rem; }
-	&left--5 { left: -4rem; }
-	&left--6 { left: -8rem; }
-	&left--7 { left: -16rem; }
-	&z-0 { z-index: 0; }
-	&z-1 { z-index: 1; }
-	&z-2 { z-index: 2; }
-	&z-3 { z-index: 3; }
-	&z-4 { z-index: 4; }
-	&z-5 { z-index: 5; }
-	&z-999 { z-index: 999; }
-	&z-max { z-index: 2147483647; }
+	@each $positionKey, $positionValue in $position {
+		
+		&#{$position-name}-#{$positionKey} {
+			position: #{$positionValue};
+		}
+
+	}
 
 }
