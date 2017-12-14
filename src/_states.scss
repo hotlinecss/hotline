@@ -21,6 +21,10 @@
 	}
 }
 
+.background-animate {
+	transition: background-color 200ms ease-in-out;
+}
+
 .grow {
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;

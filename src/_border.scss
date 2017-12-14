@@ -6,6 +6,11 @@
 
 @include breakpoints {
 
+	&#{$border-name}-#{map-get($sides, "all")} {
+		border-style: solid;
+		border-width: 1px;
+	}
+
 	&#{$border-name}-#{map-get($sides, "top")} {
 		border-top-style: solid; 
 		border-top-width: 1px;
