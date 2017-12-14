@@ -7,6 +7,16 @@ $breakpoints: (
 	"xl": 75em  // 1200px
 );
 
+$spacing-sides: (
+  "all": "a",
+  "top": "t",
+  "right": "r",
+  "bottom": "b",
+  "left": "l",
+  "vertical": "v",
+  "horizontal": "h"
+);
+
 $sides: (
   "none": "none",
   "all": "all",
@@ -14,8 +24,6 @@ $sides: (
   "right": "right",
   "bottom": "bottom",
   "left": "left",
-  "horizontal": "horizontal",
-  "vertical": "vertical",
   "center": "center"
 );
 
@@ -493,7 +501,7 @@ $max-width: (
 
 // Padding
 
-$padding-name: "padding";
+$padding-name: "p";
 $padding: (
   "0": "0",
   "1": ".25rem",
@@ -507,7 +515,7 @@ $padding: (
 
 // Margin
 
-$margin-name: "margin";
+$margin-name: "m";
 $margin: (
   "0": "0",
   "1": ".25rem",

@@ -8,32 +8,32 @@
 
 	@each $marginKey, $marginValue in $margin {
 	
-		&#{$margin-name}-#{map-get($sides, "all")}-#{$marginKey} {
+		&#{$margin-name}-#{map-get($spacing-sides, "all")}-#{$marginKey} {
 			margin: #{$marginValue};
 		}
 
-		&#{$margin-name}-#{map-get($sides, "top")}-#{$marginKey} {
+		&#{$margin-name}-#{map-get($spacing-sides, "top")}-#{$marginKey} {
 			margin-top: #{$marginValue};
 		}
 
-		&#{$margin-name}-#{map-get($sides, "right")}-#{$marginKey} {
+		&#{$margin-name}-#{map-get($spacing-sides, "right")}-#{$marginKey} {
 			margin-right: #{$marginValue};
 		}
 
-		&#{$margin-name}-#{map-get($sides, "bottom")}-#{$marginKey} {
+		&#{$margin-name}-#{map-get($spacing-sides, "bottom")}-#{$marginKey} {
 			margin-bottom: #{$marginValue};
 		}
 
-		&#{$margin-name}-#{map-get($sides, "left")}-#{$marginKey} {
+		&#{$margin-name}-#{map-get($spacing-sides, "left")}-#{$marginKey} {
 			margin-left: #{$marginValue};
 		}
 
-		&#{$margin-name}-#{map-get($sides, "vertical")}-#{$marginKey} {
+		&#{$margin-name}-#{map-get($spacing-sides, "vertical")}-#{$marginKey} {
 			margin-top: #{$marginValue};
 			margin-bottom: #{$marginValue};
 		}
 
-		&#{$margin-name}-#{map-get($sides, "horizontal")}-#{$marginKey} {
+		&#{$margin-name}-#{map-get($spacing-sides, "horizontal")}-#{$marginKey} {
 			margin-left: #{$marginValue};
 			margin-right: #{$marginValue};
 		}

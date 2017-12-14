@@ -8,32 +8,32 @@
 
 	@each $paddingKey, $paddingValue in $padding {
 	
-		&#{$padding-name}-#{map-get($sides, "all")}-#{$paddingKey} {
+		&#{$padding-name}-#{map-get($spacing-sides, "all")}-#{$paddingKey} {
 			padding: #{$paddingValue};
 		}
 
-		&#{$padding-name}-#{map-get($sides, "top")}-#{$paddingKey} {
+		&#{$padding-name}-#{map-get($spacing-sides, "top")}-#{$paddingKey} {
 			padding-top: #{$paddingValue};
 		}
 
-		&#{$padding-name}-#{map-get($sides, "right")}-#{$paddingKey} {
+		&#{$padding-name}-#{map-get($spacing-sides, "right")}-#{$paddingKey} {
 			padding-right: #{$paddingValue};
 		}
 
-		&#{$padding-name}-#{map-get($sides, "bottom")}-#{$paddingKey} {
+		&#{$padding-name}-#{map-get($spacing-sides, "bottom")}-#{$paddingKey} {
 			padding-bottom: #{$paddingValue};
 		}
 
-		&#{$padding-name}-#{map-get($sides, "left")}-#{$paddingKey} {
+		&#{$padding-name}-#{map-get($spacing-sides, "left")}-#{$paddingKey} {
 			padding-left: #{$paddingValue};
 		}
 
-		&#{$padding-name}-#{map-get($sides, "vertical")}-#{$paddingKey} {
+		&#{$padding-name}-#{map-get($spacing-sides, "vertical")}-#{$paddingKey} {
 			padding-top: #{$paddingValue};
 			padding-bottom: #{$paddingValue};
 		}
 
-		&#{$padding-name}-#{map-get($sides, "horizontal")}-#{$paddingKey} {
+		&#{$padding-name}-#{map-get($spacing-sides, "horizontal")}-#{$paddingKey} {
 			padding-left: #{$paddingValue};
 			padding-right: #{$paddingValue};
 		}
