@@ -4,22 +4,34 @@
 
 */
 
-@include breakpoints {
+// .xs-overflow-scroll { overflow: scroll; }
 
-	@each $overflowKey, $overflowValue in $overflow {
-		
-		&#{$overflow-name}-#{$overflowKey} {
-			overflow: #{$overflowValue};
-		}
+// .xs-overflow-x-scroll { overflow-x: scroll; }
 
-		&#{$overflow-name}-x-#{$overflowKey} {
-			overflow-x: #{$overflowValue};
-		}
+// .xs-overflow-y-scroll { overflow-y: scroll; }
 
-		&#{$overflow-name}-y-#{$overflowKey} {
-			overflow-y: #{$overflowValue};
-		}
 
-	}
+@mixin utility-overflow($breakpoint: null) {
+  .#{$breakpoint}overflow-visible { overflow: visible; }
+  .#{$breakpoint}overflow-x-visible { overflow-x: visible; }
+  .#{$breakpoint}overflow-y-visible { overflow-y: visible; }
+  .#{$breakpoint}overflow-auto { overflow: auto; }
+  .#{$breakpoint}overflow-x-auto { overflow-x: auto; }
+  .#{$breakpoint}overflow-y-auto { overflow-y: auto; }
+  .#{$breakpoint}overflow-hidden { overflow: hidden; }
+  .#{$breakpoint}overflow-x-hidden { overflow-x: hidden; }
+  .#{$breakpoint}overflow-y-hidden { overflow-y: hidden; }
+  .#{$breakpoint}overflow-scroll { overflow: scroll; }
+  .#{$breakpoint}overflow-x-scroll { overflow-x: scroll; }
+  .#{$breakpoint}overflow-y-scroll { overflow-y: scroll; }
+}
 
+@include utility-overflow();
+
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-overflow(#{$name}-);
+    }
+  }
 }

@@ -4,14 +4,20 @@
 
 */
 
-@include breakpoints {
+@mixin utility-border-style($breakpoint: null) {
+  .#{$breakpoint}border-none { border-style: none; }
+  .#{$breakpoint}border-hidden { border-style: hidden; }
+  .#{$breakpoint}border-dashed { border-style: dashed; }
+  .#{$breakpoint}border-dotted { border-style: dotted; }
+  .#{$breakpoint}border-double { border-style: double; }
+}
 
-	@each $border-styleKey, $border-styleValue in $border-style {
-		
-		&#{$border-style-name}-#{$border-styleKey} {
-			border-style: #{$border-styleValue};
-		}
+@include utility-border-style();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-border-style(#{$name}-);
+    }
+  }
 }

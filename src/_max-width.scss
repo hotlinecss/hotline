@@ -4,14 +4,20 @@
 
 */
 
-@include breakpoints {
+@mixin utility-max-width($breakpoint: null) {
+  @each $name, $value in $max-width {
+    .#{$breakpoint}max-w-#{$name} {
+      max-width: #{$value};
+    }
+  }
+}
 
-	@each $max-widthKey, $max-widthValue in $max-width {
-		
-		&#{$max-width-name}-#{$max-widthKey} {
-			max-width: #{$max-widthValue};
-		}
+@include utility-max-width();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-max-width(#{$name}-);
+    }
+  }
 }

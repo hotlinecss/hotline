@@ -4,14 +4,20 @@
 
 */
 
-@include breakpoints {
+@mixin utility-position($breakpoint: null) {
+  .#{$breakpoint}absolute { position: absolute; }
+  .#{$breakpoint}fixed { position: fixed; }
+  .#{$breakpoint}static { position: static; }
+  .#{$breakpoint}relative { position: relative; }
+  .#{$breakpoint}sticky { position: sticky; }
+}
 
-	@each $positionKey, $positionValue in $position {
-		
-		&#{$position-name}-#{$positionKey} {
-			position: #{$positionValue};
-		}
+@include utility-position();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-position(#{$name}-);
+    }
+  }
 }

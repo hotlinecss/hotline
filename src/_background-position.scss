@@ -4,31 +4,35 @@
 
 */
 
-@include breakpoints {
-		
-	&#{$background-position-name}-#{map-get($sides, "center")} {
-		background-repeat: no-repeat;
-		background-position: center center;
-	}
+@mixin utility-background-position($breakpoint: null) {
+  .#{$breakpoint}bg-center { 
+  	background-repeat: no-repeat;
+  	background-position: center center; 
+  }
+  .#{$breakpoint}bg-top { 
+  	background-repeat: no-repeat;
+  	background-position: top center; 
+  }
+  .#{$breakpoint}bg-right { 
+  	background-repeat: no-repeat;
+  	background-position: center right; 
+  }
+  .#{$breakpoint}bg-bottom { 
+  	background-repeat: no-repeat;
+  	background-position: bottom center; 
+  }
+  .#{$breakpoint}bg-left { 
+  	background-repeat: no-repeat;
+  	background-position: center left; 
+  }
+}
 
-	&#{$background-position-name}-#{map-get($sides, "top")} {
-		background-repeat: no-repeat;
-		background-position: top center;
-	}
+@include utility-background-position();
 
-	&#{$background-position-name}-#{map-get($sides, "right")} {
-		background-repeat: no-repeat;
-		background-position: center right;
-	}
-
-	&#{$background-position-name}-#{map-get($sides, "bottom")} {
-		background-repeat: no-repeat;
-		background-position: bottom center;
-	}
-
-	&#{$background-position-name}-#{map-get($sides, "left")} {
-		background-repeat: no-repeat;
-		background-position: center left;
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-background-position(#{$name}-);
+    }
+  }
 }

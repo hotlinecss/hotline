@@ -1,0 +1,23 @@
+/*
+
+	Max height
+
+*/
+
+@mixin utility-max-height($breakpoint: null) {
+  @each $name, $value in $max-height {
+    .#{$breakpoint}max-h-#{$name} {
+      max-height: #{$value};
+    }
+  }
+}
+
+@include utility-max-height();
+
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-max-height(#{$name}-);
+    }
+  }
+}

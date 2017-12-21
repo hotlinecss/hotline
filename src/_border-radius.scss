@@ -4,34 +4,41 @@
 
 */
 
-@include breakpoints {
+@mixin utility-border-radius($breakpoint: null) {
+  @each $name, $value in $border-radius {
+    .#{$breakpoint}radius-#{$name} {
+      border-radius: #{$value};
+    }
+  }
 
-	@each $border-radiusKey, $border-radiusValue in $border-radius {
-		
-		&#{$border-radius-name}-#{$border-radiusKey} {
-			border-radius: #{$border-radiusValue};
-		}
-
-	}
-
-	&#{$radius-side-name}-#{map-get($sides, "top")} { 
+	.#{$breakpoint}radius-top { 
 		border-bottom-left-radius: 0; 
 		border-bottom-right-radius: 0; 
 	}
 	
-	&#{$radius-side-name}-#{map-get($sides, "right")} { 
+	.#{$breakpoint}radius-right { 
 		border-top-left-radius: 0; 
 		border-bottom-left-radius: 0; 
 	}
 
-	&#{$radius-side-name}-#{map-get($sides, "bottom")} { 
+	.#{$breakpoint}radius-bottom { 
 		border-top-left-radius: 0; 
 		border-top-right-radius: 0; 
 	}
 
-	&#{$radius-side-name}-#{map-get($sides, "left")} { 
+	.#{$breakpoint}radius-left { 
 		border-top-right-radius: 0; 
 		border-bottom-right-radius: 0; 
 	}
 
+}
+
+@include utility-border-radius();
+
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-border-radius(#{$name}-);
+    }
+  }
 }

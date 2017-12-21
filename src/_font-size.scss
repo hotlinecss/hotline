@@ -4,14 +4,20 @@
 
 */
 
-@include breakpoints {
+@mixin utility-font-size($breakpoint: null) {
+  @each $name, $value in $font-size {
+    .#{$breakpoint}font-#{$name} {
+      font-size: #{$value};
+    }
+  }
+}
 
-	@each $font-sizeKey, $font-sizeValue in $font-size {
-		
-		&#{$font-size-name}-#{$font-sizeKey} {
-			font-size: #{$font-sizeValue};
-		}
+@include utility-font-size();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-font-size(#{$name}-);
+    }
+  }
 }

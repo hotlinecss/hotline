@@ -4,14 +4,18 @@
 
 */
 
-@include breakpoints {
-
-	@each $min-heightKey, $min-heightValue in $min-height {
-		
-		&#{$min-height-name}-#{$min-heightKey} {
-			min-height: #{$min-heightValue};
-		}
-
+@mixin utility-min-height($breakpoint: null) {
+	@each $name, $value in $min-height {
+	  .#{$breakpoint}min-h-#{$name} { min-height: #{$value}; }
 	}
+}
 
+@include utility-min-height();
+
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-min-height(#{$name}-);
+    }
+  }
 }

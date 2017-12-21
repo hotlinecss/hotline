@@ -4,14 +4,18 @@
 
 */
 
-@include breakpoints {
+@mixin utility-line-height($breakpoint: null) {
+  .#{$breakpoint}line-normal { line-height: normal; }
+  .#{$breakpoint}line-title { line-height: 1.25; }
+  .#{$breakpoint}line-copy { line-height: 1.5; }
+}
 
-	@each $line-heightKey, $line-heightValue in $line-height {
-		
-		&#{$line-height-name}-#{$line-heightKey} {
-			line-height: #{$line-heightValue};
-		}
+@include utility-line-height();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-line-height(#{$name}-);
+    }
+  }
 }

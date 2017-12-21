@@ -4,14 +4,20 @@
 
 */
 
-@include breakpoints {
+@mixin utility-width($breakpoint: null) {
+  @each $name, $value in $width {
+    .#{$breakpoint}w-#{$name} {
+      width: #{$value};
+    }
+  }
+}
 
-	@each $widthKey, $widthValue in $width {
-		
-		&#{$width-name}-#{$widthKey} {
-			width: #{$widthValue};
-		}
+@include utility-width();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-width(#{$name}-);
+    }
+  }
 }

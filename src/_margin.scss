@@ -1,43 +1,33 @@
 /*
 
-	Margin
+	margin
 
 */
 
-@include breakpoints {
+@mixin utility-margin($breakpoint: null) {
+  @each $name, $value in $spacing {
+    .#{$breakpoint}ma#{$name} { margin: #{$value}; }
+    .#{$breakpoint}mt#{$name} { margin-top: #{$value}; }
+    .#{$breakpoint}mr#{$name} { margin-right: #{$value}; }
+    .#{$breakpoint}mb#{$name} { margin-bottom: #{$value}; }
+    .#{$breakpoint}ml#{$name} { margin-left: #{$value}; }
+    .#{$breakpoint}mh#{$name} { margin-left: #{$value}; margin-right: #{$value}; }
+    .#{$breakpoint}mv#{$name} { margin-top: #{$value}; margin-bottom: #{$value}; }
+  }
+  .#{$breakpoint}mt-auto { margin-top: auto; }
+  .#{$breakpoint}mr-auto { margin-right: auto; }
+  .#{$breakpoint}mb-auto { margin-bottom: auto; }
+  .#{$breakpoint}ml-auto { margin-left: auto; }
+  .#{$breakpoint}mv-auto { margin-top: auto; margin-bottom: auto; }
+  .#{$breakpoint}mh-auto { margin-left: auto; margin-right: auto; }
+}
 
-	@each $marginKey, $marginValue in $margin {
-	
-		&#{$margin-name}-#{map-get($spacing-sides, "all")}-#{$marginKey} {
-			margin: #{$marginValue};
-		}
+@include utility-margin();
 
-		&#{$margin-name}-#{map-get($spacing-sides, "top")}-#{$marginKey} {
-			margin-top: #{$marginValue};
-		}
-
-		&#{$margin-name}-#{map-get($spacing-sides, "right")}-#{$marginKey} {
-			margin-right: #{$marginValue};
-		}
-
-		&#{$margin-name}-#{map-get($spacing-sides, "bottom")}-#{$marginKey} {
-			margin-bottom: #{$marginValue};
-		}
-
-		&#{$margin-name}-#{map-get($spacing-sides, "left")}-#{$marginKey} {
-			margin-left: #{$marginValue};
-		}
-
-		&#{$margin-name}-#{map-get($spacing-sides, "vertical")}-#{$marginKey} {
-			margin-top: #{$marginValue};
-			margin-bottom: #{$marginValue};
-		}
-
-		&#{$margin-name}-#{map-get($spacing-sides, "horizontal")}-#{$marginKey} {
-			margin-left: #{$marginValue};
-			margin-right: #{$marginValue};
-		}
-
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-margin(#{$name}-);
+    }
+  }
 }

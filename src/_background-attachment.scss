@@ -4,14 +4,18 @@
 
 */
 
-@include breakpoints {
+@mixin utility-background-attachment($breakpoint: null) {
+  .#{$breakpoint}bg-fixed { background-attachment: fixed; }
+  .#{$breakpoint}bg-local { background-attachment: local; }
+  .#{$breakpoint}bg-scroll { background-attachment: scroll; }
+}
 
-	@each $background-attachmentKey, $background-attachmentValue in $background-attachment {
-		
-		&#{$background-attachment-name}-#{$background-attachmentKey} {
-			background-attachment: #{$background-attachmentValue};
-		}
+@include utility-background-attachment();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-background-attachment(#{$name}-);
+    }
+  }
 }

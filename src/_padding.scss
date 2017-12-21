@@ -4,40 +4,24 @@
 
 */
 
-@include breakpoints {
+@mixin utility-padding($breakpoint: null) {
+  @each $name, $value in $spacing {
+    .#{$breakpoint}pa#{$name} { padding: #{$value}; }
+    .#{$breakpoint}pt#{$name} { padding-top: #{$value}; }
+    .#{$breakpoint}pr#{$name} { padding-right: #{$value}; }
+    .#{$breakpoint}pb#{$name} { padding-bottom: #{$value}; }
+    .#{$breakpoint}pl#{$name} { padding-left: #{$value}; }
+    .#{$breakpoint}ph#{$name} { padding-left: #{$value}; padding-right: #{$value}; }
+    .#{$breakpoint}pv#{$name} { padding-top: #{$value}; padding-bottom: #{$value}; }
+  }
+}
 
-	@each $paddingKey, $paddingValue in $padding {
-	
-		&#{$padding-name}-#{map-get($spacing-sides, "all")}-#{$paddingKey} {
-			padding: #{$paddingValue};
-		}
+@include utility-padding();
 
-		&#{$padding-name}-#{map-get($spacing-sides, "top")}-#{$paddingKey} {
-			padding-top: #{$paddingValue};
-		}
-
-		&#{$padding-name}-#{map-get($spacing-sides, "right")}-#{$paddingKey} {
-			padding-right: #{$paddingValue};
-		}
-
-		&#{$padding-name}-#{map-get($spacing-sides, "bottom")}-#{$paddingKey} {
-			padding-bottom: #{$paddingValue};
-		}
-
-		&#{$padding-name}-#{map-get($spacing-sides, "left")}-#{$paddingKey} {
-			padding-left: #{$paddingValue};
-		}
-
-		&#{$padding-name}-#{map-get($spacing-sides, "vertical")}-#{$paddingKey} {
-			padding-top: #{$paddingValue};
-			padding-bottom: #{$paddingValue};
-		}
-
-		&#{$padding-name}-#{map-get($spacing-sides, "horizontal")}-#{$paddingKey} {
-			padding-left: #{$paddingValue};
-			padding-right: #{$paddingValue};
-		}
-
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-padding(#{$name}-);
+    }
+  }
 }

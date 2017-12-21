@@ -4,14 +4,18 @@
 
 */
 
-@include breakpoints {
+@mixin utility-float($breakpoint: null) {
+  .#{$breakpoint}push-left { float: left; }
+  .#{$breakpoint}push-right { float: right; }
+  .#{$breakpoint}push-none { float: none; }
+}
 
-	@each $floatKey, $floatValue in $float {
-		
-		&#{$float-name}-#{$floatKey} {
-			float: #{$floatValue};
-		}
+@include utility-float();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-float(#{$name}-);
+    }
+  }
 }

@@ -15,13 +15,19 @@
 	}
 }
 
+.hover-text-underline {
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 .pointer {
 	&:hover {
 		cursor: pointer;
 	}
 }
 
-.background-animate {
+.bg-animate {
 	transition: background-color 200ms ease-in-out;
 }
 

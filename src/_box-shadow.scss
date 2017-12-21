@@ -4,10 +4,12 @@
 
 */
 
-@each $box-shadowKey, $box-shadowValue in $box-shadow {
-	
-	.#{$box-shadow-name}-#{$box-shadowKey} {
-		box-shadow: #{$box-shadowValue};
-	}
-
+@mixin utility-box-shadow($breakpoint: null) {
+  @each $name, $value in $box-shadow {
+    .#{$breakpoint}box-shadow-#{$name} {
+      box-shadow: #{$value};
+    }
+  }
 }
+
+@include utility-box-shadow();

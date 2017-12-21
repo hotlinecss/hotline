@@ -4,14 +4,19 @@
 
 */
 
-@include breakpoints {
+@mixin utility-white-space($breakpoint: null) {
+  .#{$breakpoint}white-space-prewrap { white-space: pre-wrap; }
+  .#{$breakpoint}white-space-preline { white-space: pre-line; }
+  .#{$breakpoint}white-space-nowrap { white-space: nowrap; }
+  .#{$breakpoint}white-space-normal { white-space: normal; }
+}
 
-	@each $white-spaceKey, $white-spaceValue in $white-space {
-		
-		&#{$white-space-name}-#{$white-spaceKey} {
-			white-space: #{$white-spaceValue};
-		}
+@include utility-white-space();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-white-space(#{$name}-);
+    }
+  }
 }

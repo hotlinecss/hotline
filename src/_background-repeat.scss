@@ -4,14 +4,21 @@
 
 */
 
-@include breakpoints {
+ @mixin utility-background-repeat($breakpoint: null) {
+  .#{$breakpoint}bg-repeat { background-repeat: repeat; }
+  .#{$breakpoint}bg-no-repeat { background-repeat: no-repeat; }
+  .#{$breakpoint}bg-repeat-h { background-repeat: repeat-x; }
+  .#{$breakpoint}bg-repeat-v { background-repeat: repeat-y; }
+  .#{$breakpoint}bg-repeat-space { background-repeat: space; }
+  .#{$breakpoint}bg-repeat-around { background-repeat: around; }
+}
 
-	@each $background-repeatKey, $background-repeatValue in $background-repeat {
-		
-		&#{$background-repeat-name}-#{$background-repeatKey} {
-			background-repeat: #{$background-repeatValue};
-		}
+@include utility-background-repeat();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-background-repeat(#{$name}-);
+    }
+  }
 }

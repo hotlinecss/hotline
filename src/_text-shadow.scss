@@ -4,10 +4,12 @@
 
 */
 
-@each $text-shadowKey, $text-shadowValue in $text-shadow {
-	
-	.#{$text-shadow-name}-#{$text-shadowKey} {
-		text-shadow: #{$text-shadowValue};
-	}
-
+@mixin utility-text-shadow($breakpoint: null) {
+  @each $name, $value in $text-shadow {
+    .#{$breakpoint}text-shadow-#{$name} {
+      text-shadow: #{$value};
+    }
+  }
 }
+
+@include utility-text-shadow();

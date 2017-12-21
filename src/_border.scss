@@ -4,48 +4,25 @@
 
 */
 
-@include breakpoints {
+@mixin utility-border($breakpoint: null) {
+  .#{$breakpoint}border { border-style: solid; border-width: 1px; }
+  .#{$breakpoint}border-t { border-top-style: solid; border-top-width: 1px; }
+  .#{$breakpoint}border-r { border-right-style: solid; border-right-width: 1px; }
+  .#{$breakpoint}border-b { border-bottom-style: solid; border-bottom-width: 1px; }
+  .#{$breakpoint}border-l { border-left-style: solid; border-left-width: 1px; }
+  .#{$breakpoint}border-none { border-width: 0; }
+  .#{$breakpoint}border-t-none { border-top-width: 0; }
+  .#{$breakpoint}border-r-none { border-right-width: 0; }
+  .#{$breakpoint}border-b-none { border-bottom-width: 0; }
+  .#{$breakpoint}border-l-none { border-left-width: 0; }
+}
 
-	&#{$border-name}-#{map-get($sides, "all")} {
-		border-style: solid;
-		border-width: 1px;
-	}
+@include utility-border();
 
-	&#{$border-name}-#{map-get($sides, "top")} {
-		border-top-style: solid; 
-		border-top-width: 1px;
-	}
-
-	&#{$border-name}-#{map-get($sides, "right")} {
-		border-right-style: solid; 
-		border-right-width: 1px;
-	}
-
-	&#{$border-name}-#{map-get($sides, "bottom")} {
-		border-bottom-style: solid; 
-		border-bottom-width: 1px;
-	}
-
-	&#{$border-name}-#{map-get($sides, "left")} {
-		border-left-style: solid; 
-		border-left-width: 1px;
-	}
-
-	&#{$border-name}-#{map-get($sides, "top")}-0 {
-		border-top-width: 0;
-	}
-
-	&#{$border-name}-#{map-get($sides, "right")}-0 {
-		border-right-width: 0;
-	}
-
-	&#{$border-name}-#{map-get($sides, "bottom")}-0 {
-		border-bottom-width: 0;
-	}
-
-	&#{$border-name}-#{map-get($sides, "left")}-0 {
-		border-left-width: 0;
-	}
-
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-border(#{$name}-);
+    }
+  }
 }

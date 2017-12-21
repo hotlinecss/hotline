@@ -4,14 +4,20 @@
 
 */
 
-@include breakpoints {
+@mixin utility-height($breakpoint: null) {
+  @each $name, $value in $height {
+    .#{$breakpoint}h-#{$name} {
+      height: #{$value};
+    }
+  }
+}
 
-	@each $heightKey, $heightValue in $height {
-		
-		&#{$height-name}-#{$heightKey} {
-			height: #{$heightValue};
-		}
+@include utility-height();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-height(#{$name}-);
+    }
+  }
 }

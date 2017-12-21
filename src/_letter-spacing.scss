@@ -4,14 +4,18 @@
 
 */
 
-@include breakpoints {
+@mixin utility-letter-spacing($breakpoint: null) {
+  .#{$breakpoint}tracked { letter-spacing: .1em; }
+  .#{$breakpoint}tracked-tight { letter-spacing: -.05em; }
+  .#{$breakpoint}tracked-wide { letter-spacing: .25em; }
+}
 
-	@each $letter-spacingKey, $letter-spacingValue in $letter-spacing {
-		
-		&#{$letter-spacing-name}-#{$letter-spacingKey} {
-			letter-spacing: #{$letter-spacingValue};
-		}
+@include utility-letter-spacing();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-letter-spacing(#{$name}-);
+    }
+  }
 }

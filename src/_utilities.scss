@@ -4,9 +4,8 @@
 
 */
 
-@include breakpoints {
-
-	&screen-reader {
+@mixin utility-utilities($breakpoint: null) {
+  .#{$breakpoint}screen-reader {
 	  position: absolute;
 	  width: 1px;
 	  height: 1px;
@@ -17,22 +16,25 @@
 	  border: 0;
 	}
 
-	&truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.#{$breakpoint}truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.#{$breakpoint}fill { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
-	&fill { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+	.#{$breakpoint}::before, .cf::after { content: " "; display: table; }
+	.#{$breakpoint}::after { clear: both; }
 
-	&clearfix::before, .cf::after { content: " "; display: table; }
-	&clearfix::after { clear: both; }
-
-	&center-block { margin-left: auto; margin-right: auto; }
-
-	&aspect-ratio { height: 0; position: relative }
-	&aspect-ratio--16x9 { padding-bottom: 56.25%; }
-	&aspect-ratio--8x5 { padding-bottom: 62.5%; }
-	&aspect-ratio--4x3 { padding-bottom: 75%; }
-	&aspect-ratio--3x2 { padding-bottom: 66.66%; }
-	&aspect-ratio-item { height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; z-index: 100; }
-
-	&flex-auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
+	.#{$breakpoint}aspect-ratio { height: 0; position: relative }
+	.#{$breakpoint}aspect-ratio--16x9 { padding-bottom: 56.25%; }
+	.#{$breakpoint}aspect-ratio--8x5 { padding-bottom: 62.5%; }
+	.#{$breakpoint}aspect-ratio--4x3 { padding-bottom: 75%; }
+	.#{$breakpoint}aspect-ratio--3x2 { padding-bottom: 66.66%; }
+	.#{$breakpoint}aspect-ratio-item { 
+		height: 100%; 
+		position: 
+		absolute; 
+		top: 0; right: 0; bottom: 0; left: 0; 
+		width: 100%; 
+		z-index: 100; }
 
 }
+
+@include utility-utilities();

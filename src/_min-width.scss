@@ -1,0 +1,21 @@
+/*
+
+	Min width
+
+*/
+
+@mixin utility-min-width($breakpoint: null) {
+	@each $name, $value in $min-width {
+	  .#{$breakpoint}min-w-#{$name} { min-width: #{$value}; }
+	}
+}
+
+@include utility-min-width();
+
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-min-width(#{$name}-);
+    }
+  }
+}

@@ -4,14 +4,23 @@
 
 */
 
-@include breakpoints {
+@mixin utility-z-index($breakpoint: null) {
+  .#{$breakpoint}z-0 { z-index: 0; }
+  .#{$breakpoint}z-1 { z-index: 1; }
+  .#{$breakpoint}z-2 { z-index: 2; }
+  .#{$breakpoint}z-3 { z-index: 3; }
+  .#{$breakpoint}z-4 { z-index: 4; }
+  .#{$breakpoint}z-5 { z-index: 5; }
+  .#{$breakpoint}z-999 { z-index: 999; }
+  .#{$breakpoint}z-max { z-index: 2147483647; }
+}
 
-	@each $z-indexKey, $z-indexValue in $z-index {
-		
-		&#{$z-index-name}-#{$z-indexKey} {
-			z-index: #{$z-indexValue};
-		}
+@include utility-z-index();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-z-index(#{$name}-);
+    }
+  }
 }

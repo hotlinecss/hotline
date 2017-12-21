@@ -4,14 +4,17 @@
 
 */
 
-@include breakpoints {
+@mixin utility-pointer-events($breakpoint: null) {
+  .#{$breakpoint}events-none { pointer-events: none; }
+  .#{$breakpoint}events-auto { pointer-events: auto; }
+}
 
-	@each $pointer-eventsKey, $pointer-eventsValue in $pointer-events {
-		
-		&#{$pointer-events-name}-#{$pointer-eventsKey} {
-			pointer-events: #{$pointer-eventsValue};
-		}
+@include utility-pointer-events();
 
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-pointer-events(#{$name}-);
+    }
+  }
 }

@@ -4,26 +4,21 @@
 
 */
 
-@include breakpoints {
+@mixin utility-coordinates($breakpoint: null) {
+  @each $name, $value in $coordinates {
+    .#{$breakpoint}put-t-#{$name} { top: #{$value}; }
+    .#{$breakpoint}put-r-#{$name} { right: #{$value}; }
+    .#{$breakpoint}put-b-#{$name} { bottom: #{$value}; }
+    .#{$breakpoint}put-l-#{$name} { left: #{$value}; }
+  }
+}
 
-	@each $coordinatesKey, $coordinatesValue in $coordinates {
-		
-		&#{map-get($sides, "top")}-#{$coordinatesKey} {
-			top: #{$coordinatesValue};
-		}
+@include utility-coordinates();
 
-		&#{map-get($sides, "right")}-#{$coordinatesKey} {
-			right: #{$coordinatesValue};
-		}
-
-		&#{map-get($sides, "bottom")}-#{$coordinatesKey} {
-			bottom: #{$coordinatesValue};
-		}
-
-		&#{map-get($sides, "left")}-#{$coordinatesKey} {
-			left: #{$coordinatesValue};
-		}
-
-	}
-
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-coordinates(#{$name}-);
+    }
+  }
 }

@@ -1,0 +1,18 @@
+/*
+
+	Links
+
+*/
+
+.link {
+	text-decoration: none;
+	transition: color 500ms ease-in-out;
+
+	&:link,
+	&:hover,
+	&:active,
+	&:focus {
+		transition: color 500ms ease-in-out;
+	}
+
+}
