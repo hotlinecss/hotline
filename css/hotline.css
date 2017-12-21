@@ -2512,28 +2512,28 @@ textarea {
 	Colors
 
 */
-.current-color {
-  color: current-color;
+.currentcolor {
+  color: currentColor;
 }
 
-.border-current-color {
-  border-color: current-color;
+.border-currentcolor {
+  border-color: currentColor;
 }
 
-.bg-current-color {
-  background-color: current-color;
+.bg-currentcolor {
+  background-color: currentColor;
 }
 
-.hover-current-color:hover, .hover-current-color:focus {
-  color: current-color;
+.hover-currentcolor:hover, .hover-currentcolor:focus {
+  color: currentColor;
 }
 
-.hover-border-current-color:hover, .hover-border-current-color:focus {
-  color: current-color;
+.hover-border-currentcolor:hover, .hover-border-currentcolor:focus {
+  color: currentColor;
 }
 
-.hover-bg-current-color:hover, .hover-bg-current-color:focus {
-  color: current-color;
+.hover-bg-currentcolor:hover, .hover-bg-currentcolor:focus {
+  color: currentColor;
 }
 
 .transparent {
