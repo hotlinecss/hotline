@@ -38,13 +38,13 @@
   .#{$breakpoint}flex-grow-1 { flex-grow: 1; }
   .#{$breakpoint}flex-grow-2 { flex-grow: 2; }
   .#{$breakpoint}flex-grow-3 { flex-grow: 3; }
-  .#{$breakpoint}order-1 { flex-grow: 1; }
-  .#{$breakpoint}order-2 { flex-grow: 2; }
-  .#{$breakpoint}order-3 { flex-grow: 3; }
-  .#{$breakpoint}order-4 { flex-grow: 4; }
-  .#{$breakpoint}order-5 { flex-grow: 5; }
-  .#{$breakpoint}order-6 { flex-grow: 6; }
-  .#{$breakpoint}order-last { flex-grow: 999; }
+  .#{$breakpoint}order-1 { order: 1; }
+  .#{$breakpoint}order-2 { order: 2; }
+  .#{$breakpoint}order-3 { order: 3; }
+  .#{$breakpoint}order-4 { order: 4; }
+  .#{$breakpoint}order-5 { order: 5; }
+  .#{$breakpoint}order-6 { order: 6; }
+  .#{$breakpoint}order-last { order: 999; }
 }
 
 @include utility-display();
