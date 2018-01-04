@@ -1,6 +1,6 @@
 {
   "name": "hotlinecss",
-  "version": "6.0.3",
+  "version": "6.0.4",
   "description": "Lightweight framework for the web",
   "main": "css/hotline.min.css",
   "scripts": {
@@ -22,12 +22,12 @@
   "devDependencies": {
     "css-mqpacker": "^6.0.1",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.9.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.9.2",
     "gulp-header": "^1.8.9",
-    "gulp-postcss": "^7.0.0",
+    "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-size": "^2.1.0"
+    "gulp-size": "^3.0.0"
   }
 }

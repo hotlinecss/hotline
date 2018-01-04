@@ -1,4 +1,4 @@
-/* hotlinecss - 6.0.3 - MIT */	
+/* hotlinecss - 6.0.4 - MIT */	
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -501,15 +501,15 @@ textarea {
 */
 .link {
   text-decoration: none;
-  -webkit-transition: color 500ms ease-in-out;
-  -o-transition: color 500ms ease-in-out;
-  transition: color 500ms ease-in-out;
+  -webkit-transition: color 150ms ease-in-out;
+  -o-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
 }
 
 .link:link, .link:hover, .link:active, .link:focus {
-  -webkit-transition: color 500ms ease-in-out;
-  -o-transition: color 500ms ease-in-out;
-  transition: color 500ms ease-in-out;
+  -webkit-transition: color 150ms ease-in-out;
+  -o-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
 }
 
 /*
