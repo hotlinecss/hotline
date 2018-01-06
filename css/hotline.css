@@ -2529,11 +2529,11 @@ textarea {
 }
 
 .hover-border-currentcolor:hover, .hover-border-currentcolor:focus {
-  color: currentColor;
+  border-color: currentColor;
 }
 
 .hover-bg-currentcolor:hover, .hover-bg-currentcolor:focus {
-  color: currentColor;
+  background-color: currentColor;
 }
 
 .transparent {
@@ -2553,11 +2553,11 @@ textarea {
 }
 
 .hover-border-transparent:hover, .hover-border-transparent:focus {
-  color: transparent;
+  border-color: transparent;
 }
 
 .hover-bg-transparent:hover, .hover-bg-transparent:focus {
-  color: transparent;
+  background-color: transparent;
 }
 
 .black {
@@ -2577,11 +2577,11 @@ textarea {
 }
 
 .hover-border-black:hover, .hover-border-black:focus {
-  color: #000;
+  border-color: #000;
 }
 
 .hover-bg-black:hover, .hover-bg-black:focus {
-  color: #000;
+  background-color: #000;
 }
 
 .white {
@@ -2601,11 +2601,11 @@ textarea {
 }
 
 .hover-border-white:hover, .hover-border-white:focus {
-  color: #fff;
+  border-color: #fff;
 }
 
 .hover-bg-white:hover, .hover-bg-white:focus {
-  color: #fff;
+  background-color: #fff;
 }
 
 .gray-0 {
@@ -2625,11 +2625,11 @@ textarea {
 }
 
 .hover-border-gray-0:hover, .hover-border-gray-0:focus {
-  color: #f9f9f9;
+  border-color: #f9f9f9;
 }
 
 .hover-bg-gray-0:hover, .hover-bg-gray-0:focus {
-  color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 .gray-1 {
@@ -2649,11 +2649,11 @@ textarea {
 }
 
 .hover-border-gray-1:hover, .hover-border-gray-1:focus {
-  color: #ededed;
+  border-color: #ededed;
 }
 
 .hover-bg-gray-1:hover, .hover-bg-gray-1:focus {
-  color: #ededed;
+  background-color: #ededed;
 }
 
 .gray-2 {
@@ -2673,11 +2673,11 @@ textarea {
 }
 
 .hover-border-gray-2:hover, .hover-border-gray-2:focus {
-  color: #e0e0e0;
+  border-color: #e0e0e0;
 }
 
 .hover-bg-gray-2:hover, .hover-bg-gray-2:focus {
-  color: #e0e0e0;
+  background-color: #e0e0e0;
 }
 
 .gray-3 {
@@ -2697,11 +2697,11 @@ textarea {
 }
 
 .hover-border-gray-3:hover, .hover-border-gray-3:focus {
-  color: #d2d2d2;
+  border-color: #d2d2d2;
 }
 
 .hover-bg-gray-3:hover, .hover-bg-gray-3:focus {
-  color: #d2d2d2;
+  background-color: #d2d2d2;
 }
 
 .gray-4 {
@@ -2721,11 +2721,11 @@ textarea {
 }
 
 .hover-border-gray-4:hover, .hover-border-gray-4:focus {
-  color: #c3c3c3;
+  border-color: #c3c3c3;
 }
 
 .hover-bg-gray-4:hover, .hover-bg-gray-4:focus {
-  color: #c3c3c3;
+  background-color: #c3c3c3;
 }
 
 .gray-5 {
@@ -2745,11 +2745,11 @@ textarea {
 }
 
 .hover-border-gray-5:hover, .hover-border-gray-5:focus {
-  color: #b2b2b2;
+  border-color: #b2b2b2;
 }
 
 .hover-bg-gray-5:hover, .hover-bg-gray-5:focus {
-  color: #b2b2b2;
+  background-color: #b2b2b2;
 }
 
 .gray-6 {
@@ -2769,11 +2769,11 @@ textarea {
 }
 
 .hover-border-gray-6:hover, .hover-border-gray-6:focus {
-  color: #9f9f9f;
+  border-color: #9f9f9f;
 }
 
 .hover-bg-gray-6:hover, .hover-bg-gray-6:focus {
-  color: #9f9f9f;
+  background-color: #9f9f9f;
 }
 
 .gray-7 {
@@ -2793,11 +2793,11 @@ textarea {
 }
 
 .hover-border-gray-7:hover, .hover-border-gray-7:focus {
-  color: #888888;
+  border-color: #888888;
 }
 
 .hover-bg-gray-7:hover, .hover-bg-gray-7:focus {
-  color: #888888;
+  background-color: #888888;
 }
 
 .gray-8 {
@@ -2817,11 +2817,11 @@ textarea {
 }
 
 .hover-border-gray-8:hover, .hover-border-gray-8:focus {
-  color: #6c6c6c;
+  border-color: #6c6c6c;
 }
 
 .hover-bg-gray-8:hover, .hover-bg-gray-8:focus {
-  color: #6c6c6c;
+  background-color: #6c6c6c;
 }
 
 .gray-9 {
@@ -2841,11 +2841,11 @@ textarea {
 }
 
 .hover-border-gray-9:hover, .hover-border-gray-9:focus {
-  color: #3f3f3f;
+  border-color: #3f3f3f;
 }
 
 .hover-bg-gray-9:hover, .hover-bg-gray-9:focus {
-  color: #3f3f3f;
+  background-color: #3f3f3f;
 }
 
 .black-05 {

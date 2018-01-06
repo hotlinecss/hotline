@@ -25,13 +25,13 @@
     .hover-border-#{$name} { 
     	&:hover, 
     	&:focus {
-    		color: #{$value};
+    		border-color: #{$value};
     	} 
     }
     .hover-bg-#{$name} { 
     	&:hover, 
     	&:focus {
-    		color: #{$value};
+    		background-color: #{$value};
     	} 
     }
   }
