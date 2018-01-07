@@ -14,6 +14,15 @@
     .#{$breakpoint}ph#{$name} { padding-left: #{$value}; padding-right: #{$value}; }
     .#{$breakpoint}pv#{$name} { padding-top: #{$value}; padding-bottom: #{$value}; }
   }
+  @each $name, $value in $negative-spacing {
+    .#{$breakpoint}npa#{$name} { padding: #{$value}; }
+    .#{$breakpoint}npt#{$name} { padding-top: #{$value}; }
+    .#{$breakpoint}npr#{$name} { padding-right: #{$value}; }
+    .#{$breakpoint}npb#{$name} { padding-bottom: #{$value}; }
+    .#{$breakpoint}npl#{$name} { padding-left: #{$value}; }
+    .#{$breakpoint}nph#{$name} { padding-left: #{$value}; padding-right: #{$value}; }
+    .#{$breakpoint}npv#{$name} { padding-top: #{$value}; padding-bottom: #{$value}; }
+  }
 }
 
 @include utility-padding();
