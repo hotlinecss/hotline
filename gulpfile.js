@@ -1,13 +1,14 @@
-const gulp    = require("gulp");
-const postcss = require("gulp-postcss");
-const sass    = require("gulp-sass");
-const mq      = require("css-mqpacker");
-const size    = require("gulp-size");
-const clean   = require("gulp-clean-css");
-const header  = require("gulp-header")
-const rename  = require("gulp-rename");
-const prefix  = require("gulp-autoprefixer");
-const pkg     = require("./package.json");
+const gulp    		= require("gulp");
+const postcss 		= require("gulp-postcss");
+const sass    		= require("gulp-sass");
+const mq      		= require("css-mqpacker");
+const size    		= require("gulp-size");
+const clean   		= require("gulp-clean-css");
+const header  		= require("gulp-header")
+const rename  		= require("gulp-rename");
+const prefix  		= require("gulp-autoprefixer");
+const sourcemaps  = require("gulp-sourcemaps");
+const pkg         = require("./package.json");
 
 const options = {
 	"paths": {
@@ -22,10 +23,12 @@ const options = {
 
 gulp.task("build:css", function() {
 	return gulp.src(options.paths.srcAll)
+		.pipe(sourcemaps.init())
 		.pipe(sass({outputStyle: "expanded"}).on("error", sass.logError))
 		.pipe(prefix({browsers: options.prefix }))
 		.pipe(postcss(options.processors))
 		.pipe(header("/* ${pkg.name} - ${pkg.version} - ${pkg.license} */\t\n", {pkg: pkg}))
+		.pipe(sourcemaps.write(options.paths.root))
 		.pipe(gulp.dest(options.paths.dist))
 		.pipe(size({title: "Raw: "}))
 		.pipe(clean())

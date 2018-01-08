@@ -6,10 +6,16 @@
 
 @mixin utility-coordinates($breakpoint: null) {
   @each $name, $value in $coordinates {
-    .#{$breakpoint}put-t-#{$name} { top: #{$value}; }
-    .#{$breakpoint}put-r-#{$name} { right: #{$value}; }
-    .#{$breakpoint}put-b-#{$name} { bottom: #{$value}; }
-    .#{$breakpoint}put-l-#{$name} { left: #{$value}; }
+    .#{$breakpoint}pin-t-#{$name} { top: #{$value}; }
+    .#{$breakpoint}pin-r-#{$name} { right: #{$value}; }
+    .#{$breakpoint}pin-b-#{$name} { bottom: #{$value}; }
+    .#{$breakpoint}pin-l-#{$name} { left: #{$value}; }
+  }
+  @each $name, $value in $negative-coordinates {
+    .#{$breakpoint}npin-t-#{$name} { top: #{$value}; }
+    .#{$breakpoint}npin-r-#{$name} { right: #{$value}; }
+    .#{$breakpoint}npin-b-#{$name} { bottom: #{$value}; }
+    .#{$breakpoint}npin-l-#{$name} { left: #{$value}; }
   }
 }
 

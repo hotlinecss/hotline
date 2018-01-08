@@ -6,7 +6,7 @@
 
 @mixin utility-border-width($breakpoint: null) {
   @each $name, $value in $border-width {
-    .#{$breakpoint}border-width-#{$name} {
+    .#{$breakpoint}border-w-#{$name} {
       border-width: #{$value};
     }
   }

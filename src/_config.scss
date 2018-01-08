@@ -4,7 +4,7 @@ $mq-breakpoints: (
   sm: 576px, // 36em
 	md: 768px, // 48em
 	lg: 992px, // 62em
-	xl: 1200px  // 75em
+	xl: 1200px // 75em
 );
 
 $font-size: (
@@ -30,6 +30,9 @@ $width: (
   4: 8rem,
   5: 16rem,
   6: 32rem,
+  7: 48rem,
+  8: 64rem,
+  9: 80rem,
   10: 10%,
   20: 20%,
   25: 25%,
@@ -138,7 +141,21 @@ $coordinates: (
   3: 1rem,
   4: 2rem,
   5: 4rem,
-  6: 8rem
+  6: 8rem,
+  50: 50%,
+  100: 100%
+);
+
+$negative-coordinates: (
+  0: -0,
+  1: -.250rem,
+  2: -.5rem,
+  3: -1rem,
+  4: -2rem,
+  5: -4rem,
+  6: -8rem,
+  50: -50%,
+  100: -100%
 );
 
 $text-shadow: (
