@@ -1,4 +1,4 @@
-/* hotlinecss - 6.1.4 - MIT */	
+/* hotlinecss - 6.1.5 - MIT */	
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -2401,22 +2401,22 @@ textarea {
   border-radius: 9999px;
 }
 
-.radius-top {
+.radius-t {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.radius-right {
+.radius-r {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.radius-bottom {
+.radius-b {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.radius-left {
+.radius-l {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -4994,19 +4994,19 @@ textarea {
   .sm-radius-full {
     border-radius: 9999px;
   }
-  .sm-radius-top {
+  .sm-radius-t {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .sm-radius-right {
+  .sm-radius-r {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .sm-radius-bottom {
+  .sm-radius-b {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  .sm-radius-left {
+  .sm-radius-l {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -6681,19 +6681,19 @@ textarea {
   .md-radius-full {
     border-radius: 9999px;
   }
-  .md-radius-top {
+  .md-radius-t {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .md-radius-right {
+  .md-radius-r {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .md-radius-bottom {
+  .md-radius-b {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  .md-radius-left {
+  .md-radius-l {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -8368,19 +8368,19 @@ textarea {
   .lg-radius-full {
     border-radius: 9999px;
   }
-  .lg-radius-top {
+  .lg-radius-t {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .lg-radius-right {
+  .lg-radius-r {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .lg-radius-bottom {
+  .lg-radius-b {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  .lg-radius-left {
+  .lg-radius-l {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -10055,19 +10055,19 @@ textarea {
   .xl-radius-full {
     border-radius: 9999px;
   }
-  .xl-radius-top {
+  .xl-radius-t {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .xl-radius-right {
+  .xl-radius-r {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .xl-radius-bottom {
+  .xl-radius-b {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  .xl-radius-left {
+  .xl-radius-l {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }

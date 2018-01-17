@@ -11,22 +11,22 @@
     }
   }
 
-	.#{$breakpoint}radius-top { 
+	.#{$breakpoint}radius-t { 
 		border-bottom-left-radius: 0; 
 		border-bottom-right-radius: 0; 
 	}
 	
-	.#{$breakpoint}radius-right { 
+	.#{$breakpoint}radius-r { 
 		border-top-left-radius: 0; 
 		border-bottom-left-radius: 0; 
 	}
 
-	.#{$breakpoint}radius-bottom { 
+	.#{$breakpoint}radius-b { 
 		border-top-left-radius: 0; 
 		border-top-right-radius: 0; 
 	}
 
-	.#{$breakpoint}radius-left { 
+	.#{$breakpoint}radius-l { 
 		border-top-right-radius: 0; 
 		border-bottom-right-radius: 0; 
 	}
