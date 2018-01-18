@@ -1,4 +1,4 @@
-/* hotlinecss - 6.1.5 - MIT */	
+/* hotlinecss - 6.1.6 - MIT */	
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -3072,6 +3072,10 @@ textarea {
   border: 0;
 }
 
+.measure {
+  max-width: 30rem;
+}
+
 .truncate {
   white-space: nowrap;
   overflow: hidden;
@@ -5385,6 +5389,65 @@ textarea {
   .sm-events-auto {
     pointer-events: auto;
   }
+  .sm-screen-reader {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  .sm-measure {
+    max-width: 30rem;
+  }
+  .sm-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+  }
+  .sm-fill {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .sm-::before, .cf::after {
+    content: " ";
+    display: table;
+  }
+  .sm-::after {
+    clear: both;
+  }
+  .sm-aspect-ratio {
+    height: 0;
+    position: relative;
+  }
+  .sm-aspect-ratio--16x9 {
+    padding-bottom: 56.25%;
+  }
+  .sm-aspect-ratio--8x5 {
+    padding-bottom: 62.5%;
+  }
+  .sm-aspect-ratio--4x3 {
+    padding-bottom: 75%;
+  }
+  .sm-aspect-ratio--3x2 {
+    padding-bottom: 66.66%;
+  }
+  .sm-aspect-ratio-item {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
 }
 
 @media (min-width: 48em) {
@@ -7071,6 +7134,65 @@ textarea {
   }
   .md-events-auto {
     pointer-events: auto;
+  }
+  .md-screen-reader {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  .md-measure {
+    max-width: 30rem;
+  }
+  .md-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+  }
+  .md-fill {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .md-::before, .cf::after {
+    content: " ";
+    display: table;
+  }
+  .md-::after {
+    clear: both;
+  }
+  .md-aspect-ratio {
+    height: 0;
+    position: relative;
+  }
+  .md-aspect-ratio--16x9 {
+    padding-bottom: 56.25%;
+  }
+  .md-aspect-ratio--8x5 {
+    padding-bottom: 62.5%;
+  }
+  .md-aspect-ratio--4x3 {
+    padding-bottom: 75%;
+  }
+  .md-aspect-ratio--3x2 {
+    padding-bottom: 66.66%;
+  }
+  .md-aspect-ratio-item {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
   }
 }
 
@@ -8759,6 +8881,65 @@ textarea {
   .lg-events-auto {
     pointer-events: auto;
   }
+  .lg-screen-reader {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  .lg-measure {
+    max-width: 30rem;
+  }
+  .lg-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+  }
+  .lg-fill {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .lg-::before, .cf::after {
+    content: " ";
+    display: table;
+  }
+  .lg-::after {
+    clear: both;
+  }
+  .lg-aspect-ratio {
+    height: 0;
+    position: relative;
+  }
+  .lg-aspect-ratio--16x9 {
+    padding-bottom: 56.25%;
+  }
+  .lg-aspect-ratio--8x5 {
+    padding-bottom: 62.5%;
+  }
+  .lg-aspect-ratio--4x3 {
+    padding-bottom: 75%;
+  }
+  .lg-aspect-ratio--3x2 {
+    padding-bottom: 66.66%;
+  }
+  .lg-aspect-ratio-item {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
 }
 
 @media (min-width: 75em) {
@@ -10445,6 +10626,65 @@ textarea {
   }
   .xl-events-auto {
     pointer-events: auto;
+  }
+  .xl-screen-reader {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  .xl-measure {
+    max-width: 30rem;
+  }
+  .xl-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+  }
+  .xl-fill {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .xl-::before, .cf::after {
+    content: " ";
+    display: table;
+  }
+  .xl-::after {
+    clear: both;
+  }
+  .xl-aspect-ratio {
+    height: 0;
+    position: relative;
+  }
+  .xl-aspect-ratio--16x9 {
+    padding-bottom: 56.25%;
+  }
+  .xl-aspect-ratio--8x5 {
+    padding-bottom: 62.5%;
+  }
+  .xl-aspect-ratio--4x3 {
+    padding-bottom: 75%;
+  }
+  .xl-aspect-ratio--3x2 {
+    padding-bottom: 66.66%;
+  }
+  .xl-aspect-ratio-item {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
   }
 }
 

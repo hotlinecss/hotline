@@ -16,6 +16,7 @@
 	  border: 0;
 	}
 
+	.#{$breakpoint}measure { max-width: 30rem; }
 	.#{$breakpoint}truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 	.#{$breakpoint}fill { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
@@ -38,3 +39,11 @@
 }
 
 @include utility-utilities();
+
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include utility-utilities(#{$name}-);
+    }
+  }
+}
