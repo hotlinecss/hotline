@@ -1,4 +1,4 @@
-/* hotlinecss - 6.1.6 - MIT */	
+/* hotlinecss - 6.1.8 - MIT */	
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -790,13 +790,13 @@ textarea {
 }
 
 .box-shadow-2 {
-  -webkit-box-shadow: 0 0 0 1px rgba(89, 105, 128, .1), 0 1px 3px 0 rgba(89, 105, 128, .1), 0 1px 2px 0 rgba(0, 0, 0,.05);
-          box-shadow: 0 0 0 1px rgba(89, 105, 128, .1), 0 1px 3px 0 rgba(89, 105, 128, .1), 0 1px 2px 0 rgba(0, 0, 0,.05);
+  -webkit-box-shadow: 0 0 0 1px rgba(89, 105, 128, .1), 0 3px 20px 0 rgba(89, 105, 128,.3), 0 1px 2px 0 rgba(0, 0, 0,.05);
+          box-shadow: 0 0 0 1px rgba(89, 105, 128, .1), 0 3px 20px 0 rgba(89, 105, 128,.3), 0 1px 2px 0 rgba(0, 0, 0,.05);
 }
 
 .box-shadow-3 {
-  -webkit-box-shadow: 0 0 0 1px rgba(89, 105, 128, .1), 0 3px 20px 0 rgba(89, 105, 128,.3), 0 1px 2px 0 rgba(0, 0, 0,.05);
-          box-shadow: 0 0 0 1px rgba(89, 105, 128, .1), 0 3px 20px 0 rgba(89, 105, 128,.3), 0 1px 2px 0 rgba(0, 0, 0,.05);
+  -webkit-box-shadow: 0 0 0 1px rgba(89, 105, 128, .1), 0 1px 3px 0 rgba(89, 105, 128, .1), 0 1px 2px 0 rgba(0, 0, 0,.05);
+          box-shadow: 0 0 0 1px rgba(89, 105, 128, .1), 0 1px 3px 0 rgba(89, 105, 128, .1), 0 1px 2px 0 rgba(0, 0, 0,.05);
 }
 
 .box-shadow-4 {
@@ -2969,6 +2969,35 @@ textarea {
 
 /*
 
+	Parent
+
+*/
+.parent-measure p {
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+
+.parent-measure-wide p {
+  max-width: 34rem;
+  margin-bottom: 2rem;
+}
+
+.parent-line-copy p {
+  line-height: 1.5;
+}
+
+.parent-img-fluid img {
+  max-width: 100%;
+  height: auto;
+}
+
+.parent-img-full img {
+  width: 100%;
+  height: auto;
+}
+
+/*
+
 	Opacity
 
 */
@@ -3074,6 +3103,10 @@ textarea {
 
 .measure {
   max-width: 30rem;
+}
+
+.measure-wide {
+  max-width: 34rem;
 }
 
 .truncate {
@@ -5383,6 +5416,25 @@ textarea {
   .sm-wrap-break-word {
     word-wrap: break-word;
   }
+  .sm-parent-measure p {
+    max-width: 30rem;
+    margin-bottom: 2rem;
+  }
+  .sm-parent-measure-wide p {
+    max-width: 34rem;
+    margin-bottom: 2rem;
+  }
+  .sm-parent-line-copy p {
+    line-height: 1.5;
+  }
+  .sm-parent-img-fluid img {
+    max-width: 100%;
+    height: auto;
+  }
+  .sm-parent-img-full img {
+    width: 100%;
+    height: auto;
+  }
   .sm-events-none {
     pointer-events: none;
   }
@@ -5401,6 +5453,9 @@ textarea {
   }
   .sm-measure {
     max-width: 30rem;
+  }
+  .sm-measure-wide {
+    max-width: 34rem;
   }
   .sm-truncate {
     white-space: nowrap;
@@ -7129,6 +7184,25 @@ textarea {
   .md-wrap-break-word {
     word-wrap: break-word;
   }
+  .md-parent-measure p {
+    max-width: 30rem;
+    margin-bottom: 2rem;
+  }
+  .md-parent-measure-wide p {
+    max-width: 34rem;
+    margin-bottom: 2rem;
+  }
+  .md-parent-line-copy p {
+    line-height: 1.5;
+  }
+  .md-parent-img-fluid img {
+    max-width: 100%;
+    height: auto;
+  }
+  .md-parent-img-full img {
+    width: 100%;
+    height: auto;
+  }
   .md-events-none {
     pointer-events: none;
   }
@@ -7147,6 +7221,9 @@ textarea {
   }
   .md-measure {
     max-width: 30rem;
+  }
+  .md-measure-wide {
+    max-width: 34rem;
   }
   .md-truncate {
     white-space: nowrap;
@@ -8875,6 +8952,25 @@ textarea {
   .lg-wrap-break-word {
     word-wrap: break-word;
   }
+  .lg-parent-measure p {
+    max-width: 30rem;
+    margin-bottom: 2rem;
+  }
+  .lg-parent-measure-wide p {
+    max-width: 34rem;
+    margin-bottom: 2rem;
+  }
+  .lg-parent-line-copy p {
+    line-height: 1.5;
+  }
+  .lg-parent-img-fluid img {
+    max-width: 100%;
+    height: auto;
+  }
+  .lg-parent-img-full img {
+    width: 100%;
+    height: auto;
+  }
   .lg-events-none {
     pointer-events: none;
   }
@@ -8893,6 +8989,9 @@ textarea {
   }
   .lg-measure {
     max-width: 30rem;
+  }
+  .lg-measure-wide {
+    max-width: 34rem;
   }
   .lg-truncate {
     white-space: nowrap;
@@ -10621,6 +10720,25 @@ textarea {
   .xl-wrap-break-word {
     word-wrap: break-word;
   }
+  .xl-parent-measure p {
+    max-width: 30rem;
+    margin-bottom: 2rem;
+  }
+  .xl-parent-measure-wide p {
+    max-width: 34rem;
+    margin-bottom: 2rem;
+  }
+  .xl-parent-line-copy p {
+    line-height: 1.5;
+  }
+  .xl-parent-img-fluid img {
+    max-width: 100%;
+    height: auto;
+  }
+  .xl-parent-img-full img {
+    width: 100%;
+    height: auto;
+  }
   .xl-events-none {
     pointer-events: none;
   }
@@ -10639,6 +10757,9 @@ textarea {
   }
   .xl-measure {
     max-width: 30rem;
+  }
+  .xl-measure-wide {
+    max-width: 34rem;
   }
   .xl-truncate {
     white-space: nowrap;

@@ -17,6 +17,7 @@
 	}
 
 	.#{$breakpoint}measure { max-width: 30rem; }
+	.#{$breakpoint}measure-wide { max-width: 34rem; }
 	.#{$breakpoint}truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 	.#{$breakpoint}fill { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
