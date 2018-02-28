@@ -5,7 +5,8 @@
 */
 
 @mixin utility-min-height($breakpoint: null) {
-	@each $name, $value in $min-height {
+	.#{$breakpoint}min-h-0 { min-height: 0; }
+	@each $name, $value in $max-min-height {
 	  .#{$breakpoint}min-h-#{$name} { min-height: #{$value}; }
 	}
 }

@@ -20,8 +20,6 @@ $font-size: (
   medium: medium
 );
 
-$total-columns-width: 12;
-
 $width: (
   auto: auto,
   1: 1rem,
@@ -51,6 +49,23 @@ $width: (
   100vh: 100vw,
 );
 
+$height: (
+  auto: auto,
+  0: 0,
+  1: 1rem,
+  2: 2rem,
+  3: 4rem,
+  4: 8rem,
+  5: 16rem,
+  6: 32rem,
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  75vh: 75vh,
+  100vh: 100vh
+);
+
 $min-width: (
   0: 0,
   50: 50%,
@@ -70,52 +85,31 @@ $max-width: (
   100: 100%
 );
 
-$height: (
-  auto: auto,
-  0: 0,
-  1: 1rem,
-  2: 2rem,
-  3: 4rem,
-  4: 8rem,
-  5: 16rem,
-  6: 32rem,
-  25: 25%,
-  50: 50%,
-  75: 75%,
-  100: 100%,
-  75vh: 75vh,
-  100vh: 100vh
-);
-
-$min-height: (
-  0: 0,
+$max-min-height: (
   100: 100%,
   100vh: 100vh
 );
 
-$max-height: (
-  100: 100%,
-  100vh: 100vh
-);
+$spacer: 1rem;
 
 $spacing: (
   0: 0,
-  1: .250rem,
-  2: .5rem,
-  3: 1rem,
-  4: 2rem,
-  5: 4rem,
-  6: 8rem
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: ($spacer * 1),
+  4: ($spacer * 2),
+  5: ($spacer * 4),
+  6: ($spacer * 8)
 );
 
 $negative-spacing: (
   0: 0,
-  1: -.250rem,
-  2: -.5rem,
-  3: -1rem,
-  4: -2rem,
-  5: -4rem,
-  6: -8rem
+  1: ($spacer * -.25),
+  2: ($spacer * -.5),
+  3: ($spacer * -1),
+  4: ($spacer * -2),
+  5: ($spacer * -4),
+  6: ($spacer * -8)
 );
 
 $border-width: (
@@ -148,7 +142,7 @@ $coordinates: (
 );
 
 $negative-coordinates: (
-  0: -0,
+  0: 0,
   1: -.250rem,
   2: -.5rem,
   3: -1rem,
@@ -171,19 +165,30 @@ $box-shadow: (
   4: "0 2px 4px rgba(0, 0, 0, 0.18)"
 );
 
+$blue: #349aff;
+$green: #4BB543;
+$red: #ff3434;
+$orange: #ff8335;
+
+$lighten-value: 5%;
+
 $colors: (
   currentcolor: currentColor,
   transparent: transparent,
-  black: #000,
-  white: #fff,
-  gray-0: #f9f9f9,
-  gray-1: #ededed,
-  gray-2: #e0e0e0,
-  gray-3: #d2d2d2,
-  gray-4: #c3c3c3,
-  gray-5: #b2b2b2,
-  gray-6: #9f9f9f,
-  gray-7: #888888,
-  gray-8: #6c6c6c,
-  gray-9: #3f3f3f
+  near-black: #111111,
+  black: #000000,
+  white: #ffffff,
+  near-white: #f4f4f4,
+  light-gray: #EEEEEE,
+  light-silver: #aaaaaa,
+  silver: #999999,
+  gray: #777777,
+  blue: $blue,
+  light-blue: lighten($blue, $lighten-value),
+  green: $green,
+  light-green: lighten($green, $lighten-value),
+  red: $red,
+  light-red: lighten($red, $lighten-value),
+  orange: $orange,
+  light-orange: lighten($orange, $lighten-value)
 );
