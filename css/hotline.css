@@ -1,4 +1,4 @@
-/* hotlinecss - 6.2.0 - MIT */	
+/* hotlinecss - 6.2.1 - MIT */	
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -3124,6 +3124,15 @@ textarea {
   left: 0;
 }
 
+.clearfix::before, .cf::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
 .aspect-ratio {
   height: 0;
   position: relative;
@@ -5566,11 +5575,11 @@ textarea {
     bottom: 0;
     left: 0;
   }
-  .sm-::before, .cf::after {
+  .sm-clearfix::before, .cf::after {
     content: " ";
     display: table;
   }
-  .sm-::after {
+  .sm-clearfix::after {
     clear: both;
   }
   .sm-aspect-ratio {
@@ -7334,11 +7343,11 @@ textarea {
     bottom: 0;
     left: 0;
   }
-  .md-::before, .cf::after {
+  .md-clearfix::before, .cf::after {
     content: " ";
     display: table;
   }
-  .md-::after {
+  .md-clearfix::after {
     clear: both;
   }
   .md-aspect-ratio {
@@ -9102,11 +9111,11 @@ textarea {
     bottom: 0;
     left: 0;
   }
-  .lg-::before, .cf::after {
+  .lg-clearfix::before, .cf::after {
     content: " ";
     display: table;
   }
-  .lg-::after {
+  .lg-clearfix::after {
     clear: both;
   }
   .lg-aspect-ratio {
@@ -10870,11 +10879,11 @@ textarea {
     bottom: 0;
     left: 0;
   }
-  .xl-::before, .cf::after {
+  .xl-clearfix::before, .cf::after {
     content: " ";
     display: table;
   }
-  .xl-::after {
+  .xl-clearfix::after {
     clear: both;
   }
   .xl-aspect-ratio {

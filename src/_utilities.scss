@@ -21,20 +21,20 @@
 	.#{$breakpoint}truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 	.#{$breakpoint}fill { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
-	.#{$breakpoint}::before, .cf::after { content: " "; display: table; }
-	.#{$breakpoint}::after { clear: both; }
+	.#{$breakpoint}clearfix::before, .cf::after { content: " "; display: table; }
+	.#{$breakpoint}clearfix::after { clear: both; }
 
 	.#{$breakpoint}aspect-ratio { height: 0; position: relative }
 	.#{$breakpoint}aspect-ratio--16x9 { padding-bottom: 56.25%; }
 	.#{$breakpoint}aspect-ratio--8x5 { padding-bottom: 62.5%; }
 	.#{$breakpoint}aspect-ratio--4x3 { padding-bottom: 75%; }
 	.#{$breakpoint}aspect-ratio--3x2 { padding-bottom: 66.66%; }
-	.#{$breakpoint}aspect-ratio-item { 
-		height: 100%; 
-		position: 
-		absolute; 
-		top: 0; right: 0; bottom: 0; left: 0; 
-		width: 100%; 
+	.#{$breakpoint}aspect-ratio-item {
+		height: 100%;
+		position:
+		absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		width: 100%;
 		z-index: 100; }
 
 }
