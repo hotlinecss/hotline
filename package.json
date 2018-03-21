@@ -1,6 +1,6 @@
 {
   "name": "hotlinecss",
-  "version": "6.2.1",
+  "version": "6.2.2",
   "description": "Lightweight framework for the web",
   "main": "css/hotline.min.css",
   "scripts": {

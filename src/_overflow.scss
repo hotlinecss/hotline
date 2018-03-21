@@ -4,13 +4,6 @@
 
 */
 
-// .xs-overflow-scroll { overflow: scroll; }
-
-// .xs-overflow-x-scroll { overflow-x: scroll; }
-
-// .xs-overflow-y-scroll { overflow-y: scroll; }
-
-
 @mixin utility-overflow($breakpoint: null) {
   .#{$breakpoint}overflow-visible { overflow: visible; }
   .#{$breakpoint}overflow-x-visible { overflow-x: visible; }
