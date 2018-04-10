@@ -13,16 +13,13 @@
     .#{$breakpoint}ml#{$name} { margin-left: #{$value}; }
     .#{$breakpoint}mh#{$name} { margin-left: #{$value}; margin-right: #{$value}; }
     .#{$breakpoint}mv#{$name} { margin-top: #{$value}; margin-bottom: #{$value}; }
-  }
-
-  @each $name, $value in $negative-spacing {
-    .#{$breakpoint}nma#{$name} { margin: #{$value}; }
-    .#{$breakpoint}nmt#{$name} { margin-top: #{$value}; }
-    .#{$breakpoint}nmr#{$name} { margin-right: #{$value}; }
-    .#{$breakpoint}nmb#{$name} { margin-bottom: #{$value}; }
-    .#{$breakpoint}nml#{$name} { margin-left: #{$value}; }
-    .#{$breakpoint}nmh#{$name} { margin-left: #{$value}; margin-right: #{$value}; }
-    .#{$breakpoint}nmv#{$name} { margin-top: #{$value}; margin-bottom: #{$value}; }
+    .#{$breakpoint}nma#{$name} { margin: ($value * -1); }
+    .#{$breakpoint}nmt#{$name} { margin-top: ($value * -1); }
+    .#{$breakpoint}nmr#{$name} { margin-right: ($value * -1); }
+    .#{$breakpoint}nmb#{$name} { margin-bottom: ($value * -1); }
+    .#{$breakpoint}nml#{$name} { margin-left: ($value * -1); }
+    .#{$breakpoint}nmh#{$name} { margin-left: ($value * -1); margin-right: ($value * -1); }
+    .#{$breakpoint}nmv#{$name} { margin-top: ($value * -1); margin-bottom: ($value * -1); }
   }
 
   .#{$breakpoint}mt-auto { margin-top: auto; }

@@ -13,15 +13,13 @@
     .#{$breakpoint}pl#{$name} { padding-left: #{$value}; }
     .#{$breakpoint}ph#{$name} { padding-left: #{$value}; padding-right: #{$value}; }
     .#{$breakpoint}pv#{$name} { padding-top: #{$value}; padding-bottom: #{$value}; }
-  }
-  @each $name, $value in $negative-spacing {
-    .#{$breakpoint}npa#{$name} { padding: #{$value}; }
-    .#{$breakpoint}npt#{$name} { padding-top: #{$value}; }
-    .#{$breakpoint}npr#{$name} { padding-right: #{$value}; }
-    .#{$breakpoint}npb#{$name} { padding-bottom: #{$value}; }
-    .#{$breakpoint}npl#{$name} { padding-left: #{$value}; }
-    .#{$breakpoint}nph#{$name} { padding-left: #{$value}; padding-right: #{$value}; }
-    .#{$breakpoint}npv#{$name} { padding-top: #{$value}; padding-bottom: #{$value}; }
+    .#{$breakpoint}npa#{$name} { padding: ($value * -1); }
+    .#{$breakpoint}npt#{$name} { padding-top: ($value * -1); }
+    .#{$breakpoint}npr#{$name} { padding-right: ($value * -1); }
+    .#{$breakpoint}npb#{$name} { padding-bottom: ($value * -1); }
+    .#{$breakpoint}npl#{$name} { padding-left: ($value * -1); }
+    .#{$breakpoint}nph#{$name} { padding-left: ($value * -1); padding-right: ($value * -1); }
+    .#{$breakpoint}npv#{$name} { padding-top: ($value * -1); padding-bottom: ($value * -1); }
   }
 }
 

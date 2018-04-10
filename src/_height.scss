@@ -5,10 +5,13 @@
 */
 
 @mixin utility-height($breakpoint: null) {
-  @each $name, $value in $height {
+  @each $name, $value in $sense-sizes {
     .#{$breakpoint}h-#{$name} {
       height: #{$value};
     }
+  }
+  .h-100vh {
+    height: 100vh;
   }
 }
 

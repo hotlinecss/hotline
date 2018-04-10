@@ -4,10 +4,6 @@
 
 */
 
-// .xs-wrap-normal { word-wrap: normal; }
-
-// .xs-wrap-break-word { word-wrap: break-word; }
-
 @mixin utility-word-wrap($breakpoint: null) {
   .#{$breakpoint}wrap-normal { word-wrap: normal; }
   .#{$breakpoint}wrap-break-word { word-wrap: break-word; }

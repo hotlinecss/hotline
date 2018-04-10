@@ -10,6 +10,9 @@
       width: #{$value};
     }
   }
+  .w-100vw {
+    width: 100vw;
+  }
 }
 
 @include utility-width();

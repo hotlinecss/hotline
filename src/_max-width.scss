@@ -5,7 +5,7 @@
 */
 
 @mixin utility-max-width($breakpoint: null) {
-  @each $name, $value in $max-width {
+  @each $name, $value in $sense-sizes {
     .#{$breakpoint}max-w-#{$name} {
       max-width: #{$value};
     }

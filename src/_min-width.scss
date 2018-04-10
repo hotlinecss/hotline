@@ -5,8 +5,10 @@
 */
 
 @mixin utility-min-width($breakpoint: null) {
-	@each $name, $value in $min-width {
-	  .#{$breakpoint}min-w-#{$name} { min-width: #{$value}; }
+	@each $name, $value in $sense-sizes {
+	  .#{$breakpoint}min-w-#{$name} {
+			min-width: #{$value};
+		}
 	}
 }
 
