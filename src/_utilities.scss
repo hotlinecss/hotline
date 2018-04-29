@@ -5,6 +5,17 @@
 */
 
 @mixin utility-utilities($breakpoint: null) {
+
+  .#{breakpoint}user-select-none { user-select: none; }
+
+  .#{breakpoint}user-select-text { user-select: text; }
+
+  .#{breakpoint}user-select-auto { user-select: auto; }
+
+  .#{breakpoint}user-select-all { user-select: all; }
+
+  .#{breakpoint}user-select-contain { user-select: contain; }
+
   .#{$breakpoint}screen-reader {
 	  position: absolute;
 	  width: 1px;

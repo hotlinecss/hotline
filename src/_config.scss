@@ -111,6 +111,7 @@ $blue: #349aff;
 $green: #4BB543;
 $red: #ff3434;
 $orange: #ff8335;
+$yellow: #ffff3b;
 
 $lighten-value: 5%;
 
@@ -125,6 +126,8 @@ $colors: (
   light-silver: #aaaaaa,
   silver: #999999,
   gray: #777777,
+  yellow: $yellow,
+  light-yellow: lighten($yellow, $lighten-value),
   blue: $blue,
   light-blue: lighten($blue, $lighten-value),
   green: $green,
