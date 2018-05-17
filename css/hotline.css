@@ -1,4 +1,4 @@
-/* hotlinecss - 6.4.4 - MIT */	
+/* hotlinecss - 6.4.5 - MIT */	
 /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
 /* Document
    ========================================================================== */
@@ -894,6 +894,10 @@ textarea {
 	Width
 
 */
+.w-auto {
+  width: auto;
+}
+
 .w-10 {
   width: 10%;
 }
@@ -4178,6 +4182,9 @@ textarea {
         -ms-flex-order: 999;
             order: 999;
   }
+  .sm-w-auto {
+    width: auto;
+  }
   .sm-w-10 {
     width: 10%;
   }
@@ -6050,6 +6057,9 @@ textarea {
     -webkit-box-ordinal-group: 1000;
         -ms-flex-order: 999;
             order: 999;
+  }
+  .md-w-auto {
+    width: auto;
   }
   .md-w-10 {
     width: 10%;
@@ -7924,6 +7934,9 @@ textarea {
         -ms-flex-order: 999;
             order: 999;
   }
+  .lg-w-auto {
+    width: auto;
+  }
   .lg-w-10 {
     width: 10%;
   }
@@ -9796,6 +9809,9 @@ textarea {
     -webkit-box-ordinal-group: 1000;
         -ms-flex-order: 999;
             order: 999;
+  }
+  .xl-w-auto {
+    width: auto;
   }
   .xl-w-10 {
     width: 10%;
