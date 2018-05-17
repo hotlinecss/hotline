@@ -10,7 +10,7 @@
       height: #{$value};
     }
   }
-  .h-100vh {
+  .#{$breakpoint}h-100vh {
     height: 100vh;
   }
 }

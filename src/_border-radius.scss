@@ -11,26 +11,25 @@
     }
   }
 
-	.#{$breakpoint}radius-t { 
-		border-bottom-left-radius: 0; 
-		border-bottom-right-radius: 0; 
-	}
-	
-	.#{$breakpoint}radius-r { 
-		border-top-left-radius: 0; 
-		border-bottom-left-radius: 0; 
+	.#{$breakpoint}radius-t {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
 	}
 
-	.#{$breakpoint}radius-b { 
-		border-top-left-radius: 0; 
-		border-top-right-radius: 0; 
+	.#{$breakpoint}radius-r {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
 	}
 
-	.#{$breakpoint}radius-l { 
-		border-top-right-radius: 0; 
-		border-bottom-right-radius: 0; 
+	.#{$breakpoint}radius-b {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
 	}
 
+	.#{$breakpoint}radius-l {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
 }
 
 @include utility-border-radius();

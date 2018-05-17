@@ -5,10 +5,8 @@
 */
 
 @mixin utility-table($breakpoint: null) {
-
 	.table { border-collapse: collapse; border-spacing: 0; }
 	.table-fixed { table-layout: fixed; }
-
 }
 
 @include utility-table();

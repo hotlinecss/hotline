@@ -10,7 +10,7 @@
       width: #{$value};
     }
   }
-  .w-100vw {
+  .#{$breakpoint}w-100vw {
     width: 100vw;
   }
 }

@@ -5,7 +5,9 @@
 */
 
 @mixin utility-min-height($breakpoint: null) {
-	.#{$breakpoint}min-h-0 { min-height: 0; }
+	.#{$breakpoint}min-h-0 {
+		min-height: 0;
+	}
 	@each $name, $value in $sense-sizes {
 	  .#{$breakpoint}min-h-#{$name} { min-height: #{$value}; }
 	}

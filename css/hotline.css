@@ -1,4 +1,4 @@
-/* hotlinecss - 6.4.0 - MIT */	
+/* hotlinecss - 6.4.4 - MIT */	
 /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
 /* Document
    ========================================================================== */
@@ -4223,7 +4223,7 @@ textarea {
   .sm-w-100 {
     width: 100%;
   }
-  .w-100vw {
+  .sm-w-100vw {
     width: 100vw;
   }
   .sm-min-w-auto {
@@ -4343,7 +4343,7 @@ textarea {
   .sm-h-100 {
     height: 100%;
   }
-  .h-100vh {
+  .sm-h-100vh {
     height: 100vh;
   }
   .sm-min-h-0 {
@@ -6096,7 +6096,7 @@ textarea {
   .md-w-100 {
     width: 100%;
   }
-  .w-100vw {
+  .md-w-100vw {
     width: 100vw;
   }
   .md-min-w-auto {
@@ -6216,7 +6216,7 @@ textarea {
   .md-h-100 {
     height: 100%;
   }
-  .h-100vh {
+  .md-h-100vh {
     height: 100vh;
   }
   .md-min-h-0 {
@@ -7969,7 +7969,7 @@ textarea {
   .lg-w-100 {
     width: 100%;
   }
-  .w-100vw {
+  .lg-w-100vw {
     width: 100vw;
   }
   .lg-min-w-auto {
@@ -8089,7 +8089,7 @@ textarea {
   .lg-h-100 {
     height: 100%;
   }
-  .h-100vh {
+  .lg-h-100vh {
     height: 100vh;
   }
   .lg-min-h-0 {
@@ -9842,7 +9842,7 @@ textarea {
   .xl-w-100 {
     width: 100%;
   }
-  .w-100vw {
+  .xl-w-100vw {
     width: 100vw;
   }
   .xl-min-w-auto {
@@ -9962,7 +9962,7 @@ textarea {
   .xl-h-100 {
     height: 100%;
   }
-  .h-100vh {
+  .xl-h-100vh {
     height: 100vh;
   }
   .xl-min-h-0 {
