@@ -6,6 +6,10 @@
 
 @mixin utility-utilities($breakpoint: null) {
 
+	.fill-currentcolor { fill: currentColor; }
+
+	.stroke-currentcolor { stroke: currentColor; }
+
   .#{breakpoint}user-select-none { user-select: none; }
 
   .#{breakpoint}user-select-text { user-select: text; }
