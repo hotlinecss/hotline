@@ -15,6 +15,16 @@
 	}
 }
 
+.hover-fade {
+	opacity: 1;
+	transition: opacity 200ms ease-in-out;
+
+	&:hover {
+		opacity: .5;
+	}
+
+}
+
 .hover-text-underline {
 	&:hover {
 		text-decoration: underline;
