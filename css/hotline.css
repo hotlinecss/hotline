@@ -1,4 +1,4 @@
-/* hotlinecss - 6.5.1 - MIT */	
+/* hotlinecss - 6.5.3 - MIT */	
 /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
 /* Document
    ========================================================================== */
@@ -1433,36 +1433,6 @@ textarea {
   padding-bottom: 0;
 }
 
-.npa0 {
-  padding: 0;
-}
-
-.npt0 {
-  padding-top: 0;
-}
-
-.npr0 {
-  padding-right: 0;
-}
-
-.npb0 {
-  padding-bottom: 0;
-}
-
-.npl0 {
-  padding-left: 0;
-}
-
-.nph0 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.npv0 {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .pa1 {
   padding: 0.25rem;
 }
@@ -1854,36 +1824,6 @@ textarea {
 }
 
 .mv0 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.nma0 {
-  margin: 0;
-}
-
-.nmt0 {
-  margin-top: 0;
-}
-
-.nmr0 {
-  margin-right: 0;
-}
-
-.nmb0 {
-  margin-bottom: 0;
-}
-
-.nml0 {
-  margin-left: 0;
-}
-
-.nmh0 {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.nmv0 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -4946,29 +4886,6 @@ textarea {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .sm-npa0 {
-    padding: 0;
-  }
-  .sm-npt0 {
-    padding-top: 0;
-  }
-  .sm-npr0 {
-    padding-right: 0;
-  }
-  .sm-npb0 {
-    padding-bottom: 0;
-  }
-  .sm-npl0 {
-    padding-left: 0;
-  }
-  .sm-nph0 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .sm-npv0 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   .sm-pa1 {
     padding: 0.25rem;
   }
@@ -5265,29 +5182,6 @@ textarea {
     margin-right: 0;
   }
   .sm-mv0 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .sm-nma0 {
-    margin: 0;
-  }
-  .sm-nmt0 {
-    margin-top: 0;
-  }
-  .sm-nmr0 {
-    margin-right: 0;
-  }
-  .sm-nmb0 {
-    margin-bottom: 0;
-  }
-  .sm-nml0 {
-    margin-left: 0;
-  }
-  .sm-nmh0 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .sm-nmv0 {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -6939,29 +6833,6 @@ textarea {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .md-npa0 {
-    padding: 0;
-  }
-  .md-npt0 {
-    padding-top: 0;
-  }
-  .md-npr0 {
-    padding-right: 0;
-  }
-  .md-npb0 {
-    padding-bottom: 0;
-  }
-  .md-npl0 {
-    padding-left: 0;
-  }
-  .md-nph0 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .md-npv0 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   .md-pa1 {
     padding: 0.25rem;
   }
@@ -7258,29 +7129,6 @@ textarea {
     margin-right: 0;
   }
   .md-mv0 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .md-nma0 {
-    margin: 0;
-  }
-  .md-nmt0 {
-    margin-top: 0;
-  }
-  .md-nmr0 {
-    margin-right: 0;
-  }
-  .md-nmb0 {
-    margin-bottom: 0;
-  }
-  .md-nml0 {
-    margin-left: 0;
-  }
-  .md-nmh0 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .md-nmv0 {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -8932,29 +8780,6 @@ textarea {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .lg-npa0 {
-    padding: 0;
-  }
-  .lg-npt0 {
-    padding-top: 0;
-  }
-  .lg-npr0 {
-    padding-right: 0;
-  }
-  .lg-npb0 {
-    padding-bottom: 0;
-  }
-  .lg-npl0 {
-    padding-left: 0;
-  }
-  .lg-nph0 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .lg-npv0 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   .lg-pa1 {
     padding: 0.25rem;
   }
@@ -9251,29 +9076,6 @@ textarea {
     margin-right: 0;
   }
   .lg-mv0 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .lg-nma0 {
-    margin: 0;
-  }
-  .lg-nmt0 {
-    margin-top: 0;
-  }
-  .lg-nmr0 {
-    margin-right: 0;
-  }
-  .lg-nmb0 {
-    margin-bottom: 0;
-  }
-  .lg-nml0 {
-    margin-left: 0;
-  }
-  .lg-nmh0 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .lg-nmv0 {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -10925,29 +10727,6 @@ textarea {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .xl-npa0 {
-    padding: 0;
-  }
-  .xl-npt0 {
-    padding-top: 0;
-  }
-  .xl-npr0 {
-    padding-right: 0;
-  }
-  .xl-npb0 {
-    padding-bottom: 0;
-  }
-  .xl-npl0 {
-    padding-left: 0;
-  }
-  .xl-nph0 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .xl-npv0 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   .xl-pa1 {
     padding: 0.25rem;
   }
@@ -11244,29 +11023,6 @@ textarea {
     margin-right: 0;
   }
   .xl-mv0 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .xl-nma0 {
-    margin: 0;
-  }
-  .xl-nmt0 {
-    margin-top: 0;
-  }
-  .xl-nmr0 {
-    margin-right: 0;
-  }
-  .xl-nmb0 {
-    margin-bottom: 0;
-  }
-  .xl-nml0 {
-    margin-left: 0;
-  }
-  .xl-nmh0 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .xl-nmv0 {
     margin-top: 0;
     margin-bottom: 0;
   }
