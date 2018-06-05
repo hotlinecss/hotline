@@ -1,4 +1,4 @@
-/* hotlinecss - 6.5.3 - MIT */	
+/* hotlinecss - 6.5.4 - MIT */	
 /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
 /* Document
    ========================================================================== */
@@ -3115,35 +3115,35 @@ textarea {
   stroke: currentColor;
 }
 
-.breakpointuser-select-none {
+.user-select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 
-.breakpointuser-select-text {
+.user-select-text {
   -webkit-user-select: text;
      -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
 }
 
-.breakpointuser-select-auto {
+.user-select-auto {
   -webkit-user-select: auto;
      -moz-user-select: auto;
       -ms-user-select: auto;
           user-select: auto;
 }
 
-.breakpointuser-select-all {
+.user-select-all {
   -webkit-user-select: all;
      -moz-user-select: all;
       -ms-user-select: all;
           user-select: all;
 }
 
-.breakpointuser-select-contain {
+.user-select-contain {
   -webkit-user-select: contain;
      -moz-user-select: contain;
       -ms-user-select: contain;
@@ -6019,31 +6019,31 @@ textarea {
   .stroke-currentcolor {
     stroke: currentColor;
   }
-  .breakpointuser-select-none {
+  .sm-user-select-none {
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
-  .breakpointuser-select-text {
+  .sm-user-select-text {
     -webkit-user-select: text;
        -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
-  .breakpointuser-select-auto {
+  .sm-user-select-auto {
     -webkit-user-select: auto;
        -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
-  .breakpointuser-select-all {
+  .sm-user-select-all {
     -webkit-user-select: all;
        -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
-  .breakpointuser-select-contain {
+  .sm-user-select-contain {
     -webkit-user-select: contain;
        -moz-user-select: contain;
         -ms-user-select: contain;
@@ -7966,31 +7966,31 @@ textarea {
   .stroke-currentcolor {
     stroke: currentColor;
   }
-  .breakpointuser-select-none {
+  .md-user-select-none {
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
-  .breakpointuser-select-text {
+  .md-user-select-text {
     -webkit-user-select: text;
        -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
-  .breakpointuser-select-auto {
+  .md-user-select-auto {
     -webkit-user-select: auto;
        -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
-  .breakpointuser-select-all {
+  .md-user-select-all {
     -webkit-user-select: all;
        -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
-  .breakpointuser-select-contain {
+  .md-user-select-contain {
     -webkit-user-select: contain;
        -moz-user-select: contain;
         -ms-user-select: contain;
@@ -9913,31 +9913,31 @@ textarea {
   .stroke-currentcolor {
     stroke: currentColor;
   }
-  .breakpointuser-select-none {
+  .lg-user-select-none {
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
-  .breakpointuser-select-text {
+  .lg-user-select-text {
     -webkit-user-select: text;
        -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
-  .breakpointuser-select-auto {
+  .lg-user-select-auto {
     -webkit-user-select: auto;
        -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
-  .breakpointuser-select-all {
+  .lg-user-select-all {
     -webkit-user-select: all;
        -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
-  .breakpointuser-select-contain {
+  .lg-user-select-contain {
     -webkit-user-select: contain;
        -moz-user-select: contain;
         -ms-user-select: contain;
@@ -11860,31 +11860,31 @@ textarea {
   .stroke-currentcolor {
     stroke: currentColor;
   }
-  .breakpointuser-select-none {
+  .xl-user-select-none {
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
-  .breakpointuser-select-text {
+  .xl-user-select-text {
     -webkit-user-select: text;
        -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
-  .breakpointuser-select-auto {
+  .xl-user-select-auto {
     -webkit-user-select: auto;
        -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
-  .breakpointuser-select-all {
+  .xl-user-select-all {
     -webkit-user-select: all;
        -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
-  .breakpointuser-select-contain {
+  .xl-user-select-contain {
     -webkit-user-select: contain;
        -moz-user-select: contain;
         -ms-user-select: contain;
