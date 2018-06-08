@@ -9,27 +9,46 @@
     .#{$name} { 
     	color: #{$value}; 
     }
+
     .border-#{$name} { 
     	border-color: #{$value}; 
     }
+
     .bg-#{$name} { 
     	background-color: #{$value}; 
     }
 
     .hover-#{$name} { 
-    	&:hover, 
+    	&:hover {
+    		color: #{$value};
+    	} 
+    }
+
+    .focus-#{$name} { 
     	&:focus {
     		color: #{$value};
     	} 
     }
+
     .hover-border-#{$name} { 
-    	&:hover, 
+    	&:hover {
+    		border-color: #{$value};
+    	} 
+    }
+
+    .focus-border-#{$name} { 
     	&:focus {
     		border-color: #{$value};
     	} 
     }
+
     .hover-bg-#{$name} { 
-    	&:hover, 
+    	&:hover {
+    		background-color: #{$value};
+    	} 
+    }
+
+    .focus-bg-#{$name} { 
     	&:focus {
     		background-color: #{$value};
     	} 
