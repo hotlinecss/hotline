@@ -47,39 +47,43 @@ $spacer: 1rem;
 
 $spacing: (
   0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
-  3: ($spacer * 1),
-  4: ($spacer * 2),
-  5: ($spacer * 4),
-  6: ($spacer * 8)
+  1: ($spacer * .125),
+  2: ($spacer * .25),
+  3: ($spacer * .5),
+  4: ($spacer * 1),
+  5: ($spacer * 2),
+  6: ($spacer * 4),
+  7: ($spacer * 8)
 );
 
 $border-width: (
-  1: .250rem,
-  2: .500rem,
-  3: 1rem,
-  4: 2rem,
-  5: 4rem
+  0: 0,
+  1: .125rem,
+  2: .250rem,
+  3: .500rem,
+  4: 1rem,
+  5: 2rem
 );
 
 $border-radius: (
   0: 0,
-  1: .250rem,
-  2: .500rem,
-  3: 1rem,
-  4: 2rem,
+  1: .125rem,
+  2: .250rem,
+  3: .500rem,
+  4: 1rem,
+  5: 2rem,
   full: 9999px
 );
 
 $coordinates: (
   0: 0,
-  1: .250rem,
-  2: .5rem,
-  3: 1rem,
-  4: 2rem,
-  5: 4rem,
-  6: 8rem,
+  1: .125rem,
+  2: .250rem,
+  3: .5rem,
+  4: 1rem,
+  5: 2rem,
+  6: 4rem,
+  7: 8rem,
   50: 50%,
   100: 100%
 );
