@@ -11,9 +11,9 @@
     }
   }
   @each $item in $grid {
-    @for $i from 1 through $item {
-      .#{$breakpoint}w-#{$i}-#{$item} {
-        width: percentage($i/$item);
+    @for $index from 1 through $item {
+      .#{$breakpoint}w-#{$index}-#{$item} {
+        width: percentage($index/$item);
       }
     }
   }
