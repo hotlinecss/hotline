@@ -1,4 +1,4 @@
-/* hotlinecss - 6.6.1 - MIT */	
+/* hotlinecss - 6.6.2 - MIT */	
 /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
 /* Document
    ========================================================================== */
@@ -6853,12 +6853,6 @@ textarea {
   .sm-events-auto {
     pointer-events: auto;
   }
-  .fill-currentcolor {
-    fill: currentColor;
-  }
-  .stroke-currentcolor {
-    stroke: currentColor;
-  }
   .sm-user-select-none {
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -9011,12 +9005,6 @@ textarea {
   }
   .md-events-auto {
     pointer-events: auto;
-  }
-  .fill-currentcolor {
-    fill: currentColor;
-  }
-  .stroke-currentcolor {
-    stroke: currentColor;
   }
   .md-user-select-none {
     -webkit-user-select: none;
@@ -11171,12 +11159,6 @@ textarea {
   .lg-events-auto {
     pointer-events: auto;
   }
-  .fill-currentcolor {
-    fill: currentColor;
-  }
-  .stroke-currentcolor {
-    stroke: currentColor;
-  }
   .lg-user-select-none {
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -13329,12 +13311,6 @@ textarea {
   }
   .xl-events-auto {
     pointer-events: auto;
-  }
-  .fill-currentcolor {
-    fill: currentColor;
-  }
-  .stroke-currentcolor {
-    stroke: currentColor;
   }
   .xl-user-select-none {
     -webkit-user-select: none;

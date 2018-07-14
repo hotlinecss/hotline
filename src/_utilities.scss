@@ -4,11 +4,11 @@
 
 */
 
+.fill-currentcolor { fill: currentColor; }
+
+.stroke-currentcolor { stroke: currentColor; }
+
 @mixin utility-utilities($breakpoint: null) {
-
-	.fill-currentcolor { fill: currentColor; }
-
-	.stroke-currentcolor { stroke: currentColor; }
 
   .#{$breakpoint}user-select-none { user-select: none; }
 
