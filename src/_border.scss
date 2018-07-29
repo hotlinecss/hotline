@@ -10,11 +10,6 @@
   .#{$breakpoint}border-r { border-right-style: solid; border-right-width: 1px; }
   .#{$breakpoint}border-b { border-bottom-style: solid; border-bottom-width: 1px; }
   .#{$breakpoint}border-l { border-left-style: solid; border-left-width: 1px; }
-  .#{$breakpoint}border-none { border-width: 0; }
-  .#{$breakpoint}border-t-none { border-top-width: 0; }
-  .#{$breakpoint}border-r-none { border-right-width: 0; }
-  .#{$breakpoint}border-b-none { border-bottom-width: 0; }
-  .#{$breakpoint}border-l-none { border-left-width: 0; }
 }
 
 @include utility-border();

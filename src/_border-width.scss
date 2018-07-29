@@ -6,8 +6,32 @@
 
 @mixin utility-border-width($breakpoint: null) {
   @each $name, $value in $border-width {
-    .#{$breakpoint}border-w-#{$name} {
+    .#{$breakpoint}border-a-#{$name} {
       border-width: #{$value};
+    }
+  }
+
+  @each $name, $value in $border-width {
+    .#{$breakpoint}border-t-#{$name} {
+      border-top-width: #{$value};
+    }
+  }
+
+  @each $name, $value in $border-width {
+    .#{$breakpoint}border-r-#{$name} {
+      border-right-width: #{$value};
+    }
+  }
+
+  @each $name, $value in $border-width {
+    .#{$breakpoint}border-b-#{$name} {
+      border-bottom-width: #{$value};
+    }
+  }
+
+  @each $name, $value in $border-width {
+    .#{$breakpoint}border-l-#{$name} {
+      border-left-width: #{$value};
     }
   }
 }

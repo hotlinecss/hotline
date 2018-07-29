@@ -6,6 +6,7 @@
 
 @mixin utility-border-style($breakpoint: null) {
   .#{$breakpoint}border-none { border-style: none; }
+  .#{$breakpoint}border-solid { border-style: solid; }
   .#{$breakpoint}border-hidden { border-style: hidden; }
   .#{$breakpoint}border-dashed { border-style: dashed; }
   .#{$breakpoint}border-dotted { border-style: dotted; }

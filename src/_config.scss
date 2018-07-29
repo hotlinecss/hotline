@@ -105,7 +105,7 @@ $red: #ff3434;
 $orange: #ff8335;
 $yellow: #ffff3b;
 
-$lighten-value: 5%;
+$lighten-darken-value: 7%;
 
 $gray0: #f9f9f9;
 $gray1: #ededed;
@@ -139,13 +139,18 @@ $colors: (
   gray-8: $gray8,
   gray-9: $gray9,
   yellow: $yellow,
-  light-yellow: lighten($yellow, $lighten-value),
+  light-yellow: lighten($yellow, $lighten-darken-value),
+  dark-yellow: darken($yellow, $lighten-darken-value),
   blue: $blue,
-  light-blue: lighten($blue, $lighten-value),
+  light-blue: lighten($blue, $lighten-darken-value),
+  dark-blue: darken($blue, $lighten-darken-value),
   green: $green,
-  light-green: lighten($green, $lighten-value),
+  light-green: lighten($green, $lighten-darken-value),
+  dark-green: darken($green, $lighten-darken-value),
   red: $red,
-  light-red: lighten($red, $lighten-value),
+  light-red: lighten($red, $lighten-darken-value),
+  dark-red: darken($red, $lighten-darken-value),
   orange: $orange,
-  light-orange: lighten($orange, $lighten-value)
+  light-orange: lighten($orange, $lighten-darken-value),
+  dark-orange: darken($orange, $lighten-darken-value)
 );
