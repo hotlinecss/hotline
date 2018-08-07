@@ -17,9 +17,17 @@ const options = {
 		"dist": "./css/",
 		"root": "./"
 	},
-	"prefix": ["last 3 versions"],
+	"prefix": ["last 3 years", "not ie <= 9"],
 	"processors": [mq()]
 }
+
+var banner = ['/**',
+  ' * <%= pkg.name %> - <%= pkg.description %>',
+  ' * @version v<%= pkg.version %>',
+  ' * @link <%= pkg.homepage %>',
+  ' * @license <%= pkg.license %>',
+  ' */', '\n',
+  ''].join('\n');
 
 gulp.task("build:css", function() {
 	return gulp.src(options.paths.srcAll)
@@ -27,13 +35,13 @@ gulp.task("build:css", function() {
 		.pipe(sass({outputStyle: "expanded"}).on("error", sass.logError))
 		.pipe(prefix({browsers: options.prefix }))
 		.pipe(postcss(options.processors))
-		.pipe(header("/* ${pkg.name} - ${pkg.version} - ${pkg.license} */\t\n", {pkg: pkg}))
+		.pipe(header(banner, {pkg: pkg}))
 		.pipe(sourcemaps.write(options.paths.root))
 		.pipe(gulp.dest(options.paths.dist))
 		.pipe(size({title: "Raw: "}))
 		.pipe(clean())
 		.pipe(rename({suffix: ".min"}))
-		.pipe(header("/* ${pkg.name} - ${pkg.version} - ${pkg.license} */\t\n", {pkg: pkg}))
+		.pipe(header(banner, {pkg: pkg}))
 		.pipe(size({title: "Min: "}))
 		.pipe(size({title: "Gzip: ", gzip: true}))
 		.pipe(gulp.dest(options.paths.dist))

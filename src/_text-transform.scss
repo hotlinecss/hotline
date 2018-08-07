@@ -5,9 +5,9 @@
 */
 
 @mixin utility-text-transform($breakpoint: null) {
-  .#{$breakpoint}text-uppercase { text-transform: uppercase; }
-  .#{$breakpoint}text-lowercase { text-transform: lowercase; }
-  .#{$breakpoint}text-capitalize { text-transform: capitalize; }
+  .#{$breakpoint}uppercase { text-transform: uppercase; }
+  .#{$breakpoint}lowercase { text-transform: lowercase; }
+  .#{$breakpoint}capitalize { text-transform: capitalize; }
 }
 
 @include utility-text-transform();

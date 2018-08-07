@@ -4,7 +4,7 @@
 
 */
 
- @mixin utility-background-repeat($breakpoint: null) {
+@mixin utility-background-repeat($breakpoint: null) {
   .#{$breakpoint}bg-repeat { background-repeat: repeat; }
   .#{$breakpoint}bg-no-repeat { background-repeat: no-repeat; }
   .#{$breakpoint}bg-repeat-h { background-repeat: repeat-x; }

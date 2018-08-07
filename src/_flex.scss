@@ -6,6 +6,8 @@
 
 @mixin utility-display($breakpoint: null) {
   .#{$breakpoint}flex { display: flex; }
+  .#{$breakpoint}flex-initial { flex: initial; }
+  .#{$breakpoint}flex-none { flex: none; }
   .#{$breakpoint}inline-flex { display: inline-flex; }
   .#{$breakpoint}flex-auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
   .#{$breakpoint}flex-wrap { flex-wrap: wrap; }
@@ -35,9 +37,8 @@
   .#{$breakpoint}self-end { align-self: flex-end; }
   .#{$breakpoint}self-stretch { align-self: stretch; }
   .#{$breakpoint}self-baseline { align-self: baseline; }
-  .#{$breakpoint}flex-grow-1 { flex-grow: 1; }
-  .#{$breakpoint}flex-grow-2 { flex-grow: 2; }
-  .#{$breakpoint}flex-grow-3 { flex-grow: 3; }
+  .#{$breakpoint}flex-grow { flex-grow: 1; }
+  .#{$breakpoint}flex-shrink { flex-shrink: 1; }
   .#{$breakpoint}order-1 { order: 1; }
   .#{$breakpoint}order-2 { order: 2; }
   .#{$breakpoint}order-3 { order: 3; }
