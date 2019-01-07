@@ -4,12 +4,12 @@
 
 */
 
-@mixin utility-box-shadow($breakpoint: null) {
-  @each $name, $value in $box-shadow {
-    .#{$breakpoint}box-shadow-#{$name} {
-      box-shadow: #{$value};
-    }
-  }
+@mixin generateBoxShadow($breakpoint: null) {
+	@each $key, $value in $box-shadow {
+		.#{$breakpoint}box-shadow-#{$key} { box-shadow: #{$value}; }
+		.#{$breakpoint}hover-box-shadow-#{$key}:hover { box-shadow: #{$value}; }
+		.#{$breakpoint}focus-box-shadow-#{$key}:focus { box-shadow: #{$value}; }
+	}
 }
 
-@include utility-box-shadow();
+@include generateBoxShadow();

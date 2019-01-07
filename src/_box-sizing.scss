@@ -4,17 +4,17 @@
 
 */
 
-@mixin utility-box-sizing($breakpoint: null) {
+@mixin generateBoxSizing($breakpoint: null) {
   .#{$breakpoint}border-box { box-sizing: border-box; }
   .#{$breakpoint}content-box { box-sizing: content-box; }
 }
 
-@include utility-box-sizing();
+@include generateBoxSizing();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-box-sizing(#{$name}-);
+      @include generateBoxSizing(#{$name}-);
     }
   }
 }

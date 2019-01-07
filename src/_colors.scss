@@ -4,123 +4,52 @@
 
 */
 
-@mixin utility-colors($breakpoint: null) {
+@mixin generateColors($breakpoint: null) {
+  .fill-current-color { fill: currentColor; }
   @each $name, $value in $colors {
-    .#{$name} { 
-    	color: #{$value}; 
-    }
-
-    .border-#{$name} { 
-    	border-color: #{$value}; 
-    }
-
-    .bg-#{$name} { 
-    	background-color: #{$value}; 
-    }
-
-    .hover-#{$name} { 
-    	&:hover {
-    		color: #{$value};
-    	} 
-    }
-
-    .focus-#{$name} { 
-    	&:focus {
-    		color: #{$value};
-    	} 
-    }
-
-    .hover-border-#{$name} { 
-    	&:hover {
-    		border-color: #{$value};
-    	} 
-    }
-
-    .focus-border-#{$name} { 
-    	&:focus {
-    		border-color: #{$value};
-    	} 
-    }
-
-    .hover-bg-#{$name} { 
-    	&:hover {
-    		background-color: #{$value};
-    	} 
-    }
-
-    .focus-bg-#{$name} { 
-    	&:focus {
-    		background-color: #{$value};
-    	} 
-    }
+  	.#{$breakpoint}#{$name} { color: #{$value}; }
+    .#{$breakpoint}border-#{$name} { border-color: #{$value}; }
+    .#{$breakpoint}bg-#{$name} { background-color: #{$value}; }
+    .#{$breakpoint}hover-#{$name}:hover { color: #{$value}; }
+    .#{$breakpoint}hover-border-#{$name}:hover { border-color: #{$value}; }
+    .#{$breakpoint}hover-bg-#{$name}:hover { background-color: #{$value}; }
+    .#{$breakpoint}focus-#{$name}:focus { color: #{$value}; }
+    .#{$breakpoint}focus-border-#{$name}:focus { border-color: #{$value}; }
+    .#{$breakpoint}focus-bg-#{$name}:focus { background-color: #{$value}; }
   }
-
-  .black-05 { color: rgba(0, 0, 0, 0.05); }
-  .black-10 { color: rgba(0, 0, 0, 0.1); }
-  .black-20 { color: rgba(0, 0, 0, 0.2); }
-  .black-30 { color: rgba(0, 0, 0, 0.3); }
-  .black-40 { color: rgba(0, 0, 0, 0.4); }
-  .black-50 { color: rgba(0, 0, 0, 0.5); }
-  .black-60 { color: rgba(0, 0, 0, 0.6); }
-  .black-70 { color: rgba(0, 0, 0, 0.7); }
-  .black-80 { color: rgba(0, 0, 0, 0.8); }
-  .black-90 { color: rgba(0, 0, 0, 0.9); }
-
-  .border-black-05 { border-color: rgba(0, 0, 0, 0.05); }
-  .border-black-10 { border-color: rgba(0, 0, 0, 0.1); }
-  .border-black-20 { border-color: rgba(0, 0, 0, 0.2); }
-  .border-black-30 { border-color: rgba(0, 0, 0, 0.3); }
-  .border-black-40 { border-color: rgba(0, 0, 0, 0.4); }
-  .border-black-50 { border-color: rgba(0, 0, 0, 0.5); }
-  .border-black-60 { border-color: rgba(0, 0, 0, 0.6); }
-  .border-black-70 { border-color: rgba(0, 0, 0, 0.7); }
-  .border-black-80 { border-color: rgba(0, 0, 0, 0.8); }
-  .border-black-90 { border-color: rgba(0, 0, 0, 0.9); }
-
-  .bg-black-05 { background-color: rgba(0, 0, 0, 0.05); }
-  .bg-black-10 { background-color: rgba(0, 0, 0, 0.1); }
-  .bg-black-20 { background-color: rgba(0, 0, 0, 0.2); }
-  .bg-black-30 { background-color: rgba(0, 0, 0, 0.3); }
-  .bg-black-40 { background-color: rgba(0, 0, 0, 0.4); }
-  .bg-black-50 { background-color: rgba(0, 0, 0, 0.5); }
-  .bg-black-60 { background-color: rgba(0, 0, 0, 0.6); }
-  .bg-black-70 { background-color: rgba(0, 0, 0, 0.7); }
-  .bg-black-80 { background-color: rgba(0, 0, 0, 0.8); }
-  .bg-black-90 { background-color: rgba(0, 0, 0, 0.9); }
-
-  .white-05 { color: rgba(255, 255, 255, 0.05); }
-  .white-10 { color: rgba(255, 255, 255, 0.1); }
-  .white-20 { color: rgba(255, 255, 255, 0.2); }
-  .white-30 { color: rgba(255, 255, 255, 0.3); }
-  .white-40 { color: rgba(255, 255, 255, 0.4); }
-  .white-50 { color: rgba(255, 255, 255, 0.5); }
-  .white-60 { color: rgba(255, 255, 255, 0.6); }
-  .white-70 { color: rgba(255, 255, 255, 0.7); }
-  .white-80 { color: rgba(255, 255, 255, 0.8); }
-  .white-90 { color: rgba(255, 255, 255, 0.9); }
-
-  .border-white-05 { border-color: rgba(255, 255, 255, 0.05); }
-  .border-white-10 { border-color: rgba(255, 255, 255, 0.1); }
-  .border-white-20 { border-color: rgba(255, 255, 255, 0.2); }
-  .border-white-30 { border-color: rgba(255, 255, 255, 0.3); }
-  .border-white-40 { border-color: rgba(255, 255, 255, 0.4); }
-  .border-white-50 { border-color: rgba(255, 255, 255, 0.5); }
-  .border-white-60 { border-color: rgba(255, 255, 255, 0.6); }
-  .border-white-70 { border-color: rgba(255, 255, 255, 0.7); }
-  .border-white-80 { border-color: rgba(255, 255, 255, 0.8); }
-  .border-white-90 { border-color: rgba(255, 255, 255, 0.9); }
-
-  .bg-white-05 { background-color: rgba(255, 255, 255, 0.05); }
-  .bg-white-10 { background-color: rgba(255, 255, 255, 0.1); }
-  .bg-white-20 { background-color: rgba(255, 255, 255, 0.2); }
-  .bg-white-30 { background-color: rgba(255, 255, 255, 0.3); }
-  .bg-white-40 { background-color: rgba(255, 255, 255, 0.4); }
-  .bg-white-50 { background-color: rgba(255, 255, 255, 0.5); }
-  .bg-white-60 { background-color: rgba(255, 255, 255, 0.6); }
-  .bg-white-70 { background-color: rgba(255, 255, 255, 0.7); }
-  .bg-white-80 { background-color: rgba(255, 255, 255, 0.8); }
-  .bg-white-90 { background-color: rgba(255, 255, 255, 0.9); }
-
+  .#{$breakpoint}black-05 { color: rgba(0, 0, 0, .05); }
+  .#{$breakpoint}black-10 { color: rgba(0, 0, 0, .10); }
+  .#{$breakpoint}black-20 { color: rgba(0, 0, 0, .20); }
+  .#{$breakpoint}black-30 { color: rgba(0, 0, 0, .30); }
+  .#{$breakpoint}black-40 { color: rgba(0, 0, 0, .40); }
+  .#{$breakpoint}black-50 { color: rgba(0, 0, 0, .50); }
+  .#{$breakpoint}black-60 { color: rgba(0, 0, 0, .60); }
+  .#{$breakpoint}black-70 { color: rgba(0, 0, 0, .70); }
+  .#{$breakpoint}black-80 { color: rgba(0, 0, 0, .80); }
+  .#{$breakpoint}black-90 { color: rgba(0, 0, 0, .90); }
+  .#{$breakpoint}black-100 { color: rgba(0, 0, 0, 1); }
+  .#{$breakpoint}border-black-05 { border-color: rgba(0, 0, 0, .05); }
+  .#{$breakpoint}border-black-10 { border-color: rgba(0, 0, 0, .10); }
+  .#{$breakpoint}border-black-20 { border-color: rgba(0, 0, 0, .20); }
+  .#{$breakpoint}border-black-30 { border-color: rgba(0, 0, 0, .30); }
+  .#{$breakpoint}border-black-40 { border-color: rgba(0, 0, 0, .40); }
+  .#{$breakpoint}border-black-50 { border-color: rgba(0, 0, 0, .50); }
+  .#{$breakpoint}border-black-60 { border-color: rgba(0, 0, 0, .60); }
+  .#{$breakpoint}border-black-70 { border-color: rgba(0, 0, 0, .70); }
+  .#{$breakpoint}border-black-80 { border-color: rgba(0, 0, 0, .80); }
+  .#{$breakpoint}border-black-90 { border-color: rgba(0, 0, 0, .90); }
+  .#{$breakpoint}border-black-100 { border-color: rgba(0, 0, 0, 1); }
+  .#{$breakpoint}bg-black-05 { background-color: rgba(0, 0, 0, .05); }
+  .#{$breakpoint}bg-black-10 { background-color: rgba(0, 0, 0, .10); }
+  .#{$breakpoint}bg-black-20 { background-color: rgba(0, 0, 0, .20); }
+  .#{$breakpoint}bg-black-30 { background-color: rgba(0, 0, 0, .30); }
+  .#{$breakpoint}bg-black-40 { background-color: rgba(0, 0, 0, .40); }
+  .#{$breakpoint}bg-black-50 { background-color: rgba(0, 0, 0, .50); }
+  .#{$breakpoint}bg-black-60 { background-color: rgba(0, 0, 0, .60); }
+  .#{$breakpoint}bg-black-70 { background-color: rgba(0, 0, 0, .70); }
+  .#{$breakpoint}bg-black-80 { background-color: rgba(0, 0, 0, .80); }
+  .#{$breakpoint}bg-black-90 { background-color: rgba(0, 0, 0, .90); }
+  .#{$breakpoint}bg-black-100 { background-color: rgba(0, 0, 0, 1); }
 }
 
-@include utility-colors();
+@include generateColors();

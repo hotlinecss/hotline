@@ -4,7 +4,7 @@
 
 */
 
-@mixin utility-background-repeat($breakpoint: null) {
+@mixin generateBackgroundRepeat($breakpoint: null) {
   .#{$breakpoint}bg-repeat { background-repeat: repeat; }
   .#{$breakpoint}bg-no-repeat { background-repeat: no-repeat; }
   .#{$breakpoint}bg-repeat-h { background-repeat: repeat-x; }
@@ -13,12 +13,12 @@
   .#{$breakpoint}bg-repeat-around { background-repeat: around; }
 }
 
-@include utility-background-repeat();
+@include generateBackgroundRepeat();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-background-repeat(#{$name}-);
+      @include generateBackgroundRepeat(#{$name}-);
     }
   }
 }

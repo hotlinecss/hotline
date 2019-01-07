@@ -4,17 +4,17 @@
 
 */
 
-@mixin utility-background-cover($breakpoint: null) {
+@mixin generateBackgroundSize($breakpoint: null) {
   .#{$breakpoint}bg-cover { background-size: cover; }
   .#{$breakpoint}bg-contain { background-size: contain; }
 }
 
-@include utility-background-cover();
+@include generateBackgroundSize();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-background-cover(#{$name}-);
+      @include generateBackgroundSize(#{$name}-);
     }
   }
 }

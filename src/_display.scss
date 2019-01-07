@@ -4,21 +4,22 @@
 
 */
 
-@mixin utility-display($breakpoint: null) {
-  .#{$breakpoint}d-none { display: none; }
-  .#{$breakpoint}d-block { display: block; }
-  .#{$breakpoint}d-inline-block { display: inline-block; }
-  .#{$breakpoint}d-inline { display: inline; }
-  .#{$breakpoint}d-table { display: table; }
-  .#{$breakpoint}d-cell { display: table-cell; }
+@mixin generateDisplay($breakpoint: null) {
+	.#{$breakpoint}block { display: block; }
+	.#{$breakpoint}inline { display: inline; }
+	.#{$breakpoint}inline-block { display: inline-block; }
+	.#{$breakpoint}table { display: table; }
+	.#{$breakpoint}table-row { display: table-row; }
+	.#{$breakpoint}table-cell { display: table-cell; }
+	.#{$breakpoint}hidden { display: none; }
 }
 
-@include utility-display();
+@include generateDisplay();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-display(#{$name}-);
+      @include generateDisplay(#{$name}-);
     }
   }
 }

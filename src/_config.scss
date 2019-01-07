@@ -7,150 +7,84 @@ $mq-breakpoints: (
 	xl: 1200px // 75em
 );
 
-$grid: (2, 3, 4, 5, 6, 8, 12);
+$grid: (12);
 
-$sense-sizes: (
-  auto: auto,
-  1: 1rem,
-  2: 2rem,
-  3: 4rem,
-  4: 8rem,
-  5: 16rem,
-  6: 24rem,
-  7: 32rem,
-  8: 40rem,
-  9: 48rem,
-  10: 56rem,
-  11: 64rem,
-  12: 72rem,
-  13: 80rem,
-  14: 88rem,
-  15: 96rem,
-  50: 50%,
-  100: 100%
+//  Values for 
+//    padding,
+//    margin,
+//    width,
+//    min-height,
+//    height,
+//    max-height,
+//    coordinates
+
+$normal-values: (
+  0: 0,
+  1: .0625rem, 
+  2: .125rem, 
+  3: .25rem, 
+  4: .5rem, 
+  5: 1rem, 
+  6: 2rem, 
+  7: 4rem, 
+  8: 8rem, 
+  9: 16rem
 );
 
-$font-size: (
-  headline: 6rem,
-  subheadline: 5rem,
-  1: 3rem,
-  2: 2.25rem,
-  3: 1.5rem,
-  4: 1.25rem,
-  5: 1rem,
-  6: .875rem,
+// Values for
+//    min-width
+//    max-width
+
+$extra-normal-values: join($normal-values, (
+  10: 32rem,
+  11: 48rem,
+  12: 64rem,
+  13: 96rem
+));
+
+$font-sizes: (
   7: .75rem,
-  medium: medium
-);
-
-$spacer: 1rem;
-
-$spacing: (
-  0: 0,
-  1: ($spacer * .125),
-  2: ($spacer * .25),
-  3: ($spacer * .5),
-  4: ($spacer * 1),
-  5: ($spacer * 2),
-  6: ($spacer * 4),
-  7: ($spacer * 8)
-);
-
-$border-width: (
-  0: 0,
-  1: .125rem,
-  2: .250rem,
-  3: .500rem,
-  4: 1rem,
-  5: 2rem
-);
-
-$border-radius: (
-  0: 0,
-  1: .125rem,
-  2: .250rem,
-  3: .500rem,
-  4: 1rem,
-  5: 2rem,
-  full: 9999px
-);
-
-$coordinates: (
-  0: 0,
-  1: .125rem,
-  2: .250rem,
-  3: .5rem,
-  4: 1rem,
-  5: 2rem,
-  6: 4rem,
-  7: 8rem,
-  50: 50%,
-  100: 100%
-);
-
-$text-shadow: (
-  1: "0 1px 2px rgba(0, 0, 0, 0.20)"
+  6: .875rem,
+  5: 1rem,
+  4: 1.25rem,
+  3: 1.5rem,
+  2: 2rem,
+  1: 3rem,
+  headline: 6rem
 );
 
 $box-shadow: (
   none: none,
-  1: "0 2px 4px 0 rgba(0, 0, 0, 0.10)",
-  2: "0 4px 8px 0 rgba(0, 0, 0, 0.10), 0 2px 4px 0 rgba(0, 0, 0, 0.08)",
-  3: "0 12px 24px 0 rgba(0, 0, 0, 0.15), 0 4px 12px 0 rgba(0, 0, 0, 0.12)"
+  1: '0 2px 4px 0 rgba(0, 0, 0, 0.10)',
+  2: '0 4px 8px 0 rgba(0, 0, 0, 0.10), 0 2px 4px 0 rgba(0, 0, 0, 0.08)',
+  3: '0 12px 24px 0 rgba(0, 0, 0, 0.15), 0 4px 12px 0 rgba(0, 0, 0, 0.12)'
 );
 
-$blue: #349aff;
-$green: #4BB543;
-$red: #ff3434;
-$orange: #ff8335;
-$yellow: #ffff3b;
-
-$lighten-darken-value: 7%;
-
-$gray0: #f9f9f9;
-$gray1: #ededed;
-$gray2: #dfe0e1;
-$gray3: #d1d2d4;
-$gray4: #c2c3c5;
-$gray5: #b1b3b5;
-$gray6: #9d9fa2;
-$gray7: #86898c;
-$gray8: #696c70;
-$gray9: #3b3f45;
-
 $colors: (
-  currentcolor: currentColor,
-  transparent: transparent,
-  near-black: #111,
-  black: #000,
-  white: #fff,
-  near-white: #f4f4f4,
-  light-gray: #eee,
-  light-silver: #aaa,
-  silver: #999,
-  gray-0: $gray0,
-  gray-1: $gray1,
-  gray-2: $gray2,
-  gray-3: $gray3,
-  gray-4: $gray4,
-  gray-5: $gray5,
-  gray-6: $gray6,
-  gray-7: $gray7,
-  gray-8: $gray8,
-  gray-9: $gray9,
-  yellow: $yellow,
-  light-yellow: lighten($yellow, $lighten-darken-value),
-  dark-yellow: darken($yellow, $lighten-darken-value),
-  blue: $blue,
-  light-blue: lighten($blue, $lighten-darken-value),
-  dark-blue: darken($blue, $lighten-darken-value),
-  green: $green,
-  light-green: lighten($green, $lighten-darken-value),
-  dark-green: darken($green, $lighten-darken-value),
-  red: $red,
-  light-red: lighten($red, $lighten-darken-value),
-  dark-red: darken($red, $lighten-darken-value),
-  orange: $orange,
-  light-orange: lighten($orange, $lighten-darken-value),
-  dark-orange: darken($orange, $lighten-darken-value)
+  'current-color': currentColor,
+  'transparent': 'transparent',
+  'black': #000,
+  'white': #fff,
+  'gray0': #f8f9f9,
+  'gray1': #ebedee,
+  'gray2': #dee1e3,
+  'gray3': #cfd3d6,
+  'gray4': #bec4c8,
+  'gray5': #acb4b9,
+  'gray6': #97a1a7,
+  'gray7': #7f8a93,
+  'gray8': #5f6e78,
+  'gray9': #374047,
+  'red': #ee4430,
+  'dark-orange': #fa7b45,
+  'orange': #fb9f42,
+  'yellow': #fcc83a,
+  'light-yellow': #fcf545,
+  'light-green': #75bb36,
+  'green': #00953c,
+  'teal': #00a099,
+  'light-blue': #006bbd,
+  'blue': #0f3298,
+  'purple': #5f2384,
+  'violet': #b5328c
 );

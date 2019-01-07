@@ -4,18 +4,18 @@
 
 */
 
-@mixin utility-text-transform($breakpoint: null) {
-  .#{$breakpoint}uppercase { text-transform: uppercase; }
-  .#{$breakpoint}lowercase { text-transform: lowercase; }
-  .#{$breakpoint}capitalize { text-transform: capitalize; }
+@mixin generateTextTransform($breakpoint: null) {
+	.#{$breakpoint}uppercase { text-transform: uppercase; }
+	.#{$breakpoint}lowercase { text-transform: lowercase; }
+	.#{$breakpoint}capitalize { text-transform: capitalize; }
 }
 
-@include utility-text-transform();
+@include generateTextTransform();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-text-transform(#{$name}-);
+      @include generateTextTransform(#{$name}-);
     }
   }
 }

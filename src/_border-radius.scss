@@ -4,40 +4,16 @@
 
 */
 
-@mixin utility-border-radius($breakpoint: null) {
-  @each $name, $value in $border-radius {
-    .#{$breakpoint}radius-#{$name} {
-      border-radius: #{$value};
-    }
-  }
-
-	.#{$breakpoint}radius-t {
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
+@mixin generateBorderRadius($breakpoint: null) {
+	@each $key, $value in $normal-values {
+		.#{$breakpoint}radius-#{$key} {
+			border-radius: #{$value};
+		}
 	}
 
-	.#{$breakpoint}radius-r {
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
-	}
-
-	.#{$breakpoint}radius-b {
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-	}
-
-	.#{$breakpoint}radius-l {
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
+	.radius-full {
+		border-radius: 9999px;
 	}
 }
 
-@include utility-border-radius();
-
-@if (variable-exists(mq-breakpoints)) {
-  @each $name, $value in $mq-breakpoints {
-    @include mq($from: $name) {
-      @include utility-border-radius(#{$name}-);
-    }
-  }
-}
+@include generateBorderRadius();

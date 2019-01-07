@@ -4,21 +4,28 @@
 
 */
 
-@mixin utility-min-height($breakpoint: null) {
-	.#{$breakpoint}min-h-0 {
-		min-height: 0;
-	}
-	@each $name, $value in $sense-sizes {
-	  .#{$breakpoint}min-h-#{$name} { min-height: #{$value}; }
-	}
+@mixin generateMinHeight($breakpoint: null) {
+  .#{$breakpoint}min-height-auto { min-height: auto; }
+
+  @each $key, $value in $normal-values {
+  	.#{$breakpoint}min-height-#{$key} {
+  		min-height: #{$value};
+  	}
+  }
+
+  .#{$breakpoint}min-height-50 { min-height: 50%; }
+	.#{$breakpoint}min-height-100 { min-height: 100%; }
+  .#{$breakpoint}min-height-50vh { min-height: 50vh; }
+	.#{$breakpoint}min-height-100vh { min-height: 100vh; }
+
 }
 
-@include utility-min-height();
+@include generateMinHeight();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-min-height(#{$name}-);
+      @include generateMinHeight(#{$name}-);
     }
   }
 }

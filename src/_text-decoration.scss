@@ -4,18 +4,10 @@
 
 */
 
-@mixin utility-text-decoration($breakpoint: null) {
-  .#{$breakpoint}text-none { text-decoration: none; }
-  .#{$breakpoint}text-underline { text-decoration: underline; }
-  .#{$breakpoint}text-strike { text-decoration: line-through; }
+@mixin generateTextDecoration($breakpoint: null) {
+	.#{$breakpoint}underline { text-decoration: underline; }
+	.#{$breakpoint}line { text-decoration: line-through; }
+	.#{$breakpoint}plain { text-decoration: none; }
 }
 
-@include utility-text-decoration();
-
-@if (variable-exists(mq-breakpoints)) {
-  @each $name, $value in $mq-breakpoints {
-    @include mq($from: $name) {
-      @include utility-text-decoration(#{$name}-);
-    }
-  }
-}
+@include generateTextDecoration();

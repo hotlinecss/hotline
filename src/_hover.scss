@@ -1,0 +1,46 @@
+/*
+
+	Hover
+
+*/
+
+@mixin generateHover($breakpoint: null) {
+	.hover-underline:hover { text-decoration: underline; }
+
+	.overlay .overlay-item {
+		opacity: 0;
+		transition: opacity 200ms ease-in-out;
+
+		&:hover,
+		&:focus,
+		&:active {
+			opacity: 1;
+		}
+	}
+
+	.grow {
+		-moz-osx-font-smoothing: grayscale;
+		 backface-visibility: hidden;
+		 transform: translateZ(0);
+		 transition: transform 200ms ease-in-out;
+
+		 &:hover,
+		 &:focus {
+		   transform: scale(1.05);
+		 }
+
+		 &:active {
+		  transform: scale(0.9);
+		}
+	}
+}
+
+@include generateHover();
+
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include generateHover(#{$name}-);
+    }
+  }
+}

@@ -4,7 +4,7 @@
   
 */
 
-@mixin utility-background-position($breakpoint: null) {
+@mixin generateBackgroundPosition($breakpoint: null) {
   .#{$breakpoint}bg-center { 
   	background-repeat: no-repeat;
   	background-position: center center; 
@@ -27,12 +27,12 @@
   }
 }
 
-@include utility-background-position();
+@include generateBackgroundPosition();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-background-position(#{$name}-);
+      @include generateBackgroundPosition(#{$name}-);
     }
   }
 }

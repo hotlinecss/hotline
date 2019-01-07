@@ -4,7 +4,7 @@
 
 */
 
-@mixin utility-z-index($breakpoint: null) {
+@mixin generateZindex($breakpoint: null) {
   .#{$breakpoint}z-0 { z-index: 0; }
   .#{$breakpoint}z-1 { z-index: 1; }
   .#{$breakpoint}z-2 { z-index: 2; }
@@ -15,12 +15,12 @@
   .#{$breakpoint}z-max { z-index: 2147483647; }
 }
 
-@include utility-z-index();
+@include generateZindex();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-z-index(#{$name}-);
+      @include generateZindex(#{$name}-);
     }
   }
 }

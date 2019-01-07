@@ -4,9 +4,10 @@
 
 */
 
-@mixin utility-table($breakpoint: null) {
+@mixin generateTable($breakpoint: null) {
 	.table { border-collapse: collapse; border-spacing: 0; }
+	.table-auto { table-layout: auto; }
 	.table-fixed { table-layout: fixed; }
 }
 
-@include utility-table();
+@include generateTable();

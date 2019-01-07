@@ -4,18 +4,17 @@
 
 */
 
-
-@mixin utility-font-style($breakpoint: null) {
-  .#{$breakpoint}font-normal { font-style: normal; }
-  .#{$breakpoint}font-italic { font-style: italic; }
+@mixin generateFontStyle($breakpoint: null) {
+  .#{$breakpoint}normal { font-style: normal; }
+  .#{$breakpoint}italic { font-style: italic; }
 }
 
-@include utility-font-style();
+@include generateFontStyle();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-font-style(#{$name}-);
+      @include generateFontStyle(#{$name}-);
     }
   }
 }

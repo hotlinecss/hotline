@@ -4,24 +4,15 @@
 
 */
 
-.sans-serif { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" }
+@mixin generateFontFamily($breakpoint: null) {
+	.font-family-inherit { font-family: inherit; }
+	.font-size-inherit { font-size: inherit; }
+	.font-color-inherit { color: inherit; }
+	.sans-serif { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" }
+	.georgia { font-family: georgia, serif; }
+	.verdana { font-family: verdana, sans-serif; }
+	.times { font-family: "Times New Roman", Times, serif; }
+	.monospace { font-family: Consolas, monaco, monospace; }
+}
 
-.times { font-family: "Times New Roman", Times, serif; }
-
-.avenir { font-family: "avenir next", avenir, sans-serif; }
-
-.athelas { font-family: athelas, georgia, serif; }
-
-.helvetica { font-family: "helvetica neue", helvetica, sans-serif; }
-
-.georgia { font-family: georgia, serif; }
-
-.verdana { font-family: verdana, sans-serif; }
-
-.code { font-family: Consolas, monaco, monospace; }
-
-.font-family-inherit { font-family: inherit; }
-
-.font-size-inherit { font-size: inherit; }
-
-.font-color-inherit { color: inherit; }
+@include generateFontFamily();

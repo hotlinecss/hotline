@@ -1,43 +1,47 @@
 /*
 
-	margin
+	Margin
 
 */
 
-@mixin utility-margin($breakpoint: null) {
-  @each $name, $value in $spacing {
-    .#{$breakpoint}ma#{$name} { margin: #{$value}; }
-    .#{$breakpoint}mt#{$name} { margin-top: #{$value}; }
-    .#{$breakpoint}mr#{$name} { margin-right: #{$value}; }
-    .#{$breakpoint}mb#{$name} { margin-bottom: #{$value}; }
-    .#{$breakpoint}ml#{$name} { margin-left: #{$value}; }
-    .#{$breakpoint}mh#{$name} { margin-left: #{$value}; margin-right: #{$value}; }
-    .#{$breakpoint}mv#{$name} { margin-top: #{$value}; margin-bottom: #{$value}; }
-    @if $value != 0 { 
-      .#{$breakpoint}nma#{$name} { margin: ($value * -1); }
-      .#{$breakpoint}nmt#{$name} { margin-top: ($value * -1); }
-      .#{$breakpoint}nmr#{$name} { margin-right: ($value * -1); }
-      .#{$breakpoint}nmb#{$name} { margin-bottom: ($value * -1); }
-      .#{$breakpoint}nml#{$name} { margin-left: ($value * -1); }
-      .#{$breakpoint}nmh#{$name} { margin-left: ($value * -1); margin-right: ($value * -1); }
-      .#{$breakpoint}nmv#{$name} { margin-top: ($value * -1); margin-bottom: ($value * -1); }
-    }
+@mixin generateMargin($breakpoint: null) {
+  @each $key, $value in $normal-values {
+    .#{$breakpoint}ma-#{$key} { margin: #{$value}; }
+    .#{$breakpoint}mt-#{$key} { margin-top: #{$value}; }
+    .#{$breakpoint}mr-#{$key} { margin-right: #{$value}; }
+    .#{$breakpoint}mb-#{$key} { margin-bottom: #{$value}; }
+    .#{$breakpoint}ml-#{$key} { margin-left: #{$value}; }
+    .#{$breakpoint}mh-#{$key} { margin-left: #{$value}; margin-right: #{$value}; }
+    .#{$breakpoint}mv-#{$key} { margin-top: #{$value}; margin-bottom: #{$value}; }
+
+		@if $value != 0 { 
+      .#{$breakpoint}man-#{$key} { margin: ($value * -1); }
+      .#{$breakpoint}mtn-#{$key} { margin-top: ($value * -1); }
+      .#{$breakpoint}mrn-#{$key} { margin-right: ($value * -1); }
+      .#{$breakpoint}mbn-#{$key} { margin-bottom: ($value * -1); }
+      .#{$breakpoint}mln-#{$key} { margin-left: ($value * -1); }
+      .#{$breakpoint}mhn-#{$key} { margin-left: ($value * -1); margin-right: ($value * -1); }
+      .#{$breakpoint}mvn-#{$key} { margin-top: ($value * -1); margin-bottom: ($value * -1); }
+		}
+
   }
 
+  .#{$breakpoint}ma-auto { margin: auto; }
   .#{$breakpoint}mt-auto { margin-top: auto; }
   .#{$breakpoint}mr-auto { margin-right: auto; }
   .#{$breakpoint}mb-auto { margin-bottom: auto; }
   .#{$breakpoint}ml-auto { margin-left: auto; }
   .#{$breakpoint}mv-auto { margin-top: auto; margin-bottom: auto; }
   .#{$breakpoint}mh-auto { margin-left: auto; margin-right: auto; }
+  
 }
 
-@include utility-margin();
+@include generateMargin();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-margin(#{$name}-);
+      @include generateMargin(#{$name}-);
     }
   }
 }

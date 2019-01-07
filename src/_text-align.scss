@@ -4,19 +4,19 @@
 
 */
 
-@mixin utility-text-align($breakpoint: null) {
+@mixin generateTextAlign($breakpoint: null) {
   .#{$breakpoint}text-left { text-align: left; }
   .#{$breakpoint}text-center { text-align: center; }
   .#{$breakpoint}text-right { text-align: right; }
   .#{$breakpoint}text-justify { text-align: justify; }
 }
 
-@include utility-text-align();
+@include generateTextAlign();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-text-align(#{$name}-);
+      @include generateTextAlign(#{$name}-);
     }
   }
 }

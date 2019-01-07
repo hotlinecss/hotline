@@ -4,18 +4,11 @@
 
 */
 
-@mixin utility-letter-spacing($breakpoint: null) {
-  .#{$breakpoint}tracked { letter-spacing: .1em; }
-  .#{$breakpoint}tracked-tight { letter-spacing: -.05em; }
-  .#{$breakpoint}tracked-wide { letter-spacing: .25em; }
+@mixin generateLetterSpacing($breakpoint: null) {
+	.#{$breakpoint}tracking-normal { letter-spacing: normal; }
+  .#{$breakpoint}tracking { letter-spacing: .1em; }
+  .#{$breakpoint}tracking-tight { letter-spacing: -.05em; }
+  .#{$breakpoint}tracking-wide { letter-spacing: .25em; }
 }
 
-@include utility-letter-spacing();
-
-@if (variable-exists(mq-breakpoints)) {
-  @each $name, $value in $mq-breakpoints {
-    @include mq($from: $name) {
-      @include utility-letter-spacing(#{$name}-);
-    }
-  }
-}
+@include generateLetterSpacing();

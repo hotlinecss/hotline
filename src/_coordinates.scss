@@ -4,25 +4,28 @@
 
 */
 
-@mixin utility-coordinates($breakpoint: null) {
-  @each $name, $value in $coordinates {
-    .#{$breakpoint}pin-t-#{$name} { top: #{$value}; }
-    .#{$breakpoint}pin-r-#{$name} { right: #{$value}; }
-    .#{$breakpoint}pin-b-#{$name} { bottom: #{$value}; }
-    .#{$breakpoint}pin-l-#{$name} { left: #{$value}; }
-    .#{$breakpoint}npin-t-#{$name} { top: ($value * -1); }
-    .#{$breakpoint}npin-r-#{$name} { right: ($value * -1); }
-    .#{$breakpoint}npin-b-#{$name} { bottom: ($value * -1); }
-    .#{$breakpoint}npin-l-#{$name} { left: ($value * -1); }
+@mixin generateCoordinates($breakpoint: null) {
+  @each $key, $value in $normal-values {
+		.#{$breakpoint}top-#{$key} { top: #{$value} }
+		.#{$breakpoint}right-#{$key} { right: #{$value} }
+		.#{$breakpoint}bottom-#{$key} { bottom: #{$value} }
+		.#{$breakpoint}left-#{$key} { left: #{$value} }
+
+		@if $value != 0 { 
+      .#{$breakpoint}topn-#{$key} { top: ($value * -1); }
+      .#{$breakpoint}rightn-#{$key} { right: ($value * -1); }
+      .#{$breakpoint}bottomn-#{$key} { bottom: ($value * -1); }
+      .#{$breakpoint}leftn-#{$key} { left: ($value * -1); }
+    }
   }
 }
 
-@include utility-coordinates();
+@include generateCoordinates();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-coordinates(#{$name}-);
+      @include generateCoordinates(#{$name}-);
     }
   }
 }

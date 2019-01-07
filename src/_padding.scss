@@ -4,33 +4,35 @@
 
 */
 
-@mixin utility-padding($breakpoint: null) {
-  @each $name, $value in $spacing {
-    .#{$breakpoint}pa#{$name} { padding: #{$value}; }
-    .#{$breakpoint}pt#{$name} { padding-top: #{$value}; }
-    .#{$breakpoint}pr#{$name} { padding-right: #{$value}; }
-    .#{$breakpoint}pb#{$name} { padding-bottom: #{$value}; }
-    .#{$breakpoint}pl#{$name} { padding-left: #{$value}; }
-    .#{$breakpoint}ph#{$name} { padding-left: #{$value}; padding-right: #{$value}; }
-    .#{$breakpoint}pv#{$name} { padding-top: #{$value}; padding-bottom: #{$value}; }
-    @if $value != 0 {
-      .#{$breakpoint}npa#{$name} { padding: ($value * -1); }
-      .#{$breakpoint}npt#{$name} { padding-top: ($value * -1); }
-      .#{$breakpoint}npr#{$name} { padding-right: ($value * -1); }
-      .#{$breakpoint}npb#{$name} { padding-bottom: ($value * -1); }
-      .#{$breakpoint}npl#{$name} { padding-left: ($value * -1); }
-      .#{$breakpoint}nph#{$name} { padding-left: ($value * -1); padding-right: ($value * -1); }
-      .#{$breakpoint}npv#{$name} { padding-top: ($value * -1); padding-bottom: ($value * -1); }
+@mixin generatePadding($breakpoint: null) {
+  @each $key, $value in $normal-values {
+    .#{$breakpoint}pa-#{$key} { padding: #{$value}; }
+    .#{$breakpoint}pt-#{$key} { padding-top: #{$value}; }
+    .#{$breakpoint}pr-#{$key} { padding-right: #{$value}; }
+    .#{$breakpoint}pb-#{$key} { padding-bottom: #{$value}; }
+    .#{$breakpoint}pl-#{$key} { padding-left: #{$value}; }
+    .#{$breakpoint}ph-#{$key} { padding-left: #{$value}; padding-right: #{$value}; }
+    .#{$breakpoint}pv-#{$key} { padding-top: #{$value}; padding-bottom: #{$value}; }
+
+    @if $value != 0 { 
+      .#{$breakpoint}pan-#{$key} { padding: ($value * -1); }
+      .#{$breakpoint}ptn-#{$key} { padding-top: ($value * -1); }
+      .#{$breakpoint}prn-#{$key} { padding-right: ($value * -1); }
+      .#{$breakpoint}pbn-#{$key} { padding-bottom: ($value * -1); }
+      .#{$breakpoint}pln-#{$key} { padding-left: ($value * -1); }
+      .#{$breakpoint}phn-#{$key} { padding-left: ($value * -1); padding-right: ($value * -1); }
+      .#{$breakpoint}pvn-#{$key} { padding-top: ($value * -1); padding-bottom: ($value * -1); }
     }
+
   }
 }
 
-@include utility-padding();
+@include generatePadding();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-padding(#{$name}-);
+      @include generatePadding(#{$name}-);
     }
   }
 }

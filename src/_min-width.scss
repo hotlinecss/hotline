@@ -4,20 +4,28 @@
 
 */
 
-@mixin utility-min-width($breakpoint: null) {
-	@each $name, $value in $sense-sizes {
-	  .#{$breakpoint}min-w-#{$name} {
-			min-width: #{$value};
-		}
-	}
+@mixin generateMinWidth($breakpoint: null) {
+  .#{$breakpoint}min-width-auto { min-width: auto; }
+
+  @each $key, $value in $extra-normal-values {
+  	.#{$breakpoint}min-width-#{$key} {
+  		min-width: #{$value};
+  	}
+  }
+
+  .#{$breakpoint}min-width-50 { min-width: 50%; }
+	.#{$breakpoint}min-width-100 { min-width: 100%; }
+  .#{$breakpoint}min-width-50vw { min-width: 50vw; }
+	.#{$breakpoint}min-width-100vw { min-width: 100vw; }
+
 }
 
-@include utility-min-width();
+@include generateMinWidth();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-min-width(#{$name}-);
+      @include generateMinWidth(#{$name}-);
     }
   }
 }

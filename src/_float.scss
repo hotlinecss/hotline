@@ -4,18 +4,18 @@
 
 */
 
-@mixin utility-float($breakpoint: null) {
-  .#{$breakpoint}push-left { float: left; }
-  .#{$breakpoint}push-right { float: right; }
-  .#{$breakpoint}push-none { float: none; }
+@mixin generateFloat($breakpoint: null) {
+	.#{$breakpoint}push-none { float: none; }
+	.#{$breakpoint}push-left { float: left; }
+	.#{$breakpoint}push-right { float: right; }
 }
 
-@include utility-float();
+@include generateFloat();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-float(#{$name}-);
+      @include generateFloat(#{$name}-);
     }
   }
 }

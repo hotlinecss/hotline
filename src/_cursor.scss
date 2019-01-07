@@ -1,0 +1,13 @@
+/*
+
+	Cursor
+
+*/
+
+@mixin generateCursor($breakpoint: null) {
+	.#{$breakpoint}cursor-pointer { cursor: pointer; }
+	.#{$breakpoint}cursor-wait { cursor: wait; }
+	.#{$breakpoint}cursor-auto { cursor: auto; }
+}
+
+@include generateCursor();

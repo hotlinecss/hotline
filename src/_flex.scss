@@ -4,56 +4,56 @@
 
 */
 
-@mixin utility-display($breakpoint: null) {
-  .#{$breakpoint}flex { display: flex; }
-  .#{$breakpoint}flex-initial { flex: initial; }
-  .#{$breakpoint}flex-none { flex: none; }
-  .#{$breakpoint}inline-flex { display: inline-flex; }
-  .#{$breakpoint}flex-auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
-  .#{$breakpoint}flex-wrap { flex-wrap: wrap; }
-  .#{$breakpoint}flex-wrap-reverse { flex-wrap: wrap-reverse; }
-  .#{$breakpoint}flex-row { flex-direction: row; }
-  .#{$breakpoint}flex-column { flex-direction: column; }
-  .#{$breakpoint}flex-row-reverse { flex-direction: row-reverse; }
-  .#{$breakpoint}flex-column-reverse { flex-direction: column-reverse; }
-  .#{$breakpoint}justify-start { justify-content: flex-start; }
-  .#{$breakpoint}justify-center { justify-content: center; }
-  .#{$breakpoint}justify-end { justify-content: flex-end; }
-  .#{$breakpoint}justify-between { justify-content: space-between; }
-  .#{$breakpoint}justify-around { justify-content: space-around; }
-  .#{$breakpoint}items-start { align-items: flex-start; }
-  .#{$breakpoint}items-center { align-items: center; }
-  .#{$breakpoint}items-end { align-items: flex-end; }
-  .#{$breakpoint}items-stretch { align-items: stretch; }
-  .#{$breakpoint}items-baseline { align-items: baseline; }
-  .#{$breakpoint}content-start { align-content: flex-start; }
-  .#{$breakpoint}content-center { align-content: center; }
-  .#{$breakpoint}content-end { align-content: flex-end; }
-  .#{$breakpoint}content-between { align-content: space-between; }
-  .#{$breakpoint}content-around { align-content: space-around; }
-  .#{$breakpoint}content-stretch { align-content: stretch; }
-  .#{$breakpoint}self-start { align-self: flex-start; }
-  .#{$breakpoint}self-center { align-self: center; }
-  .#{$breakpoint}self-end { align-self: flex-end; }
-  .#{$breakpoint}self-stretch { align-self: stretch; }
-  .#{$breakpoint}self-baseline { align-self: baseline; }
-  .#{$breakpoint}flex-grow { flex-grow: 1; }
-  .#{$breakpoint}flex-shrink { flex-shrink: 1; }
-  .#{$breakpoint}order-1 { order: 1; }
-  .#{$breakpoint}order-2 { order: 2; }
-  .#{$breakpoint}order-3 { order: 3; }
-  .#{$breakpoint}order-4 { order: 4; }
-  .#{$breakpoint}order-5 { order: 5; }
-  .#{$breakpoint}order-6 { order: 6; }
-  .#{$breakpoint}order-last { order: 999; }
+@mixin generateFlex($breakpoint: null) {
+	.#{$breakpoint}flex { display: flex; }
+	.#{$breakpoint}inline-flex { display: inline-flex; }
+	.#{$breakpoint}flex-initial { flex: initial; }
+	.#{$breakpoint}flex-none { flex: none; }
+	.#{$breakpoint}flex-auto { flex: 1 1 auto; min-width: 0; min-height: 0; }
+	.#{$breakpoint}flex-wrap { flex-wrap: wrap; }
+	.#{$breakpoint}flex-wrap-reverse { flex-wrap: wrap-reverse; }
+	.#{$breakpoint}flex-row { flex-direction: row; }
+	.#{$breakpoint}flex-column { flex-direction: column; }
+	.#{$breakpoint}flex-row-reverse { flex-direction: row-reverse; }
+	.#{$breakpoint}flex-column-reverse { flex-direction: column-reverse; }
+	.#{$breakpoint}justify-start { justify-content: flex-start; }
+	.#{$breakpoint}justify-center { justify-content: center; }
+	.#{$breakpoint}justify-end { justify-content: flex-end; }
+	.#{$breakpoint}justify-between { justify-content: space-between; }
+	.#{$breakpoint}justify-around { justify-content: space-around; }
+	.#{$breakpoint}items-start { align-items: flex-start; }
+	.#{$breakpoint}items-center { align-items: center; }
+	.#{$breakpoint}items-end { align-items: flex-end; }
+	.#{$breakpoint}items-stretch { align-items: stretch; }
+	.#{$breakpoint}items-baseline { align-items: baseline; }
+	.#{$breakpoint}content-start { align-content: flex-start; }
+	.#{$breakpoint}content-center { align-content: center; }
+	.#{$breakpoint}content-end { align-content: flex-end; }
+	.#{$breakpoint}content-between { align-content: space-between; }
+	.#{$breakpoint}content-around { align-content: space-around; }
+	.#{$breakpoint}content-stretch { align-content: stretch; }
+	.#{$breakpoint}self-start { align-self: flex-start; }
+	.#{$breakpoint}self-center { align-self: center; }
+	.#{$breakpoint}self-end { align-self: flex-end; }
+	.#{$breakpoint}self-stretch { align-self: stretch; }
+	.#{$breakpoint}self-baseline { align-self: baseline; }
+	.#{$breakpoint}flex-grow { flex-grow: 1; }
+	.#{$breakpoint}flex-shrink { flex-shrink: 1; }
+	.#{$breakpoint}order-1 { order: 1; }
+	.#{$breakpoint}order-2 { order: 2; }
+	.#{$breakpoint}order-3 { order: 3; }
+	.#{$breakpoint}order-4 { order: 4; }
+	.#{$breakpoint}order-5 { order: 5; }
+	.#{$breakpoint}order-6 { order: 6; }
+	.#{$breakpoint}order-last { order: 999; }
 }
 
-@include utility-display();
+@include generateFlex();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-display(#{$name}-);
+      @include generateFlex(#{$name}-);
     }
   }
 }

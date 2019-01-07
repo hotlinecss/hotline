@@ -1,65 +1,52 @@
 @import "config";
 @import "helpers/mq";
-@import "normalize";
+@import "../node_modules/modern-normalize/modern-normalize.css";
+@import "reset";
 
 @import "table";
 @import "form";
 @import "lists";
 @import "links";
 
-@import "font-size";
-@import "font-style";
-@import "font-weight";
 @import "font-family";
-
-
-@import "letter-spacing";
-@import "line-height";
-
+@import "font-weight";
+@import "font-style";
+@import "font-size";
 @import "text-align";
 @import "text-transform";
 @import "text-decoration";
-@import "text-shadow";
-@import "box-shadow";
+@import "line-height";
+@import "letter-spacing";
 
-@import "display";
-@import "flex";
-
-@import "width";
-@import "min-width";
-@import "max-width";
-@import "height";
-@import "min-height";
-@import "max-height";
-
-@import "padding";
-@import "margin";
-
-@import "background-size";
-@import "background-position";
-@import "background-repeat";
-@import "background-attachment";
-@import "object-fit";
-
-@import "border";
-@import "border-radius";
 @import "border-width";
 @import "border-style";
-
-@import "box-sizing";
+@import "border-radius";
+@import "min-width";
+@import "width";
+@import "max-width";
+@import "min-height";
+@import "height";
+@import "max-height";
 @import "position";
+@import "display";
 @import "coordinates";
-@import "overflow";
 @import "float";
 @import "vertical-align";
-@import "z-index";
+@import "overflow";
+@import "box-sizing";
 @import "white-space";
-@import "word-wrap";
+@import "background-size";
+@import "background-repeat";
+@import "background-position";
+@import "background-attachment";
+@import "z-index";
+@import "cursor";
 
-@import "parent";
+@import "flex";
+
+@import "margin";
+@import "padding";
+@import "box-shadow";
 @import "opacity";
-@import "states";
-@import "pointer-events";
-@import "utilities";
-
 @import "colors";
+@import "hover";

@@ -4,19 +4,19 @@
 
 */
 
-@mixin utility-vertical-align($breakpoint: null) {
+@mixin generateVerticalAlign($breakpoint: null) {
   .#{$breakpoint}align-top { vertical-align: top; }
   .#{$breakpoint}align-middle { vertical-align: middle; }
   .#{$breakpoint}align-baseline { vertical-align: baseline; }
   .#{$breakpoint}align-bottom { vertical-align: bottom; }
 }
 
-@include utility-vertical-align();
+@include generateVerticalAlign();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-vertical-align(#{$name}-);
+      @include generateVerticalAlign(#{$name}-);
     }
   }
 }

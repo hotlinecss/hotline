@@ -4,20 +4,28 @@
 
 */
 
-@mixin utility-max-width($breakpoint: null) {
-  @each $name, $value in $sense-sizes {
-    .#{$breakpoint}max-w-#{$name} {
-      max-width: #{$value};
-    }
+@mixin generateMaxWidth($breakpoint: null) {
+  .#{$breakpoint}max-width-auto { max-width: auto; }
+
+  @each $key, $value in $extra-normal-values {
+  	.#{$breakpoint}max-width-#{$key} {
+  		max-width: #{$value};
+  	}
   }
+
+  .#{$breakpoint}max-width-50 { max-width: 50%; }
+	.#{$breakpoint}max-width-100 { max-width: 100%; }
+  .#{$breakpoint}max-width-50vw { max-width: 50vw; }
+	.#{$breakpoint}max-width-100vw { max-width: 100vw; }
+
 }
 
-@include utility-max-width();
+@include generateMaxWidth();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-max-width(#{$name}-);
+      @include generateMaxWidth(#{$name}-);
     }
   }
 }

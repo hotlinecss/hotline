@@ -4,30 +4,47 @@
 
 */
 
-@mixin utility-width($breakpoint: null) {
-  @each $name, $value in $sense-sizes {
-    .#{$breakpoint}w-#{$name} {
-      width: #{$value};
-    }
-  }
+@mixin generateColumns($breakpoint: null) {
   @each $item in $grid {
     @for $index from 1 through $item {
       .#{$breakpoint}w-#{$index}-#{$item} {
-        width: percentage($index/$item);
+        width: percentage($index / $item);
       }
     }
   }
-  .#{$breakpoint}w-100vw {
-    width: 100vw;
-  }
 }
 
-@include utility-width();
+@include generateColumns();
 
 @if (variable-exists(mq-breakpoints)) {
   @each $name, $value in $mq-breakpoints {
     @include mq($from: $name) {
-      @include utility-width(#{$name}-);
+      @include generateColumns(#{$name}-);
+    }
+  }
+}
+
+@mixin generateWidth($breakpoint: null) {
+  .#{$breakpoint}w-auto { width: auto; }
+
+  @each $key, $value in $normal-values {
+  	.#{$breakpoint}w-#{$key} {
+  		width: #{$value};
+  	}
+  }
+
+  .#{$breakpoint}w-50 { width: 50%; }
+	.#{$breakpoint}w-100 { width: 100%; }
+  .#{$breakpoint}w-50vw { width: 50vw; }
+	.#{$breakpoint}w-100vw { width: 100vw; }
+}
+
+@include generateWidth();
+
+@if (variable-exists(mq-breakpoints)) {
+  @each $name, $value in $mq-breakpoints {
+    @include mq($from: $name) {
+      @include generateWidth(#{$name}-);
     }
   }
 }

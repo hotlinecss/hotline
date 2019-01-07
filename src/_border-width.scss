@@ -4,44 +4,31 @@
 
 */
 
-@mixin utility-border-width($breakpoint: null) {
-  @each $name, $value in $border-width {
-    .#{$breakpoint}border-a-#{$name} {
-      border-width: #{$value};
-    }
+@mixin generateBorderWidth($breakpoint: null) {
+  @each $key, $value in $normal-values {
+  	.#{$breakpoint}border-#{$key} {
+  		border-width: #{$value};
+  	}
   }
 
-  @each $name, $value in $border-width {
-    .#{$breakpoint}border-t-#{$name} {
-      border-top-width: #{$value};
-    }
+	@each $key, $value in $normal-values {
+  	.#{$breakpoint}border-t-#{$key} {
+  		border-top-width: #{$value};
+  	}
+
+  	.#{$breakpoint}border-r-#{$key} {
+  		border-right-width: #{$value};
+  	}
+
+  	.#{$breakpoint}border-b-#{$key} {
+  		border-bottom-width: #{$value};
+  	}
+
+  	.#{$breakpoint}border-l-#{$key} {
+  		border-left-width: #{$value};    
+  	}
   }
 
-  @each $name, $value in $border-width {
-    .#{$breakpoint}border-r-#{$name} {
-      border-right-width: #{$value};
-    }
-  }
-
-  @each $name, $value in $border-width {
-    .#{$breakpoint}border-b-#{$name} {
-      border-bottom-width: #{$value};
-    }
-  }
-
-  @each $name, $value in $border-width {
-    .#{$breakpoint}border-l-#{$name} {
-      border-left-width: #{$value};
-    }
-  }
 }
 
-@include utility-border-width();
-
-@if (variable-exists(mq-breakpoints)) {
-  @each $name, $value in $mq-breakpoints {
-    @include mq($from: $name) {
-      @include utility-border-width(#{$name}-);
-    }
-  }
-}
+@include generateBorderWidth();
