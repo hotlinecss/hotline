@@ -5,8 +5,8 @@
 */
 
 @mixin generateFontStyle($breakpoint: null) {
-  .#{$breakpoint}normal { font-style: normal; }
-  .#{$breakpoint}italic { font-style: italic; }
+  .#{$breakpoint}fs-normal { font-style: normal; }
+  .#{$breakpoint}fs-italic { font-style: italic; }
 }
 
 @include generateFontStyle();

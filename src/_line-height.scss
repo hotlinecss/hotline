@@ -6,8 +6,8 @@
 
 
 @mixin generateLineHeight($breakpoint: null) {
-	.#{$breakpoint}title { line-height: 1.25; }
-	.#{$breakpoint}copy { line-height: 1.5; }
+	.#{$breakpoint}lh-125 { line-height: 1.25; }
+	.#{$breakpoint}lh-150 { line-height: 1.5; }
 }
 
 @include generateLineHeight();

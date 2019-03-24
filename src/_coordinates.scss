@@ -6,16 +6,16 @@
 
 @mixin generateCoordinates($breakpoint: null) {
   @each $key, $value in $normal-values {
-		.#{$breakpoint}top-#{$key} { top: #{$value} }
-		.#{$breakpoint}right-#{$key} { right: #{$value} }
-		.#{$breakpoint}bottom-#{$key} { bottom: #{$value} }
-		.#{$breakpoint}left-#{$key} { left: #{$value} }
+		.#{$breakpoint}t-#{$key} { top: #{$value} }
+		.#{$breakpoint}r-#{$key} { right: #{$value} }
+		.#{$breakpoint}b-#{$key} { bottom: #{$value} }
+		.#{$breakpoint}l-#{$key} { left: #{$value} }
 
 		@if $value != 0 { 
-      .#{$breakpoint}topn-#{$key} { top: ($value * -1); }
-      .#{$breakpoint}rightn-#{$key} { right: ($value * -1); }
-      .#{$breakpoint}bottomn-#{$key} { bottom: ($value * -1); }
-      .#{$breakpoint}leftn-#{$key} { left: ($value * -1); }
+      .#{$breakpoint}tn-#{$key} { top: ($value * -1); }
+      .#{$breakpoint}rn-#{$key} { right: ($value * -1); }
+      .#{$breakpoint}bn-#{$key} { bottom: ($value * -1); }
+      .#{$breakpoint}ln-#{$key} { left: ($value * -1); }
     }
   }
 }

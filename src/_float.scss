@@ -5,9 +5,9 @@
 */
 
 @mixin generateFloat($breakpoint: null) {
-	.#{$breakpoint}push-none { float: none; }
-	.#{$breakpoint}push-left { float: left; }
-	.#{$breakpoint}push-right { float: right; }
+	.#{$breakpoint}f-none { float: none; }
+	.#{$breakpoint}f-left { float: left; }
+	.#{$breakpoint}f-right { float: right; }
 }
 
 @include generateFloat();

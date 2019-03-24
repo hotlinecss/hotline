@@ -5,10 +5,10 @@
 */
 
 @mixin generateVerticalAlign($breakpoint: null) {
-  .#{$breakpoint}align-top { vertical-align: top; }
-  .#{$breakpoint}align-middle { vertical-align: middle; }
-  .#{$breakpoint}align-baseline { vertical-align: baseline; }
-  .#{$breakpoint}align-bottom { vertical-align: bottom; }
+  .#{$breakpoint}va-top { vertical-align: top; }
+  .#{$breakpoint}va-middle { vertical-align: middle; }
+  .#{$breakpoint}va-baseline { vertical-align: baseline; }
+  .#{$breakpoint}va-bottom { vertical-align: bottom; }
 }
 
 @include generateVerticalAlign();

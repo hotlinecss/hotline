@@ -23,7 +23,6 @@
       .#{$breakpoint}phn-#{$key} { padding-left: ($value * -1); padding-right: ($value * -1); }
       .#{$breakpoint}pvn-#{$key} { padding-top: ($value * -1); padding-bottom: ($value * -1); }
     }
-
   }
 }
 

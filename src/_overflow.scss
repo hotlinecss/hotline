@@ -5,18 +5,18 @@
 */
 
 @mixin generateOverflow($breakpoint: null) {
-  .#{$breakpoint}overflow-visible { overflow: visible; }
-  .#{$breakpoint}overflow-x-visible { overflow-x: visible; }
-  .#{$breakpoint}overflow-y-visible { overflow-y: visible; }
-  .#{$breakpoint}overflow-auto { overflow: auto; }
-  .#{$breakpoint}overflow-x-auto { overflow-x: auto; }
-  .#{$breakpoint}overflow-y-auto { overflow-y: auto; }
-  .#{$breakpoint}overflow-hidden { overflow: hidden; }
-  .#{$breakpoint}overflow-x-hidden { overflow-x: hidden; }
-  .#{$breakpoint}overflow-y-hidden { overflow-y: hidden; }
-  .#{$breakpoint}overflow-scroll { overflow: scroll; }
-  .#{$breakpoint}overflow-x-scroll { overflow-x: scroll; }
-  .#{$breakpoint}overflow-y-scroll { overflow-y: scroll; }
+  .#{$breakpoint}o-visible { overflow: visible; }
+  .#{$breakpoint}ox-visible { overflow-x: visible; }
+  .#{$breakpoint}oy-visible { overflow-y: visible; }
+  .#{$breakpoint}o-auto { overflow: auto; }
+  .#{$breakpoint}ox-auto { overflow-x: auto; }
+  .#{$breakpoint}oy-auto { overflow-y: auto; }
+  .#{$breakpoint}o-hidden { overflow: hidden; }
+  .#{$breakpoint}ox-hidden { overflow-x: hidden; }
+  .#{$breakpoint}oy-hidden { overflow-y: hidden; }
+  .#{$breakpoint}o-scroll { overflow: scroll; }
+  .#{$breakpoint}ox-scroll { overflow-x: scroll; }
+  .#{$breakpoint}oy-scroll { overflow-y: scroll; }
 }
 
 @include generateOverflow();

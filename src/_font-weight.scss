@@ -5,19 +5,19 @@
 */
 
 @mixin generateFontWeight($breakpoint: null) {
-	.#{$breakpoint}font-lighter { font-weight: lighter; }
-	.#{$breakpoint}font-normal { font-weight: normal; }
-	.#{$breakpoint}font-bold { font-weight: bold; }
-	.#{$breakpoint}font-bolder { font-weight: bolder; }
-	.#{$breakpoint}font-100 { font-weight: 100; }
-	.#{$breakpoint}font-200 { font-weight: 200; }
-	.#{$breakpoint}font-300 { font-weight: 300; }
-	.#{$breakpoint}font-400 { font-weight: 400; }
-	.#{$breakpoint}font-500 { font-weight: 500; }
-	.#{$breakpoint}font-600 { font-weight: 600; }
-	.#{$breakpoint}font-700 { font-weight: 700; }
-	.#{$breakpoint}font-800 { font-weight: 800; }
-	.#{$breakpoint}font-900 { font-weight: 900; }
+	.#{$breakpoint}fw-lighter { font-weight: lighter; }
+	.#{$breakpoint}fw-normal { font-weight: normal; }
+	.#{$breakpoint}fw-bold { font-weight: bold; }
+	.#{$breakpoint}fw-bolder { font-weight: bolder; }
+	.#{$breakpoint}fw-100 { font-weight: 100; }
+	.#{$breakpoint}fw-200 { font-weight: 200; }
+	.#{$breakpoint}fw-300 { font-weight: 300; }
+	.#{$breakpoint}fw-400 { font-weight: 400; }
+	.#{$breakpoint}fw-500 { font-weight: 500; }
+	.#{$breakpoint}fw-600 { font-weight: 600; }
+	.#{$breakpoint}fw-700 { font-weight: 700; }
+	.#{$breakpoint}fw-900 { font-weight: 900; }
+	.#{$breakpoint}fw-800 { font-weight: 800; }
 }
 
 @include generateFontWeight();

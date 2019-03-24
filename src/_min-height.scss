@@ -5,18 +5,18 @@
 */
 
 @mixin generateMinHeight($breakpoint: null) {
-  .#{$breakpoint}min-height-auto { min-height: auto; }
+  .#{$breakpoint}min-h-auto { min-height: auto; }
 
   @each $key, $value in $normal-values {
-  	.#{$breakpoint}min-height-#{$key} {
+  	.#{$breakpoint}min-h-#{$key} {
   		min-height: #{$value};
   	}
   }
 
-  .#{$breakpoint}min-height-50 { min-height: 50%; }
-	.#{$breakpoint}min-height-100 { min-height: 100%; }
-  .#{$breakpoint}min-height-50vh { min-height: 50vh; }
-	.#{$breakpoint}min-height-100vh { min-height: 100vh; }
+  .#{$breakpoint}min-h-50 { min-height: 50%; }
+	.#{$breakpoint}min-h-100 { min-height: 100%; }
+  .#{$breakpoint}min-h-50vh { min-height: 50vh; }
+	.#{$breakpoint}min-h-100vh { min-height: 100vh; }
 
 }
 

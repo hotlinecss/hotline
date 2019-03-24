@@ -5,9 +5,9 @@
 */
 
 @mixin generateTextDecoration($breakpoint: null) {
-	.#{$breakpoint}underline { text-decoration: underline; }
-	.#{$breakpoint}line { text-decoration: line-through; }
-	.#{$breakpoint}plain { text-decoration: none; }
+	.#{$breakpoint}td-underline { text-decoration: underline; }
+	.#{$breakpoint}td-line { text-decoration: line-through; }
+	.#{$breakpoint}td-none { text-decoration: none; }
 }
 
 @include generateTextDecoration();

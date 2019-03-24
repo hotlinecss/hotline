@@ -5,10 +5,10 @@
 */
 
 @mixin generateTextAlign($breakpoint: null) {
-  .#{$breakpoint}text-left { text-align: left; }
-  .#{$breakpoint}text-center { text-align: center; }
-  .#{$breakpoint}text-right { text-align: right; }
-  .#{$breakpoint}text-justify { text-align: justify; }
+  .#{$breakpoint}ta-left { text-align: left; }
+  .#{$breakpoint}ta-center { text-align: center; }
+  .#{$breakpoint}ta-right { text-align: right; }
+  .#{$breakpoint}ta-justify { text-align: justify; }
 }
 
 @include generateTextAlign();

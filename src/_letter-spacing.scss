@@ -5,10 +5,9 @@
 */
 
 @mixin generateLetterSpacing($breakpoint: null) {
-	.#{$breakpoint}tracking-normal { letter-spacing: normal; }
-  .#{$breakpoint}tracking { letter-spacing: .1em; }
-  .#{$breakpoint}tracking-tight { letter-spacing: -.05em; }
-  .#{$breakpoint}tracking-wide { letter-spacing: .25em; }
+	.#{$breakpoint}ls-normal { letter-spacing: normal; }
+  .#{$breakpoint}ls-010 { letter-spacing: .1em; }
+  .#{$breakpoint}ls-025 { letter-spacing: .25em; }
 }
 
 @include generateLetterSpacing();

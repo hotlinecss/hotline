@@ -5,18 +5,18 @@
 */
 
 @mixin generateMinWidth($breakpoint: null) {
-  .#{$breakpoint}min-width-auto { min-width: auto; }
+  .#{$breakpoint}min-w-auto { min-width: auto; }
 
   @each $key, $value in $extra-normal-values {
-  	.#{$breakpoint}min-width-#{$key} {
+  	.#{$breakpoint}min-w-#{$key} {
   		min-width: #{$value};
   	}
   }
 
-  .#{$breakpoint}min-width-50 { min-width: 50%; }
-	.#{$breakpoint}min-width-100 { min-width: 100%; }
-  .#{$breakpoint}min-width-50vw { min-width: 50vw; }
-	.#{$breakpoint}min-width-100vw { min-width: 100vw; }
+  .#{$breakpoint}min-w-50 { min-width: 50%; }
+	.#{$breakpoint}min-w-100 { min-width: 100%; }
+  .#{$breakpoint}min-w-50vw { min-width: 50vw; }
+	.#{$breakpoint}min-w-100vw { min-width: 100vw; }
 
 }
 

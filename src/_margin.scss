@@ -23,7 +23,6 @@
       .#{$breakpoint}mhn-#{$key} { margin-left: ($value * -1); margin-right: ($value * -1); }
       .#{$breakpoint}mvn-#{$key} { margin-top: ($value * -1); margin-bottom: ($value * -1); }
 		}
-
   }
 
   .#{$breakpoint}ma-auto { margin: auto; }

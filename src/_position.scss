@@ -5,11 +5,11 @@
 */
 
 @mixin generatePosition($breakpoint: null) {
-  .#{$breakpoint}absolute { position: absolute; }
-  .#{$breakpoint}fixed { position: fixed; }
-  .#{$breakpoint}static { position: static; }
-  .#{$breakpoint}relative { position: relative; }
-	.#{$breakpoint}sticky { position: sticky; }
+  .#{$breakpoint}p-absolute { position: absolute; }
+  .#{$breakpoint}p-fixed { position: fixed; }
+  .#{$breakpoint}p-static { position: static; }
+  .#{$breakpoint}p-relative { position: relative; }
+	.#{$breakpoint}p-sticky { position: sticky; }
 }
 
 @include generatePosition();

@@ -5,9 +5,9 @@
 */
 
 @mixin generateCursor($breakpoint: null) {
-	.#{$breakpoint}cursor-pointer { cursor: pointer; }
-	.#{$breakpoint}cursor-wait { cursor: wait; }
-	.#{$breakpoint}cursor-auto { cursor: auto; }
+	.#{$breakpoint}c-pointer { cursor: pointer; }
+	.#{$breakpoint}c-wait { cursor: wait; }
+	.#{$breakpoint}c-auto { cursor: auto; }
 }
 
 @include generateCursor();

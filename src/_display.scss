@@ -5,13 +5,13 @@
 */
 
 @mixin generateDisplay($breakpoint: null) {
-	.#{$breakpoint}block { display: block; }
-	.#{$breakpoint}inline { display: inline; }
-	.#{$breakpoint}inline-block { display: inline-block; }
-	.#{$breakpoint}table { display: table; }
-	.#{$breakpoint}table-row { display: table-row; }
-	.#{$breakpoint}table-cell { display: table-cell; }
-	.#{$breakpoint}hidden { display: none; }
+	.#{$breakpoint}d-block { display: block; }
+	.#{$breakpoint}d-inline { display: inline; }
+	.#{$breakpoint}d-inline-block { display: inline-block; }
+	.#{$breakpoint}d-table { display: table; }
+	.#{$breakpoint}d-table-row { display: table-row; }
+	.#{$breakpoint}d-table-cell { display: table-cell; }
+	.#{$breakpoint}d-hidden { display: none; }
 }
 
 @include generateDisplay();

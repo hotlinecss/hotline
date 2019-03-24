@@ -20,15 +20,14 @@ $grid: (12);
 
 $normal-values: (
   0: 0,
-  1: .0625rem, 
-  2: .125rem, 
-  3: .25rem, 
-  4: .5rem, 
-  5: 1rem, 
-  6: 2rem, 
-  7: 4rem, 
-  8: 8rem, 
-  9: 16rem
+  1: .125rem, 
+  2: .250rem, 
+  3: .5rem, 
+  4: 1rem, 
+  5: 2rem, 
+  6: 4rem, 
+  7: 8rem, 
+  8: 16rem
 );
 
 // Values for
@@ -36,10 +35,10 @@ $normal-values: (
 //    max-width
 
 $extra-normal-values: join($normal-values, (
-  10: 32rem,
-  11: 48rem,
-  12: 64rem,
-  13: 96rem
+  9: 32rem,
+  10: 48rem,
+  11: 64rem,
+  12: 96rem
 ));
 
 $font-sizes: (

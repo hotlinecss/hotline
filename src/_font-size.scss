@@ -6,7 +6,7 @@
 
 @mixin generateFontSize($breakpoint: null) {
   @each $key, $value in $font-sizes {
-  	.#{$breakpoint}font-#{$key} {
+  	.#{$breakpoint}fs-#{$key} {
   		font-size: #{$value};
   	}
   }
